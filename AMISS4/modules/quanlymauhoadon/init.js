@@ -1,0 +1,1 @@
+﻿$("#curentPage").html("Quản lý mẫu hóa đơn");
