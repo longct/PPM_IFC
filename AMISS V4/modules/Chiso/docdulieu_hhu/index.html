@@ -1,0 +1,61 @@
+﻿
+<div class="box box-info no-margin-bt">
+    <div class="box-body" style="margin-bottom:10px;">
+        <div class="col-lg-3">
+            <div id="dropDownButton" style="width: 100%;">
+                <div id='jqxDropDL_docttdcu' style="border: none;">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <!--<label style="width:60px;">Ngày</label>-->
+            <input type="text" class="form-control datepicker" id="txtDateDoctucthoiDcu" />
+        </div>
+        <div class="col-lg-5">
+             <button id="btnDoc" class="btn btn-success">Thực hiện đọc</button>
+             <button id="btnXuatExcel" class="btn btn-success">Xuất excel</button>
+        </div>
+    </div>
+    <div style="text-align:center">
+        <center>
+            <div class="bar2">
+                <div id="delayClock" class="clock1">
+                </div>
+            </div>
+            <div class="bar">
+                <h2 class="timer">0:00</h2>
+            </div>
+
+            <div class="circle"></div>
+            <div class="divMessage_ddlhhu"></div>
+            <div class="progress-bar-dtt noload">
+                <span class="loadtext"></span>
+                <div class="load"></div>
+            </div>
+        </center>
+    </div>
+</div>
+<div class="box box-body">
+    <div class="col-lg-12 panel-tsvh">
+        <table class="table table-responsive table-bordered table-hover" id="csdk_data">
+            <thead>
+                <tr>
+                    <th><span>STT</span></th>
+                    <th style="width:30%"><span>Tên điểm đo</span></th>
+                    <th><span> Số công tơ</span></th>
+                    <th class="TtenHide"><span>Chỉ số (Kwh)</span></th>
+                    <th><span>Thời gian đọc</span></th>
+                    <th><span>Trạng thái</span></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+</div>
+<link href="../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../js/jqx/jqxcore.js"></script>
+<script src="../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../js/jqx/jqxtree.js"></script>
+<script src="../../js/jqx/jqxdata.js"></script>
+<script src="../../../modules/Chiso/docdulieu_hhu/timer-doctucthoi.js"></script>

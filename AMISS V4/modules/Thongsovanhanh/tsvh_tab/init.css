@@ -1,0 +1,10 @@
+﻿.form-inline{display:inline-block;}
+.input-group{
+    padding:0px !important;
+}
+.input-group.date, select#cb_sct_tsvh{
+ width:125px;
+}
+.col-lg-4.sct{
+    width:26.333333%;
+}

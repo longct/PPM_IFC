@@ -1,0 +1,59 @@
+﻿<div class="box box-body" id="phanquyenuser">
+    <div class="col-xs-12">
+        <div class="panel-heading">
+            <ul class="filter_column"></ul>
+            <!-- box thông tin khởi tạo -->
+            <div class="panel panel-teal filterable">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Chọn người dùng:</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-lg-8">
+                        <table id="" class="table no-border table-responsive">
+                            <tbody id="">
+                                <tr>
+                                    <td style="width:200px"><label class="filter_tsvh"> Tên người dùng</label></td>
+                                    <td>
+                                        <select id="sl_nguoidung" class="form-control select2" style="width:100%"></select>
+                                    </td>
+                                    <td> <button id="btn_searchnguoidung" class="btn btn-warning"><i class="fa fa-search">Tìm kiếm</i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- box thông tin khách hàng -->
+            <div class="panel panel-teal filterable">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Thông tin phân quyền</h3>
+                    <div class="pull-right" style="margin-top: -20px !important;">
+                        <button id="btn_luuphanquyen" class="btn btn-success btn-xs"><span class="fa fa-save"></span> Lưu</button>
+                        <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Lọc</button>
+                    </div>
+                </div>
+                <table id="" class="table table-bordered table-striped">
+                    <thead>
+                        <tr class="filters">
+                            <th width="5%">STT</th>
+                            <th class="chucnang"><input type="text" class="form-control " placeholder="Chức năng" disabled></th>
+                            <th width="10%">Xem</th>
+                            <th width="10%">Thêm mới</th>
+                            <th width="10%">Sửa</th>
+                            <th width="10%">Xóa</th>
+                            <th width="10%">In</th>
+                        </tr>
+                    </thead>
+                    <tbody id="danhsachchucnang"></tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>
+
+<div id="toast" class='' style='display:none'></div>

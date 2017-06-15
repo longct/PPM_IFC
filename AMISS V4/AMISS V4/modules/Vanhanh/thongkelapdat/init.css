@@ -1,0 +1,25 @@
+﻿.select2-container {
+    /*margin-top:5px;*/
+}
+.input-group{
+    padding:0px !important;
+}
+.input-group.date, select#cb_trangthai{
+ width:135px;
+ float:left;
+
+}
+.col-lg-4.sct{
+    width:26.333333%;
+}
+h3.bcvh {
+    margin-top: 0 !important;
+}
+.mkn{
+    background:#F44336;
+    color:#fff;
+}
+.kn{
+    background:#4CAF50;
+    color:#fff;
+}

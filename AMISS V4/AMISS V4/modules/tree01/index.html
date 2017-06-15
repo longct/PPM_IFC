@@ -1,0 +1,78 @@
+﻿<section class="wrapper">
+    <div class="panel panel-default">
+        <div class="iconic-input">
+            <i class="fa fa-search"></i>
+            <input type="text" class="form-control" placeholder="Tìm kiếm" id="txt_search_tree"/>
+        </div>
+    </div>
+    <div class="divider" style="border:none !important;"></div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title panel-title-filter-tree">
+                <i class="fa fa-filter"></i><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Lọc thông tin
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" style="height: auto;">
+            <div class="panel-body panel-tree">
+                <div class="form-inline" role="form">
+                    <div class="form-group form-filter-tree">
+                        <table>
+                            <tr>
+                                <td><label class="control-label filter-tree" for="dateForm_csc_ngay">Ngày lắp</label></td>
+                                <td>
+                                    <input class="form-control form-control-inline input-medium default-date-picker filter-tree" size="10" type="text" value=""
+                                           data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_dateform_tree" />
+                                </td>
+                                <td>
+                                    <input class="form-control form-control-inline input-medium default-date-picker filter-tree" size="10" type="text" value=""
+                                           data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_dateto_tree" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label filter-tree" for="dateForm_csc_ngay">Trạng thái</label></td>
+                                <td colspan="2">
+                                    <select class="form-control input-sm m-bot15" id="cb_trangthai_tree">
+                                        <option value="-1">--Tất cả--</option>
+                                        <option value="1">Xanh</option>
+                                        <option value="3">Vàng</option>
+                                        <option value="2">Đỏ</option>
+                                        <option value="4">Trắng</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label filter-tree" for="dateForm_csc_ngay">Công nghệ</label></td>
+                                <td colspan="2">
+                                    <select class="form-control input-sm m-bot15" id="cb_congnghe_tree">
+                                       
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label filter-tree" for="dateForm_csc_ngay">Nhà sản xuất</label></td>
+                                <td colspan="2">
+                                    <select class="form-control input-sm m-bot15" id="cb_nhasanxuat_tree">
+                                        
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn btn-danger btn-xoa" type="button" id="btn_xoa_tree"><i class="fa fa-refresh "></i> Xóa</button></td>
+                                <td colspan="2" style="text-align:right"><button class="btn btn-success" type="button" id="btn_thuchien_tree"><i class="fa fa-filter"></i> Thực hiện</button></td>
+                            </tr>
+                        </table>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="tree-place">
+        <ul id="tree01"></ul>
+    </div>
+</section>

@@ -1,0 +1,48 @@
+﻿.td_stt {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    white-space: nowrap;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.cmis_view1{
+    padding: 5px;
+    border: 1px solid #00a9ff;
+    display: inline-block;
+   height: 215px;
+    border-right: none;
+   
+}
+.cmis_view2{
+    padding: 5px;
+    border: 1px solid #00a9ff;
+    display: inline-block;
+    height: 215px;
+  
+}
+
+.filter_cmis{float: left;margin: 5px;color: #015b88; font-weight: bold;}
+.glyphicon{margin-left:10px;cursor:pointer;}
+.txt-csm{
+    width: 70px;
+    border: none;
+    text-align: right;
+}
+text-right{text-align:right;}
+.cmis_view1 .col-lg-6,.cmis_view2 .col-lg-6,.cmis_view1 .col-lg-4,.cmis_view2 .col-lg-4{
+     overflow: hidden;white-space: nowrap;
+     margin:0;padding:0
+}

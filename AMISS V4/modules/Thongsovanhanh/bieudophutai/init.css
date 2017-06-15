@@ -1,0 +1,15 @@
+﻿table.tbl-info tbody tr td{
+    vertical-align:top !important;
+    padding:10px;
+}
+.input-group{
+    padding:0px !important;
+    width:100%;
+}
+#doimatkhau{
+    cursor:pointer;
+}
+
+input[type=radio]{margin:0px 3px 0px 0px;}
+
+.label-12{font-size:12px;}

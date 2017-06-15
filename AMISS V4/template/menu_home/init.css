@@ -1,0 +1,64 @@
+﻿#thongtinkhachhang_box {
+    padding: 5px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border:none;
+}
+
+#metro_menu {
+    /*margin-top: 10px !important;*/
+    /*box-shadow: 2px 2px 2px #ccc;*/
+    margin-bottom: 10px !important;
+    /*border-radius: 0 5px 5px 0;*/
+    overflow: auto;
+    background: none;
+}
+
+.menu_metro:hover {
+    background: #06466b !important;
+    font-weight: bold;
+}
+
+#metro_sub_menu {
+    /*box-shadow: 2px 2px 2px #ccc;*/
+    margin-bottom: 10px !important;
+    /*border-radius: 5px;*/
+    /*margin-top: 10px;*/
+    /*padding: 3px !important;*/
+    background:none;
+}
+
+.activity {
+    width: 90%;
+    position: absolute;
+    bottom: 5px;
+    text-align: right;
+}
+
+.col {
+    float: left;
+}
+
+.left-mainmenu {
+    width: 240px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.left-submenu {
+    width: 325px;
+    margin-left: 5px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.right-content {
+    width: calc(100% - 500px);
+    /*margin-left: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px #ccc;*/
+    margin-bottom: 10px !important;
+    /*border-radius: 5px !important;*/
+    background: #fff;
+}

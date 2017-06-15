@@ -1,0 +1,35 @@
+﻿.menu_metro_sub .icon_metro{
+    margin-left:0px !important;
+}
+/*MENI ICON*/
+#chiso_chisochotngay .icon_metro {
+    background: url('template/sub_menu_chiso/icon/chiso.png') no-repeat center center;
+}
+
+#tsvh_tsvhtab .icon_metro_fav {
+    background: url('template/sub_menu_chiso/icon/chiso-fav.png') no-repeat center center;
+}
+
+#chiso_chisotungthoidiem .icon_metro {
+    background: url('template/sub_menu_chiso/icon/xemcs.png') no-repeat center center;
+}
+
+#chiso_chisotungthoidiem .icon_metro_fav {
+    background: url('template/sub_menu_chiso/icon/xemcs_fav.png') no-repeat center center;
+}
+
+#chiso_tsvh .icon_metro {
+    background: url('template/sub_menu_chiso/icon/doctt.png') no-repeat center center;
+}
+
+#chiso_tsvh .icon_metro {
+    background: url('template/sub_menu_chiso/icon/docdcu.png') no-repeat center center;
+}
+
+#chiso_bieudotsvh .icon_metro {
+    background: url('template/sub_menu_chiso/icon/cmis1.png') no-repeat center center;
+}
+
+#chiso_sukien .icon_metro {
+    background: url('template/sub_menu_chiso/icon/kh.png') no-repeat center center;
+}

@@ -1,0 +1,32 @@
+﻿#jqxDropDL_nhapkh {
+    overflow-y: scroll;
+    background: #fff;
+}
+
+    #jqxDropDL_nhapkh ul {
+        background-color: white;
+        color: black;
+    }
+
+        #jqxDropDL_nhapkh ul li div:hover {
+            background-color: white;
+            color: black;
+        }
+
+#dropDownButton_nhapkh {
+    width: 100% !important;
+    margin: 0px 0px 5px 7px;
+    color: black;
+    height: 30px !important;
+    border-radius: 0px;
+    width:100% !important;
+}
+
+.jqx-fill-state-hover {
+    background-color: white;
+}
+
+#dropDownButtonContentdropDownButton {
+    top: 3px !important;
+}
+

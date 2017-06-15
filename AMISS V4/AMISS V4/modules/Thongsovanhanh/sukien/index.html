@@ -1,0 +1,110 @@
+﻿<div class="box box-body">
+    <div class="box-body">
+        <div class="form-inline table-responsive" id="boxFilter">
+            <label class="tungay">Từ ngày</label>
+            <div class="input-group date tungay_d">
+                <input type="text" class="form-control datepicker" id="dtTuNgay" style="width: 120px;">
+            </div>
+
+            <label class="denngay">Đến ngày</label>
+            <div class="input-group date denngay_d">
+                <input type="text" class="form-control datepicker" id="dtDenNgay" style="width: 120px;">
+            </div>
+            <label>Loại cảnh báo</label>
+            <div class="form-inline" style="margin-top:10px">
+                <select class="dropdown" id="cbLoaisukien" style="height:32px;">
+                    <option value="ALL">–– TẤT CẢ ––</option>
+                    <option value="PROGLOG">Lập trình công tơ</option>
+                    <option value="TIMECHANGE">Thay đổi thời gian</option>
+                    <option value="POWERFAIL">Mất nguồn</option>
+                    <option value="UNDERVOLTAGE">Thấp áp</option>
+                    <option value="OVERVOLTAGE">Quá áp</option>
+                    <option value="PHASEFAIL">Mất điện áp pha</option>
+                    <option value="REVERSEVOLTAGE">Ngược chiều điện áp</option>
+                    <option value="REVERSECURRENT">Ngược chiều dòng điện</option>
+                    <option value="VOLTAGEIMBALANCE">Mất cân bằng áp</option>
+                    <option value="CURRENTIMBALANCE">Mất cân bằng dòng</option>
+                    <option value="LOSTCURRENT">Mất dòng</option>
+                    <option value="OVERCURRENT">Quá dòng</option>
+                    <option value="REVERSEPOWER">Ngược công suất</option>
+                    <option value="OVERLOAD">Quá tải</option>
+                    <option value="PASSCHANGE">Đổi Mật Khẩu</option>
+                    <option value="TAMPER">Đấu sai</option>
+                </select>
+            </div>
+            <label>Mã điểm đo</label>
+            <div class="form-inline" style="margin-top:10px">
+                <input type="text" class="form-control" id="txtMaDiemDo" style="width: 120px;">
+            </div>
+            <div class="form-inline">
+                <button class="btn btn-success" id="btnLocdulieu">Thực hiện</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 mes">
+        <span id="mesMain"></span>
+    </div>
+    <div class="col-lg-12">
+        <div class="pull-left"><span class="sobanghi"></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel" id="excel_sukien"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12 panel-tsvh">
+        <div class="panel panel-teal filterable">
+            <!--<div class="panel-heading">
+                <h3 class="panel-title">Danh sách sự kiện</h3>
+                <div class="pull-right" style="margin-top: -20px !important;">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Lọc</button>
+                </div>
+            </div>-->
+            <table id="tbl_sukien_data" class="table table-bordered table-hover table-striped">
+                <thead>
+                    <!--<tr class="filters">
+                        <th class="th_stt"><input type="text" class="form-control " placeholder="STT" disabled></th>
+                        <th class="th_sukien"><input type="text" class="form-control " placeholder="Sự kiện" disabled></th>
+                        <th class="th_pha"><input type="text" class="form-control " placeholder="Pha" disabled></th>
+                        <th class="th_thoidiembatdau"><input type="text" class="form-control " placeholder="Thời điểm bắt đầu" disabled></th>
+                        <th class="th_thoidiemketthuc"><input type="text" class="form-control " placeholder="Thời điểm kết thúc" disabled></th>
+                        <th class="th_solanxayra"><input type="text" class="form-control " placeholder="Số lần" disabled></th>
+                        <th class="th_sophut"><input style="width:90px;" type="text" class="form-control " placeholder="Số Phút" disabled></th>
+                    </tr>-->
+                    <tr class="bg-aqua-gradient">
+                        <th class="th_stt">STT</th>
+                        <th class="th_sukien">Sự kiện</th>
+                        <th class="th_pha">Pha</th>
+                        <th class="th_thoidiembatdau">Thời điểm bắt đầu</th>
+                        <th class="th_thoidiemketthuc">Thời điểm kết thúc</th>
+                        <th class="th_solanxayra">Số lần</th>
+                        <th class="th_sophut">Số phút</th>
+                    </tr>
+                </thead>
+                <tbody id="sukien_details">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="scroll_header col-lg-12 " style="display:none;">
+        <table class="table table-responsive table-bordered" id="tbl_sukien_data_fix">
+            <thead class="bg-aqua-gradient">
+                <tr>
+                    <th class="th_stt">STT</th>
+                    <th class="th_sukien">Sự kiện</th>
+                    <th class="th_pha">Pha</th>
+                    <th class="th_thoidiembatdau">Thời điểm bắt đầu</th>
+                    <th class="th_thoidiemketthuc">Thời điểm kết thúc</th>
+                    <th class="th_solanxayra">Số lần</th>
+                    <th class="th_sophut">Số phút</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+

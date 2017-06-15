@@ -1,0 +1,213 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+
+        <div class="col-lg-12" id="help_step">
+            <div class="step col-lg-4 step-active" id="step_1">
+                <h4 class="step_header headercmiss">Chọn file CMIS</h4>
+                <div class="step_stt"><div class="step-active step_done"></div></div>
+            </div>
+
+            <div class="step col-lg-4" id="step_2">
+                <h4 class="step_header headercmiss">Chọn thời điểm</h4>
+                <div class="step_stt"><div class="step_deactive"></div></div>
+            </div>
+
+            <div class="step col-lg-4" id="step_3">
+                <h4 class="step_header headercmiss">Xuất file đã gửi CMIS</h4>
+                <div class="step_stt"><div class="step_deactive"></div></div>
+            </div>
+        </div>
+        <div class="col-lg-12" id="help_step_exec" style="margin-bottom: 20px !important;">
+            <div class="col-lg-12" id="step_exec_1">
+                <div class="tl_cmiss col-lg-12">
+                    <label class="filter_tsvh" style="float:left">Chọn file CMISS</label>
+                </div>
+                <div class="tl_cmiss col-lg-6">
+                    <input type="file" class="form-control" placeholder="" id="txt_file_cmisdb" accept=".xml" style="" onchange="f_cleartemp_dbcmis(this);" />
+                </div>
+                <div class="tl_cmiss col-lg-6">
+                    <button class="btn btn-success" id="btntieptuc_step1" disabled="disabled">Tiếp tục</button>
+                </div>
+            </div>
+            <div class="col-lg-12" id="step_exec_2" style="margin-bottom: 20px !important;display:none">
+                <div class="col-lg-6 tl_cmiss">
+                    <div class="col-lg-6 tl_cmiss">
+                        <label class="filter_tsvh pull-left">Ngưỡng CB trên (%)</label>
+                        <input type="number" maxlength="2" value="15" class="form-control pull-left text-center" id="txtTyletren"  onkeypress="return isNumber(event)">
+                    </div>
+                    <div class="col-lg-6 tl_cmiss">
+                        <label class="filter_tsvh pull-left">Ngưỡng CB dưới (%)</label>
+                        <input type="number" maxlength="2" value="15" class="form-control pull-left text-center" id="txtTyleduoi"  onkeypress="return isNumber(event)">
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+                <div class="col-lg-6 tl_cmiss">
+                    <div class="col-lg-4 tl_cmiss">
+                        <label class="filter_tsvh">Số kỳ chốt</label>
+                        <select class="form-control" id="cboSokychot_napcmiss">
+                            <option value="1" selected="selected">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 tl_cmiss">
+                        <label class="filter_tsvh" style="">Ngày</label>
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right datepicker" id="dt_thangnapcmis" >
+                        </div>
+                    </div>
+                    <div class="col-lg-4 tl_cmiss">
+                        <label class="filter_tsvh" style="">Giờ</label>
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right" id="txtfixgiochot" value="00:00">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-12" style="margin-bottom:8px !important;padding: 10px;">
+                    <button class="btn btn-danger" style="margin:0 5px 5px 0px" id="btnbackcmis_step2">Quay lại</button>
+                    <button class="btn btn-success" style="margin:0 5px 5px 0px" id="btnTieptuccmis_2">Tiếp tục</button>
+
+                </div>
+            </div>
+
+            <div class="col-lg-12" id="step_exec_3" style="display:none">
+                <div class="col-lg-6 tl_cmiss">
+                    <div style="margin-top: 59px;">
+                        <button class="btn btn-danger" style="margin:0 5px 5px 0px" id="btnbackcmis_step3">Quay lại</button>
+                        <button class="btn btn-success" style="margin:0 5px 5px 0px" id="btnNapcmis">Nạp dữ liệu</button>
+                        <button class="btn btn-success" style="margin:0 5px 5px 0px" id="btnXuatExcel">Xuất EXCEL</button>
+                        <button class="btn btn-success" style="margin:0 5px 5px 0px" id="btnXuatXML">Xuất XML</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 tl_cmiss" style="margin-top: 20px;">
+                    <div class="col-lg-12 tl_cmiss">
+                        <select class="form-control pull-left" id="sllichsuluufilecmis">
+                            <option selected="selected">Lịch sử lưu file</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 tl_cmiss">
+                        <button class="btn btn-success" id="btnKiemsoat">Kiểm soát chỉ số</button>
+                        <button class="btn btn-success" id="btnXoafile">Xóa file</button>
+                        <button class="btn btn-success" id="btnLuufile">Lưu lại</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Thông số khách hàng-->
+<div id="msg_info_cmis" style="display:none"></div>
+<div id="napCmissResult" style="display:none">
+    <div class="col-lg-12 col-md-12" style="border: 1px solid #ccc;padding: 10px">
+        <div class="col-lg-4 col-md-4">
+            <div id="saithongtin" data-typecb="7" style="color:#ff5722;"></div>
+            <div id="slquacao" data-typecb="1" style="color:#dc9c39;"></div>
+            <div id="slkhongtang" data-typecb="6" style="color:#3f51b5;"></div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div id="slquathap" data-typecb="2" style="color:#a39200;"></div>
+            <div id="khongcochiso" data-typecb="4" style="color:#ff9800;"></div>
+
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <div id="slam" data-typecb="3" style="color:#e91e63;"></div>
+            <div id="slquanho" data-typecb="5" style="color:#9c27b0;"></div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-12 panel-tkdn" style="width:100%; overflow-x:scroll;max-height:350px; display:none">
+
+    <table class="table table-responsive table-bordered table-hover" id="tbl_cmis">
+        <thead class="bg-aqua-gradient">
+            <tr>
+                <th>Chọn</th>
+                <th>MA_NVGCS</th>
+                <th>MA_KHANG</th>
+                <th>MA_DDO</th>
+                <th>MA_DVIQLY</th>
+                <th>MA_GC</th>
+                <th>MA_QUYEN</th>
+                <th>MA_TRAM</th>
+                <th>BOCSO_ID</th>
+                <th>LOAI_BCS</th>
+                <th>LOAI_CS</th>
+                <th>TEN_KHANG</th>
+                <th>DIA_CHI</th>
+                <th>MA_NN</th>
+                <th>SO_HO</th>
+                <th>MA_CTO</th>
+                <th>SERY_CTO</th>
+                <th>HSN</th>
+                <th>CS_CU</th>
+                <th>TTR_CU</th>
+                <th>SL_CU</th>
+                <th>SL_TTIEP</th>
+                <th>NGAY_CU</th>
+                <th>CS_MOI</th>
+                <th>SL_MOI</th>
+                <th>CHUOI_GIA</th>
+                <th>KY</th>
+                <th>THANG</th>
+                <th>NAM</th>
+                <th>NGAY_MOI</th>
+                <th>NGUOI_GCS</th>
+                <th>SL_THAO</th>
+                <th>KIMUA_CSPK</th>
+                <th>MA_COT</th>
+                <th>SLUONG_1</th>
+                <th>SLUONG_2</th>
+                <th>SLUONG_3</th>
+                <th>SO_HOM</th>
+                <th>PMAX</th>
+                <th>NGAY_PMAX</th>
+                <th>GHI CHÚ</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<!-- Modal Lưu file-->
+<div class="modal fade" id="savefile_tkdn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header m-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Thông tin file</h4>
+            </div>
+            <div class="modal-body">
+                <table id="dmk" class="table table-bordered">
+                    <tr>
+                        <td>Tên File</td>
+                        <td valign="top">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-paperclip"></i></span>
+                                <input type="text" class="form-control" id="txt_file_cmis">
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td valign="bottom" style="padding:5px;">
+                            <button class="btn btn-success" id="btn_dongy_cmis">Đồng ý</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>

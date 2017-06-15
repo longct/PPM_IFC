@@ -1,0 +1,199 @@
+﻿#divUABC {
+    width: 160px;
+}
+
+.widthItem {
+    width: 23px;
+}
+
+.ui-slider-tick-mark {
+    display: inline-block;
+    width: 1px;
+    background: #bd8cbf;
+    height: 8px;
+    position: absolute;
+    top: 2px;
+    color: #bd8cbf;
+}
+
+#bieudo-tong {
+    width: 700px;
+    height: 100%;
+    float: right;
+}
+
+.groupABC {
+    width: 240px;
+    height: 225px;
+    float: left;
+}
+
+.groupPQTong {
+    width: 400px;
+    height: 339px;
+    float: left;
+    margin-left: 20px;
+}
+
+.singleDisplay1 {
+    width: 500px;
+    height: 439px;
+}
+
+.singleWidth1 {
+    width: 80%;
+    padding: 10%;
+}
+
+#bdleft {
+    width: 31%;
+    height: 100%;
+    float: left;
+}
+
+#bdright {
+    width: 68%;
+    height: 100%;
+    float: left;
+}
+
+.show {
+    display: block;
+    width: 80%;
+    padding: 10%;
+}
+
+.hide {
+    display: none;
+}
+
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+#titleInforDisplay {
+    float: left;
+    width: 30%;
+    min-width: 180px;
+    width: 180px;
+}
+
+#slider {
+    float: left;
+    width: 60%;
+    min-width: 600px;
+    width: 600px;
+}
+
+#tblShowtime {
+    width: 100%;
+    min-width: 800px;
+}
+
+#sliderInforMation {
+    float: left;
+    width: 30%;
+    min-width: 700px;
+    width: 100%;
+    font-size: 13px;
+}
+
+.button {
+    margin-top: 1px !important;
+}
+
+#slider {
+    margin: 10px;
+}
+
+#contents {
+    float: left;
+}
+
+.inputRight {
+    text-align: right;
+}
+
+.textBox {
+    color: #bd8cbf;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 2px solid #4b5169;
+}
+
+#container_PQPhaseA {
+    margin: 0 auto;
+}
+
+#container_PQPhaseB {
+    margin: 0 auto;
+}
+
+#container_PQPhaseC {
+    margin: 0 auto;
+}
+
+#container_PQTong {
+    min-width: 210px;
+}
+
+#container_UICOSAngle {
+    min-width: 210px;
+}
+
+#showListTimesCount {
+    display: table;
+    width: 160px;
+    overflow: hidden;
+    float: left;
+}
+
+#showUIPQ {
+    /*width: 162px;*/
+    width: 120px;
+    height: 80%;
+    font-size: 12px;
+}
+
+p.inline {
+    display: inline;
+}
+
+.container_gridBlock {
+    width: 100%;
+    min-width: 800px;
+    width: 800px;
+    height: 90px;
+    float: left;
+    margin-top: 10px;
+    overflow-y: hidden;
+}
+
+.date-range {
+    float: left;
+}
+
+.phase-vector-chart {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.large-vector-chart {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.lineStyle {
+    border-style: solid;
+    color: Gray;
+}
+
+.icheckbox_flat-blue icheckbox_{
+    margin: 0px !important;
+}

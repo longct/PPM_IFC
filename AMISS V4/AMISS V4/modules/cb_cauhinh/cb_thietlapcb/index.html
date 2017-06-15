@@ -1,0 +1,197 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div id="quanly_cht"></div>
+    </div>
+    <!--vẽ cấu hình-->
+    <div class="col-lg-12" id="t_cauhinh_chtl">
+
+        <table class="table table-responsive table-bordered">
+            <tr id="tr_cb_tencauhinh">
+                <td width="200px"><label class="filter_tsvh">Tên cấu hình(*):</label> </td>
+                <td><input type="text" class="form-control" id="txt_tencauhinh_chtl" style="width:400px" /> </td>
+            </tr>
+            <tr id="tr_cb_apdungcho" style="display:none">
+                <td width="200px"><label class="filter_tsvh">ÁP DỤNG CHO(*):</label> </td>
+                <td>
+                    <select id="cboWhichPha" class="form-control" style="width:200px">
+                        <option value="3">3 Pha</option>
+                        <option value="1">1 Pha</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn btn-success margin-top3" id="btn_trolai_cbtl" style="display:none">Trở lại</button>
+                    <button class="btn btn-success margin-top3" id="btn_capnhat_cbtl">Cập nhật cấu hình</button>
+                    <button class="btn btn-success margin-top3" id="btn_sudungma_cbtl">Sử dụng mặc định</button>
+                </td>
+
+            </tr>
+        </table>
+        <br />
+
+        <table class="table table-responsive table-bordered">
+            <thead class="bg-aqua-gradient">
+                <tr>
+                    <th>Loại cảnh báo</th>
+                    <th>Thông số thiết lập</th>
+                    <th>Bật cảnh báo</th>
+                </tr>
+            </thead>
+            <tr>
+                <td colspan="3" ><b>Cảnh báo điện áp (U)</b></td>
+            </tr>
+            <tr>
+                <td>- Cảnh báo quá điện áp  </td>
+                <td><span class="tl_txt">Tỷ lệ</span><input type="number" id="txt_canhqua_tlcb"> (%) U định mức  </td>
+                <td rowspan="3" class="c"><input type="checkbox" id="cb_canhqua_tlcb" checked></td>
+            </tr>
+            <tr>
+                <td>- Cảnh báo sụt điện áp</td>
+                <td><span class="tl_txt">Tỷ lệ</span><input type="number" id="txt_canhthap_tlcb"> (%) U định mức </td>
+                <td></td>
+            </tr>
+            <tr class="tr_tldinhmuc">
+                <td>- Thiết lập U định mức</td>
+                <td>
+                    <a href="#" onclick="thietlapdinhmuc('U')" id="l_tldm_u" data-id="0">Thêm thiết lập U định mức</a>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"><b>Cảnh báo dòng điện (I)</b></td>
+            </tr>
+            <tr>
+                <td>- Cảnh báo quá dòng </td>
+                <td><span class="tl_txt">Tỉ lệ </span><input type="number" id="txt_idinhmuc_tlcb" /> (%) I định mức</td>
+                <td  class="c"><input type="checkbox" id="cb_idinhmuc_tlcb" checked></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td>- Quá dòng 1 pha và 2 pha còn lại = 0 </td>
+                <td><span class="tl_txt">1 phase ≥</span> <input type="number" id="txt_dong1pha2pha_tlcb" />(%) </td>
+                <td class="c"><input type="checkbox" id="cb_dong1pha2pha_tlcb"></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td>- Quá dòng 2 pha và 1 pha còn lại = 0 </td>
+                <td><span class="tl_txt">2 phase ≥</span><input type="number" id="txt_dong2pha1pha_tlcb" />(%) </td>
+                <td class="c"><input type="checkbox" id="cb_dong2pha1pha_tlcb"></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td>- Dòng 1 pha lệch so với các pha </td>
+                <td><span class="tl_txt">1 phase ≤ </span> <input type="number" id="txt_donglenh1pha_tlcb" /> (%) tb các pha </td>
+                <td class="c"><input type="checkbox" id="cb_donglenh1pha_tlcb"></td>
+            </tr>
+            <tr class="tr_tldinhmuc">
+                <td>- Thiết lập I định mức</td>
+                <td><a href="#" onclick="thietlapdinhmuc('I')" id="l_tldm_i" data-id="0">Thêm thiết lập I định mức</a></td>
+                <td></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td><b>Hệ số công suất - Cos(φ)</b></td>
+                <td><span class="tl_txt">CosTB < </span><input type="number" id="txt_hscos_tlcb" /> thì cảnh báo</td>
+                <td class="c"><input type="checkbox" id="cb_hscos_tlcb"></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td colspan="3"><b>Cảnh báo tần số (Freg)</b></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td>- Cảnh báo quá tần số </td>
+                <td><span class="tl_txt">Tỷ lệ</span><input type="number" id="txt_canhbaoquatanso_tlcb"> %) Freg định mức </td>
+                <td rowspan="3"  class="c"><input type="checkbox" id="cb_canhbaoquatanso_tlcb"></td>
+            </tr>
+         
+            <tr class="tr_cb_3pha">
+                <td>- Cảnh báo thấp tần số</td>
+                <td><span class="tl_txt">Tỷ lệ</span><input type="number" id="txt_canhbaothaptanso_tlcb"> (%) Freg định mức </td>
+                <td></td>
+            </tr>
+            <tr class="tr_cb_3pha tr_tldinhmuc">
+                <td>- Thiết lập tần số định mức</td>
+                <td><input type="number" id="txt_cbts_dm_tlcb" /> (Hz)</td>
+                <td></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td colspan="3"><b>Cảnh báo góc lệch pha (φ) </b></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td>- Cảnh báo góc lệch pha A </td>
+                <td><span class="tl_txt">Angle A ≤</span><input type="number" id="txt_gocatanso_tlcb">  (Độ) | Angle A ≥ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <input type="number" id="txt_canhaqua_tlcb"> (Độ)  </td>
+                <td rowspan="3"  class="c"><input type="checkbox" id="cb_gocatanso_tlcb"></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td>- Cảnh báo góc lệch pha B </td>
+                <td><span class="tl_txt">Angle B ≤</span><input type="number" id="txt_gocbtanso_tlcb">  (Độ) | Angle B ≥ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <input type="number" id="txt_canhbqua_tlcb"> (Độ)  </td>
+                <td></td>
+            </tr>
+            <tr class="tr_cb_3pha">
+                <td>- Cảnh báo góc lệch pha C </td>
+                <td><span class="tl_txt">Angle C ≤</span><input type="number" id="txt_gocctanso_tlcb">  (Độ) | Angle C ≥ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <input type="number" id="txt_canhcqua_tlcb"> (Độ)  </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"><b>Cảnh báo thời gian </b></td>
+            </tr>
+            <tr>
+                <td>- Cảnh báo lệch thời gian hệ thống và công tơ</td>
+                <td><span class="tl_txt1">Độ lệch < </span><input type="number" id="txt_lenhthoigianct_tlcb" />  (Phút) thì cảnh báo</td>
+                <td class="c"><input type="checkbox" id="cb_lenhthoigianct_tlcb" checked></td>
+            </tr>
+            <tr>
+                <td colspan="3"><b>Cảnh báo công suất (P) </b></td>
+            </tr>
+            <tr>
+                <td>- Cảnh báo công suất vượt ngưỡng</td>
+                <td>
+                    <span class="tl_txt1">Tỉ lệ (+)< </span><input type="number" id="txt_congsuatvuot_tlcb" /> (%)
+                </td>
+                <td class="c"><input type="checkbox" id="cb_congsuatvuot_tlcb"></td>
+            </tr>
+            <tr class="tr_tldinhmuc">
+                <td>- Thiết lập P định mức</td>
+                <td><input type="number" id="txt_cbcs_dm_tlcb" /> (Kwh)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"><b>Cảnh báo sản lượng </b></td>
+            </tr>
+            <tr>
+                <td>- Sản lượng không đổi qua nhiều ngày liên tiếp</td>
+                <td><span class="tl_txt4">Số ngày  </span><input type="number" id="txt_sanluongko_tlcb" />   (ngày) liên tục sản lượng không đổi</td>
+                <td  class="c"><input type="checkbox" id="cb_sanluongko_tlcb"></td>
+            </tr>
+            <tr>
+                <td>- Sản lượng kỳ vượt ngưỡng so với kì trước</td>
+                <td><span class="tl_txt5">Tỉ lệ (-) </span><input type="number" id="txt_sanluongkynguong_tlcb" />   (%) sản lượng kỳ trước </td>
+                <td class="c"><input type="checkbox" id="cb_sanluongkynguong_tlcb"></td>
+            </tr>
+            <tr>
+                <td>- Sản lượng kỳ dưới ngưỡng so với kì trước</td>
+                <td><span class="tl_txt5">Tỉ lệ (-)  </span><input type="number" id="txt_sanluongkyduoi_tlcb" />  (%) sản lượng kỳ trước</td>
+                <td class="c"><input type="checkbox" id="cb_sanluongkyduoi_tlcb"></td>
+            </tr>
+            <tr>
+                <td>
+                    <strong><span class="">Danh sách gửi email:</span></strong>
+                    <br />
+                    <textarea placeholder="Email ngăn cách nhau bằng dấu phẩy" id="txtemaillist_tlcb" style="width:100%" maxlength="300"></textarea>
+                </td>
+                <td>
+                    <strong><span class="">Danh sách số điện thoại:</span></strong>
+                    <br />
+                    <textarea placeholder="Số điện thoại ngăn cách nhau bằng dấu phẩy" style="width:100%" id="txtphonelist_tlcb" maxlength="300"></textarea>
+                </td>
+                <td></td>
+            </tr>
+            <tr id="tr_chophepghide">
+                <td colspan="2">
+                    <input type="checkbox" id="chkchophepghide" style="float: left;" checked="checked" /><div style="color:red;margin-top: 5px;">Cho phép ghi đè cấu hình cảnh báo</div> 
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="toast" class='' style='display:none'></div>
+
+<div data-include="modules/cb_cauhinh/cb_modal_dm"></div>

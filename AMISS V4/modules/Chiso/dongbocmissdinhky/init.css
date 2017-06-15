@@ -1,0 +1,12 @@
+﻿.headercmiss{margin-top:12px !important}
+.tl_cmiss{margin-bottom:5px !important;padding-left:0 !important}
+.clear-fix{clear:both}
+.step{height:45px !important}
+#msg_info_cmis{
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+#step_exec_1,#step_exec_2,#step_exec_3{
+   margin-top: 10px;
+}
+.c{text-align:center}

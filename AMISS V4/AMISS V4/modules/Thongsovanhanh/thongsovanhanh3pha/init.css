@@ -1,0 +1,68 @@
+﻿.td_stt {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a#SearchAdvanced_Tsvh {
+    /*color: #00AEF2;*/
+    color: rgb(172, 172, 172);
+    /* float: left; */
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+    a#SearchAdvanced_Tsvh::before {
+        background: url(../../../css/images/sprite.png) no-repeat scroll -42px -204px rgba(0, 0, 0, 0);
+        content: " ";
+        height: 22px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 20px;
+    }
+
+#SearchAdvanced_TsvhLabel {
+    cursor:pointer;
+}
+
+.hasFlowContent {
+    overflow: hidden;
+}
+
+.group .box {
+    float: left;
+    width: 269px;
+    margin: 0 20px 13px 0;
+}
+
+.txt02 {
+    width: 70px; 
+    padding: 0 10px;
+}
+
+/*.group > div {
+    background-color: #e1e1e1;
+    color: #363636;
+}*/
+
+.input-group.date {
+    width: 90px !important;
+}
+
+.box_search {
+    background-color:#ddd;
+    border-radius:10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+input[type="radio"] {
+    width:20px;
+    height:20px;
+}

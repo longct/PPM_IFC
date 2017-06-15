@@ -1,0 +1,47 @@
+﻿.menu_metro_sub .icon_metro{
+    margin-left:0px !important;
+}
+/*MENI ICON*/
+#chiso_tlngaychot .icon_metro {
+    background: url('template/sub_menu_chiso/icon/chiso.png') no-repeat center center;
+}
+
+#chiso_tlngaychot .icon_metro_fav {
+    background: url('template/sub_menu_chiso/icon/chiso-fav.png') no-repeat center center;
+}
+
+#chiso_xemcs .icon_metro {
+    background: url('template/sub_menu_chiso/icon/xemcs.png') no-repeat center center;
+}
+
+#chiso_xemcs .icon_metro_fav {
+    background: url('template/sub_menu_chiso/icon/xemcs_fav.png') no-repeat center center;
+}
+
+#chiso_doctt .icon_metro {
+    background: url('template/sub_menu_chiso/icon/doctt.png') no-repeat center center;
+}
+
+#chiso_docdcu .icon_metro {
+    background: url('template/sub_menu_chiso/icon/docdcu.png') no-repeat center center;
+}
+
+#chiso_cmis1 .icon_metro {
+    background: url('template/sub_menu_chiso/icon/cmis1.png') no-repeat center center;
+}
+
+#chiso_kh .icon_metro {
+    background: url('template/sub_menu_chiso/icon/kh.png') no-repeat center center;
+}
+
+#chiso_thanhly .icon_metro {
+    background: url('template/sub_menu_chiso/icon/thanhly.png') no-repeat center center;
+}
+
+#chiso_thaycto .icon_metro {
+    background: url('template/sub_menu_chiso/icon/thaycto.png') no-repeat center center;
+}
+
+#chiso_hhu .icon_metro {
+    background: url('template/sub_menu_chiso/icon/hhu.png') no-repeat center center;
+}

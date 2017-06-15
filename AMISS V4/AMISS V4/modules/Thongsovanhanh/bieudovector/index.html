@@ -1,0 +1,200 @@
+﻿<div class="box box-body">
+    <div class="box-body">
+        <div class="form-inline table-responsive" id="boxFilter">
+            <div class="input-group date tungay_d">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input type="text" class="form-control datepicker" id="dtNgay" style="width: 120px;">
+            </div>
+            <select class="form-control " style="width: 150px;" id="cb_socongto">
+                <option value="">Tất cả</option>
+            </select>
+            <div class="form-inline">
+                <button class="btn btn-success" id="btnStopDrawingChart">Thực hiện</button>
+            </div>
+            <div class="form-inline">
+                <button class="btn btn-success" id="btnStopDrawingChart1">Tạm dừng</button>
+            </div>
+        </div>
+        <!--<div class="form-inline" id="boxFilter" style="margin-top:10px">
+            <div class="col-lg-12" id="rad_">
+                <label class="col-lg-2">
+                    <input type="radio" name="bdtsvh_r" id="r_all" class="icheckbox_flat-blue icheckbox_" checked /><label for="r_u">Tất cả</label>
+                </label>
+                <label class="col-lg-2">
+                    <input type="radio" name="bdtsvh_r" id="r_pqa" class="icheckbox_flat-blue icheckbox_" /><label for="r_i">P,Q(A)</label>
+                </label>
+                <label class="col-lg-2">
+                    <input type="radio" name="bdtsvh_r" id="r_pqb" class="icheckbox_flat-blue icheckbox_" /><label for="r_cos">P,Q(B)</label>
+                </label>
+                <label class="col-lg-2">
+                    <input type="radio" name="bdtsvh_r" id="r_pqc" class="icheckbox_flat-blue icheckbox_" /><label for="r_p">P,Q(C)</label>
+                </label>
+                <label class="col-lg-2">
+                    <input type="radio" name="bdtsvh_r" id="r_pq" class="icheckbox_flat-blue icheckbox_" /><label for="r_q">P,Q(Tổng)</label>
+                </label>
+                <label class="col-lg-2">
+                    <input type="radio" name="bdtsvh_r" id="r_ui" class="icheckbox_flat-blue icheckbox_" /><label for="r_q">U,I</label>
+                </label>
+            </div>
+        </div>-->
+        <div class="group">
+            <div style="float: left; margin-top: 5px; width: 80%;" id="divRadioChoiceBdvt">
+                <input type="radio" id="rdbAll" name="rdbChoiceBdvt" checked="checked" value="tatca"
+                       title="Tất cả" />
+                <label for="rdbAll" class="lang_mod_bdvt_lbl_p_total_send">
+                    Tất cả
+                </label>
+                <input type="radio" id="rdbPQA" name="rdbChoiceBdvt" value="pqa" title="P,Q(A)" />
+                <label for="rdbPQA" class="lang_mod_bdvt_lbl_p_total_received1">
+                    P,Q(A)
+                </label>
+                <input type="radio" id="rdbPQB" name="rdbChoiceBdvt" value="pqb" title="P, Q(A)" />
+                <label for="rdbPQB" class="lang_mod_bdvt_lbl_q_total_send2">
+                    P,Q(B)
+                </label>
+                <input type="radio" id="rdbPQC" name="rdbChoiceBdvt" value="pqc" title="P, Q(B)" />
+                <label for="rdbPQC" class="lang_mod_bdvt_lbl_q_total_received3">
+                    P,Q(C)
+                </label>
+                <input type="radio" id="rdbPQT" name="rdbChoiceBdvt" value="pqt" title="P, Q(C)" />
+                <label for="rdbPQT" class="lang_mod_bdvt_lbl_q_total_received4">
+                    P,Q(Tổng)
+                </label>
+                <input type="radio" id="rdbUI" name="rdbChoiceBdvt" value="pqt" title="U,I" />
+                <label for="rdbUI" class="lang_mod_bdvt_lbl_q_total_received5">
+                    U,I
+                </label>
+            </div>
+        </div>
+        <div class="col-lg-12 panel-tsvh">
+            <div class="panel panel-teal filterable">
+                <div class="group" id="showListTimesCount">
+                    <table id="tblShowtime">
+                        <tr><td><div id="sliderInforMation">&nbsp;</div></td></tr>
+                        <tr>
+                            <td>
+                                <div id="titleInforDisplay">
+                                    <p class="lang_mod_bdv_lbl_2">
+                                        Chạy biểu đồ vectors
+                                    </p>
+                                </div>
+                                <div id="slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="group" id="content-vector">
+                    <table style="width:100%" id="tblA1">
+                        <tr>
+                            <td align="center">
+                                <table width="100%" id="tblA11">
+                                    <tr>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                        <td>
+                                            <div id="showUIPQ">
+                                                <label class="control-label">U(V)</label>
+                                                <div class="group" id="divUABC">
+                                                    <label class="control-label widthItem">A:</label>
+                                                    <input type="text" id="txtUA" class="inputRight textBox" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">B:</label>
+                                                    <input type="text" id="txtUB" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">C:</label>
+                                                    <input type="text" id="txtUC" class="inputRight textBox" align="right" style="width: 70px" />
+                                                </div>
+                                                <label class="control-label">Góc ᵠ</label>
+                                                <div class="group" id="divUIABC">
+                                                    <label class="control-label widthItem">A:</label>
+                                                    <input type="text" id="txtUIAngleA" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">B:</label>
+                                                    <input type="text" id="txtUIAngleB" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">C:</label>
+                                                    <input type="text" id="txtUIAngleC" class="inputRight textBox" align="right" style="width: 70px" />
+                                                </div>
+                                                <label class="control-label widthItem">I(A)</label>
+                                                <div class="group" id="divIABC">
+                                                    <label class="control-label widthItem">A:</label>
+                                                    <input type="text" id="txtIA" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">B:</label>
+                                                    <input type="text" id="txtIB" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">C:</label>
+                                                    <input type="text" id="txtIC" class="inputRight textBox" align="right" style="width: 70px" />
+                                                </div>
+                                                <label class="control-label">P(kW)</label>
+                                                <div class="group" id="divPABC">
+                                                    <label class="control-label widthItem">A:</label>
+                                                    <input type="text" id="txtPA" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">B:</label>
+                                                    <input type="text" id="txtPB" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">C:</label>
+                                                    <input type="text" id="txtPC" class="inputRight textBox" align="right" style="width: 70px" />
+                                                </div>
+                                                <label class="control-label">Góc ᵠ</label>
+                                                <div class="group" id="divPQABC">
+                                                    <label class="control-label widthItem">A:</label>
+                                                    <input type="text" id="txtPQAngleA" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">B:</label>
+                                                    <input type="text" id="txtPQAngleB" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">C:</label>
+                                                    <input type="text" id="txtPQAngleC" class="inputRight textBox" align="right" style="width: 70px" />
+                                                </div>
+                                                <label class="control-label"><b>Q(kVar)</b></label>
+                                                <div class="group" id="divPABC">
+                                                    <label class="control-label widthItem">A:</label>
+                                                    <input type="text" id="txtQA" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">B:</label>
+                                                    <input type="text" id="txtQB" class="inputRight textBox" align="right" style="width: 70px" />
+                                                    <br />
+                                                    <label class="control-label widthItem">C:</label>
+                                                    <input type="text" id="txtQC" class="inputRight textBox" align="right" style="width: 70px" />
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="center">
+                                <table width="55%" id="tblA12">
+                                    <tr>
+                                        <td>
+                                            <div id="bieudo-tong">
+                                                <div id="bdleft">
+                                                    <div id="container_PQPhaseA" class="groupABC"></div>
+                                                    <div id="container_PQPhaseB" class=" groupABC"></div>
+                                                    <div id="container_PQPhaseC" class=" groupABC"></div>
+                                                </div>
+                                                <div id="bdright">
+                                                    <div id="container_PQTong" class="groupPQTong"></div>
+                                                    <div id="container_UICOSAngle" class="groupPQTong"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link href="../../../css/jquery-ui-slider-pips.css" rel="stylesheet" />
+<link href="../../../css/modern-ui-slider.css" rel="stylesheet" />
+

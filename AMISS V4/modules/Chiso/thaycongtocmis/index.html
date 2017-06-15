@@ -1,0 +1,77 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+            <div class="tl_cmiss">
+                <label class="filter_tsvh" style="float:left">Chọn file CMISS</label>
+            </div>
+            <div class="tl_cmiss">
+                <input type="file" class="form-control" placeholder="" id="txt_file_thayct" accept=".xml" style="" />
+            </div>
+            <div class="tl_cmiss">
+                <button class="btn btn-success pull-right" id="btnkiemtra_thaytocmis">Kiểm tra</button>
+            </div>
+            <div class="tl_cmiss">
+                <button class="btn btn-success pull-right" id="btnThietlap_thaytocmis">Thực hiện</button>
+            </div>
+            <div class="col-lg-4 text-file" style="float: right;margin-top: 12px;">
+                <a href="ref/filemau/05TU2_6611_treothao.xml" download="05TU2_6611_treothao.xml"><span class="glyphicon glyphicon-save"></span> Download File mẫu</a>
+            </div>
+    </div>
+    <div class="col-lg-12" id="help_step">
+        <div class="step col-lg-4" id="step_1">
+            <h4 class="step_header">Nhập File</h4>
+            <h5 class="step_des">Chọn file CMIS</h5>
+            <div class="step_stt"><div class="step_deactive" ></div></div>
+        </div>
+
+        <div class="step col-lg-4" id="step_2">
+            <h4 class="step_header">Kiểm tra</h4>
+            <h5 class="step_des">Xem lại danh sách khách hàng</h5>
+            <div class="step_stt"><div class="step_deactive"></div></div>
+        </div>
+
+        <div class="step col-lg-4" id="step_3">
+            <h4 class="step_header">Hoàn thành</h4>
+            <h5 class="step_des">Cập nhật thanh lý theo danh sách</h5>
+            <div class="step_stt"><div class="step_deactive" ></div></div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="progress-bar-dtt noload" style="display: none;">
+            <span class="loadtext"></span>
+            <div class="load"></div>
+        </div>
+    </div>
+
+</div>
+<div class="box box-body" style="display:none" id="tbl_thayct">
+    <br />
+    <div class="col-lg-12" style="padding-left:17px !important;">
+        <div class="messinfo_thaycmiss" style="display:none"></div>
+        <span class="total_thaycmiss sobanghi"></span>
+    </div>
+    <div class="col-lg-12 panel-nkhtcmis" style="width:98%;max-height:350px; overflow-y:auto; margin: 10px 10px 10px 20px;display: none;">
+        <table class="blue table table-bordered">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã khách hàng</th>
+                    <th>Mã điểm đo</th>
+                    <th>Số công tơ</th>
+                    <th>Mã quyển</th>
+                    <th>Mã trạm</th>
+                    <th>Tên khách hàng</th>
+                    <th>Loại CS</th>
+                    <th>SL mới</th>
+                    <th>CS mới</th>
+                    <th>Chức năng thực hiện</th>
+                    <th>Kết quả</th>
+
+                </tr>
+            </thead>
+            <tbody id="table_khctocmiss"></tbody>
+        </table>
+
+
+    </div>
+</div>
+<div id="toast" class='' style='display:none'></div>

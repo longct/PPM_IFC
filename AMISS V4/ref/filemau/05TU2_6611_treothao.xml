@@ -1,0 +1,426 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table1">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MA_NVGCS" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_KHANG" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_DDO" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_DVIQLY" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_GC" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_QUYEN" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_TRAM" type="xs:string" minOccurs="0" />
+                <xs:element name="BOCSO_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="LOAI_BCS" type="xs:string" minOccurs="0" />
+                <xs:element name="LOAI_CS" type="xs:string" minOccurs="0" />
+                <xs:element name="TEN_KHANG" type="xs:string" minOccurs="0" />
+                <xs:element name="DIA_CHI" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_NN" type="xs:string" minOccurs="0" />
+                <xs:element name="SO_HO" type="xs:decimal" minOccurs="0" />
+                <xs:element name="MA_CTO" type="xs:string" minOccurs="0" />
+                <xs:element name="SERY_CTO" type="xs:string" minOccurs="0" />
+                <xs:element name="HSN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CS_CU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TTR_CU" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_CU" type="xs:long" minOccurs="0" />
+                <xs:element name="SL_TTIEP" type="xs:int" minOccurs="0" />
+                <xs:element name="NGAY_CU" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CS_MOI" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TTR_MOI" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_MOI" type="xs:long" minOccurs="0" />
+                <xs:element name="CHUOI_GIA" type="xs:string" minOccurs="0" />
+                <xs:element name="KY" type="xs:int" minOccurs="0" />
+                <xs:element name="THANG" type="xs:int" minOccurs="0" />
+                <xs:element name="NAM" type="xs:int" minOccurs="0" />
+                <xs:element name="NGAY_MOI" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGUOI_GCS" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_THAO" type="xs:int" minOccurs="0" />
+                <xs:element name="KIMUA_CSPK" type="xs:short" minOccurs="0" />
+                <xs:element name="MA_COT" type="xs:string" minOccurs="0" />
+                <xs:element name="SLUONG_1" type="xs:long" minOccurs="0" />
+                <xs:element name="SLUONG_2" type="xs:long" minOccurs="0" />
+                <xs:element name="SLUONG_3" type="xs:long" minOccurs="0" />
+                <xs:element name="SO_HOM" type="xs:string" minOccurs="0" />
+                <xs:element name="PMAX" type="xs:decimal" minOccurs="0" />
+                <xs:element name="NGAY_PMAX" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA22050618949</MA_KHANG>
+    <MA_DDO>PA22050618949001</MA_DDO>
+    <MA_DVIQLY>PA2205</MA_DVIQLY>
+    <MA_GC>0253</MA_GC>
+    <MA_QUYEN>05TU2</MA_QUYEN>
+    <MA_TRAM>05CE00112</MA_TRAM>
+    <BOCSO_ID>94458337</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDN</LOAI_CS>
+    <TEN_KHANG>Đỗ Văn Ca</TEN_KHANG>
+    <DIA_CHI>(C11-TBA Từ Sơn 2) Khu phố Trần Phú-Phường Đông Ngàn</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>3372016201607000251</MA_CTO>
+    <SERY_CTO>201607000251</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>341</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-05-15T00:00:00</NGAY_CU>
+    <CS_MOI>394</CS_MOI>
+    <SL_MOI>53</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>6</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-05-31T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>11</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>2.1</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA22050618949</MA_KHANG>
+    <MA_DDO>PA22050618949001</MA_DDO>
+    <MA_DVIQLY>PA2205</MA_DVIQLY>
+    <MA_GC>0253</MA_GC>
+    <MA_QUYEN>05TU2</MA_QUYEN>
+    <MA_TRAM>05CE00112</MA_TRAM>
+    <BOCSO_ID>94486395</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DUP</LOAI_CS>
+    <TEN_KHANG>Đỗ Văn Ca</TEN_KHANG>
+    <DIA_CHI>(C11-TBA Từ Sơn 2) Khu phố Trần Phú-Phường Đông Ngàn</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>3342016201607000592</MA_CTO>
+    <SERY_CTO>201607000592</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>0</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-05-31T00:00:00</NGAY_CU>
+    <CS_MOI>0</CS_MOI>
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>6</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-05-31T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>11</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>2.1</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA22050511252</MA_KHANG>
+    <MA_DDO>PA22050511252001</MA_DDO>
+    <MA_DVIQLY>PA2205</MA_DVIQLY>
+    <MA_GC>0255</MA_GC>
+    <MA_QUYEN>05TU2</MA_QUYEN>
+    <MA_TRAM>05CE00112</MA_TRAM>
+    <BOCSO_ID>94458331</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDN</LOAI_CS>
+    <TEN_KHANG>Nguyễn Văn Thu</TEN_KHANG>
+    <DIA_CHI>(C 11) Trần Phú – TT Từ Sơn - Từ Sơn</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>3372016201607000252</MA_CTO>
+    <SERY_CTO>201607000252</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>272</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-05-15T00:00:00</NGAY_CU>
+    <CS_MOI>509</CS_MOI>
+    <SL_MOI>237</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>6</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-05-31T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>11</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>4.1</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA22050511252</MA_KHANG>
+    <MA_DDO>PA22050511252001</MA_DDO>
+    <MA_DVIQLY>PA2205</MA_DVIQLY>
+    <MA_GC>0255</MA_GC>
+    <MA_QUYEN>05TU2</MA_QUYEN>
+    <MA_TRAM>05CE00112</MA_TRAM>
+    <BOCSO_ID>94486396</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DUP</LOAI_CS>
+    <TEN_KHANG>Nguyễn Văn Thu</TEN_KHANG>
+    <DIA_CHI>(C 11) Trần Phú – TT Từ Sơn - Từ Sơn</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>3342016201607000671</MA_CTO>
+    <SERY_CTO>201607000671</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>0</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-05-31T00:00:00</NGAY_CU>
+    <CS_MOI>0</CS_MOI>
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>6</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-05-31T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>11</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>4.1</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA22050620580</MA_KHANG>
+    <MA_DDO>PA22050620580001</MA_DDO>
+    <MA_DVIQLY>PA2205</MA_DVIQLY>
+    <MA_GC>0282</MA_GC>
+    <MA_QUYEN>05TU2</MA_QUYEN>
+    <MA_TRAM>05CE00112</MA_TRAM>
+    <BOCSO_ID>94486521</BOCSO_ID>
+    <LOAI_BCS>BT</LOAI_BCS>
+    <LOAI_CS>DUP</LOAI_CS>
+    <TEN_KHANG>Ngân Hàng Thương Mại Cổ Phần Á Châu</TEN_KHANG>
+    <DIA_CHI>(C12-TBA Từ Sơn 2)</DIA_CHI>
+    <MA_NN />
+    <SO_HO>0</SO_HO>
+    <MA_CTO>308201515064223</MA_CTO>
+    <SERY_CTO>15064223</SERY_CTO>
+    <HSN>30</HSN>
+    <CS_CU>991.24</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-05-18T00:00:00</NGAY_CU>
+    <CS_MOI>991.24</CS_MOI>
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> BT: 100%*2320-KDDV-A; CD: 100%*3991-KDDV-A; TD: 100%*1412-KDDV-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>6</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-05-18T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>1</KIMUA_CSPK>
+    <MA_COT>12</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>3.2</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA22050620580</MA_KHANG>
+    <MA_DDO>PA22050620580001</MA_DDO>
+    <MA_DVIQLY>PA2205</MA_DVIQLY>
+    <MA_GC>0282</MA_GC>
+    <MA_QUYEN>05TU2</MA_QUYEN>
+    <MA_TRAM>05CE00112</MA_TRAM>
+    <BOCSO_ID>94486522</BOCSO_ID>
+    <LOAI_BCS>CD</LOAI_BCS>
+    <LOAI_CS>DUP</LOAI_CS>
+    <TEN_KHANG>Ngân Hàng Thương Mại Cổ Phần Á Châu</TEN_KHANG>
+    <DIA_CHI>(C12-TBA Từ Sơn 2)</DIA_CHI>
+    <MA_NN />
+    <SO_HO>0</SO_HO>
+    <MA_CTO>308201515064223</MA_CTO>
+    <SERY_CTO>15064223</SERY_CTO>
+    <HSN>30</HSN>
+    <CS_CU>531.82</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-05-18T00:00:00</NGAY_CU>
+    <CS_MOI>531.82</CS_MOI>
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> BT: 100%*2320-KDDV-A; CD: 100%*3991-KDDV-A; TD: 100%*1412-KDDV-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>6</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-05-18T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>1</KIMUA_CSPK>
+    <MA_COT>12</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>3.2</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA22050620580</MA_KHANG>
+    <MA_DDO>PA22050620580001</MA_DDO>
+    <MA_DVIQLY>PA2205</MA_DVIQLY>
+    <MA_GC>0282</MA_GC>
+    <MA_QUYEN>05TU2</MA_QUYEN>
+    <MA_TRAM>05CE00112</MA_TRAM>
+    <BOCSO_ID>94486523</BOCSO_ID>
+    <LOAI_BCS>TD</LOAI_BCS>
+    <LOAI_CS>DUP</LOAI_CS>
+    <TEN_KHANG>Ngân Hàng Thương Mại Cổ Phần Á Châu</TEN_KHANG>
+    <DIA_CHI>(C12-TBA Từ Sơn 2)</DIA_CHI>
+    <MA_NN />
+    <SO_HO>0</SO_HO>
+    <MA_CTO>308201515064223</MA_CTO>
+    <SERY_CTO>15064223</SERY_CTO>
+    <HSN>30</HSN>
+    <CS_CU>218.33</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-05-18T00:00:00</NGAY_CU>
+    <CS_MOI>218.33</CS_MOI>
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> BT: 100%*2320-KDDV-A; CD: 100%*3991-KDDV-A; TD: 100%*1412-KDDV-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>6</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-05-18T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>1</KIMUA_CSPK>
+    <MA_COT>12</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>3.2</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA22050620580</MA_KHANG>
+    <MA_DDO>PA22050620580001</MA_DDO>
+    <MA_DVIQLY>PA2205</MA_DVIQLY>
+    <MA_GC>0282</MA_GC>
+    <MA_QUYEN>05TU2</MA_QUYEN>
+    <MA_TRAM>05CE00112</MA_TRAM>
+    <BOCSO_ID>94486524</BOCSO_ID>
+    <LOAI_BCS>SG</LOAI_BCS>
+    <LOAI_CS>DUP</LOAI_CS>
+    <TEN_KHANG>Ngân Hàng Thương Mại Cổ Phần Á Châu</TEN_KHANG>
+    <DIA_CHI>(C12-TBA Từ Sơn 2)</DIA_CHI>
+    <MA_NN />
+    <SO_HO>0</SO_HO>
+    <MA_CTO>308201515064223</MA_CTO>
+    <SERY_CTO>15064223</SERY_CTO>
+    <HSN>30</HSN>
+    <CS_CU>1741.40</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-05-18T00:00:00</NGAY_CU>
+    <CS_MOI>1741.40</CS_MOI>
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> BT: 100%*2320-KDDV-A; CD: 100%*3991-KDDV-A; TD: 100%*1412-KDDV-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>6</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-05-18T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>1</KIMUA_CSPK>
+    <MA_COT>12</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>3.2</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA22050620580</MA_KHANG>
+    <MA_DDO>PA22050620580001</MA_DDO>
+    <MA_DVIQLY>PA2205</MA_DVIQLY>
+    <MA_GC>0282</MA_GC>
+    <MA_QUYEN>05TU2</MA_QUYEN>
+    <MA_TRAM>05CE00112</MA_TRAM>
+    <BOCSO_ID>94486525</BOCSO_ID>
+    <LOAI_BCS>VC</LOAI_BCS>
+    <LOAI_CS>DUP</LOAI_CS>
+    <TEN_KHANG>Ngân Hàng Thương Mại Cổ Phần Á Châu</TEN_KHANG>
+    <DIA_CHI>(C12-TBA Từ Sơn 2)</DIA_CHI>
+    <MA_NN />
+    <SO_HO>0</SO_HO>
+    <MA_CTO>308201515064223</MA_CTO>
+    <SERY_CTO>15064223</SERY_CTO>
+    <HSN>30</HSN>
+    <CS_CU>190.16</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-05-18T00:00:00</NGAY_CU>
+    <CS_MOI>190.16</CS_MOI>
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> BT: 100%*2320-KDDV-A; CD: 100%*3991-KDDV-A; TD: 100%*1412-KDDV-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>6</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-05-18T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>1</KIMUA_CSPK>
+    <MA_COT>12</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>3.2</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+</NewDataSet>

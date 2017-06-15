@@ -1,1 +1,0 @@
-﻿$("#curentPage").html("Chốt chỉ số đổi giá");

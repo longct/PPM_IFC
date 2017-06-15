@@ -1,0 +1,86 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12 panel-tsvh">
+        <h3 class="box-title bcvh">
+            <i class="glyphicon glyphicon-dashboard help_tsvh"></i><span id="tendiemdo_span"></span>
+        </h3>
+        <div class="box-body">
+
+            <div class="date-filter">
+                <div class="col-lg-3 tungay_d ">
+                    <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:5px;">Từ ngày</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right datepicker" id="date_tungay">
+                    </div>
+                </div>
+                <div class="col-lg-3 denngay_d">
+                    <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:5px;">Đến ngày</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right datepicker" id="date_denngay">
+                    </div>
+                </div>
+                <div class="col-lg-4 sct">
+                    <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:5px;">Trạng thái</label>
+                    <select id="cb_trangthai" class="form-control ">
+                        <option value="-1">Tất cả</option>
+                        <option value="1">Đang kết nối</option>
+                        <option value="0">Mất kết nối</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 ">
+                    <button class="btn btn-success " id="btn_thuchien_tkld" >Thực hiện</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left"><span class="sobanghi"></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><a href="#help_tsvh" data-toggle="modal"><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></a></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel" id="excel_thongkelapdat"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+        <div class="col-lg-12" id="">
+            <table class="table table-responsive table-bordered table-hover table-striped" id="tkld_data">
+                <thead class=" bg-aqua-gradient">
+                    <tr>
+                        <th class="th_stt">STT</th>
+                        <th class="">IMEI</th>
+                        <th class="">Mã điểm đo</th>
+                        <th class="">Số công tơ</th>
+                        <th class="">Trạng thái Modem</th>
+                        <th class="">Ngày khai báo/lắp modem</th>
+                        <th class="">Tên khách hàng</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="row-fluid row-fluid2">
+            <table style="width:100%">
+                <tr>
+                    <td class="col-lg-3" style="padding-top:8px">
+                        <div>
+                            <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_tkld"></label></div>
+                        </div>
+                    </td>
+                    <td class="col-lg-9">
+                        <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_tkld">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>

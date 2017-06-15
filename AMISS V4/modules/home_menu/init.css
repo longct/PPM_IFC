@@ -1,0 +1,212 @@
+﻿#search_home_txt {
+    background: #eee;
+    border-radius: 3px;
+}
+
+    #search_home_txt:focus {
+        background: #fff;
+    }
+
+#meter_info {
+    margin-top: 10px;
+}
+/* The whole thing */
+.custom-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+    padding: 0;
+}
+
+    /* Each of the items in the list */
+    .custom-menu li {
+        padding: 8px 12px;
+        cursor: pointer;
+        list-style-type: none;
+        transition: all .3s ease;
+    }
+
+        .custom-menu li:hover {
+            background-color: #DEF;
+        }
+
+.menu_metro {
+    height: 70px;
+    width: 100%;
+    margin-bottom: 5px !important;
+    padding: 10px;
+}
+
+    .menu_metro:hover {
+        cursor: pointer;
+    }
+
+.menu_metro_sub {
+    height: 100px;
+    margin: 2px 0 2px 2px !important;
+    padding: 5px;
+    width: 45%;
+}
+
+    .menu_metro_sub:hover {
+        /*cursor: pointer;*/
+    }
+
+.icon_metro {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.icon_metro_fav {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-left: 25%;
+}
+.active_metro {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-right: 10px;
+    right: 0;
+}
+.active_metro_sub {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 8px;
+    right: 0;
+}
+.text_metro {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 14px;
+    line-height:14px;
+}
+.text_metro:hover {
+    cursor:pointer;
+}
+.text_metro_sub {
+    /*position: absolute;*/
+    margin-top:24px;
+    font-size: 14px;
+    line-height:14px;
+}
+.text_metro_sub:hover {
+    cursor:pointer;
+}
+.text_metro_sub.fav {
+    /*position: absolute;*/
+    margin-top:75px;
+    font-size: 14px;
+    line-height:14px;
+}
+.text_metro_sub.fav:hover {
+    cursor:pointer;
+}
+.comment-sub{
+    color: #CCC;
+    /*position: absolute;*/
+    left: 25%;
+    top: 20%;
+    font-size: 17px;
+    cursor: pointer;
+}
+.comment-sub:hover{
+    color: #fff;
+
+}
+.info-sub{
+    color: #ccc;
+    /*position: absolute;*/
+    left: 40%;
+    top: 21%;
+    font-size: 16px;
+    cursor: pointer;
+}
+.info-sub:hover{
+    color: #fff;
+
+}
+/*ICON MENU*/
+#menu_chiso .icon_metro {
+    background: url('template/menu_home/icon/chiso.png') no-repeat center center;
+}
+
+#menu_vanhanh .icon_metro {
+    background: url('template/menu_home/icon/vanhanh.png') no-repeat center center;
+}
+
+#menu_baocao .icon_metro {
+    background: url('template/menu_home/icon/baocao.png') no-repeat center center;
+}
+
+#menu_canhbao .icon_metro {
+    background: url('template/menu_home/icon/canhbao.png') no-repeat center center;
+}
+
+#menu_quanly .icon_metro {
+    background: url('template/menu_home/icon/quanly.png') no-repeat center center;
+}
+
+#menu_tienich .icon_metro {
+    background: url('template/menu_home/icon/tienich.png') no-repeat center center;
+}
+
+.active_metro {
+    background: url('template/menu_home/icon/active.png') no-repeat center center;
+}
+.active_metro_sub {
+    background: url('template/menu_home/icon/active.png') no-repeat center center;
+}
+.canhbao-home{
+    width:450px;
+}
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75% !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    padding-left:2px !important;
+
+}
+
+.an_submenu {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    height: 700px;
+    min-height: 400px;
+    z-index:1000;
+}
+.hidemenu{
+    width:70% !important;
+}
+.vertical-text {
+    transform: rotate(90deg);
+	/*transform-origin: left top 0;*/
+    	float: left;
+    /*text-orientation: upright;
+    writing-mode: vertical-rl;*/
+    margin-top:13px;
+    font-size:13px;
+}

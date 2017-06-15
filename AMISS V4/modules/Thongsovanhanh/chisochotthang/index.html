@@ -1,0 +1,119 @@
+﻿<div class="box box-body">
+    <div class="box-body" id="box3pha">
+        <div class="form-inline">
+            <label class="tungay">Từ tháng</label>
+            <div class="input-group date tungay_d">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input type="text" class="form-control datepicker" id="dtTuNgay" style="width: 120px;">
+            </div>
+
+            <label class="denngay">Đến tháng</label>
+            <div class="input-group date denngay_d">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input type="text" class="form-control datepicker" id="dtDenNgay" style="width: 120px;">
+            </div>
+        </div>
+
+        <div class="form-inline">
+            <button class="btn btn-success" id="btnLocdulieu">Thực hiện</button>
+        </div>
+    </div>
+    <div class="col-lg-12 mes">
+        <span id="mesMain"></span>
+    </div>
+    <div class="col-lg-12">
+        <div class="pull-left"><span class="sobanghi"></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><a href="#help_tsvh" data-toggle="modal"><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></a></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel" id="excel_cscthang"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12 panel-tsvh">
+        <table class="table table-responsive table-bordered table-hover" id="cscthang_kh_data">
+            <thead class=" bg-aqua-gradient">
+                <tr>
+                    <th class="th_stt1pha">STT</th>
+                    <th class="">Thời điểm chốt</th>
+                    <th class="">Biểu giá</th>
+                    <th class="">P Giao (KWH)</th>
+                    <th class="">P Nhận (KWH))</th>
+                    <th class="">Q Giao (KVARh)</th>
+                    <th class="">Q Nhận (KVARh)</th>
+                    <th class="">PMax (KW)</th>
+                    <th class="">Thời điểm PMax</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <!--<div class="scroll_header col-lg-12 " style="display:none;">
+        <table class="table table-responsive table-bordered" id="fix_header">
+            <thead class=" bg-aqua-gradient">
+                <tr>
+                    <th class="th_stt">STT</th>
+                    <th class="th_tdd">Thời điểm đo</th>
+                    <th class="th_pha">Pha</th>
+                    <th class="th_u">U (V)</th>
+                    <th class="th_v">I (A)</th>
+                    <th class="th_goc">Góc φ</th>
+                    <th class="th_cos">Cos φ</th>
+                    <th class="th_p">P (KW)</th>
+                    <th class="th_q">Q (KVAR)</th>
+                    <th class="th_f">F (Hz)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>-->
+</div>
+<!-- Modal -->
+<div class="modal fade modal-info" id="help_tsvh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header m-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">TRỢ GIÚP</h4>
+            </div>
+            <div class="modal-body bg_fff" style="background-color:#fff !important;color:#111 !important;">
+                <b>MÔ TẢ CHỨC NĂNG:</b><br/>
+                1. Thông số vận hành hiển thị tất cả các thông số vận hành theo từng pha tại thời điểm ra lệnh đọc. Các thông số bao gồm:<br/>
+                - U (V) : điện áp của dòng điện, kí hiệu U, đơn vị V(Volt)<br />
+                - I (A): dòng điện, kí hiệu I, đơn vị A (Ampe)<br />
+                - Góc φ: góc giữa U và I, đơn vị độ (Degrees)<br />
+                - Cos φ: Hệ số góc<br />
+                - P (kW): công suất hữu ích của từng pha, đơn vị kW<br />
+                - Q (kVAR): công suất phản kháng của từng pha, đơn vị kVAR<br />
+                - F (Hz): Tần số của từng pha, đơn vị Hz<br /><br />
+                2. Màu sắc theo từng pha:<br />
+                - Pha A: <span class="td_phaa">Màu vàng</span><br />
+                - Pha B: <span class="td_phab">Màu xanh</span><br />
+                - Pha C: <span class="td_phac">Màu đỏ</span><br />
+                <b>HƯỚNG DẪN DỬ DỤNG:</b><br />
+                1. Xem thông số vận hành của nhiều điểm đo<br />
+                Bước 1: chọn Menu Vận hành, chọn Thông số vận hành.<br />
+                Bước 2: Tại cây dữ liệu điện lực bên trái, chọn nhóm điểm đo muốn xem. Hiển thị dữ liệu thông số vận hành mới nhất của tất cả các điểm đo thuộc nhóm đã chọn.<br />
+                Bước 3: Để xem dữ liệu ngày trước đó, chọn ngày và thời điểm sau đó chọn Thực hiện để xem thông số vận hành tại thời điểm đã chọn.<br /><br />
+                2. Xem thông số của 1 điểm đo<br />
+                Bước 1: Trên cây dữ liệu bên trái, chọn 1 điểm đo. Hiển thị dữ liệu của điểm đo trong ngày hiện tại.<br />
+                Bước 2: Để xem dữ liệu ngày trước đó, chọn ngày sau đó chọn Thực hiện.<br />
+                Bước 3: Để xuất dữ liệu thông số vận hành, sát tiêu đề cột ở bên phải màn hình, chọn icon xuất excel<br /><br />
+                3. Xem thông tin điểm đo<br />
+                Tại Tên khách hàng, có icon màu xanh chữ i. Chọn để xem các thông số về điểm đo: IMEI, số công tơ, mã điểm đo, các thông số biến áp TU, biến dòng TI, hệ số nhân công tơ đọc về.
+   
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="toast" class='' style='display:none'></div>
+

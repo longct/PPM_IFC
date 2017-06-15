@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><NewDataSet><xs:schema xmlns="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="NewDataSet"><xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true"><xs:complexType><xs:choice minOccurs="0" maxOccurs="unbounded"><xs:element name="Table1"><xs:complexType><xs:sequence><xs:element name="MA_NVGCS" type="xs:string" minOccurs="0" /><xs:element name="MA_KHANG" type="xs:string" minOccurs="0" /><xs:element name="MA_DDO" type="xs:string" minOccurs="0" /><xs:element name="MA_DVIQLY" type="xs:string" minOccurs="0" /><xs:element name="MA_GC" type="xs:string" minOccurs="0" /><xs:element name="MA_QUYEN" type="xs:string" minOccurs="0" /><xs:element name="MA_TRAM" type="xs:string" minOccurs="0" /><xs:element name="BOCSO_ID" type="xs:long" minOccurs="0" /><xs:element name="LOAI_BCS" type="xs:string" minOccurs="0" /><xs:element name="LOAI_CS" type="xs:string" minOccurs="0" /><xs:element name="TEN_KHANG" type="xs:string" minOccurs="0" /><xs:element name="DIA_CHI" type="xs:string" minOccurs="0" /><xs:element name="MA_NN" type="xs:string" minOccurs="0" /><xs:element name="SO_HO" type="xs:decimal" minOccurs="0" /><xs:element name="MA_CTO" type="xs:string" minOccurs="0" /><xs:element name="SERY_CTO" type="xs:string" minOccurs="0" /><xs:element name="HSN" type="xs:decimal" minOccurs="0" /><xs:element name="CS_CU" type="xs:decimal" minOccurs="0" /><xs:element name="TTR_CU" type="xs:string" minOccurs="0" /><xs:element name="SL_CU" type="xs:long" minOccurs="0" /><xs:element name="SL_TTIEP" type="xs:int" minOccurs="0" /><xs:element name="NGAY_CU" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" /><xs:element name="CS_MOI" type="xs:decimal" minOccurs="0" /><xs:element name="TTR_MOI" type="xs:string" minOccurs="0" /><xs:element name="SL_MOI" type="xs:decimal" minOccurs="0" /><xs:element name="CHUOI_GIA" type="xs:string" minOccurs="0" /><xs:element name="KY" type="xs:int" minOccurs="0" /><xs:element name="THANG" type="xs:int" minOccurs="0" /><xs:element name="NAM" type="xs:int" minOccurs="0" /><xs:element name="NGAY_MOI" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" /><xs:element name="NGUOI_GCS" type="xs:string" minOccurs="0" /><xs:element name="SL_THAO" type="xs:decimal" minOccurs="0" /><xs:element name="KIMUA_CSPK" type="xs:short" minOccurs="0" /><xs:element name="MA_COT" type="xs:string" minOccurs="0" /><xs:element name="SLUONG_1" type="xs:long" minOccurs="0" /><xs:element name="SLUONG_2" type="xs:long" minOccurs="0" /><xs:element name="SLUONG_3" type="xs:long" minOccurs="0" /><xs:element name="SO_HOM" type="xs:string" minOccurs="0" /><xs:element name="PMAX" type="xs:decimal" minOccurs="0" /><xs:element name="NGAY_PMAX" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" /></xs:sequence></xs:complexType></xs:element></xs:choice></xs:complexType></xs:element></xs:schema>
+<Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PA15TXTX07109</MA_KHANG>
+    <MA_DDO>PA22050550221001</MA_DDO>
+    <MA_DVIQLY>PA15TX</MA_DVIQLY>
+    <MA_GC>001</MA_GC>
+    <MA_QUYEN>TXCQTDDT4</MA_QUYEN>
+    <MA_TRAM>TXCE00241</MA_TRAM>
+    <BOCSO_ID>795864</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn xuân Đạo     </TEN_KHANG>
+    <DIA_CHI>- Tổ 9 P.Quyết Tâm - TP  Sơn la</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>4272016201607023227</MA_CTO>
+    <SERY_CTO>001611930155</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>49</CS_CU>
+    <TTR_CU />
+    <SL_CU>146</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-08-07T00:00:00</NGAY_CU>
+    <CS_MOI>2</CS_MOI>
+    <SL_MOI>-47</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>9</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2017-05-12T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>8A</MA_COT>
+    <SLUONG_1>146</SLUONG_1>
+    <SLUONG_2>172</SLUONG_2>
+    <SLUONG_3>181</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>222222222</MA_KHANG>
+    <MA_DDO>44222222</MA_DDO>
+    <MA_DVIQLY>PA15TX</MA_DVIQLY>
+    <MA_GC>002</MA_GC>
+    <MA_QUYEN>TXCQTDDT4</MA_QUYEN>
+    <MA_TRAM>TXCE00241</MA_TRAM>
+    <BOCSO_ID>795866</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Dương văn Vương</TEN_KHANG>
+    <DIA_CHI>-Tổ 9 Quyết tâm - TP  Sơn la</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>4272016201607018988</MA_CTO>
+    <SERY_CTO>123123213</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>77</CS_CU>
+    <TTR_CU />
+    <SL_CU>179</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-08-07T00:00:00</NGAY_CU>
+    <CS_MOI>0</CS_MOI>
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>9</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2017-05-12T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>8A</MA_COT>
+    <SLUONG_1>179</SLUONG_1>
+    <SLUONG_2>180</SLUONG_2>
+    <SLUONG_3>201</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+  </Table1>
+</NewDataSet>

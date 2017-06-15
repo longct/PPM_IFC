@@ -1,0 +1,36 @@
+﻿input[type="number"] {
+    border-color: transparent;
+    background-color: #e6e6e6;
+    font-size: 1.6rem !important;
+    width: 10%;
+    border-radius: 3px;
+    font-size: 10px !important;
+    padding: 3px;
+    margin-left:5px;
+    margin-right:5px;
+}
+input[type="text"]#txt_tencauhinh_tlcb{
+    width:100%;
+}
+input[type="checkbox"]{
+    width:18px;
+    height:18px;
+}
+table#tbl_thietlapcb tr th{
+    background:#09f;
+    color:#fff;
+}
+.tl_txt{
+    padding-right:35px;
+}
+.tl_txt2{
+    padding-right:11px;
+}
+.tl_txt3{
+    padding-right:3px;
+}
+#tlcb_tbl tr td{
+    border-top:none;
+}
+.margin-bottom5{margin-bottom:5px !important}
+.c{text-align:center}

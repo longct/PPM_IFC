@@ -1,0 +1,18 @@
+﻿#phanquyenuser table td:first-child {
+    vertical-align: middle;
+    width: 6%;
+}
+
+    #phanquyenuser table td label {
+        margin-bottom: 0px;
+    }
+
+    #adrNumber {
+        width:50px;
+        margin-right:10px;
+        float:left;
+    }
+     #adrStreet {
+        width:calc(100% - 60px);
+        float:left;
+    }
