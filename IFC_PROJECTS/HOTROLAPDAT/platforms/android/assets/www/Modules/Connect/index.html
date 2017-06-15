@@ -1,0 +1,42 @@
+﻿<div class="modal fade " id="checkConnect" tabindex="-1" role="dialog" aria-labelledby="mymodallabel" aria-hidden="true" <!--data-backdrop="static"-->>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Đọc dữ liệu</h4>
+            </div>
+            <div class="modal-body">
+                <div id="connect_bg">
+                    <img src="img/signal.gif" id="img_conn" /><br />
+                    <span class="conn_status"><p class="text-blue">Đang gửi lệnh đọc ...</p></span>
+                    <div id="data_conn" style="display:none">
+                        <table class="table table-responsive table-bordered">
+                            <thead class="bg-aqua-gradient">
+                                <tr>
+                                    <th>U(V)</th>
+                                    <th>I(A)</th>
+                                    <th>Cos</th>
+                                    <th>P(KWH)</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td class="a_c">220</td>
+                                <td class="a_c">0.5</td>
+                                <td class="a_c">0.8</td>
+                                <td class="a_c">125</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="btn_conn" style="display:none">
+                        <button class="btn btn-flat btn-danger">Cập nhật</button>
+                        <!--<button class="btn btn-flat btn-warning">Btn 2</button>
+                        <button class="btn btn-flat btn-success">Btn 3</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,88 @@
+﻿<section class="panel">
+    <div class="panel-body">
+        <div class="modal-body2">
+            <div class="form-inline" role="form">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-lg-1">
+                            <label class="th" style="margin-top:10px">Đơn vị</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <div id="dropDownButton">
+                                <div id='jqxDropDonvi' style="border: none;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-success" type="button" id="btn_laydulieu" style="margin-top:4px">Thực hiện</button>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-success" type="button" id="btnExcel" style="margin-top:4px">Xuất file Excel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<label class="th">Từ Ngày</label>
+                <input type="text" style="width:204px;" class="form-control form-control-inline input-medium default-date-picker" id="txt_tungay" />
+                <label class="th">Đến Ngày</label>
+                <input type="text" style="width:204px;" class="form-control form-control-inline input-medium default-date-picker" id="txt_denngay" />-->
+            </div>
+
+            <br />
+            <div id="messinfo_ttddxl"></div>
+            <table class="table table-responsive table-bordered">
+                <thead>
+                    <tr>
+                        <th rowspan="2">STT</th>
+                        <th rowspan="2">Đơn vị</th>
+                        <th colspan="2">Tổng điểm đo</th>
+                        <th>Tổng nghiệm thu</th>
+                        <th colspan="2">Tổng điểm đo lỗi cần xử lý</th>
+                        <th colspan="2">Ưu tiên loại 1</th>
+                        <th colspan="2">Ưu tiên loại 2</th>
+                    </tr>
+                    <tr>
+                        <th>3 pha GPRS</th>
+                        <th>RF/PLC</th>
+                        <th></th>
+                        <th>3 pha GPRS</th>
+                        <th>RF/PLC</th>
+                        <th>3 pha GPRS</th>
+                        <th>RF/PLC</th>
+                        <th>3 pha GPRS</th>
+                        <th>RF/PLC</th>
+                    </tr>
+
+                </thead>
+                <tbody id="table_ttddxl"></tbody>
+            </table>
+
+            <div class="row-fluid row-fluid2">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_ttddxl"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_ttddxl">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<link href="../../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../../js/jqx/jqxcore.js"></script>
+<script src="../../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../../js/jqx/jqxtree.js"></script>
+<script src="../../../js/jqx/jqxdata.js"></script>
+

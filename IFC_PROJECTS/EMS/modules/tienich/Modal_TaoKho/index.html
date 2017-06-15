@@ -1,0 +1,50 @@
+﻿
+ <div class="modal fade " id="modal_taokho" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                <h4 class="modal-title">Thêm mới kho</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo11_tkho"> </div>
+                <table class="table table-hover" style="width:100%;border:none" id="tbl_themtk">
+                    <tr>
+                        <td>Thuộc kho</td>
+                        <td><input type="text" class="form-control" id="txt_thuockho_tk" disabled style="width:100% !important"></td>
+                    </tr>
+                    <tr>
+                        <td>Tên kho cần tạo</td>
+                        <td>
+                            <input type="text" class="form-control" id="txt_tenkho_tk"  maxlength="100" style="width:100% !important">
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Trạng thái kho</td>
+                        <td>
+                            <select id="cb_trang_tk" class="form-control" multiple="multiple" style="width:100% !important"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="txt_khomacdinh_taokho" /> Mặc định kho tổng duyệt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button data-dismiss="modal" class="btn btn-default" type="button" id="btn_thoat_tk">Thoát</button>
+                            <button class="btn btn-success" data-toggle='modal' href='#confirm-yn' id="btn_luu_tk"><i class="fa fa-plus"></i>Lưu</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <div data-include="Module/modals_yesno"></div>
+    <!-- page end-->

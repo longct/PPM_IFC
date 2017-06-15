@@ -1,0 +1,51 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left"><span class="sobanghi"></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><a href="#help_tkdn" data-toggle="modal"><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></a></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12 panel-tkdn">
+        <table class="table table-responsive table-bordered" id="tbl_tkdn_data">
+            <thead class="bg-aqua-gradient">
+                <tr>
+                    <th class="th_stt">STT</th>
+                    <th class="th_dv">Đơn vị</th>
+                    <th class="th_ngay0">Ngày</th>
+                    <th class="th_ngay1">Ngày</th>
+                    <th class="th_ngay2">Ngày</th>
+                    <th class="th_ngay3">Ngày</th>
+                    <th class="th_ngay4">Ngày</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade modal-info" id="help_tkdn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header m-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">TRỢ GIÚP</h4>
+            </div>
+            <div class="modal-body bg_fff" style="background-color:#fff !important;color:#111 !important;">
+                <b>MÔ TẢ CHỨC NĂNG:</b><br />
+                Thống kê số lần đăng nhập trong 5 ngày gần nhất <br />
+                <b>HƯỚNG DẪN DỬ DỤNG:</b><br />
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="toast" class='' style='display:none'></div>
+

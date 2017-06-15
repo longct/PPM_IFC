@@ -1,0 +1,30 @@
+﻿.easy-tree-qldm {
+
+    overflow: auto;
+    width: 100%;
+    height:500px;
+}
+
+   
+
+.easy-tree-qldm li.parent_li > span {
+    cursor: pointer;
+}
+
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.box.box-primary {
+    border-top-color: #3c8dbc;
+}
+
+.box.box-info {
+    border-top-color: #01b8fe;
+}

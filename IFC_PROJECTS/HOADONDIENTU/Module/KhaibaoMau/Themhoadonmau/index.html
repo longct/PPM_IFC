@@ -1,0 +1,85 @@
+﻿
+<div class="modal fade " id="them_hoadon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <!--<div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Thêm Mẫu Hóa đơn</h4>
+            </div>-->
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 class="panel-title">Thêm Mẫu Hóa đơn</h3>
+                </div>
+                <div class="modal-body">
+                    <div id="messinfo_khhd_t"></div>
+                    <table class="table table-hover" style="width:100%;border:none" id="tbl_themtk">
+                        <tr>
+                            <td>Loại mẫu hóa đơn </td>
+                            <td>
+                                <select class="form-control" id="cb_loaimauhoadon_khhd_t">
+                                    <option value="0"> Hóa đơn thường </option>
+                                    <option value="1"> Hóa đơn treo tháo </option>
+                                    <option value="2"> Hóa đơn phản kháng </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tên mẫu hóa đơn</td>
+                            <td><input type="text" class="form-control" id="txt_ten_khhd_t"></td>
+                        </tr>
+                        <tr>
+                            <td>Mã mẫu hóa đơn </td>
+                            <td><input type="text" class="form-control" id="txt_maumau_khhd_t"></td>
+                        </tr>
+                        <tr>
+                            <td>Liên hóa đơn </td>
+                            <td>
+                                <select class="form-control" id="cb_lien_khhd_t">
+                                    <option value="1"> 1 </option>
+                                    <option value="2"> 2 </option>
+                                    <option value="3"> 3 </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Loại hóa đơn </td>
+                            <td><input type="text" class="form-control" id="txt_loaihoadon_khhd_t"></td>
+                        </tr>
+                        <tr>
+                            <td> Số mẫu hóa đơn</td>
+                            <td><input type="text" class="form-control" id="txt_mauso_khhd_t"></td>
+                        </tr>
+                        <tr>
+                            <td>Trạng thái sử dụng</td>
+                            <td><input type="checkbox" id="txt_hieuluc_khhd_t"></td>
+                        </tr>
+                        <tr>
+                            <td>Ký hiệu </td>
+                            <td><input type="text" class="form-control" id="txt_kyhieu_khhd_t"></td>
+                        </tr>
+                        <tr>
+                            <td>Chọn file </td>
+                            <td>
+                                <input type="file" class="form-control" id="txt_file_khhd_t" accept=".dotx" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ghi chú</td>
+                            <td><input type="text" class="form-control" id="txt_ghichu_khhd_t"></td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <button data-dismiss="modal" class="btn btn-default" type="button" id="btn_thoat_khmhd">Thoát</button>
+                                <button class="btn btn-success" type="button" id="btn_them_khmhd"> <i class="fa fa-save"></i> Lưu</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div>
+</div>
+

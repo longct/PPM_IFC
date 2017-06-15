@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <button onclick="ExecuteCreateFileTxt()">Tạo file</button>
+<script type="text/javascript">
+    
+    var config = { pathfile: "C:\\KYFILE.txt", content: "" };
+    //var urli = "http://hddt.ifc.com.vn:1005/ServiceHoaDonDienTu"
+    var urli = "http://14.177.234.76/ServiceHoaDonDienTuSbm";
+    function ExecuteCreateFileTxt() {
+        try {
+
+            if (config == null || config == undefined) {
+                return "[]";
+            }
+            var jsonpara = { config: JSON.stringify(config) };
+
+            $.ajax({
+                url: urli + "/api/CreateFileText",
+                type: "POST",
+                data: jsonpara,
+                async: true,
+                success: function (data, textStatus, jqXHR) {
+                    //console.log(data);
+                },
+                complete: function () {
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    //alert(JSON.stringify(jqXHR));
+                    ////console.log(jqXHR);
+                    ////console.log(textStatus);
+                    ////console.log(errorThrown);
+                }
+            });
+
+
+        } catch (e) {
+            ////console.log(e);
+
+            return null;
+        }
+    }
+</script>
+</body>
+</html>

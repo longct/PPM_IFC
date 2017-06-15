@@ -1,0 +1,70 @@
+﻿<div class="modal fade " id="sua_ttcongto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 650px;margin: auto;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Cập nhật thông tin công tơ</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_sua_tc"></div>
+                <table class="table table-hover" style="width:100%;border:none" id="tbl_themtk">
+                    <tr>
+                        <td>Đơn vị: </td>
+                        <td>
+                            <select class="form-control input-sm m-bot15" id="cbdonvi_tc"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Số công tơ</td>
+                        <td><input type="text" class="form-control" id="txt_socongto_tc"></td>
+                    </tr>
+                    <tr>
+                        <td>Imei </td>
+                        <td><input type="text" class="form-control" id="txt_imei_tc"></td>
+                    </tr>
+                    <tr>
+                        <td>Tên Tủ </td>
+                        <td><input type="text" class="form-control" id="txt_tenkhachhang_tc"></td>
+                    </tr>
+                    <tr>
+                        <td>Kinh độ </td>
+                        <td><input type="text" class="form-control" id="txt_kinhdo_tc"></td>
+                    </tr>
+                    <tr>
+                        <td>Vĩ độ </td>
+                        <td><input type="text" class="form-control" id="txt_vido_tc"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ngày lắp đặt: </td>
+                        <td>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value="" cache="true"
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_ngaylapdat_tc" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ: </td>
+                        <td> <textarea class="form-control" rows="2" id="txt_diachi_tc"></textarea> </td>
+                    </tr>
+
+                    <tr>
+                        <td>Loại công tơ: </td>
+                        <td>
+                            <select class="form-control input-sm m-bot15" id="cbloaicongto_tc"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ghi chú:</td>
+                        <td><textarea class="form-control" rows="2" id="txt_ghichu_tc"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button data-dismiss="modal" class="btn btn-default" type="button">Thoát</button>
+                            <button class="btn btn-success" type="button" id="btn_checkluu_ct">Cập nhật</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

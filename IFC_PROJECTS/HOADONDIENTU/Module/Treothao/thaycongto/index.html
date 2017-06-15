@@ -1,0 +1,315 @@
+﻿<div class="box box-body">
+    <div id="thayct">
+
+        <div class="tab-content clearfix">
+            <div class="tab-pane active panel panel-info" id="tab1">
+                <!--thong tin điểm đo-->
+                <div class="panel-heading">
+                    <h3 class="panel-title">Thông tin điểm đo</h3>
+                </div>
+                <div class="tab-content clearfix">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="table-responsive">
+                            <table id="tblleft_ttdd" class="table no-border">
+
+                                <tr>
+                                    <td class="textlable">Tìm kiếm</td>
+                                    <td colspan="3">
+                                        <input type="text" class="form-control " placeholder="" id="txt_timkiem_ttdd" />
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Loại điểm đo</td>
+                                    <td>
+                                        <select class="form-control" id="cb_loaidiemdo_ttdd" disabled>
+                                            <option value="-1">Chọn loại điểm đo</option>
+                                            <option value="1">1 PHA</option>
+                                            <option value="3">3 PHA</option>
+                                            <option value="31">3 PHA 1 BIỂU</option>
+                                        </select>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>Số công tơ</td>
+                                    <td>
+                                        <input type="text" class="form-control " placeholder="" id="txt_socongtotk_ttdd" />
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="table-responsive">
+                            <table id="tblright_ttdd" class="table no-border">
+                                <tr>
+                                    <td class="textlable">Tên khách hàng</td>
+
+                                    <td colspan="3"> <input type="text" class="form-control " placeholder="" id="txt_tenkhachhang_ttdd" /></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Địa chỉ</td>
+                                    <td colspan="3"> <input type="text" class="form-control " placeholder="" id="txt_diachi_ttdd" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--thong tin bien ban-->
+                <div id="anhload" style="display:none;"> </div>
+                <div style="margin-top:20px; clear:both"></div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">Thông tin biên bản</h3>
+                </div>
+
+                <div class="tab-content clearfix">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="table-responsive">
+                            <table id="tblleft_ttbb" class="table no-border">
+
+                                <tr>
+                                    <td class="textlable">Số biên bản</td>
+                                    <td>
+                                        <input type="text" class="form-control " placeholder="" id="txt_sobienban_ttdd" />
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Lý do treo tháo</td>
+                                    <td>
+                                        <input type="text" class="form-control " placeholder="" id="txt_lydo_ttdd"/>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="table-responsive">
+                            <table id="tblright_ttbb" class="table no-border">
+
+
+                                <tr>
+                                    <td class="textlable" >Nhân viên treo tháo</td>
+                                    <td colspan="3">
+                                        <input type="text" class="form-control" id="txt_nhvientreothao_ttdd">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textlable" >Nhân viên kẹp chỉ</td>
+                                    <td  colspan="3">
+                                        <input type="text" class="form-control" id="txt_nhvienkepchi_ttdd">
+                                    </td>
+                                 </tr>
+                                <tr>
+                                    <td class="textlable">Thuộc kỳ
+                                    
+                                    </td><td>
+                                        <select class="form-control " id="cb_kychot_ttdd">
+                                            <option value="1"> Kỳ 1</option>
+                                            <option value="2"> Kỳ 2</option>
+                                            <option value="3"> Kỳ 3</option>
+                                        </select>
+                                    </td>
+                                    <td width="100px">Tháng       </td>
+                                    <td style=" float:left;"> <input type="text" id="txt_thang_ttd" class="form-control datepicker " style="width:100px;display: inline-block;" placeholder="" /></td>
+
+                                 
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--thong số treo tháo-->
+                <div style="margin-top:20px; clear:both"></div>
+                <div class="tab-content clearfix" style="padding: 0;">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 0;">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Thông số công tơ tháo</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="tblleft_tsctt" class="table no-border">
+
+                                <tr>
+                                    <td class="textlable">Công tơ tháo</td>
+                                    <td >
+                                        <input type="number" class="form-control " placeholder="" id="txt_congtothao_ttdd" />
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Ngày tháo</td>
+                                    <td>
+                                        <input type="text" class="form-control pull-right datepicker" id="txtctdatethao_ttdd">
+                                    </td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td style="font-weight:bold;text-align:left" >Giao</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="textlable">Biểu tổng hữu công</td>
+                                    <td >
+                                        <input type="number" class="form-control" id="txtbieutonghuuconggiaot_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Vô công</td>
+                                    <td >
+                                        <input type="number" class="form-control" id="txtvoconggiaot_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Biểu 1-BT</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="txtbieu1btgiaot_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Biểu 2-CĐ</td>
+                                    <td>
+                                        <input type="text" class="form-control" id="txtbieu2CDgiaot_ttdd">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Biểu 3-TĐ</td>
+                                    <td >
+                                        <input type="number" class="form-control" id="txtbieu3TDgiaot_ttdd">
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td class="textlable">Lập trình</td>
+                                    <td >
+                                        <input type="number" class="form-control" id="txtlaptrinh_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">TU</td>
+                                    <td >
+                                        <input type="number" class="form-control" id="txtTugiao_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">TI</td>
+                                    <td >
+                                        <input type="number" class="form-control" id="txtTigiao_ttdd">
+                                    </td>
+                                </tr>
+                         
+                            </table>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:0">
+                        <div class="panel-heading" style="border-left: 2px solid #fffbfb;">
+                            <h3 class="panel-title">Thông số công tơ treo</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table id="tblrigth_tsctt" class="table no-border">
+
+                                <tr>
+                                    <td class="textlable">Công tơ treo</td>
+                                    <td>
+                                        <input type="number" class="form-control " placeholder="" id="txt_congtotreo_ttdd" />
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Ngày treo</td>
+                                    <td>
+                                        <input type="text" class="form-control pull-right datepicker" id="txtctdatetreo_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td style="font-weight:bold;text-align:left">Giao</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="textlable">Biểu tổng hữu công</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="txtbieutonghuuconggiaotr_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Vô công</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="txtvoconggiaotr_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Biểu 1-BT</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="txtbieu1btgiaotr_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Biểu 2-CĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="txtbieu2CDgiaotr_ttdd">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Biểu 3-TĐ</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="txtbieu3TDgiaotr_ttdd">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="textlable">Lập trình</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="txtlaptrinhtr_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">TU</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="txtTugiaotr_ttdd">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="textlable">TI</td>
+                                    <td>
+                                        <input type="number" class="form-control" id="txtTigiaotr_ttdd">
+                                    </td>
+                                </tr>
+                           
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:20px; clear:both"></div>
+                <div style="text-align:center; padding-bottom:20px">
+                    <button id="btn_tiep_ttdd" class="btn btn-success">Cập nhật</button>
+                    <button id="btn_xoa_ttdd" class="btn btn-success">Xóa form</button>
+                </div>
+            </div>
+            <div class="tab-pane panel panel-info" id="tab2">
+                Tìm kiếm
+            </div>
+
+        </div>
+        <div class="bottom-mar-50"></div>
+    </div>
+</div>
+
+
+
+

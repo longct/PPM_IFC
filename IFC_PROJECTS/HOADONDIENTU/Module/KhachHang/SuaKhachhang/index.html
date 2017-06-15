@@ -1,0 +1,121 @@
+﻿<div class="modal fade " id="sua_khachhang" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:75%">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="panel-title">Thông Tin khởi tạo</h3>
+            </div>
+            <div id="messinfo_skbkh"></div>
+            <div class="panel-body">
+                <table id="" class="table no-border table-responsive">
+
+                    <tr>
+                        <td>Tên khách hàng:</td>
+                        <td> <input type="text" class="form-control " placeholder="" id="txt_tenkhachang_skbkh" /></td>
+                        <td>Mã khách hàng</td>
+                        <td> <input type="text" class="form-control " placeholder="" id="txt_makhachang_skbkh" disabled /></td>
+                        <td>Mã điểm đo</td>
+                        <td> <input type="text" class="form-control " placeholder="" id="txt_madiemdos_kbkh" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td>Số công tơ</td>
+                        <td><input type="text" class="form-control " placeholder="" id="txt_socongto_skbkh" disabled /> </td>
+                        <td>Mã số thuế</td>
+                        <td> <input type="text" class="form-control " placeholder="" id="txt_masothue_skbkh"></td>
+                        <td>Hệ số nhân</td>
+                        <td> <input type="text" class="form-control " placeholder="" id="txt_hesonhan_skbkh"></td>
+                    </tr>
+                    <tr>
+                        <td>Loại điểm đo</td>
+                        <td><select class="form-control" id="cb_loaidiemdos_kbkh"> </select></td>
+                        <td>Mã Địa chính</td>
+                        <td> <input type="text" class="form-control" placeholder="" id="txt_madiachinhs_kbkh" /></td>
+                        <td>Địa chỉ</td>
+                        <td> <input type="text" class="form-control" placeholder="" id="txt_diachis_kbkh"></td>
+                    </tr>
+                    <tr>
+                        <td>Chọn đơn vị</td>
+                        <td><select class="form-control" id="cb_donvis_kbkh"> </select> </td>
+                        <td>Mã số GCS</td>
+                        <td> <select class="form-control" id="cb_masoghis_kbkh"> </select></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <!--<tr>
+                        <td>Mã trạm</td>
+                        <td><select class="form-control" id="cb_matrams_kbkh"> </select> </td>
+                        <td>Mã số ghi</td>
+                        <td> <select class="form-control" id="cb_masoghis_kbkh"> </select></td>
+                        <td>Mã cột</td>
+                        <td> <select class="form-control " id="cb_macots_kbkh"> </select></td>
+                    </tr>-->
+                    <tr>
+                        <!--<td>Mã Hòm</td>
+                        <td><input type="text" class="form-control " id="cb_mahoms_kbkh" /> </td>-->
+                        <td>Mã đơn vị quản lý</td>
+                        <td><input type="text" class="form-control " id="cb_donviqlys_kbkh"  /> </td>
+                        <td>Mã Khu vực</td>
+                        <td><input type="text" class="form-control " id="txt_makhuvuc_skbkh" placeholder=""> </td>
+                        <td>Ngày tạo</td>
+                        <td> <input type="text" id="txt_sdate_kbkh" class="form-control datepicker " />  </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panel-heading">
+                <h3 class="panel-title">Thông tin khách hàng</h3>
+            </div>
+            <div class="panel-body">
+                <table id="" class="table no-border table-responsive">
+
+                    <tr>
+                        <td>Số chứng minh thư</td>
+                        <td><input type="text" class="form-control " placeholder="" id="txt_sominhthus_kbkh"></td>
+                        <td>Ngày cấp</td>
+                        <td>
+                            <input type="text" id="txt_ngaycapdates_kbkh" class="form-control datepicker " />
+                        </td>
+                        <td>Nơi cấp </td>
+                        <td><input type="text" class="form-control " placeholder="" id="txt_noicaps_kbkh"></td>
+                    </tr>
+                    <tr>
+                        <td>Số tài khoản ngân hàng</td>
+                        <td><input type="text" class="form-control " placeholder="" id="txt_sotaikhoans_kbkh"></td>
+                        <td>Tên ngân hàng</td>
+                        <td> <select class="form-control" id="cb_tenganhangs_kbkh"> </select></td>
+                        <td> Kỳ chốt</td>
+                        <td>
+                            <select class="form-control " id="cb_kychot_sca">
+                                <option value="1"> Kỳ 1</option>
+                                <option value="2"> Kỳ 2</option>
+                                <option value="3"> Kỳ 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Điện thoại</td>
+                        <td><input type="text" class="form-control " placeholder="" id="txt_dienthoais_kbkh"></td>
+                        <td>Email </td>
+                        <td><input type="text" class="form-control " placeholder="" id="txt_emails_kbkh"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="6">
+
+                            <button data-dismiss="modal" class="btn btn-default" type="button">Thoát</button>
+                            <button id="btn_capnhatkhachang" class="btn btn-success"><i class="fa fa-save"></i> Cập nhật</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="bottom-mar-50"></div>
+    </div>
+</div>
+<div id="toast" class='' style='display:none'></div>

@@ -1,0 +1,85 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left">
+            <div class="form-inline col-lg-12">
+                <div class="col-lg-10">
+                    <div class="col-lg-2">
+                        <label class="filter_tsvh">Từ ngày</label>
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right datepicker" id="date_tungay_cbsk">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <label class="filter_tsvh">Đến ngày</label>
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right datepicker" id="date_denngay_cbsk">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="filter_tsvh">Loại cảnh báo</label>
+                        <select class="form-control" id="cb_sk_loaicb">
+                            <option value="-1">Xem tất cả</option>
+                            <option value="PROGLOG">Lập trình công tơ</option>
+                            <option value="CURRENTIMBALANCE">Mất cân bằng dòng</option>
+                            <option value="LOSTCURRENT">Mất dòng</option>
+                            <option value="OVERCURRENT">Quá dòng</option>
+                            <option value="REVERSEPOWER">Ngược công suất</option>
+                            <option value="OVERLOAD"> Quá tải</option>
+                            <option value="PASSCHANGE">Đổi mật khẩu</option>
+                            <option value="TIMECHANGE">Thay đổi thời gian</option>
+                            <option value="POWERFAIL">Mất nguồn</option>
+                            <option value="UNDERVOLTAGE">Thấp áp</option>
+                            <option value="OVERVOLTAGE">Quá áp</option>
+                            <option value="PHASEFAIL">Mất điện áp pha</option>
+                            <option value="REVERSEVOLTAGE"> Ngược chiều điện áp</option>
+                            <option value="REVERSECURRENT"> Ngược chiều dòng điện</option>
+                            <option value="VOLTAGEIMBALANCE"> Mất cân bằng áp</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <label class="filter_tsvh">Mã điểm đo</label>
+                        <input type="text" class="form-control" id="madiemdo_cbsk" />
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn  btn-success margin-top3 margin-r-5"  id="btn_thuchien_cbsk">Thực hiện</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel" id="excel_cbsk"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <label class="sobanghi"></label>
+    </div>
+    <div class="col-lg-12 panel-tsvh">
+        <table class="table table-responsive table-bordered" id="tbl_chitiet_cbsk">
+            <thead class=" bg-aqua-gradient">
+                <tr>
+                    <th class="th_stt1pha">STT</th>
+                    <th class="">Sự kiện</th>
+                    <th class="">Pha</th>
+                    <th class="">Thời điểm bắt đầu</th>
+                    <th class="">Thời điểm kết thúc</th>
+                    <th class="">Số phút</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+

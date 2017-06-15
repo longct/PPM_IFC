@@ -1,0 +1,10 @@
+﻿.backrow3{
+    background-color: forestgreen;
+    
+}
+.dropdown-menu {
+max-height: 150px;
+overflow-y: auto;
+overflow-x: hidden;
+}
+#sua_nhapduan .table tbody tr td select,#sua_nhapduan  .table tbody tr td input[type="text"]{width:300px !important}

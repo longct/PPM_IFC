@@ -1,0 +1,7 @@
+﻿{
+  "ServerName": "DongNaiPC",
+  "PingSqlServer0": "Data Source=14.177.66.131,1525;Initial Catalog=IFCSmart;User ID=sa;Password=ifc@123456ByRnD;",
+  "PingSqlServer1": "Data Source=14.177.66.131,1525;Initial Catalog=EMS_TB;User ID=sa;Password=ifc@123456ByRnD;",
+  "CheckStopLstSoft": "OneDrive===TeamViewer",
+  "CheckLstNotRespond": "OneDrive===TeamViewer"
+}

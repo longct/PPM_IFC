@@ -1,0 +1,15 @@
+﻿.col-lg-12{padding-bottom:10px;}
+div.input-group.date{width:120px;}
+input[type=radio]{margin:0px 5px 0px 0px;}
+#tbl_nxhhu td,th{white-space:nowrap;}
+.total_nxhhucmis {
+    margin: 0;
+    font-size: 15px;
+}
+.divMessage_nxhhucmis{
+    margin: 0;
+    color: #337ab7;
+    border: 1px solid rgba(60, 141, 188, 0.18);
+    padding: 13px;
+}
+.kh_kccs{color:red}

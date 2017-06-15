@@ -1,0 +1,10 @@
+﻿.td_stt{
+    font-size:17px;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+}
+input[type="checkbox"]{
+    width:18px;
+    height:18px;
+}

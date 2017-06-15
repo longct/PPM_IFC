@@ -1,0 +1,19 @@
+﻿
+table#tbl_xuatexcel tr td {
+    border: none;
+    padding: 5px;
+}
+
+table#tbl_xuatexcel input, table#tbl_xuatexcel select, table#tbl_xuatexcel textarea {
+    width: 220px;
+}
+
+
+.them_phieu {
+    padding-top: 20px;
+}
+
+i.fa-them {
+    cursor: pointer;
+    color: #047514;
+}

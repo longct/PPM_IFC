@@ -1,0 +1,16 @@
+﻿label.th {
+    min-width: 150px !important;
+}
+label.th1 {
+    min-width: 150px !important;
+    margin-left:20px;
+    font-weight:normal !important;
+        font-size: 15px;
+}
+.form-inline {
+    margin-bottom: 10px;
+}
+
+.form-group select, .form-group input {
+    min-width:200px;
+}

@@ -1,0 +1,61 @@
+﻿#timkiemdiemdo, #cb_loaict,#matkhaucto {
+    height: 34px;
+    margin-top: 5px;
+    border-radius:20px;
+    box-shadow:none;
+    border:none;
+    padding-left:10px;
+}
+
+#timkiemdiemdo {
+    width: 70%;
+}
+
+#matkhaucto {
+    width: 100%;
+}
+
+#cb_loaict {
+    width: 28%;
+}
+
+.btn_meter i {
+    color: #fff;
+    font-size: 50px;
+}
+
+.btn_meter {
+    float: left;
+    margin-right: 8px;
+    text-align:center;
+}
+
+.act_btn {
+    height: 65px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.meter_info_tbl {
+    color: #fff;
+    text-transform: none;
+    overflow: auto;
+}
+
+.modal-body {
+    padding: 0px !important;
+}
+
+#connect_bg_tk {
+    text-align: center;
+}
+.toadohientai{
+    font-style: italic;
+    margin: 5px 0;
+}
+.loading_search{
+    color:#fff;
+    text-align:center;
+    text-transform:none;
+    padding:5px;
+}

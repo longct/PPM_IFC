@@ -1,0 +1,56 @@
+﻿<div class="col-lg-12 classtrangthai_sl" id="tab_nhaptay">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/tienich/capnhattrangthaitb/trangthai_tab"></div>
+        </div>
+    </section>
+    <section class="panel" style="float: left;width: 100%;">
+        <div class="panel-heading">
+            <div style="width: 100%; float: left;">
+                <div class="form-group col-xs-12 col-sm-4 col-lg-4 col-md-4">
+                    <label class="th">Thuộc Kho (*)</label>
+                    <select id="cb_thuockho_ttsl" class="form-control form-control-inline input-medium">
+                        <option value="0">--Chọn Kho--</option>
+                    </select>
+                </div>
+                <div class="form-group  col-xs-12 col-sm-4 col-lg-4 col-md-4">
+                    <label class="th">Vật tư thiết bị (*)</label>
+                    <select id="cb_vttb_ttsl" class="form-control form-control-inline input-medium">
+                        <option value="0">--Chọn vật tư thiết bị--</option>
+                    </select>
+                </div>
+                <div class="form-group  col-xs-12 col-sm-4 col-lg-4 col-md-4">
+                    <label class="th">Loại thiết bị (*)</label>
+                    <select id="cb_loaivttb_ttsl" class="form-control form-control-inline input-medium">
+                        <option value="0">--Chọn loại thiết bị--</option>
+                    </select>
+                </div>
+            </div>
+            <div style="width: 100%; float: left;">
+                <div class="form-group col-xs-12 col-sm-4 col-lg-4 col-md-4">
+                    <label class="th">Số lượng (*)</label>
+                    <input type="text" id="txtsl_ttsl" class="form-control form-control-inline input-medium" />
+                </div>
+                <div class="form-group  col-xs-12 col-sm-4 col-lg-4 col-md-4">
+                    <label class="th">Trạng thái cũ</label>
+                    <select id="cb_trangthaicu_ttsl" class="form-control form-control-inline input-medium">
+                        <option value="1">--Chọn trạng thái--</option>
+                    </select>
+                </div>
+                <div class="form-group  col-xs-12 col-sm-4 col-lg-4 col-md-4">
+                    <label class="th">Trạng thái cập nhật</label><br />
+                    <select id="cb_trangthai_ttsl" class="form-control form-control-inline input-medium" style="width:60%; float:left">
+                        <option value="1">--Chọn trạng thái--</option>
+                    </select>
+                    <a class="btn btn-primary classquyen_sua" id="btnCapNhat_ttsl" style="margin-left:5px">
+                        <i class="fa fa-plus"></i>Cập nhật
+                    </a>
+                </div>
+            </div>
+            <div style="width: 100%; float: left;">
+                <div id="messinfo_cnttsl"></div>
+            </div>
+        </div>
+    </section>
+</div>
+<div data-include="modules/modals_yesno"></div>

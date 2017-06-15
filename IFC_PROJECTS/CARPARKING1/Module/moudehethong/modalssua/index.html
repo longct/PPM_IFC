@@ -1,0 +1,46 @@
+﻿    <!-- page start-->
+<script>
+    $("#txt_manhanvien_tmtk").focus(function () {
+        $("span.manhanvien").text("OK");
+    });
+
+    $("#txt_manhanvien_tmtk").focusout(function() {
+        $( "span.manhanvien" ).text( "" );
+    })
+</script>
+<section class="panel">
+    <div class="panel-body">
+        <div id="messinfo_createtaokhoan"></div>
+        <table class="table table-hover" style="width:650px;border:none" id="tbl_themtk">
+            <tr>
+                <td>Mã Nhân viên </td>
+                <td><input type="text" class="form-control" id="txt_manhanvien_tmtk"></td>
+            </tr>
+            <tr>
+                <td>Tên nhân viên: </td>
+                <td><input type="text" class="form-control" id="txt_hoten_tmtk"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại: </td>
+                <td><input type="text" class="form-control" id="txt_dienthoai_tmtk"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ: </td>
+                <td><input type="text" class="form-control" id="txt_diachi_tmtk"></td>
+            </tr>
+            <tr>
+                <td>Quyền: </td>
+                <td>
+                    <select class="form-control input-sm m-bot15" id="cbquyen_ThemTK"></select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn btn-success" data-toggle='modal' href='#confirm-yn' id="btn_checkluu_themmoitk"><i class="fa fa-plus"></i>Thêm</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<div data-include="modules/modals_yesno/index.html"></div>
+<!-- page end-->

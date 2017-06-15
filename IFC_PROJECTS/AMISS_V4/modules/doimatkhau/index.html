@@ -1,0 +1,57 @@
+﻿<!-- Modal -->
+<div class="modal fade" id="doimatkhau" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header m-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Đổi mật khẩu</h4>
+            </div>
+            <div class="modal-body">
+                <table id="dmk" class="table table-bordered" >
+                    <tr>
+                        <td>Mật khẩu cũ</td>
+                        <td valign="top">
+                            <div class="input-group">   
+                                <input type="password" class="form-control" placeholder="Mật khẩu cũ" id="txt_nhapcumk">
+                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mật khẩu mới</td>
+                        <td>
+                            <div class="input-group">
+                                <input type="password" class="form-control" placeholder="Mật khẩu mới" id="txt_nhapmoimk">
+                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nhập lại mật khẩu mới</td>
+                        <td>
+                            <div class="input-group">
+                               
+                                <input type="password" class="form-control" placeholder="Nhập lại mật khẩu mới" id="txt_nhaplaimk">
+                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td valign="bottom" style="padding:5px;">
+                            <button class="btn btn-success" id="btn_thaymatkhau">Lưu</button>
+                            <button class="btn btn-warning" id="cancel_dmk">Hủy</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <!--<div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>-->
+        </div>
+    </div>
+</div>
+<div id="toast" class='' style='display:none'></div>

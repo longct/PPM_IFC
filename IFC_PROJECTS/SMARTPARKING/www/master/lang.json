@@ -1,0 +1,28 @@
+﻿{
+  "VI": {
+    "lang_hienthitatcasmartpacking": "Hiển thị tất cả smartparking",
+    "lang_menuhienthitatca": "HIỂN THỊ TẤT CẢ",
+    "lang_menudiemdoxungquanh": "ĐIỂM ĐỖ XUNG QUANH",
+    "lang_menudanhsachdiemdo": "DANH SÁCH ĐIỂM ĐỖ",
+    "lang_menutimkiemchung": "TÌM KIẾM CHUNG",
+    "lang_menudiemdothuongxuyen": "ĐIỂM ĐỖ THƯỜNG XUYÊN",
+    "lang_menuthietlap": "THIẾT LẬP",
+    "lang_menutruynhapdangxuat": "TRUY NHẬP/ĐĂNG XUẤT",
+    "lang_menudangky": "ĐĂNG KÝ",
+    "lang_menutrogiup": "TRỢ GIÚP",
+    "lang_menuthongtinungdung":  "THÔNG TIN ỨNG DỤNG"
+  },
+  "EN": {
+    "lang_hienthitatcasmartpacking": "Show all smartparking",
+    "lang_menuhienthitatca": "SHOW ALL",
+    "lang_menudiemdoxungquanh": "PARKING ROUND",
+    "lang_menudanhsachdiemdo": "LIST OF PARKING",
+    "lang_menutimkiemchung": "SEARCH GENERAL",
+    "lang_menudiemdothuongxuyen": "REGULAR PARKING",
+    "lang_menuthietlap": "SYSTEM SETTINGS",
+    "lang_menutruynhapdangxuat": "SIGN IN/SIGN OUT",
+    "lang_menudangky": "REGISTER",
+    "lang_trogiup": "HELP",
+     "lang_menuthongtinungdung":  "APPLICATION INFORMATION"
+  }
+}

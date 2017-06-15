@@ -1,0 +1,86 @@
+﻿
+<div class="col-lg-4">
+    <div class="panel-qldmdl box box-info" style="float:left; padding:20px">
+        <div class="tree-filter-qldm">
+            <select class="form-control " style="width: 100%;" id="chondonvi_qldmdl"></select>
+            <div class="input-group" style="display:none; margin:10px 0" id="stree_qldm">
+                <input type="text" class="form-control" id="search_meter_qldmdl" placeholder="Tìm điểm đo">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            </div>
+            <div class="callout callout-danger" id="help_tree_qldm" style="margin:10px 0">
+                <p><i class="fa fa-info-circle"></i>Vui lòng chọn điện lực</p>
+            </div>
+
+            <div class="easy-tree-qldm" id="tree_left_qldmdl" style="display:none">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-8">
+    <div class="panel-qldm" style="display:none">
+
+
+        <div class="box box-info no-margin-bt">
+
+            <div class="box-body " style="margin-bottom:10px;">
+                <div class="pull-left">
+                    <h3 class="box-title no-margin">
+                        <i class="glyphicon glyphicon-dashboard help_tsvh"></i><span id="tendiemdo_span"></span>
+                    </h3>
+                </div>
+                <div class="pull-right" id="toolbar">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="box box-body ">
+            <div class="col-lg-12 ">
+                <table id="" class="table no-border table-responsive">
+
+                    <tr>
+                        <td>Tên thư mục</td>
+                        <td> <input type="text" class="form-control " placeholder="" id="txt_tenthumuc_qldm" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>Số điểm đo</td>
+                        <td> <input type="text" class="form-control " placeholder="" id="txt_sodiemdo_qldm" /></td>
+                    </tr>
+                    <tr>
+                        <td>Ghi chú</td>
+                        <td>
+                            <textarea class="form-control " cols="10" rows="5" id="txt_ghichu_qldm"> </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Loại thư mục</td>
+                        <td>
+                            <select class="form-control" id="CboLoaidanhmuc_qldm" style="width: 250px;">
+                                <option value="0">Tất cả</option>
+                                <option value="5">Trạm</option>
+                                <option value="4">Sổ ghi</option>
+                                <option value="6">Cột</option>
+                                <option value="8">Đã lắp DCu</option>
+                                <option value="9">Chưa lắp DCu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button id="btnsaveadd_qldm" class="btn btn-success">
+                                Thêm mới
+                            </button>
+                            <button id="btnsaveedit_qldm" class="btn btn-success" style="display:none">
+                                Cập nhật
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+

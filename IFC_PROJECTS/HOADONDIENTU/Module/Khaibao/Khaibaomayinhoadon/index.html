@@ -1,0 +1,163 @@
+﻿<div class="col-lg-12">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title"> QUYẾT ĐỊNH ÁP DỤNG HÓA ĐƠN TỰ IN </h3>
+        </div>
+        <div class="panel panel-body">
+            <div id="messinfo_adhd"></div>
+            <div class="col-lg-12">
+                <table class="table table-responsive no-border ">
+                    <tr>
+                        <td style="width:200px">Tên đơn vị: </td>
+                        <td colspan="3"><select id="txt_tendonvi_adhd" class="form-control"></select></td>
+                        <td class="r"> Tại: </td>
+                        <td><input type="text" id="txt_tai_adhd" class="form-control" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Quyết định số: </td>
+                        <td><input type="text" id="txt_quetdinh_adhd" class="form-control " disabled></td>
+                        <td>Đăng ký kinh doanh số: </td>
+                        <td style="width:165px;"><input type="text" id="txt_dky_adhd" class="form-control " disabled></td>
+                        <td>Người đề nghị: </td>
+                        <td><input type="text" id="txt_nguoide_adhd" class="form-control " disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="text-bold">Điều 1: </td>
+                        <td colspan="2"><input type="text" id="txt_dieu1_adhd" class="form-control "></td>
+                        <td colspan="3">
+                            <div class="form-inline">
+                                <input style="width:90px;" class="form-control datepicker date_hopdong" size="40" type="text" value="" cache="true" data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="date_dieu_adhd" />
+                                <input style="width:82.8%"type="text" id="txt_dieu2_adhd" class="form-control">
+                            </div>
+                        </td>
+
+
+            </tr>
+            </table>
+        </div>
+        <div class="col-lg-12 no-padding">
+            <h5 class="text-bold">1. Hệ thống thiết bị</h5>
+        </div>
+        <div class="col-lg-8">
+            <table class="table table-responsive no-border no-padding">
+                <tr>
+                    <td style="width:200px;">Tên máy tính : </td>
+                    <td colspan="3"><select id="cb_maytinh_adhd" class="form-control"></select></td>
+                </tr>
+                <tr>
+                    <td>Mã hiệu: </td>
+                    <td><input type="text" id="txt_mahieu_adhd" class="form-control " disabled></td>
+                    <td>Nhà sản  xuất: </td>
+                    <td><input type="text" id="txt_sxmt_adhd" class="form-control " disabled></td>
+                </tr>
+                <tr>
+                    <td>Hệ điều hành: </td>
+                    <td><input type="text" id="txt_hedhmt_adhd" class="form-control " disabled></td>
+                    <td>Vi xử lý CPU: </td>
+                    <td><input type="text" id="txt_cpumt_adhd" class="form-control " disabled></td>
+                    <td>RAM: </td>
+                    <td><input type="text" id="txt_rammt_adhd" class="form-control " disabled></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <table class="table table-responsive no-border no-padding">
+                <tr>
+                    <td>Tên máy in: </td>
+                    <td> <select id="cb_mayin_adhd" class="form-control"> </select></td>
+                </tr>
+                <tr>
+                    <td>Nhà sản  xuất: </td>
+                    <td><input type="text" id="txt_sxin_adhd" class="form-control " disabled></td>
+                </tr>
+                <tr>
+                    <td>Số hiệu: </td>
+                    <td><input type="text" id="txt_hieu_adhd" class="form-control " disabled></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-body">
+        <div class="col-lg-12 no-padding">
+            <h5 class="text-bold">2. Phần mềm ứng dụng và biện pháp hỗ trợ kỹ thuật</h5>
+        </div>
+        <div class="col-lg-12">
+            <table class="table table-responsive no-border no-padding">
+                <tr>
+                    <td>Phần mềm</td>
+                    <td><input type="text" class="form-control" size="150" id="txt_phanmen_adhd" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Trách nhiệm hỗ trợ kỹ thuật</td>
+                </tr>
+                <tr>
+                    <td style="width:200px;">Bên sử dụng phần mềm </td>
+                    <td><input type="text" id="txt_bensdpm_adhd" class="form-control "></td>
+                </tr>
+                <tr>
+                    <td>Bên cung cấp phần mềm </td>
+                    <td><input type="text" id="txt_benccpm_adhd" class="form-control "></td>
+                </tr>
+            </table>
+        </div>
+        <h5 class="text-bold">Điều 2: Mẫu các loại hóa đơn tự in và mục đích sử dụng của mỗi loại hóa đơn</h5>
+        <div class="col-lg-12">
+            <table class="table table-responsive no-border no-padding">
+                <tr>
+                    <td style="width:200px;">Mục đích sử dụng</td>
+                    <td><input type="text" class="form-control" size="150" id="txt_mucdinhs_adhd" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-12">
+            <table class="table table-responsive no-border no-padding">
+                <tr>
+                    <td style="width:200px;">Danh sách hóa đơn</td>
+                    <td style="width:200px;">
+                        <input type="text" id="txt_dsachhd_adhd" class="form-control " />
+                    </td>
+                    <td><button id="bt_loada" class="btn btn-success" data-toggle='modal' href='#hoa_dondailog'><i class="fa fa-check"></i> Chọn</button></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <h5 class="text-bold">Điều 3: Trách nhiệm của từng bộ phận trực thuộc liên quan việc tạo, lập, lưu trữ và luân chuyển dữ liệu hóa đơn tự in trong công ty</h5>
+        <div class="col-lg-12">
+            <table class="table table-responsive no-border no-padding">
+                <tr>
+                    <td style="width:200px;">Bộ phận bán hàng </td>
+                    <td><input type="text" id="txt_bopbhang_adhd" class="form-control "></td>
+
+                </tr>
+                <tr>
+                    <td>Bộ phận kế toán </td>
+                    <td><input type="text" id="txt_bophanketoan_adhd" class="form-control "></td>
+
+                </tr>
+                <tr>
+                    <td>Bộ phận kỹ thuật </td>
+                    <td><input type="text" id="txt_bpkythuat_adhd" class="form-control "></td>
+                </tr>
+            </table>
+        </div>
+        <table class="table table-responsive no-border no-padding">
+            <tr>
+                <td width="27%"><h5 class="text-bold">Điều 4: Quyết định này có hiệu lực thi hành từ ngày</h5></td>
+                <td><input class="form-control datepicker date_hopdong" size="10" type="text" value="" cache="true" data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="date_quyet_adhd" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="txt_yeucauhd_adhd" class="form-control ">
+                </td>
+            </tr>
+        </table>
+
+        <button id="btn_inquyetdinh_adhd" class="btn btn-warning"  style="margin-top:5px;"><i class="fa fa-print"></i> In quyết định</button>
+        <button id="btn_them_adhd" class="btn btn-success" style="margin-left:5px; margin-top:5px;"><i class="fa fa-save"></i> Cập nhật</button>
+
+    </div>
+    <div class="bottom-mar-50"></div>
+</div>
+</div>
+<div data-include="Module/Khaibao/Hoadondailog"></div>

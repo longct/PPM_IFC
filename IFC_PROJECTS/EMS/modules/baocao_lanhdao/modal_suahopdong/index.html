@@ -1,0 +1,40 @@
+﻿<div class="modal fade " id="modal_suahopdong" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:60%">
+        <section class="panel" style="padding:20px 20px 20px 20px">
+            <label style="font-size: 15px;margin: 0px 0px 20px;color: darkorange;">SỬA THÔNG TIN HỢP ĐỒNG</label>
+            <div id="messinfo_detail"></div>
+            <div class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="th">Đơn vị</label>
+                    <select id="cbo_donvi_detail" class="form-control"></select>
+                </div>
+                <div class="form-group">
+                    <label class="th">Ngày ký</label>
+                    <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                           data-date-format="dd/mm/yyyy" id="date_ngayky_detail" cache="true" />
+                </div>
+            </div>
+            <div class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="th">Số hợp đồng</label>
+                    <input id="txt_sohopdong_detail" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="th">Số lượng điểm đo</label>
+                    <input id="txt_sodiemdo_detail" class="form-control" maxlength="7" type="number" />
+                </div>
+
+            </div>
+            <div class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="th">Ghi chú</label>
+                    <input type="text" class="form-control form-control-inline input-medium" id="txt_ghichu_detail" />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" id="btn_update">Lưu lại</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+

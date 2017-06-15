@@ -1,0 +1,72 @@
+﻿.form-control {
+    color: black !important;
+}
+
+.modal-static { 
+    position: fixed;
+    top: 50% !important; 
+    left: 50% !important; 
+    margin-top: -100px;  
+    margin-left: -100px; 
+    overflow: visible !important;
+}
+.modal-static,
+.modal-static .modal-dialog,
+.modal-static .modal-content {
+    width: 200px; 
+    height: 200px; 
+}
+.modal-static .modal-dialog,
+.modal-static .modal-content {
+    padding: 0 !important; 
+    margin: 0 !important;
+}
+.modal-static .modal-content .icon {
+}
+
+
+/********CUSTOMIZE LONGCT*********/
+.error {
+    width: 300px;
+    height: 20px;
+    height: auto;
+    position: absolute;
+    left: 46%;
+    margin-left: -100px;
+    top: 20%;
+    background-color: #d73925;
+    color: #F0F0F0;
+    font-family: Calibri;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    z-index: 2000000;
+}
+
+.success {
+    width: 300px;
+    height: 20px;
+    height: auto;
+    position: absolute;
+    left: 46%;
+    margin-left: -100px;
+    top: 20%;
+    background-color: #00ca6d;
+    color: #F0F0F0;
+    font-family: Calibri;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    z-index: 2000000;
+}
+
+span.combo{height:34px !important;}
+label{font-size:14px;}

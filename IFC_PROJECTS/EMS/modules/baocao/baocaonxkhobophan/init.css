@@ -1,0 +1,11 @@
+﻿.middle{vertical-align:middle !important;}
+.c{text-align:center;white-space: nowrap;}
+/*.bgcolor{background-color:#f0ad4e !important}*/
+.panel-body table thead tr th {
+    text-align: center;
+    background: #01B7FD;
+    color: #fff;
+    border-bottom-width: 0px !important;
+}
+.bgcolor{background-color:#3c763d !important}
+.bgcolorx{background-color:#f0ad4e !important}

@@ -1,0 +1,82 @@
+﻿
+<div class="modal fade " id="tab_danhsachnhap_nhapkho_qlvt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">NHẬP KHO</h4>
+            </div>
+            <div id="messinfo_tlcb"></div>
+            <div id="thietlap_canhbao_content" style="margin: 4px 2px;">
+                <table style="width:70%">
+                    <tbody>
+                        <tr>
+                            <td>Từ ngày</td>
+                            <td>
+                                <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                       data-date="30/01/2015" placeholder="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_datefrom_nkdanhsach" cache="true" />
+                            </td>
+                            <td>Đến ngày</td>
+                            <td>
+                                <input class="form-control form-control-inline input-medium default-date-picker" size="20" type="text" value="" cache="true" data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_ngayfrom_viewtl">
+                            </td>
+                            <td>
+                                <button class="btn btn-success" type="button" id="btnThucHienDanhsach_nkdanhsach"><i class="fa fa-plus"></i>Thực hiện</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="messinfo_danhsachnhap"></div>
+
+                <table class="table table-bordered" style="margin-top: 10px;">
+                    <thead>
+                        <tr>
+                            <th class="c">STT</th>
+                            <th class="c">Mã phiếu</th>
+                            <th class="c">Người gửi</th>
+                            <th class="c">Người nhận</th>
+                            <th class="c">Từ kho</th>
+                            <th class="c">Tới kho</th>
+                            <th class="c">Số lượng</th>
+                            <th class="c">Mã vận đơn</th>
+                            <th class="c">Thời gian nhập</th>
+                            <th class="c">Ghi chú</th>
+                            <th class="c">Xem</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblnhapkho_nkdanhsachnhap"></tbody>
+
+                </table>
+                <div class="row-fluid">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_info" id="hidden-table-info_info"><label id="txt_tongsobanghi_nkdanhsachnhap"></label></div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate paging_bootstrap pagination" id="pagecurent_nkdanhsachnhap">
+                                        <ul>
+                                            <li class="prev disabled"><a>← Trước</a></li>
+                                            <li class="active"><a>1</a></li>
+                                            <li><a>2</a></li>
+                                            <li><a>3</a></li>
+                                            <li><a>4</a></li>
+                                            <li><a>5</a></li>
+                                            <li class="next"><a>Sau → </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

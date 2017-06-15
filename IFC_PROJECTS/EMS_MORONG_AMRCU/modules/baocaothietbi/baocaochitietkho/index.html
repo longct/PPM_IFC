@@ -1,0 +1,140 @@
+﻿<div class="col-lg-12" id="tab_nhaptay">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/baocaothietbi/baocaothietbi_tab"></div>
+        </div>
+    </section>
+    <section class="panel">
+
+        <div class="panel-heading">
+            <div class="form-inline" role="form">
+               
+                <table class="table" id="tbl_baocaochitietkho">
+                    <tr>
+                        <td>
+                            <label class="th">Kho </label>
+                        </td>
+                        <td>
+                            <select id="cbkho_baocaochitietkho" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Vật tư thiết bị</label>
+                        </td>
+                        <td>
+                            <select id="cbvattutb_baocaochitietkho" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Loại thiết bị</label>
+                        </td>
+                        <td>
+                            <select id="cbloạithietbi_baocaochitietkho" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="th">Người dùng</label>
+                        </td>
+                        <td>
+                            <select id="cbnguoidung_baocaochitietkho" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Trạng thái</label>
+                        </td>
+                        <td>
+                            <select id="cbtrangthai_baocaochitietkho" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Dự án</label>
+                        </td>
+                        <td>
+                            <select id="cbduan_baocaochitietkho" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>
+                        </td>
+                    </tr>
+                   
+
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <a class="btn btn-warning"   id="btnThucHienDanhsach_baocaochitietkho">
+                                <i class="fa fa-plus"></i>Thực hiện
+                            </a>
+                            <a class="btn btn-warning"   id="btnExecl_baocaochitietkho">
+                                    <i class="fa fa-plus"></i>Xuất execl
+                            </a>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+            
+            <div id="messinfo_baocaochitietkho"></div>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th class="c">STT</th>
+                        <th class ="c">Tên kho</th>
+                        <th  class="c">Tên vật tư</th>
+                        <th class="c">Người dùng</th>
+                        <th class="c">Serial</th>
+                        <th class="c">Số lượng</th>
+                        <th class="c">Dự án</th>
+                        <th class="c">Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody id="myTableData_baocaochitietkho"></tbody>
+
+            </table>
+            <div class="row-fluid">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"><label id="txt_tongsobanghi_baocaochitietkho"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pagecurent_baocaochitietkho">
+                                    <ul>
+                                        <li class="prev disabled"><a  >← Trước</a></li>
+                                        <li class="active"><a  >1</a></li>
+                                        <li><a  >2</a></li>
+                                        <li><a  >3</a></li>
+                                        <li><a  >4</a></li>
+                                        <li><a  >5</a></li>
+                                        <li class="next"><a  >Sau → </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+<div data-include="modules/modals_yesno"></div>

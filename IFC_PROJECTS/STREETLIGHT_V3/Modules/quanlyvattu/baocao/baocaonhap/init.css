@@ -1,0 +1,9 @@
+﻿body {
+}
+#myTableData_baocaonhap a{text-decoration:underline !important}
+#tb_bcnhap_chitiet  a{text-decoration:underline !important}
+table#tbl_baocaonhap tbody tr td input[type="text"], table#tbl_baocaonhap tbody tr td select, table#tbl_baocaonhap tbody tr td textarea {
+    width: 200px !important;
+    font-size: 13px !important;
+    margin:0
+}

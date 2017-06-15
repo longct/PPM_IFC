@@ -1,0 +1,16 @@
+﻿#menu ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 25px;
+    text-align: center;
+    opacity: .85;
+    cursor: pointer;
+    text-transform:uppercase;
+    color:#00adee;
+    /*font-weight:bold;*/
+    /*font-size:15px;*/
+}
+#menu ul li:hover{
+    color:#d70707;
+    border-bottom:3px solid #d70707;
+} 

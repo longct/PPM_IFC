@@ -1,0 +1,13 @@
+﻿.v_m{vertical-align:middle !important}
+.c_m{background-color: #339933 !important; color:#fff !important; font-weight:bold;}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+#grv_baocaoxuat tbody td{text-align:center}
+table#tbl_baocaoxuat tbody tr td input[type="text"], table#tbl_baocaoxuat tbody tr td select, table#tbl_baocaoxuat tbody tr td textarea {
+    width: 200px !important;
+    font-size: 13px !important;
+    margin:0
+}

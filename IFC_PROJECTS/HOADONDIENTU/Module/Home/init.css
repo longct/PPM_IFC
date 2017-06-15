@@ -1,0 +1,87 @@
+﻿.round-home {
+    width: 110px;
+    height: 110px;
+    border-radius: 60px;
+    /*background: #0094ff;*/
+    background: rgba(0, 148, 255, 0.4);
+}
+
+.over-home {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background: url('../img/cover.png') center center no-repeat;
+}
+
+.ro1 {
+    margin-left: 100px;
+    float: left;
+    background:url('../img/certificate-flat.png') no-repeat center center;
+}
+
+.ro2 {
+    margin-left: 80px;
+    float: left;
+    background:url('../img/contract-icon-12.png') no-repeat center center;
+}
+
+.ro3 {
+    margin-left: 0px;
+    float: left;
+    margin-top: 60px;
+    background:url('../img/mail.png') no-repeat center center;
+}
+
+.ro4 {
+    margin-left: 280px;
+    margin-top:60px;
+    float: left;
+    background:url('../img/computer-1331579_640.png') no-repeat center center;
+}
+
+.ro5 {
+    margin-left: 100px;
+    margin-top:60px;
+    float: left;
+    background:url('../img/F04-512.png') no-repeat center center;
+}
+
+.ro6 {
+    margin-left: 80px;
+    margin-top:60px;
+    float: left;
+    background:url('../img/cert_icon.png') no-repeat center center;
+}
+.menu-ro-home{
+    position:absolute;
+    border-radius:3px;
+}
+.menu-ro-home ul li a:link, .menu-ro-home ul li a:visited{
+    color:#fff;
+}
+.menu-ro-home ul li{
+    list-style:none;
+    background:rgb(255, 106, 0);
+    padding:3px;
+    color:#fff;
+    cursor:pointer;
+    width:150px;
+}
+.menu-ro-home ul li:first-child{
+    border-radius:3px 3px 0 0;
+}
+.menu-ro-home ul li:last-child{
+    border-radius:0 0 3px 3px;
+}
+.menu-ro-home ul li:hover{
+    background:#808080;
+    color:#fff;
+}
+.home-top1{
+    height:128px;
+}
+@media screen and (max-width: 1024px){
+.home-top1{
+    height:256px;
+}
+}

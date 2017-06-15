@@ -1,0 +1,60 @@
+﻿<div class="col-lg-12" id="tab_nhaptay">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/baocao_lanhdao/baocao_lanhdao_tab"></div>
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-heading">
+            <div class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="th">Đơn vị</label>
+                    <select id="cbo_donvi" class="form-control  "></select>
+                </div>
+                <div class="form-group">
+                    <label class="th">Ngày ký</label>
+                    <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                           data-date-format="dd/mm/yyyy" id="date_ngayky" cache="true" />
+                </div>
+                <div class="form-group" style="margin-top:15px;">
+                    <label class="th">Ghi chú</label>
+                    <input type="text" class="form-control form-control-inline input-medium" id="txt_ghichu" style="min-width:400px"/>
+                </div>
+            </div>
+            <div class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="th">Số hợp đồng</label>
+                    <input id="txt_sohopdong" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="th">Số lượng điểm đo</label>
+                    <input id="txt_sodiemdo" class="form-control" type="number" maxlength="7" />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" id="btn_save">Lưu thêm mới</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="messinfo"></div>
+    <section class="panel">
+        <div class="panel-body">
+            <table class="table table-bordered" id="tbl_bcld_hopdong">
+                <thead>
+                    <tr>
+                        <th class="c">STT</th>
+                        <th class="c">Đơn Vị</th>
+                        <th class="c">Số hợp đồng</th>
+                        <th class="c">Ngày ký</th>
+                        <th class="c">Số lượng điểm đo</th>
+                        <th class="c">Ghi chú</th>
+                        <!--<th class="c"></th>-->
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+</div>
+<div data-include="modules/modals_yesno"></div>
+<!--<div data-include="modules/baocao_lanhdao/modal_suahopdong"></div>-->

@@ -1,0 +1,98 @@
+﻿<div class="modal fade" id="muavattuthietbi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:80%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="txtMahopdongHead_nhapxct">Thông tin chi tiết dự án</h4>
+            </div>
+            <div id="messinfo_nhapxct"></div>
+            <div class="modal-body">
+                <section class="panel">
+                    <div class="panel-heading">
+                        <div class="form-inline" role="form">
+                            <table class="table" id="tbl_vttbhdct">
+                                <tr>
+                                    <td>
+                                        <label class="th">Mã hợp đồng</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control form-control-inline input-medium" id="txtmahd_ct_bcvttb_hd" maxlength="50" disabled />
+                                    </td>
+                                    <td>
+                                        <label class="th">Số lượng tổng</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control form-control-inline input-medium" id="txtsoluongtong_ct_bcvttb_hd" disabled />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label class="th">Tên hợp đồng</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control form-control-inline input-medium" id="txttenhd_ct_bcvttb_hd" maxlength="250" disabled />
+                                    </td>
+
+
+                                    <td>
+                                        <label class="th">Tổng số lượng đã nhận</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control form-control-inline input-medium" id="txtsoluongnhan_ct_bcvttb_hd" disabled />
+
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="th">Ghi chú</label>
+                                    </td>
+                                    <td>
+                                        <textarea id="txtghichu_ct_bcvttb_hd" class="form-control form-control-inline input-medium" maxlength="1000" disabled></textarea>
+                                    </td>
+
+                                    <td>
+                                        <label class="th">Số lượng chưa nhận</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control form-control-inline input-medium" id="txtsoluongcon_ct_bcvttb_hd" disabled />
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="panel">
+                    <div class="panel-body">
+                        <div id="messinfo_nhapxct"></div>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Ban miền</th>
+                                    <th>Mã vật tư thiết bị</th>
+                                    <th>Tên vật tư thiết bị</th>
+                                    <th width="150px">SL xuất theo KH</th>
+                                    <th>Thời gian giao</th>
+                                </tr>
+                            </thead>
+                            <tbody id="myTableData_vttbhdct"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+
+            </div>
+            <div class="modal-footer" style="border:none !important">
+                <button data-dismiss="modal" class="btn btn-danger" type="button"><i class="fa fa-ban"></i>Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+

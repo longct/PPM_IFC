@@ -1,0 +1,12 @@
+#table_bcaodientieuthu td {
+    vertical-align: middle;
+    text-align: center;
+}
+#table_bcaodientieuthu td.a-center {
+    text-align: center;
+}
+#table_bcaodientieuthu td.a-right {
+    text-align: right;
+}
+#tbl_ckbT th{white-space: pre-wrap;}
+sub{text-transform:lowercase;}

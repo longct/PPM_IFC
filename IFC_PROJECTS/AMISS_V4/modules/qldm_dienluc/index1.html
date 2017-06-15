@@ -1,0 +1,98 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left"><span class=""></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12 panel-tsvh" id="qldm">
+        <div class="col-lg-5">
+            <div id="dropDownButton1" style="margin-top:11px">
+                <div id='jqxDropDL_qldm_1' style="border: none;">
+                </div>
+            </div>
+            <input type="text" class="form-control" id="dm_search" placeholder="Tìm kiếm điểm đo" />
+            <button class="btn btn-success" id="btnloc1">Thực hiện</button>
+            <label class="filter_tsvh" id="count1"></label>
+            <div class="table_diemdo" style="width:100%; overflow-x:scroll">
+                <table class="table table-responsive table-bordered table-striped table-hover" id="tbl_dsdiemdo" style="width:700px">
+                    <thead class="bg-aqua-gradient">
+                        <tr>
+                            <th>Mã</th>
+                            <th>Tên khách hàng</th>
+                            <th>Số công tơ</th>
+                            <th>Mã khách hàng</th>
+                            <th>Mã điểm đo</th>
+                            <th>IMEI</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-lg-1">
+            <div class="btn_chuyendiemdo">
+                <i class="glyphicon glyphicon-play" id="btnMove1"></i><br />
+                <i class="glyphicon glyphicon-forward"  id="btnMoveAll"></i><br />
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div id="dropDownButton2" style="margin-top:11px">
+                <div id='jqxDropDL_qldm_2' style="border: none;">
+                </div>
+            </div>
+            <button class="btn btn-warning" id="btnThemmoi">Thêm mới</button>
+            <button class="btn btn-warning" id="btnSua">Sửa</button>
+            <button class="btn btn-danger" id="btnXoa">Xóa</button>
+            <!--<button class="btn btn-danger" id="btnLoaidiemdo">Loại bỏ điểm đo</button>-->
+            <label class="filter_tsvh" id="count2"></label>
+            <div style="display:none" id="divThemmoi">
+                <label class="filter_tsvh col-xs-3">Tên thư mục</label>
+                <input type="text" id="txtNameFolder" name="rg-from" value="" class="form-control" style="width: 250px;">
+                <label class="filter_tsvh col-xs-3">Số điểm đo</label>
+                <input type="text" id="txtCoutNumber" class="form-control" placeholder="Số điểm đo thực tế" style="width: 250px;" />
+                <label class="filter_tsvh col-xs-3">Loại thư mục</label>
+                <select class="form-control" id="CboLoaidanhmuc" style="width: 250px;">
+                    <option value="0">Tất cả</option>
+                    <option value="5">Trạm</option>
+                    <option value="4">Sổ ghi</option>
+                    <option value="6">Cột</option>
+                    <option value="8">Đã lắp DCu</option>
+                    <option value="9">Chưa lắp DCu</option>                 
+                </select>
+                <label class="filter_tsvh col-xs-3">Ghi chú</label>
+                <textarea class="form-control" id="txtDes" style="width: 250px;display:inline-block"></textarea>
+                <button class="btn btn-success" id="btnCreate" style="display:none;margin-top: -21px;">Lưu thêm mới</button>
+                <button class="btn btn-success" id="btnEdit" style="display:none;margin-top: -21px;">Lưu thay đổi</button>
+            </div>
+            <div class="table_diemdo_nhan" style="width:100%; overflow-x:scroll">
+                <table class="table table-responsive table-bordered table-hover" id="tbl_dsdiemdo_nhan" style="width:700px">
+                    <thead class="bg-aqua-gradient">
+                        <tr>
+                            <th>Mã</th>
+                            <th>Tên khách hàng</th>
+                            <th>Số công tơ</th>
+                            <th>Mã khách hàng</th>
+                            <th>Mã điểm đo</th>
+                            <th>IMEI</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<link href="../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../js/jqx/jqxcore.js"></script>
+<script src="../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../js/jqx/jqxtree.js"></script>
+<script src="../../js/jqx/jqxdata.js"></script>

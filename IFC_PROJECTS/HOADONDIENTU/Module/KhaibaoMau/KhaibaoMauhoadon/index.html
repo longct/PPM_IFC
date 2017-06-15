@@ -1,0 +1,54 @@
+﻿<div class="col-lg-12">
+    <div class="panel panel-info filterable">
+        <div class="panel-heading">
+            <h3 class="panel-title">DANH SÁCH KHAI BÁO MẪU HÓA ĐƠN</h3>
+        </div>
+        <div class="panel panel-body">
+            <div class="form-inline">
+                <div class="form-group">
+                    <button type="button" class="btn btn-success" id="btn_mauhd" data-toggle='modal' href='#them_hoadon'><i class="fa fa-plus"></i> Thêm</button>
+                </div>
+            </div>
+            <br />
+            <div id="messinfo_hodon"></div>
+
+            <table class="table table-responsive table-bordered table-striped">
+                <thead class="bg-aqua">
+                    <tr>
+                        <th class="td_stt1pha">STT</th>
+                        <th>Tên mẫu hóa đơn</th>
+                        <th>Mã mẫu hóa đơn</th>
+                        <th>Mẫu số hóa đơn</th>
+                        <th>Ký hiệu</th>
+                        <th>Số hiện tại</th>
+                        <th>Số kết thúc</th>
+                        <th>Trạng thái</th>
+                        <th>Tải mẫu hóa đơn</th>
+                        <th>Chức năng</th>
+                    </tr>
+                </thead>
+                <tbody id="table_khhd_hoadon"></tbody>
+            </table>
+            <div class="row-fluid row-fluid2">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span3">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_lst_hoadon">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate" id="hidden-table-info_info"> <label id="pageCurent_lst_hoadon"></label></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div data-include="Module/KhaibaoMau/Themhoadonmau"></div>
+<div data-include="Module/KhaibaoMau/Suahoadonmau"></div>

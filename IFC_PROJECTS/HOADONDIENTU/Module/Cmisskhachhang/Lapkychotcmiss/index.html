@@ -1,0 +1,52 @@
+﻿<div class="col-lg-12">
+    <div class="panel panel-info filterable">
+        <div class="panel-heading">
+            <h3 class="panel-title">THIẾT LẬP NGÀY CHỐT CMISS</h3>
+        </div>
+        <div class="col-lg-4" >
+            <div class="col-lg-12">
+                <div class="col-lg-4">
+                    <label class="filter_tsvh" for="rdiXml" style="">Chọn file CMIS</label>
+                </div>
+                <div class="col-lg-8">
+                    <input type="file" class="form-control" onchange="f_cleartemp(this);" placeholder="" id="txt_file_tlcmiss" accept=".xml" style="" />
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="col-lg-4">
+                    <label class="filter_tsvh" style="">Tháng</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right datepicker" id="date_thang_tlcmiss" datepicker_op="{'minViewMode' : 'months', 'format': 'mm/yyyy'}">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <label class="filter_tsvh">Số kỳ chốt</label>
+                    <select class="form-control" id="sokychot_tlcmiss">
+                        <option selected="selected" value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="col-lg-4">
+                    <label class="filter_tsvh">Ngày chốt</label>
+                    <input type="text" class="form-control text-center" validate="true" style="" id="txtFixday_tlcmiss" placeholder="1">
+                </div>
+            </div>
+            <div class="col-lg-12" style="margin-top:10px">
+                <div class="col-lg-6">
+                    <label class="checkbox" style="">
+                        <input type="checkbox" value="1" id="ckall_tlcmiss" class="flat-red">
+                        Áp dụng cả năm
+                    </label>
+                </div>
+                <div class="col-lg-6">
+                    <button class="btn btn-success pull-right" id="btnThietlap">Thực hiện</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,88 @@
+﻿
+<div class="modal fade " id="xemchitiet_kbdm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 80%;">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title">Khai báo dự phòng VTTB theo kho</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_themkbdm"> </div>
+                <div style="width: 100%; float: left;">
+                    <div class="form-group  col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>Ban miền (*)</label>
+                       
+                        <input type="text" class="form-control form-control-inline input-medium" id="cb_banmien_kbdmct" disabled />
+                    </div>
+                    
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>Ngày khai báo</label>
+                        <input type="text" class="form-control form-control-inline input-medium" id="txt_slngay_kbdmct" disabled />
+                    </div>
+                </div>
+                <div style="width: 100%; float: left;">
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>Vật tư thiết bị (*)</label>
+                        <input type="text" class="form-control form-control-inline input-medium" id="cbvattu_kbdmct" disabled />
+                    </div>
+                     <div class="form-group col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>Loại VTTB (*)</label>
+                         <input type="text" class="form-control form-control-inline input-medium" id="cb_tenvt_kbdmct" disabled /> 
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-12 col-lg-4 col-md-4">
+                        <label>Ghi chú (*)</label>
+                        <input type="text" class="form-control form-control-inline input-medium" id="txt_ghichu_kbdmct" />
+                    </div>
+                   
+                </div>
+                <div style="width: 100%; float: left;">
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>SL VTTB dự phòng/tháng (*)</label>
+                        <input type="text" class="form-control form-control-inline input-medium" id="txt_slvttbduphong_kbdmct" disabled />
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>Định mức tồn tối thiểu (*)</label>
+                        <input type="text" class="form-control form-control-inline input-medium" id="txt_dmttt_kbdmct" disabled />
+                    </div>
+                
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>Định mức tồn tối đa (*)</label>
+                        <input type="number" class="form-control form-control-inline input-medium" id="txt_dmttd_kbdmct" min="0" />
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <td colspan="5" style="font-weight:bold">CHI TIẾT ĐỀ XUẤT SỐ LƯỢNG PHÁT SINH</td>
+                            </tr>
+                            <tr>
+                                <td>Số lần</td>
+                                <td>SL VTTB xin cấp phát sinh</td>
+                                <td>Thời gian</td>
+                                <td>lý do</td>
+                            </tr>
+                        </thead>
+                        <tbody id="myTableData_ct">
+
+                        </tbody>
+                    </table>
+                   
+                </div>
+               
+                <div class="form-group col-xs-12 col-sm-12 col-lg-12 col-md-12" style="margin-top: 10px;">
+                    <button class="btn btn-default" type="button" id="btn_thoat_kbdmct">Thoát</button>
+                </div>
+             
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- page end-->

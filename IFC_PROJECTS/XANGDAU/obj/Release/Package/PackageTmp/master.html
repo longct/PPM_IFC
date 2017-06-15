@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="shortcut icon" href="../../img/favicon.png">
+
+    <title>XĂNG DẦU</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+
+</head>
+
+<body>
+
+    <section id="container" class="sidebar-closed">
+        <!--header start-->
+        <header class="header white-bg">
+            <!--<div class="sidebar-toggle-box">
+                <div data-original-title="Ẩn hiện menu" data-placement="right" class="fa fa-bars tooltips" id="showMenu"></div>
+            </div>-->
+            <!--logo start-->
+            <a class="logo linktomod" id="nameTitle" href="#Module/Home">Xăng dầu</a>
+            <!--logo end-->
+            <div class="horizontal-menu navbar-collapse collapse ">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <div class="btn-group" style="margin-top:15px;">
+                            <!--<button data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm" type="button">Công ty Xăng dầu số 1 <span class="caret"></span></button>-->
+                            <!--<ul role="menu" class="dropdown-menu" id="cbDonVi_master">-->
+                                <!--<li value=""><a class="linktomod" href="#Module/Lichsutram">Trạm 1</a></li>
+                                <li><a class="linktomod" href="#">Trạm 2</a></li>
+                                <li><a class="linktomod" href="#Module/moudehethong/modals_khaibao">Trạm 3</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Tất cả các trạm</a></li>-->
+                            <!--</ul>-->
+                            <select class="form-control form-control-inline input-medium " id="cbDonVi_master">                              
+                            </select>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">THỐNG KÊ<b class=" fa fa-angle-down"></b></a>
+                        <ul class="dropdown-menu">                          
+                            <li><a class="linktomod" href="#Module/Lichsuchottram">LỊCH SỬ CHỐT</a></li>
+                            <li><a class="linktomod" href="#Module/LichsucotAll">LỊCH SỬ CỘT</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#">KHAI BÁO<b class=" fa fa-angle-down"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="linktomod" href="#Module/KhaiBaoDiemDo/chokhaibao">KHAI BÁO CỘT</a></li>
+                            <li class="inbox-divider"><a class="linktomod" href="#Module/Catruc/TaoCa">CA TRỰC</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+
+            </div>
+            <div class="top-nav ">
+                <ul class="nav pull-right top-menu">
+
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="img/logo.png" style="width: 135px;">
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li><a class="linktomod" href="#Module/TaoTaiKhoan"><i class=" fa fa-suitcase"></i>Tạo tài khoản</a></li>
+                            <!--<li><a class="linktomod" href="#Module/moudehethong/modals_resetpasword"><i class="fa fa-cog"></i> Thay đổi mật khẩu</a></li>-->
+                            <li><a data-toggle='modal' href='#modal_resetpass'><i class="fa fa-cog"></i> Thay đổi mật khẩu</a></li>
+                            
+                            <li><a href="login.html"><i class="fa fa-key"></i>Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                    <!--<li><a href="#"><i class="fa fa-bell-o"></i> Notification</a></li>-->
+                </ul>
+            </div>
+        </header>
+        <!--header end-->
+        <!--sidebar start-->
+        <!--sidebar end-->
+        <!--main content start-->
+
+        <section id="main-content">
+            <div class="wrapper site-min-height">
+                <div class="breadcrumb"><i class="fa fa-home linktomod" style="cursor:pointer" href="#Module/Home"></i><span id="bread"></span></div>
+                <div class="main-content-delete">
+                <div data-include="Module/Home"></div>
+                    </div>
+            </div>
+        </section>
+        <!--main content end-->
+        <!--footer start-->
+        <footer class="site-footer">
+            <div class="text-center">
+                Bản quyền thuộc về Infras consult © 2016. <br/>Tầng 14-15, Tòa nhà HH-03 (Tòa nhà Vietcombak) Khu tiểu thủ Công nghiệp, Làng nghề Vạn Phúc, P. Vạn Phúc, Q. Hà Đông, Tp Hà Nội. Điện thoại: 04.3310.3388
+                <a href="#" class="go-top">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
+        </footer>
+
+        <!--footer end-->
+    </section>
+    <!--<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div data-include="Module/Vanhanh/Theodoidiemdomatkn/index.html"></div>
+            </div>
+        </div>
+    </div>-->
+    <!-- js placed at the end of the document so the pages load faster -->
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/advanced-form-components.js"></script>
+    <script src="js/numeral.js"></script>
+    <script type="text/javascript" src="js/common-scripts.js"></script>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script src="js/morris.min.js"></script>
+    <!--<script src="js/raphael-min.js"></script>-->
+    <script src="js/multiselect.js"></script>
+    <link href="css/morris.css" rel="stylesheet" />
+    <!--<script src="js/highcharts.js"></script>
+    <script src="js/draggable-legend.js"></script>-->
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="api/addModul.js"></script>
+    <script src="js/hover-dropdown.js"></script>
+    <script type="text/javascript" src="api/api.js"></script>
+    <script src="master/init.js"></script>
+
+    <link href="master/init.css" rel="stylesheet" />
+    <!--custom switch-->
+    <script src="js/bootstrap-switch.js"></script>
+    <!--custom tagsinput-->
+    <script src="js/jquery.tagsinput.js"></script>
+    <!--custom checkbox & radio-->
+    <script type="text/javascript" src="js/ga.js"></script>
+    <!--<script src="js/form-component.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
+
+    <!--TIMER-->
+    <!--<script type="text/javascript" src="js/timer-doctucthoi.js"></script>-->
+    <script src="js/jquery.menu.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#fullscreen').click(function (e) {
+                window.open('home.html', 'PoP_Up', 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1366,height=768');
+                /*$('#panel-body').toggleClass("fullscreen", 1000);*/
+            });
+
+        });
+    </script>
+
+
+</body>
+</html>
+
+<div data-include="Module/moudehethong/modals_resetpasword"></div>

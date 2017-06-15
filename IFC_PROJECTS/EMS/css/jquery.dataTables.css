@@ -1,0 +1,214 @@
+/*
+ * Table styles
+ */
+table.dataTable {
+    width: 100%;
+    margin: 0;
+    clear: both;
+    border-spacing: 0;
+    background-color: #fff;
+    float: left;
+}
+
+    table.dataTable thead {
+        width: 100%;
+    }
+
+        table.dataTable thead th,
+        table.dataTable tfoot th {
+            font-weight: bold !important;
+        }
+        /*tieu de*/
+        table.dataTable thead th,
+        table.dataTable thead td {
+            font-size: 14px;
+            text-align: center !important;
+            font-weight: normal;
+            color: #101010;
+            height: 45px;
+            vertical-align: middle;
+            border-right: 1px solid #ebebeb;
+            padding: 4px;
+            background-color: #fff;
+        }
+
+            table.dataTable thead th:active,
+            table.dataTable thead td:active {
+                outline: none;
+            }
+
+    table.dataTable tfoot th,
+    table.dataTable tfoot td {
+        /*padding: 10px 18px 6px 18px;*/
+        border-top: 1px solid #ebebeb;
+    }
+    /*hang*/
+    table.dataTable tbody {
+        width: 100%;
+    }
+
+        table.dataTable tbody tr {
+            height: 35px;
+            border-bottom: 1px solid #ebebeb;
+            width: 100% !important;
+        }
+
+            table.dataTable tbody tr:hover {
+                /*background-color: #fff;*/
+            }
+
+            table.dataTable tbody tr.selected {
+                /*background-color: #fff;*/
+            }
+        /*cot*/
+        table.dataTable tbody th,
+        table.dataTable tbody td {
+            height: 30px;
+            vertical-align: middle;
+            color: #363636;
+            font-size: 13px;
+            padding: 5px 5px 5px 5px;
+            border: 1px solid #ebebeb;
+            text-align: left;
+        }
+/*so dong hien thi*/
+.dataTables_length {
+    float: left;
+    background-color: transparent;
+    width: 20%;
+    line-height: 24px;
+    margin-left: 10px;
+}
+
+    .dataTables_length label {
+        font-size: 17px;
+        text-align: left !important;
+        font-weight: normal;
+        color: #ccc;
+        vertical-align: middle;
+    }
+/*loc*/
+.dataTables_filter {
+    float: right;
+    background-color: transparent;
+    line-height: 20px;
+    margin-right: 4px;
+}
+
+    .dataTables_filter label {
+        font-size: 17px;
+        text-align: right !important;
+        font-weight: normal;
+        color: #555;
+        vertical-align: middle;
+    }
+
+    .dataTables_filter input {
+        background-color: #fff;
+        border-radius: 5px;
+    }
+/*thong tin*/
+.dataTables_info {
+    font-size: 17px;
+    text-align: left !important;
+    font-weight: normal;
+    color: #ccc;
+    vertical-align: middle;
+    float: left;
+    background-color: transparent;
+    width: 40%;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+.paging_simple_numbers {
+    text-align: right !important;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+    .paging_simple_numbers a {
+        font-size: 17px;
+        color: #ccc;
+        vertical-align: middle;
+        float: right;
+        margin-right: 10px;
+    }
+
+
+/*thanh cuon*/
+.dataTables_scrollBody {
+    overflow: hidden;
+    width: 100%;
+    float: left;
+}
+
+/*chinh lai do rong khi load xong*/
+.dataTables_wrapper {
+    width: 100%;
+}
+
+.dataTables_scroll {
+    width: 100%;
+}
+
+.dataTables_scrollHead {
+    width: 100%;
+    float: left;
+}
+
+.dataTables_scrollHeadInner {
+    width: 100%;
+}
+
+.dataTables_scroll {
+    width: 100%;
+}
+
+.dataTable {
+    width: 100%;
+}
+
+
+.groupRow {
+    background-color: lightgray;
+}
+
+    .groupRow td {
+        color: #fdc689;
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+    }
+
+.rowTrSum {
+    background-color: #fff;
+}
+
+    .rowTrSum td {
+        color: #fdc689;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+.tdcenter {
+    text-align: center !important;
+}
+
+.tdright {
+    text-align: right !important;
+}
+
+.tdhead {
+    height: 30px;
+    vertical-align: middle;
+    color: #101010  !important;
+    font-size: 14px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #ebebeb;
+    text-align: left;
+     text-align: center !important;
+     font-weight: bold;
+    background-color: #fff;
+}
+  

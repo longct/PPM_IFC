@@ -1,0 +1,43 @@
+﻿<div class="modal fade " id="sua_hopdong" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="panel-title">Sửa Hợp Đồng</h3>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_skhmhd"></div>
+                <table class="table table-hover no-border table-responsive" style="width:100%" id="tbl_themtk">
+                    <tr>
+                        <td>Tên hợp đồng </td>
+                        <td><input type="text" class="form-control" id="txt_ten_skhmhd"></td>
+                    </tr>
+                    <tr>
+                        <td>Mã mẫu </td>
+                        <td><input type="text" class="form-control" id="txt_maumau_skhmhd"></td>
+                    </tr>
+                    <tr>
+                        <td>Trạng thái sử dụng </td>
+                        <td><input type="checkbox" id="txt_hieuluc_skhmd"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Chọn file </td>
+                        <td>
+                            <input type="file" class="form-control" id="txt_file_skhmhd" accept=".dotx" style=" width: 26%;float: left;">
+                            <input type="text" class="form-control" id="txt_tes_shd" style=" width: 74%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button data-dismiss="modal" class="btn btn-default" type="button">Thoát</button>
+                            <button class="btn btn-success" type="button" id="btn_sua_khmhd"><i class="fa fa-save"></i> Cập nhật</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-include="Module/modals_yesno"></div>

@@ -1,0 +1,90 @@
+﻿<div class="col-lg-12 classgobocap" id="tab_xuatexcel">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/ghepcap/ghepcap_tab"></div>
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-heading">
+            <div class="form-inline" role="form">
+                <table class="table">
+                    <tr>
+                       
+                        <td>
+                            <label class="th">Từ ngày</label>
+                        </td>
+                        <td>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_dateFrom_gbc" cache="true" />
+                        </td>
+                        <td>
+                            <label class="th">Đến ngày</label>
+                        </td>
+                        <td>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_dateTo_gbc" cache="true" />
+                        </td>
+                        <td>
+                            <label class="th">Tìm kiếm</label>
+                        </td>
+                        <td>
+                            <input type="text" id="txttimkiem_gbc" class="form-control form-control-inline input-medium" />
+                        </td>                     
+                    </tr>
+                   
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+
+            <div style="margin:5px 0">
+                <a class="btn btn-warning" id="btnTimKiem_gbc">
+                    <i class="fa fa-plus"></i>Tìm kiếm
+                </a>
+            </div>
+            <div id="messinfo_gbc"></div>
+            <table class="table table-bordered" id="grview_gbc">
+                <thead>
+                    <tr>
+                        <td class="c">STT</td>
+                        <td class="c">Series1</td>
+                        <td class="c">Series2</td>
+                        <td class="c">Thuộc kho</td>
+                        <td class="c">Người quản lý</td>
+                        <td class="c">Thời điểm ghép nối</td>
+                        <td class="c">Thực hiện</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="row-fluid">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"><label id="txt_tongsobanghi_gbc"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pagecurent_gbc">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+        </div>
+    </section>
+</div>
+
+<div data-include="modules/modals_yesno"></div>

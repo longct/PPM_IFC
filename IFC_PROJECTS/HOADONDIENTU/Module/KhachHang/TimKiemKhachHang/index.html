@@ -1,0 +1,170 @@
+﻿<div class="col-lg-12" id="timkiemkhachhang">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Thông tin khách hàng</h3>
+            </div>
+            <div class="panel panel-body">
+                <div id="messinfo_kh"></div>
+                <table class="table table-bordered table-striped">
+                    <thead class="bg-primary">
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên khách hàng</th>
+                            <th>Mã điểm đo</th>
+                            <th>Mã khách hàng</th>
+                            <th>Số công tơ</th>
+                            <th>Xem chi tiết hóa đơn</th>
+                            <th>Mẫu hợp đồng</th>
+                            <th>Thanh lý hợp đồng</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tb_danhsachkh"></tbody>
+                </table>
+            </div>
+
+
+            <!--
+             <div class="panel panel-teal filterable">
+                 <table id="" class="table table-bordered table-striped">
+                     <tbody id="">
+                         <tr>
+                             <td style="width:150px;">Tên khách hàng:</td>
+                             <td style="width:30%;"> <label id="lb_tenkh_tkkh"></label></td>
+                             <td style="width:150px;">Mã số thuế</td>
+                             <td style="width:30%;"> <label id="lb_masothue_tkkh"></label></td>
+                         </tr>
+                         <tr>
+                             <td>Số nhà, đường phố</td>
+                             <td>
+                                 <label id="lb_diachi_tkkh"> </label>
+                             </td>
+                             <td>Hình thức thanh toán: </td>
+                             <td> <label id="lb_hinhthutt_tkkh"></label></td>
+                         </tr>
+                         <tr>
+                             <td>Loại khách hàng:</td>
+                             <td> <label id="lb_loaikh_tkkh"></label></td>
+                             <td>Phương thức thanh toán:</td>
+                             <td> <label id="lb_phuongthutt_tkkh"></label></td>
+                         </tr>
+                         <tr>
+                             <td>Nhóm khách hàng:</td>
+                             <td> <label id="lb_nhomkh_tkkh"></label></td>
+                             <td>Mã nghành nghề: </td>
+                             <td> <label id="lb_mann_tkkh"></label></td>
+                         </tr>
+                         <tr>
+                             <td>Tài khoản:</td>
+                             <td> <label id="lb_taikhoan_tkkh"></label></td>
+                             <td>Ngày ký hợp đồng: </td>
+                             <td> <label id="lb_ngaykyhd_tkkh"></label></td>
+                         </tr>
+                         <tr>
+                             <td>Ngân hàng:</td>
+                             <td> <label id="lb_nganhang_tkkh"></label></td>
+                             <td colspan="2"></td>
+                         </tr>
+                         <tr>
+                             <td>Điện thoại SMS:</td>
+                             <td> <label id="lb_dienthoai_tkkh"></label></td>
+                             <td>Email dịch vụ: </td>
+                             <td> <label id="lb_email_tkkh"></label></td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </div>
+
+
+             <div class="panel panel-primary filterable" id="thongtinkhachhang">
+                 <div class="panel-heading">
+                     <h3 class="panel-title">Thông tinđiểm đo</h3>
+                 </div>
+                 <table id="" class="table table-bordered table-striped">
+                     <tbody id="">
+                         <tr>
+                             <td style="width:120px;">Cấp điện áp:</td>
+                             <td style="width:120px;"> <label id="lb_capdienap_tkkh"></label></td>
+                             <td style="width:80px;">Mã lộ</td>
+                             <td style="width:120px;"> <label id="lb_malo_tkkh"></label></td>
+                             <td style="width:80px;">Mã trạm:</td>
+                             <td style="width:120px;"> <label id="lb_matram_tkkh"></label></td>
+                             <td style="width:80px;">Số hộ:</td>
+                             <td style="width:120px;"> <label id="lb_soho_tkkh"></label></td>
+                         </tr>
+                         <tr>
+                             <td>Mã Khu vực</td>
+                             <td> <label id="lb_makhuvuc_tkkh"></label></td>
+                             <td>STT</td>
+                             <td> <label id="lb_stt_tkkh"></label></td>
+                             <td style="width:80px;">Mã tổ</td>
+                             <td> <label id="lb_mato_tkkh"></label></td>
+                             <td>Số pha:</td>
+                             <td> <label id="lb_sopha_tkkh"></label></td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </div>
+
+
+            box biên bản treo tháo
+             <div class="panel panel-primary filterable" id="bienbantreothao">
+                 <div class="panel-heading">
+                     <h3 class="panel-title">Biên bản treo tháo</h3>
+                 </div>
+                 <table class="table table-bordered table-striped">
+                     <tbody>
+                         <tr>
+                             <td style="width:120px;">Mã công tơ:</td>
+                             <td style="width:30%"> <label id="lb_macongto_tkkh"></label></td>
+                             <td>Số biên bản:</td>
+                             <td> <label id="lb_sobienban_tkkh"></label></td>
+                         </tr>
+                         <tr>
+                             <td>Số công tơ:</td>
+                             <td> <label id="lb_socongto_tkkh"></label></td>
+                             <td>Lý do treo:</td>
+                             <td> <label id="lb_lydotreo_tkkh"></label></td>
+                         </tr>
+                         <tr>
+                             <td>Vị trí treo:</td>
+                             <td> <label id="lb_vitritreo_tkkh"></label></td>
+                             <td>Nhân viên treo:</td>
+                             <td> <label id="lb_nvtreo_tkkh"></label></td>
+                         </tr>
+                         <tr>
+                             <td>HSN:</td>
+                             <td> <label id="lb_hsn_tkkh"></label></td>
+                             <td>Số cột: <label style="width:60px" id="lb_socot_tkkh"></label></td>
+                             <td>Số hòm:<label  style="width:60px" id="lb_sohom_tkkh"></label></td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </div>
+
+             box áp giá
+             <div class="panel panel-primary filterable" id="apgia">
+                 <div class="panel-heading">
+                     <h3 class="panel-title">Biên bản áp giá</h3>
+                 </div>
+                 <table id="tbl_bienbantreothao" class="table table-bordered table-striped">
+                     <tbody>
+                         <tr>
+                             <td>
+                                 <label style="width:150px">
+                                     <input type="checkbox" class="flat-red" checked>
+                                     Áp mẫu
+                                 </label>
+                                 <select class="form-control select2" id="cb_apgia_tkkh" style="width: 200px;display:inline-block">
+                                     <option>1</option>
+                                 </select>
+                             </td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </div>
+
+             -->
+        </div>
+        <!-- /.box-body -->
+    </div>
+<div data-include="Module/HoaDon/lichsuhoadon"></div>

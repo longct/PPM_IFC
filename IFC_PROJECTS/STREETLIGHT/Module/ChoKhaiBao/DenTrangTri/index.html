@@ -1,0 +1,67 @@
+﻿<section class="panel">
+    <div class="panel-heading">
+        <div data-include="Module/ChoKhaiBao/TabChung"></div>
+        </div>
+        <!-- page start-->
+    <div class="panel-body">
+
+        <div id="messinfo_ttden"></div>
+        <table class="table table-striped table-bordered" id="tbl_ckbD">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên Đèn</th>
+                    <th>Imei</th>
+                    <th>Ngày tạo</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="table_ttden"></tbody>
+        </table>
+        <div class="row-fluid row-fluid2">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <div class="span6">
+                            <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_ttden"></label></div>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="span6">
+                            <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_ttden">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</section>
+<div data-include="Module/ThontindentrangtriCUD/Capnhatttden"></div>
+        <!-- page end-->
+
+<div class="action_bar" id="act_chokhaibao">
+    <span class="soluong"></span>
+    <ul>
+        <li class="act_btn" id="huychon_home">
+            <img src="img/cancel.png" />
+            <span>Hủy chọn</span>
+        </li>
+        <li class="act_btn dongcatpha_home" id="dongcatpha_home">
+            <a data-toggle='modal' href='#DieuKhien_Pha_TuDong'>
+                <img src="img/dongcatpha.png" />
+                <span>Chuyển sang tủ</span>
+            </a>
+        </li>
+        <li class="act_btn " id="muccongsuat_home">
+            <a data-toggle='modal' href='#DieuKhien_Dim_TuDong' class="disabled">
+                <img src="img/setting-icon.png" />
+                <span>Chuyển sang đèn trang trí</span>
+            </a>
+        </li>
+        
+    </ul>
+</div>

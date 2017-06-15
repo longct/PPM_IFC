@@ -1,0 +1,14 @@
+﻿td .form-control{
+    width:100%;
+    text-align:right;
+}
+td button.btn-sm{
+    float:right;
+}
+tr.tendiemdo{background-color: #48C8F9;}
+tr.tendiemdo td{
+    color: #fff;
+    font-weight: bold;}
+input[name=pgiao1].pha1{display:none;}
+input[name=pgiao2].pha1{display:none;}
+input[name=pgiao3].pha1{display:none;}

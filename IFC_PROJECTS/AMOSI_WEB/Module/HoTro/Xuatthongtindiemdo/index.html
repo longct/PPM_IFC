@@ -1,0 +1,88 @@
+﻿<section class="panel">
+    <div class="panel-body">
+        <div class="modal-body2">
+            <div class="form-inline" role="form">
+
+                <table class="table" border="0">
+                    <tr>
+                        <td>
+                            <label class="th">Đơn vị</label>
+                        </td>
+                        <td>
+                            <div id="dropDownButton" style="width: 200px !important;margin-top:0px">
+                                <div id='jqxDropDonvi' style="border: none;">
+                                </div>
+                            </div>
+                        </td>
+
+                        <!--<td>
+                            <label class="th">Dự án</label>
+                        </td>
+                        <td>
+                            <select id="cb_duan" class="form-control" style="width:204px;">
+                                <option value="1">--Chọn dự án--</option>
+                            </select>
+                        </td>-->
+                        <td>
+                            <div class="form-group">
+                                <button class="btn btn-success" type="button" id="btn_laydulieu">Lấy dữ liệu</button>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-success" type="button" id="btnExcel">Xuất file Excel</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="messinfo_bht"></div>
+                <table class="table table-responsive table-bordered">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên khách hàng</th>
+                            <th>Mã điểm đo</th>
+                            <th>Số công tơ</th>
+                            <!--<th>Mã sổ</th>-->
+                            <th>Mã dự án</th>
+                            <!--<th>Số thứ tự</th>-->
+                            <th>Cột</th>
+                            <th>Địa chỉ</th>
+                            <th>Tên trạm</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_ttddxl"></tbody>
+                </table>
+
+                <div class="row-fluid row-fluid2">
+                    <table width="100%">
+                        <tr>
+                            <!--<td>
+                                <div class="span6">
+                                    <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_ttddxl"></label></div>
+                                </div>
+
+                            </td>-->
+                            <!--<td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_ttddxl">
+                                    </div>
+                                </div>
+                            </td>-->
+                            <td>
+                                <center><div class="form-group">
+    <button class="btn btn-success" type="button" id="btnXemThem" style="display: none">Xem thêm</button>
+</div></center>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        </div>
+</section>
+<div data-include="Module/modals_yesno"></div>
+<link href="../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../js/jqx/jqxcore.js"></script>
+<script src="../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../js/jqx/jqxtree.js"></script>
+<script src="../../js/jqx/jqxdata.js"></script>

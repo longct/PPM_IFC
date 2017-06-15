@@ -1,0 +1,106 @@
+﻿<div class="col-lg-12" id="tab_nhaptay">
+    <section class="panel">
+        <div class="panel-heading">
+            <div id="messinfo_tienichctlb"></div>
+            <div class="form-inline" role="form">
+                <table class="table" id="tbl_nhaptay">
+                    <tr>
+
+                        <td>
+                            <label class="th">Kho ban miền</label>
+                        </td>
+                        <td>
+                            <select id="cbkhobanm_tknctheomauphieu" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Kho tổng--</option>
+                            </select>
+                        </td>
+                        <td><label class="th">Nhân viên</label></td>
+                        <td>
+                            <select id="cbnhanvien_tknctheomauphieu" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="th">Kho điện lực</label>
+                        </td>
+                        <td>
+                            <select id="cbkhodienluc_tknctheomauphieu" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>              
+                        </td>
+                        <td>
+                            <label class="th">Xem mã phiếu bất kỳ</label>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control form-control-inline input-medium" id="txtxemmaphieu_tknctheomauphieu" />
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="th">Loại Phiếu</label>
+                        </td>
+                        <td>
+                            <select id="cbloạiphieu_tknctheomauphieu"   class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>    
+                        </td>
+                        <td></td>
+                        <td> </td>
+                        <td></td>
+                    </tr>
+ 
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+
+            <table>
+                <tr>
+                    <td>
+                        <a class="btn btn-warning" id="btnTimkiem_tknctheomauphieu">
+                            <i class="fa fa-plus"></i>Tìm kiếm
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-body">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Trạng Thái</th>
+                        <th>Người Gửi</th>
+                        <th>Người Nhận</th>
+                        <th>Số lượng</th>
+                        <th>Chủng Loại</th>
+                        <th>Tình Trạng</th>
+                        <th>Mã phiếu nhập</th>
+                        <th>Thời gian nhập</th>
+                        <th>Ghi chú</th>
+                        <th>Xem</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="myTableData_tknctheomauphieu"></tbody>
+
+            </table>
+        </div>
+    </section>
+</div>
+<div data-include="modules/modals_yesno"></div>

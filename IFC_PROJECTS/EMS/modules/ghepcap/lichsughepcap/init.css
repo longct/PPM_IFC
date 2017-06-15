@@ -1,0 +1,16 @@
+﻿
+table#tbl_xuatexcel tr td {
+    border: none;
+    padding: 5px;
+}
+
+#txtSeries{width:325px !important;}
+
+.them_phieu {
+    padding-top: 20px;
+}
+
+i.fa-them {
+    cursor: pointer;
+    color: #047514;
+}

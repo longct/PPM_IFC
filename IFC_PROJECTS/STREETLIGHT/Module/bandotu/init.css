@@ -1,0 +1,141 @@
+﻿.left-panel-bongden {
+    width: 22%;
+    float: left;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: none !important;
+}
+
+.right-panel {
+    width: 77%;
+    float: left;
+    margin-left: 5px;
+}
+
+input#search_txt_tu {
+    border-color: transparent;
+    background-color: #e6e6e6;
+    font-size: 1.6rem !important;
+    width: 95%;
+    border-radius: 3px;
+    font-size: 10px !important;
+    padding: 8px;
+}
+
+input#search_tu {
+    border-color: transparent;
+    background-color: #e6e6e6;
+    font-size: 1.6rem !important;
+    width: 97%;
+    border-radius: 3px;
+    font-size: 10px !important;
+    padding: 8px;
+    color:rgb(50, 143, 165);
+}
+
+.top-left select {
+    border-color: transparent;
+    background-color: #f7f7f7;
+    font-size: 1.4rem !important;
+    width: 95%;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+.top-left {
+    width: 100%;
+    float: left;
+    height: 220px;
+    /*background: rgba(0, 136, 204, 0.44);*/
+    background: rgb(50, 143, 165);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000;
+}
+
+.bottom-left {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    background: #fff;
+}
+
+table.table-bong tr {
+    width: 100%;
+    display: inline-table;
+    table-layout: fixed;
+}
+
+    table.table-bong tr td:first-child, table.table-bong tr th:first-child {
+        padding-left: 2px;
+        padding-right: 2px;
+        width: 22px;
+    }
+
+
+table.table-bong {
+    display: -moz-groupbox;
+}
+
+
+tr td {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.right-top {
+    width: 100%;
+    float: left;
+    height: 220px;
+    background: rgb(50, 143, 165);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+}
+
+.right-bottom {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    background: #fff;
+}
+
+.top1 {
+    width: 100%;
+    float: left;
+}
+
+.top2 {
+    margin-top: 5px;
+    width: 100%;
+    float: left;
+}
+
+.lefttop {
+    border: 1px solid #fff;
+    float: left;
+    height: 150px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+    .lefttop table, .top1 table {
+        width: 100%;
+    }
+
+.left1 {
+    width: 25%;
+}
+
+.left2 {
+    width: 25%;
+}
+
+.left3 {
+    width: 46%;
+}

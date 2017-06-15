@@ -1,0 +1,18 @@
+﻿{
+  "VI": {
+    "lang_modName": "Danh sách điểm đỗ xe",
+    "lang_timkiemchung": "Tìm kiếm chung",
+    "lang_khongtimthaydulieu": "Không tìm thấy dữ liệu",
+    "lang_hienthitatca": "Hiển thị tất cả",
+    "lang_timkiem": "Tìm kiếm",
+    "lang_placeholdersearch": "Nhập tên đường"
+  },
+  "EN": {
+    "lang_modName": "LIST OF PARKING",
+    "lang_timkiemchung": "Tìm kiếm chung",
+    "lang_khongtimthaydulieu": "Not found",
+    "lang_hienthitatca": "Show all",
+    "lang_timkiem": "Search",
+    "lang_placeholdersearch": "Enter street name"
+  }
+}

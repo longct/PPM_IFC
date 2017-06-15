@@ -1,0 +1,60 @@
+﻿<section class="panel">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-lg-1">
+                <label class="th" style="width:100px;margin-top: 17px;">Hệ thống</label>
+            </div>
+            <div class="col-lg-3">
+                <div id="dropDownButton" style="width: 100%;margin-top:11px">
+                    <div id='jqxDropDonvi' style="border: none;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2" style="display: inline-flex;">
+                <label class="th" style="width:50px;margin-top: 17px;">Ngày</label>
+                <input type="text" style="width:100px;margin-top: 10px;" class="form-control form-control-inline input-medium datepicker" id="dt_ngay" />
+            </div>
+            <div class="col-lg-1">
+                <label class="th" style="width:100px;margin-top: 17px;">Thời điểm</label>
+            </div>
+            <div class="col-lg-2">
+                <select class="form-control form-control-inline input-medium" style="margin-top: 10px;width:130px;" id="cbo_time">
+                    <!--<option value="now">Hiện tại</option>-->
+                    <option value="06:00:00">06:00</option>
+                    <option value="16:00:00">16:00</option>
+                </select>
+            </div>
+            <div class="col-lg-2">
+                <button class='btn btn-success btn_luu_cfg' type='button' id='btn_xembaocao' style="margin-top: 10px;">Xem báo cáo</button>
+                <button class='btn btn-success btn_luu_cfg' type='button' id='btn_excel' style="margin-top: 10px;">Excel</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="messinfo_bht"></div>
+            <table class="table table-responsive table-bordered table-striped sticky-header" id="table_baocao">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên trạm/Hệ thống</th>
+                        <th>Đọc thành công</th>
+                        <th>Tổng điểm đo</th>
+                        <th>Tỉ lệ</th>
+                        <th>Ngày quá khứ</th>
+                        <th>Số ngày lỗi</th>
+                        <th>Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody id="table_bcht"></tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<div data-include="Module/modals_yesno"></div>
+<link href="../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../js/jqx/jqxcore.js"></script>
+<script src="../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../js/jqx/jqxtree.js"></script>
+<script src="../../js/jqx/jqxdata.js"></script>

@@ -1,0 +1,76 @@
+﻿<div class="col-lg-12 classbaocaovtbtdluc" id="tab_nhaptay">
+    <section class="panel">
+        <div class="panel-heading">
+            <table  class="table">
+                <tr>
+                    <td>Đến ngày</td>
+                    <td>
+                        <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                               data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_dateto_baocaovttb" cache="true" />
+                    </td>
+                   
+                    <td>vật tư thiết bị</td>
+                    <td>
+                        <select id="cbvattutb_baocaovttb" class="form-control" multiple="multiple"></select>
+                      
+                    </td>
+                </tr>
+                <tr>
+                  
+                    <td>Ban miền</td>
+                    <td>
+                        <select id="cbkho_baocaovttbdl" class="form-control form-control-inline input-medium">
+                            <option value="-1">--Tất cả--</option>
+                        </select>
+                    </td>
+                    <td>Loại thiết bị</td>
+                    <td>
+                        <select id="cbloaithietbi_baocaovttbdl" class="form-control form-control-inline input-medium" multiple="multiple">
+                            <option value="-1">--Tất cả--</option>
+                        </select>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dự án</td>
+                    <td>
+                        <select id="cbduan_baocaovttbdl" class="form-control form-control-inline input-medium">
+                            <option value="-1">--Tất cả--</option>
+                        </select>
+                    </td>
+                    <td colspan="2">
+                        <a class="btn btn-warning" id="btnCapNhat_baocaovttb">
+                            <i class="fa fa-search"></i>Thực Hiện
+                        </a>
+                        <a class="btn btn-warning classquyen_in" id="btninbaocao_baocaovttb">
+                            <i class="fa fa-plus"></i> In Báo cáo
+                        </a>
+                        <a class="btn btn-warning classquyen_download" id="btnxuatexecl_baocaovttb">
+                            <i class="fa fa-plus"></i> Xuất Excel
+                        </a>
+                        <a class="btn btn-warning classquyen_download" id="btnxuatexecl_Serial_baocaovttb">
+                            <i class="fa fa-plus"></i> Xuất excel serial
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+          
+            <div id="messinfo_baocaovttdl"></div>
+            <div id="titleReportvttdl" style="text-align:center;width:100%;font-weight:bold;text-transform:uppercase;display:none;padding-top:10px;margin:10px 0 10px 0;border-top:3px solid #fca023;font-size:15px;"></div>
+            <div style="overflow-x:auto;min-height:200px;max-height:350px;">
+            
+                <div id="myTableData_baocaovttb">
+
+                </div>
+                <div id="messinfo_notdatavttdl"></div>
+            </div>
+        </div>
+    </section>
+</div>
+<div data-include="modules/modals_yesno"></div>

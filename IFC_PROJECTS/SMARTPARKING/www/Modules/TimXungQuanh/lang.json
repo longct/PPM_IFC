@@ -1,0 +1,14 @@
+﻿{
+  "VI": {
+    "lang_timkiemchung": "Tìm kiếm chung",
+    "lang_modName": "Điểm đỗ xung quanh",
+    "lang_hienthitatca": "Hiển thị tất cả",
+    "lang_khoangcach": "Khoảng cách"
+  },
+  "EN": {
+    "lang_timkiemchung": "Tìm kiếm chung",
+    "lang_modName": "Parking around",
+    "lang_hienthitatca": "Show all",
+    "lang_khoangcach": "Distance"
+  }
+}

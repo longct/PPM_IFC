@@ -1,0 +1,42 @@
+﻿.inp_txt input[type="text"] {
+    border-color: transparent;
+    background-color: #e6e6e6;
+    font-size: 1.6rem !important;
+    border-radius: 3px;
+    font-size: 14px !important;
+    padding: 0px;
+}
+
+.kitOnOff {
+    float: left;
+}
+
+.phatxt {
+    padding-left: 20px;
+}
+
+    .phatxt span {
+        margin-right: 25px;
+    }
+
+#addHtml_Dktdtd tbody tr {
+    padding-bottom:5px;
+}
+#addHtml_Dktdtd tbody{
+    max-height:300px;
+    overflow:auto;
+}
+#tab_tietkiemdiennang th{
+    white-space:pre-wrap;
+    text-align:center;
+    background:#09f;
+    color:#fff;
+    vertical-align:middle;
+}
+
+td.text-righ{
+    text-align:right;
+}
+td.text-center{
+    text-align:center;
+}

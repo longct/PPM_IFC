@@ -1,0 +1,127 @@
+﻿<div class="modal fade" id="chitiethoadon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content" style="height:550px;width:900px;margin:15px 0% 0 -25%;overflow-y:auto;">
+            <div class="panel panel-info filterable" style="margin-bottom:0px;">
+                <div class="panel-heading">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title nameheader_Dkdtt">CHI TIẾT HÓA ĐƠN</h4>
+                </div>
+                
+            </div>
+            <div class="panel panel-body" style="margin-bottom: 0px;">
+                <table id="" class="table no-border">
+                    <tbody id="hd_head">
+                        
+                    </tbody>
+                </table>
+                <!--<table class="table no-border no-padding ">
+                    <tr>
+                        <td colspan="6"><b>CÔNG TY TNHH MTV ĐIỆN LỰC ĐÀ NẴNG (Điện lực Hải Châu TK-102010000188278-NH TMCP Công thương ĐN)</b></td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ: </td>
+                        <td class="no-pad-top" colspan="5">35 Phan Đình Phùng, Q.Hải Châu, TP.Đà Nẵng (391 Trưng Nữ Vương)</td>
+                    </tr>
+                    <tr>
+                        <td>Điện thoại: </td>
+                        <td><input type="text"  id="txt_dienthoaicty" class="form-control  " style="width:120px; margin-left:6%;" placeholder="Điện thoại"></td>
+                        <td>MST: </td>
+                        <td><input type="text"  id="txt_masothuecty" class="form-control " style="width:120px" placeholder="Mã số thuế"></td>
+                        <td>ĐT sửa chữa</td>
+                        <td><input type="text"  id="txt_dienthoaisuachua" class="form-control " style="width:120px" placeholder="ĐT sửa chữa"></td>
+                    </tr>
+                </table>-->
+
+                <table class="table no-border no-padding">
+                    <tbody>
+                        <tr>
+                            <td style="width:80px;">Tháng</td>
+                            <td style="width:172px;"><input type="text" id="txt_thang_cthd" class="form-control datepicker small-box" style="width:100px" readonly></td>
+                            <td style="width:80px;">Kỳ</td>
+                            <td>
+                                <input id="cbb_kychot_cthd" type="text" class="form-control small-box" style="width: 60px;text-align: center;" readonly/>
+                            </td>
+                            <td>&nbsp;Từ ngày&nbsp;</td>
+                            <td><input type="text" id="txt_tungay_cthd" class="form-control small-box" style="width:100px" readonly></td>
+                            <td>&nbsp;Đến ngày&nbsp;</td>
+                            <td><input type="text" id="txt_denngay_cthd" class="form-control small-box" style="width:100px" readonly></td>
+                        </tr>
+                        <tr>
+                            <td style="width:60px">Mẫu số</td>
+                            <td><input id="cb_mausohoadon_cthd" class="form-control small-box" type="text" style="width: 100px;" readonly />
+                            </td>
+                            <td>Ký hiệu</td>
+                            <td><input type="text" id="txt_kyhieuhoadon_cthd" validate="true" class="form-control small-box" style="width:110px;" readonly /></td>
+                            <td>Số HD</td>
+                            <td><input type="text" id="txt_mahoadon_cthd" validate="true" class="form-control small-box" style="width:100px;" readonly /></td>
+                        </tr>
+                        <tr>
+                            <td style="width:100px">Mã KH: </td>
+                            <td style="width:150px"><label id="txt_makh_cthd"></label></td>
+                            <td style="width:90px;">Tên KH: </td>
+                            <td colspan="5"><label id="txt_tenkh_cthd"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Điện thoại: </td>
+                            <td><label id="txt_dienthoaikh_cthd"></label></td>
+                            <td>Địa chỉ: </td>
+                            <td colspan="5"><label id="txt_diachikh_cthd"></label></td>
+
+                        </tr>
+                        <tr>
+                            <td>MST: </td>
+                            <td><label id="txt_masothuekh"></label></td>
+                            <td>Số công tơ:</td>
+                            <td style="width:15%;"><label id="txt_socongto_cthd"></label></td>
+                            <td style="width:80px;">Số hộ:</td>
+                            <td style="width:15%;"><label id="txt_soho_cthd"></label></td>
+                            <td style="width:80px;">Cấp ĐA:</td>
+                            <td style="width:15%;"><label id="txt_capdienap_cthd"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Mã T.toán: </td>
+                            <td><label id="txt_matt_cthd"></label></td>
+                            <td>Mã NN:</td>
+                            <td><label id="txt_mann_cthd"></label></td>
+                            <td>Sổ GCS: </td>
+                            <td><label id="txt_soghi_cthd"></label></td>
+
+                            <td>Mã trạm:</td>
+                            <td><label id="txt_matram_cthd"></label></td>
+                        </tr>
+                        <tr>
+                            <td>P GCS: </td>
+                            <td><label id="txt_p_gcs_cthd"></label></td>
+                            <td>Mã giá:</td>
+                            <td colspan="5"><label id="txt_magia_cthd"></label></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <table id="table_tmhd" class="table table-bordered table-responsive">
+                        <thead class="bg-primary">
+                            <tr>
+                                <th>Bộ CS</th>
+                                <th class="socongto">Số công tơ</th>
+                                <th>Chỉ số mới</th>
+                                <th>Chỉ số cũ</th>
+                                <th>HS nhân</th>
+                                <th>Điện năng TT</th>
+                                <th class="sltruphu">SL trừ phụ</th>
+                                <th class="dnthucte">ĐN thực tế sử dụng</th>
+                                <th>Đơn giá</th>
+                                <th>Thành tiền (Vnđ)</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <div class="bottom-mar-50"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

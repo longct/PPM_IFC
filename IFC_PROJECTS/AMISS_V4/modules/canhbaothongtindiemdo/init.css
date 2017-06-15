@@ -1,0 +1,19 @@
+﻿#kychot{
+    padding:6px;
+}
+#btn_thuchien_xemcs{
+    margin-top:5px;
+}
+.select2-container {
+    /*margin-top:5px;*/
+}
+.input-group{
+    padding:0px !important;
+}
+.modal-content{
+    width:40%;
+    margin:10% auto;
+}
+.modal-body button{
+    margin-right:5px;
+}

@@ -1,0 +1,12 @@
+﻿.chart {
+    width: 100%;
+}
+.titleChart {
+  background-color: transparent;
+    color: #555;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}

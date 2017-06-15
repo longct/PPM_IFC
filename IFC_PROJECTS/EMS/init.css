@@ -1,0 +1,451 @@
+﻿/* CSS Document */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: helvetica;
+    font-weight: 100;
+    background: #fff;
+}
+
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    -webkit-transition: left 0.4s ease-in-out;
+    -moz-transition: left 0.4s ease-in-out;
+    -ms-transition: left 0.4s ease-in-out;
+    -o-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out;
+}
+
+    .container.open-sidebar {
+        left: 240px;
+    }
+
+.swipe-area {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+#sidebar {
+    background: #006699;
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    left: -240px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    z-index:9;
+}
+
+    #sidebar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        #sidebar ul li {
+            margin: 0;
+        }
+
+            #sidebar ul li a {
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: 100;
+                color: white;
+                text-decoration: none;
+                display: block;
+                border-bottom: 1px solid #0066CC;
+                -webkit-transition: background 0.3s ease-in-out;
+                -moz-transition: background 0.3s ease-in-out;
+                -ms-transition: background 0.3s ease-in-out;
+                -o-transition: background 0.3s ease-in-out;
+                transition: background 0.3s ease-in-out;
+            }
+
+            #sidebar ul li:hover a {
+                background: #006699;
+            }
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+    .main-content .content {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+    }
+
+        .main-content .content h1 {
+            font-weight: 100;
+        }
+
+        .main-content .content p {
+            width: 100%;
+            line-height: 160%;
+        }
+
+    .main-content #sidebar-toggle {
+        background: #0066CC;
+        border-radius: 3px;
+        display: block;
+        position: relative;
+        padding: 10px 7px;
+        float: left;
+    }
+
+        .main-content #sidebar-toggle .bar {
+            display: block;
+            width: 18px;
+            margin-bottom: 3px;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 1px;
+        }
+
+            .main-content #sidebar-toggle .bar:last-child {
+                margin-bottom: 0;
+            }
+
+
+/************************************************************/
+.midle {
+    width: 90%;
+    margin: 20% auto;
+}
+
+    .midle input[type="text"] {
+        width: 100%;
+        border-radius: 5px;
+        height: 50px;
+        border: 1px solid #ccc;
+        background: #fff;
+        line-height: 30px;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+ul .home {
+    list-style-position: inside;
+}
+
+#accordian {
+    background: #0c8cd6;
+    color: white;
+}
+    /*heading styles*/
+    #accordian h3 {
+        font-size: 15px;
+        line-height: 50px;
+        padding: 0 10px;
+        cursor: pointer;
+        /*fallback for browsers not supporting gradients*/
+        background: #003040;
+        background: linear-gradient(#01476f, #035f93);
+        text-align: left;
+        text-transform: uppercase;
+    }
+        /*heading hover effect*/
+        #accordian h3:hover {
+            text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+        }
+        /*iconfont styles*/
+        #accordian h3 span {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+    /*list items*/
+    #accordian li {
+        list-style-type: none;
+    }
+    /*links*/
+    #accordian ul ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 27px;
+        display: block;
+        padding: 15px 20px;
+        text-align: left;
+        background: #333;
+        /*transition for smooth hover animation*/
+        transition: all 0.15s;
+    }
+        /*hover effect on links*/
+        #accordian ul ul li a:hover {
+            background: #666;
+            border-left: 5px solid lightgreen;
+            padding: 15px 20px;
+        }
+    /*Lets hide the non active LIs by default*/
+    #accordian ul ul {
+        display: none;
+    }
+
+    #accordian li.active ul {
+        display: block;
+    }
+
+#top-menu {
+    height: 30px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+    #top-menu img {
+        float: left;
+    }
+
+    #top-menu h4 {
+        width: 50%;
+        float: left;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 0px;
+        margin: 5px 0px 0px 0px;
+    }
+/*********************************************/
+a#sidebar-toggle {
+    color: #fff;
+}
+
+    a#sidebar-toggle :visited {
+        color: #fff;
+    }
+
+.header {
+    width: 100%;
+    height: 32px;
+    background: #09f;
+    color: #fff;
+}
+
+    .header h2 {
+        margin-left: 40px;
+    }
+
+#action-bar {
+    width: 100%;
+    height: 40px;
+    background: url(../img/headersmart.png);
+}
+
+ul#tabs {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+    ul#tabs li {
+        display: inline-block;
+        border-bottom: solid 2px #09f;
+        padding: 5px 20px;
+        margin-bottom: 4px;
+        color: #fff;
+        cursor: pointer;
+        /*width:26%;*/
+        color: #333;
+        font-weight: bold;
+    }
+
+        ul#tabs li:hover {
+            border-bottom: solid 5px #09f;
+        }
+
+        ul#tabs li.active {
+            border-bottom: solid 5px #09f;
+        }
+
+ul#tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    ul#tab li {
+        display: none;
+    }
+
+        ul#tab li.active {
+            display: block;
+        }
+
+        ul#tab li h2 {
+            font-weight: 400;
+        }
+
+.btn {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+    border: 1px solid #0066CC;
+    background: #09f;
+    border-radius: 3px;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+    .btn:hover {
+        cursor: pointer;
+    }
+
+.ngaythang {
+    float: left;
+}
+
+    .ngaythang input[type="text"] {
+        width: 40px;
+        margin-right: 3px;
+        height: 20px;
+        border: 0;
+        border-bottom: 2px solid #ccc;
+        padding-left: 2px;
+    }
+
+ul#tab li table {
+    width: 100%;
+}
+
+    ul#tab li table th {
+        color: #fff;
+        background: #09f;
+    }
+
+    ul#tab li table th, td {
+        border: 1px solid #09f;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+.thongbao-tab1 {
+    width: 99%;
+    border: 1px solid #09f;
+    color: #09f;
+    padding-left: 5px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+
+    ul#tabs li {
+        width: 24%;
+    }
+
+    .iframe {
+        width: 35% !important;
+    }
+
+    .tb_white-sl {
+        padding: 0px !important;
+    }
+
+    #accordian ul {
+        overflow-y: auto;
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    ul#tabs li {
+        width: 24%;
+    }
+    
+    .iframe {
+        width: 35% !important;
+    }
+
+    .tb_white-sl {
+        padding: 0px !important;
+    }
+
+    #accordian ul {
+        overflow-y: auto;
+    }
+}
+@media screen and (min-width: 568px) {
+
+    ul#tabs li {
+        width: 24%;
+    }
+   
+    .iframe {
+        width: 35% !important;
+    }
+
+    .tb_white-sl {
+        padding: 0px !important;
+    }
+
+    #accordian ul {
+        overflow-y: auto;
+    }
+}
+
+
+
+
+.btn_xem {
+    width: 76px;
+    height: 23px;
+    text-align: center;
+    padding-top: -8px;
+    border: 1px solid #06C;
+    background: #09F none repeat scroll 0% 0%;
+    border-radius: 3px;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    color: #FFF;
+}
+
+.show_math {
+    width: 100%;
+    float: left;
+    margin-left: 20px;
+}
+.bdpt{    
+    height: 30px !important;
+    position:absolute;
+    z-index:9;
+}
+.bt_left {
+    height: 50px;
+    width: 100%;
+}
+
+.noti {
+   width: auto;
+    float: right;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+    .noti img {
+        height: 30px;
+        margin-right: 10px;
+        float: right;
+    }

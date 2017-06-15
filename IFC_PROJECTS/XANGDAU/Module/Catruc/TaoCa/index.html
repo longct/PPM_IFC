@@ -1,0 +1,44 @@
+﻿<section class="panel" style="margin-bottom:0px;">
+    <div class="panel-heading">
+        <div data-include="Module/Catruc/Ca_Tab"></div>
+    </div>
+</section>
+<div class="panel panel-body">
+    <div id="themmoikh_form">
+        <div class="form-inline">
+            <div class="form-group">
+                <label>Ca Trực</label>
+                <input type="text" class="form-control" id="cbca_catruc" />
+            </div>
+            <div class="form-group ">
+                <label class="control-label" for="datefrom_lichsutram">Thời gian bắt đầu </label>
+                <select class="form-control form-control-inline input-medium " id="cbthoigianbd_catruc" style="max-height: 50px;overflow: scroll;"></select>
+            </div>
+            <div class="form-group ">
+                <label class="control-label" for="dateto_lichsutram">Thời gian kết thúc </label>
+                <select class="form-control form-control-inline input-medium " id="cbthoigiankt_catruc"></select>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-success" id="btn_catruc"><i class="fa fa-plus"></i>Thêm</button>
+            </div>
+        </div>
+        <div id="messinfo_themcatruc"></div>
+        <hr />
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên Ca</th>
+                    <th>Thời điểm bắt đầu</th>
+                    <th>Thời điểm kết thúc</th>
+                    <th>Tên Trạm</th>
+                    <th>Chức Năng</th>
+                </tr>
+            </thead>
+            <tbody id="table_catruc"></tbody>
+        </table>
+      
+    </div>
+</div>
+<div data-include="Module/modals_yesno"></div>
+<!--<div data-include="Module/moudehethong/modals_suacatruc"></div>-->

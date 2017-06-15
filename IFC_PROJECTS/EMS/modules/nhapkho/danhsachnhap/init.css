@@ -1,0 +1,4 @@
+.dsnhap tbody tr td input[type="text"], .dsnhap tbody tr td select, .dsnhap tbody tr td textarea {
+    width: 160px !important;
+    font-size: 14px;
+}

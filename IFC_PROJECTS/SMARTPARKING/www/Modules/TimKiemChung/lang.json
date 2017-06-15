@@ -1,0 +1,18 @@
+﻿{
+  "VI": {
+    "lang_modName": "Tìm kiếm chung",
+    "lang_khongtimthaydulieu": "Không tìm thấy dữ liệu",
+    "lang_hienthitatca": "Hiển thị tất cả",
+    "lang_khoangcach": "Khoảng cách",
+    "lang_timkiem": "Tìm kiếm",
+    "lang_placeholdersearch": "Nhập tên đường"
+  },
+  "EN": {
+    "lang_modName": "Search General",
+    "lang_khongtimthaydulieu": "Not found",
+    "lang_hienthitatca": "Show all",
+    "lang_khoangcach": "Distance",
+    "lang_timkiem": "Search",
+    "lang_placeholdersearch": "Enter street name"
+  }
+}

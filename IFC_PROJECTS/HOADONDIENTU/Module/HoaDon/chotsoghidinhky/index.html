@@ -1,0 +1,73 @@
+﻿<div class="col-lg-12">
+    <div class="panel panel-info filterable">
+        <div class="panel-heading">
+            <h3 class="panel-title">Lịch sử chốt sổ ghi định kỳ</h3>
+        </div>
+        <div class="panel panel-body">
+            <div class="form-inline">
+                <div class="form-group">
+                    <table id="" class="table no-border table-responsive">
+                        <tr>
+                           
+                            <td>Kỳ chốt</td>
+                            <td>
+                                <select class="form-control " id="cb_kychot_csgdk">
+                                    <option value="1"> Kỳ 1</option>
+                                    <option value="2"> Kỳ 2</option>
+                                    <option value="3"> Kỳ 3</option>
+                                </select>
+                            </td>
+                            <td>Tháng</td>
+                            <td>
+                                <input type="text" id="txt_thang_csgdk" class="form-control datepicker " style="width:100px;display: inline-block;" placeholder="" />
+                            </td>
+
+                            <td>
+                                <button id="btn_timkiem_csgdk" class="btn btn-success"><i class="fa fa-search"></i>Tìm kiếm</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <br />
+               
+
+                <table class="table table-responsive table-bordered table-striped">
+                    <thead class="bg-aqua">
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã điểm đo</th>
+                            <th>Tên khách hàng</th>
+                            <th>Số công tơ</th>
+                            <th>P giao tổng</th>
+                            <th>P Giao 1</th>
+                            <th>P Giao 2</th>
+                            <th>P Giao 3</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_chotsoghidinhky"></tbody>
+                </table>
+                <div id="messinfo_cscdk"></div>
+                <div class="row-fluid row-fluid2">
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_csgdk"></label></div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_csgdk">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+﻿
+<div class="modal fade " id="thay_ttcongto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Thay công tơ</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_sua_tc"></div>
+                <table class="table table-hover" style="width:100%;border:none" id="tbl_themtk">
+                    <tr>
+                        <td>Số công tơ mới</td>
+                        <td><input type="text" class="form-control" id="txt_socongtomoi_thc"></td>
+                    </tr>
+                    <tr>
+                        <td>Số công tơ Cũ</td>
+                        <td><input type="text" class="form-control" id="txt_socongtocu_thc"></td>
+                    </tr>
+                    <tr>
+                        <td>Loại công tơ </td>
+                        <td>
+                            <select class="form-control input-sm m-bot15" id="cbloaicongto_thc"></select>
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ngày treo </td>
+                        <td>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value="" cache="true"
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_ngaytreo_thc" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sử dụng hệ số nhân </td>
+                        <td>
+                            <input type="checkbox"  id="txt_checkhsn" />
+                        </td>
+                    </tr>
+                    <tr>                      
+                        <td colspan="2">
+                            <input type="text"  id="txt_tu_thc" /> *
+                            <input type="text"  id="txt_ti_thc" /> =
+                            <input type="text"  id="txt_hsn_thc" />
+                        </td>
+                    </tr>
+                    
+                   
+                    
+                    <tr>
+                        <td colspan="2">
+                            <button data-dismiss="modal" class="btn btn-default" type="button">Thoát</button>
+                            <button class="btn btn-success" type="button" id="btn_checkluu_ct">Cập nhật</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Số công tơ</th>
+                            <th>Loại công tơ</th>
+                            <th>Ngày treo</th>
+                            <th>Ngày tháo</th>
+                            <th>Sử dụng hệ ngoài</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_tthaycongto_thc"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

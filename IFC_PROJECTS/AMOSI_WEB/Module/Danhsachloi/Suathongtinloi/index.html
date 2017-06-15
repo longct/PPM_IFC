@@ -1,0 +1,82 @@
+﻿<div class="modal fade " id="sua_loidiemdo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:75%">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="panel-title">Thông tin lỗi</h3>
+            </div>
+            <div id="messinfo_skbkh"></div>
+            <div class="panel-body">
+                <table id="" class="table no-border table-responsive">
+                    <tr>
+                        <td>Mã điểm đo:</td>
+                        <td> <input type="text" class="form-control " placeholder="" id="txt_madiemdo_s" disabled style="width:257px;" /></td>
+                        <td>Mã dự án</td>
+                        <td> <input type="text" class="form-control " placeholder="" id="txt_maduan_s" disabled /></td>
+                        <td>Ngày lỗi</td>
+                        <td> <input type="text" style="width:204px;" class="form-control form-control-inline input-medium default-date-picker" id="txt_ngayloi_s" disabled />  </td>
+                    </tr>
+                    <tr>
+                        <td>Loại lỗi</td>
+                        <td>
+                            <select id="cb_loailoi_s" class="form-control" style="width:257px;">
+                                <option value="-1">--Chọn loại lỗi--</option>
+                            </select>
+                        </td>
+                        <td>Chi tiết lỗi</td>
+                        <td> <select class="form-control" id="cb_chitietloi_s"> </select></td>
+                        <td>Ngày xử lý</td>
+                        <td> <input type="text" id="txt_ngayxuly_s" style="width:204px;" class="form-control form-control-inline input-medium default-date-picker" />  </td>
+                    </tr>
+
+                    <tr>
+                        <td>Trạng thái xử lý</td>
+                        <td><select id="cb_trangthaixuly_s" class="form-control" style="width:257px;">
+    <option value="-1">--Chọn trạng thái xử lý--</option>
+    <option value="CHUAXULY">Chưa xử lý</option>
+    <option value="DANGXULY">Đang xử lý</option>
+    <option value="DAXULY">Đã xử lý</option>
+</select> </td>
+                        <td>Kết quả xử lý</td>
+                        <td><select id="cb_ketquaxuly_s" class="form-control">
+                            <option value="-1">--Chọn kết quả--</option>
+                            <option value="THANHCONG">Thành công</option>
+                            <option value="THATBAI">Thất bại</option>
+                        </select> </td>
+                        <td>Người xử lý</td>
+                        <td><input type="text" class="form-control " style="width:204px;" id="txt_nguoixuly_s" /> </td>
+                        <!--<td>Ghi chú</td>
+                        <td>
+                            <textarea style="width:257px;" id="txt_ghichu_s" class="form-control form-control-inline input-medium" maxlength="2000"></textarea>
+                        </td>-->
+                        <!--<td>Ngày tạo</td>
+                        <td> <input type="text" id="txt_sdate_kbkh" class="form-control datepicker " />  </td>-->
+                    </tr>
+                    <tr>
+                        <td>Ghi chú</td>
+                        <td>
+                            <textarea style="width:257px;" id="txt_ghichu_s" class="form-control form-control-inline input-medium" maxlength="2000"></textarea>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel-body">
+                <table id="" class="table no-border table-responsive">
+                    <tr>
+                        <td colspan="6">
+                            <button data-dismiss="modal" class="btn btn-default" type="button" id="btn_thoat">Thoát</button>
+                            <button id="btn_capnhat" class="btn btn-success"><i class="fa fa-save"></i> Cập nhật</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="bottom-mar-50"></div>
+    </div>
+</div>
+<div id="toast" class='' style='display:none'></div>

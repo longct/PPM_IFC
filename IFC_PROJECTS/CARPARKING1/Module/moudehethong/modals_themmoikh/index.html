@@ -1,0 +1,72 @@
+﻿    <!-- page start-->
+<!--<script>
+    $("#txt_manhanvien_tmtk").focus(function () {
+        $("span.manhanvien").text("OK");
+    });
+
+    $("#txt_manhanvien_tmtk").focusout(function() {
+        $( "span.manhanvien" ).text( "" );
+    })
+</script>-->
+<div class="modal fade " id="themmoikh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Thêm mới tài khoản</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_createtaokhoan"> </div>
+                    <table class="table table-hover" style="width:100%;border:none" id="tbl_themtk">
+                        <tr>
+                            <td>Tên đăng nhập </td>
+                            <td><input type="text" class="form-control" id="txt_manhanvien_tmtk"></td>
+
+                        </tr>
+                        <tr>
+                            <td>Mật khẩu: </td>
+                            <td><input type="password" class="form-control" id="txt_matkhau_tmtk"></td>
+                        </tr>
+                        <tr>
+                            <td>Nhập lại mật khẩu: </td>
+                            <td><input type="password" class="form-control" id="txt_matkhau2_tmtk"></td>
+                        </tr>
+                        <tr>
+                            <td>Họ tên </td>
+                            <td><input type="text" class="form-control" id="txt_hoten_tmtk"></td>
+                        </tr>
+                        <tr>
+                            <td>Điện thoại: </td>
+                            <td><input type="text" class="form-control" id="txt_dienthoai_tmtk"></td>
+                        </tr>
+                        <tr>
+                            <td>Email </td>
+                            <td><input type="text" class="form-control" id="txt_email_tmtk"></td>
+                        </tr>
+                        <tr>
+                            <td>Địa chỉ: </td>
+                            <td><input type="text" class="form-control" id="txt_diachi_tmtk"></td>
+                        </tr>
+                        <tr>
+                            <td>Đơn vị: </td>
+                            <td>
+                                <select class="form-control input-sm m-bot15" id="cbdonvi_ThemTK"></select>
+                            </td>
+                        </tr>
+                   
+                        <tr>
+                            <td colspan="2">
+                                <button data-dismiss="modal" class="btn btn-default" type="button">Thoát</button>
+                                <button class="btn btn-success" data-toggle='modal' href='#confirm-yn' id="btn_checkluu_themmoitk"><i class="fa fa-plus"></i>Thêm</button>
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+   
+<div data-include="Module/modals_yesno"></div>
+<!-- page end-->

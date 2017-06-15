@@ -1,0 +1,81 @@
+﻿<div class="col-lg-12">
+    
+    <!-- /.box-header -->
+    <div class="panel panel-info filterable">
+        <div class="panel-heading">
+            <h3 class="panel-title">Chọn sổ ghi dữ liệu</h3>
+        </div>
+        <div class="panel-body">
+            <div class="col-lg-3">
+                <div class="col-lg-12" style="margin-bottom:3px">
+                    <label style="width:65px;">Điện lực</label>
+                    <select class="form-control select2" id="cb_dienluc" style="width: 180px;display:inline-block"></select>
+                </div>
+                <div class="col-lg-12" style="margin-bottom:3px">
+                    <label style="width:65px;">Trạm</label>
+                    <select class="form-control select2" id="cb_tram" style="width: 180px;display:inline-block"></select>
+                </div>
+                <div class="col-lg-12" style="margin-bottom:3px">
+                    <label style="width:65px;">Sổ GCS</label>
+                    <select class="form-control select2" id="cb_soghi" style="width: 180px;display:inline-block"></select>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="col-lg-6" style="margin-bottom:3px">
+                    <label style="width:80px">Tháng năm:</label>
+                    <input type="text" id="txt_thang" class="form-control datepicker " style="width:100px;display: inline-block;" placeholder="" />
+                </div>
+                <div class="col-lg-6" style="margin-bottom:3px">
+                    <label style="width:80px">    Kỳ:       </label>
+                    <select class="form-control select2" id="cb_ky" style="width: 100px;display:inline-block">
+                        <option selected="selected">1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="col-lg-6" style="margin-bottom:3px">
+                    <label style="width:80px">Đầu kỳ</label>
+                    <input type="text" id="txt_dauky" class="form-control " style="width:100px;display: inline-block;" readonly />
+                </div>
+                <div class="col-lg-6" style="margin-bottom:3px">
+                    <label style="width:80px">Cuối kỳ</label>
+                    <input type="text" id="txt_cuoiky" class="form-control " style="width:100px;display: inline-block;" readonly />
+                </div>
+                <div class="col-lg-4 pull-left" style="margin-bottom:3px">
+                    <button type="button" id="btn_locdulieu_ntcs" class="btn btn-success"><i class="glyphicon glyphicon-download-alt"></i> Lấy số liệu</button>
+                </div>
+                <!--<div class="col-lg-3">
+                    <button type="button" id="btn_taohoadon" class="btn btn-block btn-primary">Tạo hóa đơn</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div id="mess_ntcs"></div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title" id="lb_tongso">Tổng số: </h3>
+        </div>
+        <table id="tb_danhsachoadon" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Mã khách hàng</th>
+                    <th>Tên khách hàng</th>
+                    <th>Số công tơ</th>
+                    <th>Bộ chỉ số</th>
+                    <th>Chỉ số cũ</th>
+                    <th>Chỉ số mới</th>
+                    <th>Sản lượng</th>
+                    <th>Chi tiết hóa đơn</th>
+                    <th>Sửa chỉ số mới</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="bottom-mar-100"></div>
+</div>
+<!-- /.box-body -->
+<!-- /.box -->
+<div data-include="Module/HoaDon/modal_chitiethoadon"></div>
+<div data-include="Module/modals_yesno"></div>

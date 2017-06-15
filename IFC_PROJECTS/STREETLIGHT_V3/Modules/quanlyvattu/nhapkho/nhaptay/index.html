@@ -1,0 +1,183 @@
+﻿
+<div class="modal fade " id="tab_nhaptay_nhapkho_qlvt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">NHẬP TAY</h4>
+            </div>
+            <div id="messinfo_tlcb"></div>
+            <div id="nhaptay" style="margin: 4px 2px;">
+                <section class="panel" style="box-shadow: none;border: none;">
+                    <div class="panel-heading">
+                        <div class="form-inline form-actions-bar">
+                            <div class="form-group">
+                                <label class="label_radio r_off" for="qlseries_rad_nhaptay">
+                                    <input name="quanly_nhaptay" id="qlseries_rad_nhaptay" value="0" type="radio" checked="checked"> Quản lý Series
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="label_radio r_off" for="qlsoluong_rad_nhaptay">
+                                    <input name="quanly_nhaptay" id="qlsoluong_rad_nhaptay" value="1" type="radio"> Quản lý số lượng
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="form-inline" role="form">
+                            <table class="table" id="tbl_nhaptay">
+                                <tr>
+                                    <td>
+                                        <label class="th">Mã phiếu nhập (*)</label>
+                                    </td>
+                                    <td >
+                                        <input type="text" class="form-control form-control-inline input-medium" id="txtMaphieu_nhaptay" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <label class="th">Chủ sở hữu (*)</label>
+                                    </td>
+                                    <td>
+                                        <select id="cbchusohuu_nhaptay" class="form-control  ">
+                                            <option>--Chọn chủ sở hữu--</option>
+                                            <option value="-1">--Chọn chủ sở hữu-</option>
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label class="th">Kho nhập (*)</label>
+                                    </td>
+                                    <td>
+                                        <select id="cb_khonhap_nhaptay" class="form-control  ">
+                                            <option>--Chọn kho--</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <label class="th">Mã Vận đơn / Hợp đồng (*)</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control form-control-inline input-medium" id="txtmavandon_nhaptay" /><i class="fa-them fa fa-plus-circle" id="btnMaVanDon_nhaptay" title="Thêm"></i>
+                                    </td>
+                               
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label class="th">Người duyệt (*)</label>
+                                    </td>
+                                    <td>
+                                        <select id="cbnguoiduyet_nhaptay" class="form-control  ">
+                                            <option>--Chọn người duyệt--</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <label class="th">File Biên bản</label>
+                                    </td>
+                                    <td>
+                                        <input type="file" id="file_bienban_nhaptay" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="th">Lý do nhập</label>
+                                    </td>
+                                    <td colspan="5">
+                                        <textarea id="txtlydonhap_nhaptay" class="form-control form-control-inline input-medium"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="panel" style="box-shadow: none;border: none;">
+                    <div class="panel-body">
+                        <table class="table table-striped table-bordered">
+                            <tr>
+                                <td>Vật tư thiết bị</td>
+                                <td>Loại thiết bị</td>
+                                <td>Serial</td>
+                                <td width="80px">Version</td>
+                                <td width="80px">Số lượng</td>
+                                <td>Bắt đầu bảo hành</td>
+                                <td>Kết thúc bảo hành</td>
+                                <td>Thông tin thêm</td>
+                                <td rowspan="2" style="padding-top:50px;border-top:none;background:none;vertical-align:middle;text-align:center">
+                                    <i class="fa fa-plus-circle fa-them" style="font-size:20px;" title="Thêm" id="btn_them_nhaptay"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select id="cbvattu_nhaptay" class="form-control  ">
+                                        <option value="-1">--Chọn loại vật tư--</option>
+                                      
+                                    </select>
+                                </td>
+                                <td>
+                                    <select id="cbloaithietbi_nhaptay" class="form-control  ">
+                                        <option value="-1">--Chọn loại thiết bị--</option>
+                                       
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" id="txtserial_nhaptay" class="form-control form-control-inline input-medium" />
+                                </td>
+                                <td>
+                                    <input type="text" id="txtversion_nhaptay" style="width: 70px !important" class="form-control form-control-inline input-medium" />
+                                </td>
+                                <td>
+                                    <input type="text" id="txtsoluong_nhaptay" style="width: 70px !important" class="form-control form-control-inline input-medium" />
+                                </td>
+                                <td>
+                                    <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                           data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_datefrombh_nhaptay" cache="true" style="width: 100px !important" />
+                                </td>
+                                <td>
+                                    <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                           data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_datetobh_nhaptay" cache="true" style="width: 100px !important" />
+                                </td>
+                                <td>
+                                    <input type="text" id="txtthongtinthem_nhaptay" class="form-control form-control-inline input-medium" style="width: 100px !important" />
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>
+                                    <a class="btn btn-success" id="btnCapNhat_nhaptay">
+                                        <i class="fa fa-plus"></i>Cập nhật
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <div id="messinfo_nhaptay"></div>
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <td>Vật tư thiết bị</td>
+                                    <td>Loại thiết bị</td>
+                                    <td>Series</td>
+                                    <td width="80px">Version</td>
+                                    <td width="80px">Số lượng</td>
+                                    <td>Bắt đầu bảo hành</td>
+                                    <td>Kết thúc bảo hành</td>
+                                    <td>Thông tin thêm</td>
+                                    <td>Chức Năng</td>
+                                </tr>
+                            </thead>
+                            <tbody id="myTableData_nhaptay"></tbody>
+
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</div>
+

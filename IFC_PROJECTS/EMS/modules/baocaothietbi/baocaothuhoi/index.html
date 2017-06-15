@@ -1,0 +1,108 @@
+﻿<div class="col-lg-12" id="tab_nhaptay">
+    <section class="panel">
+        <div class="panel-heading">
+            <div class="form-inline form-actions-bar">
+                <div class="form-group">
+                    <label class="label_radio r_off" for="qlsoluong_rad_baocaothoi">
+                        <input name="quanly_baocaothoi" id="khotong_baocaothoi" value="0" type="radio"> Kho tổng thu hồi từ kho ban miền
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="label_radio r_off" for="qlsoluong_rad_baocaothoi">
+                        <input name="quanly_baocaothoi" id="khomien_baocaothoi" value="1" type="radio"> Kho miền thu hồi nhân viên lắp đặt
+                    </label>
+                </div>
+
+            </div>
+            <div class="form-inline" role="form">
+                <div id="messinfo_baocaothoi"></div>
+                <table class="table" id="tbl_baocaothoi">
+                    <tr>
+                        <td>
+                            <label class="th">Từ ngày</label>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_datefrom_baocaothoi" cache="true" />
+                            <label class="th">Đến ngày</label>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_dateto_baocaothoi" cache="true" />
+                        </td>
+                        <td>
+                            <label class="th">Vật tư thiết bị</label>
+                        </td>
+                        <td>
+                            <select id="cbvattutb_baocaothoi" class="form-control form-control-inline input-medium">
+                                <option>--Tất cả--</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="th">Kho xuất</label>
+                            <select id="cbkhoxuat_baocaothoi" class="form-control form-control-inline input-medium">
+                                <option>--Chọn kho--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Nhà cung cấp</label>
+                        </td>
+                        <td>
+                            <select id="cbnhaccap_baocaothoi" class="form-control form-control-inline input-medium">
+                                <option>--Tất cả--</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+
+            <table>
+                <tr>
+                    <td>
+                        <a class="btn btn-warning" id="btnCapNhat_baocaothoi">
+                            <i class="fa fa-plus"></i>Cập nhật
+                        </a>
+                        <a class="btn btn-warning" id="btninbaocao_baocaothoi">
+                            <i class="fa fa-plus"></i> In Báo cáo
+                        </a>
+                        <a class="btn btn-warning" id="btnxuatexecl_baocaothoi">
+                            <i class="fa fa-plus"></i> Xuất Execl
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <td>STT</td>
+                        <td>Tên VTTB</td>
+                        <td>ĐVT</td>
+                        <td>Tổng</td>
+                        <td>Số lượng tồn kho</td>
+                        <td>Hàng mới</td>
+                        <td>Hàng có thể đưa vào sử dụng</td>
+                        <td>Hàng test</td>
+                        <td>Hàng hỏng chờ khắc phục/Hủy</td>
+                        <td>Hàng cho mượn</td>
+                    </tr>
+                </thead>
+                <tbody id="myTableData_baocaothoi"></tbody>
+
+            </table>
+        </div>
+    </section>
+</div>
+<div data-include="modules/modals_yesno"></div>

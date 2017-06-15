@@ -1,0 +1,72 @@
+﻿<div class="box box-info no-margin-bt">
+    <div class="box-header">
+        <h3 class="box-title">
+            <i class="glyphicon glyphicon-dashboard help_tsvh"></i><span id="tendiemdo_span">Đọc dữ liệu tức thời</span>
+        </h3>
+        <div class="pull-right box-tools">
+            <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Thu nhỏ">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div>
+    </div>
+    <div class="box-body" style="margin:10px 0;padding-bottom: 20px;">
+        <div class="col-lg-offset-2  col-md-offset-2 col-lg-4 col-md-5 col-sm-6" style="padding-right:5px;">
+            <select class="form-control" id="cbbLoaiReadDtt" style="width:300px">
+                <option selected="selected" value="Tten">Chỉ số điện năng tích lũy</option>
+                <option value="TtenUi">Bản tin tức thời UI</option>
+                <option value="Tsvh">Đọc thông số vận hành</option>
+                <option value="Event">Đọc sự kiện</option>
+            </select>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" style="padding-left:0; margin-left:0">
+            <button class="btn btn-success" id="btnReadDtt"  style="width:200px">THỰC HIỆN ĐỌC</button>
+        </div>
+       
+        <br />
+        <div class="col-lg-offset-5  col-md-offset-5 col-sm-offset-4 col-lg-12 col-md-12 col-sm-12">
+            <div class="bar2">
+                <div id="delayClock" class="clock1">
+                </div>
+            </div>
+            <div class="bar">
+                <h2 class="timer">0:00</h2>
+            </div>
+
+            <div class="circle"></div>
+        </div>
+       
+    </div>
+</div>
+<div class="box box-body" id="readcontent">
+    <div id="info_dtt" class="darkblue" style="float: left; width: 100%;"></div>
+
+    <div class="progress-bar-dtt noload">
+        <span class="loadtext"></span>
+        <div class="load"></div>
+    </div>
+    <div class="col-lg-12 panel-tsvh" id="divDocTucThoi">
+        <table class="table table-responsive table-bordered table-hover" id="tblDataTsvhDocTucThoi">
+            <thead class="bg-aqua-gradient">
+                <tr>
+                    <th><span class="lang_dtt_grid_order">STT</span></th>
+                    <th><span class="lang_dtt_grid_namecustomer">Tên</span></th>
+                    <th><span class="lang_dtt_grid_meter">Số công tơ</span></th>
+                    <th class="uHide">U(V)</th>
+                    <th class="iHide">I(A)</th>
+                    <th class="cosHide">Cos</th>
+                    <th class="TtenHide"><span class="lang_dtt_grid_index">Chỉ số (Kwh)</span></th>
+                    <th class="EventHide"><span class="lang_dtt_grid_event">Sự kiện</span></th>
+                    <th><span class="lang_dtt_grid_time_reading">Thời gian đọc</span></th>
+                    <th><span class="lang_dtt_grid_info">Thông tin</span></th>
+                    <th><span class="lang_dtt_grid_status">Trạng thái</span></th>
+                    <th><span class="lang_dtt_grid_view">Xem</span></th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+

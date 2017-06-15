@@ -1,0 +1,51 @@
+﻿<div class="col-lg-12 classgobocap_excel" id="tab_xuatexcel">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/ghepcap/ghepcap_tab"></div>
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-heading">
+            <div class="form-inline" role="form">
+                <table class="table">
+                    <tr>
+                       
+                        <td>
+                            <label class="th">File Excel</label>
+                        </td>
+                        <td colspan="5">
+                            <input type="file" id="file_chonexecl_gbcexcel" onchange="f_UploadFile_gbcexcel(this)" />
+                        </td>
+                        <td style="text-align:right"><a href="filemau/FileMauNhapExcel.xls" download style="font-size:13px;"><label class="filemau"><i class="fa fa-download" aria-hidden="true"></i>Download File mẫu</label></a></td>                       
+                    </tr>
+                   
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+
+            <div style="margin:5px 0">
+                <a class="btn btn-warning" id="btnThucHien_gbcexcel">
+                    <i class="fa fa-plus"></i>Gỡ bỏ
+                </a>
+            </div>
+            <div id="messinfo_gbcexcel"></div>
+            <table class="table table-bordered" id="grview_gbcexcel">
+                <thead>
+                    <tr>
+                        <td class="c">STT</td>
+                        <td class="c">Series1</td>
+                        <td class="c">Series2</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+           
+        </div>
+    </section>
+</div>
+
+<div data-include="modules/modals_yesno"></div>

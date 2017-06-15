@@ -1,0 +1,55 @@
+﻿<div class="col-lg-12">
+    <div class="panel panel-info filterable">
+        <div class="panel-heading">
+            <h3 class="panel-title"></h3>
+        </div>
+        <div class="panel panel-body">
+            <div class="form-inline">
+                <div class="form-group">
+                    <table id="" class="table no-border table-responsive">
+                        <tr>
+                            <td>Thông tin khách hàng</td>
+                            <td>
+                                <input type="text" id="txt_khachhang_apgia" class="form-control" placeholder="" />
+                            </td>
+                            <td>Kỳ chốt</td>
+                            <td>
+                                <select class="form-control " id="cb_kychot_apgia">
+                                    <option value="1"> Kỳ 1</option>
+                                    <option value="2"> Kỳ 2</option>
+                                    <option value="3"> Kỳ 3</option>
+                                </select>
+                            </td>
+                            <td>Tháng</td>
+                            <td>
+                                <input type="text" id="txt_thang_apgia" class="form-control datepicker " style="width:100px;display: inline-block;" placeholder="" />
+                            </td>
+
+                            <td>
+                                <button id="btn_capnhat_apgia" class="btn btn-success"><i class="fa fa-plus"></i> Cập nhật</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <br />
+                <div id="messinfo_apgiakh"></div>
+
+                <table class="table table-responsive table-bordered table-striped">
+                    <thead class="bg-aqua">
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã điểm đo</th>
+                            <th>Tên khách hàng</th>
+                            <th>Số công tơ</th>
+                            <th>Địa chỉ</th>
+                            <th>Áp giá</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_apgiatkh"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

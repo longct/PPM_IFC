@@ -1,0 +1,25 @@
+﻿
+table#tbl_xuatexcel tr td {
+    border: none;
+    padding: 5px;
+}
+
+table#tbl_xuatexcel input, table#tbl_xuatexcel select, table#tbl_xuatexcel textarea {
+    width: 220px;
+}
+
+#grvnhapkhotrung_xuatexcel tr td{
+    border: 1px solid #f5f5f5 !important;
+}
+.them_phieu {
+    padding-top: 20px;
+}
+
+i.fa-them {
+    cursor: pointer;
+    color: #047514;
+}
+.filemau{font-size:14px}
+.panel-body table thead tr th.alert-danger{
+
+}

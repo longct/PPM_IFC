@@ -1,0 +1,189 @@
+﻿[
+  {
+    "id": "1",
+    "text": "ĐIỆN LỰC IFC",
+    "icon": "glyphicon glyphicon-home",
+    "children": [
+      {
+        "id": "2",
+        "text": "TẦNG 15",
+        "icon": "glyphicon glyphicon-home",
+        "children": [
+          {
+            "id": "3",
+            "text": "SOIFC2",
+            "icon": "glyphicon glyphicon-book",
+            "children": [              
+              {
+                "id": "4",
+                "text": "CÔNG TƠ 956",
+                "icon": "fa fa-circle",
+                "children": [ ],
+                "li_attr": { },
+                "data": {
+                  "code": "010101",
+                  "sct": "201607000956",
+                  "istype": "3",
+                  "meterid": "202347"
+                },
+                "a_attr": {
+                  "class": "text-yellow"
+                }
+              },
+              {
+                "id": "14",
+                "text": "CÔNG TƠ 922",
+                "icon": "fa fa-circle",
+                "children": [ ],
+                "li_attr": { },
+                "data": {
+                  "code": "010101",
+                  "sct": "14099922",
+                  "istype": "3",
+                  "meterid": "202246"
+                },
+                "a_attr": {
+                  "class": "text-green"
+                }
+              },
+              {
+                "id": "6",
+                "text": "CÔNG TƠ 685",
+                "icon": "fa fa-circle",
+                "children": [ ],
+                "li_attr": { },
+                "data": {
+                  "code": "010101",
+                  "sct": "201604000685",
+                  "istype": "1",
+                  "meterid": "203025"
+                },
+                "a_attr": {
+                  "class": "text-green"
+                }
+              }
+            ],
+            "li_attr": { },
+            "data": {
+              "code": "01040502",
+              "sct": "0",
+              "istype": "4",
+              "meterid": "0"
+            },
+            "a_attr": { }
+          }
+        ],
+        "li_attr": { },
+        "data": {
+          "code": "010405",
+          "sct": "0",
+          "istype": "0",
+          "meterid": "0"
+        },
+        "a_attr": { }
+      },
+      {
+        "id": "7",
+        "text": "TẦNG 14",
+        "icon": "glyphicon glyphicon-home",
+        "children": [
+          {
+            "id": "8",
+            "text": "SOIFC1",
+            "icon": "glyphicon glyphicon-book",
+            "children": [
+              {
+                "id": "9",
+                "text": "CÔNG TƠ 957",
+                "icon": "fa fa-circle",
+                "children": [ ],
+                "li_attr": { },
+                "data": {
+                  "code": "010201",
+                  "sct": "201607000957",
+                  "istype": "3",
+                  "meterid": "202438"
+                },
+                "a_attr": {
+                  "class": "text-green"
+                }
+              },
+              {
+                "id": "10",
+                "text": "CÔNG TƠ 958",
+                "icon": "fa fa-circle",
+                "children": [ ],
+                "li_attr": { },
+                "data": {
+                  "code": "010201",
+                  "sct": "201607000958",
+                  "istype": "31",
+                  "meterid": "202438"
+                },
+                "a_attr": {
+                  "class": "text-green"
+                }
+              },
+              {
+                "id": "11",
+                "text": "CÔNG TƠ 959",
+                "icon": "fa fa-circle",
+                "children": [ ],
+                "li_attr": { },
+                "data": {
+                  "code": "010101",
+                  "sct": "201607000959",
+                  "istype": "1",
+                  "meterid": "202438"
+                },
+                "a_attr": {
+                  "class": "text-green"
+                }
+              },
+              {
+                "id": "12",
+                "text": "CÔNG TƠ 960",
+                "icon": "fa fa-circle",
+                "children": [ ],
+                "li_attr": { },
+                "data": {
+                  "code": "010201",
+                  "sct": "201607000960",
+                  "istype": "3",
+                  "meterid": "202438"
+                },
+                "a_attr": {
+                  "class": "text-green"
+                }
+              }
+            ],
+            "li_attr": { },
+            "data": {
+              "code": "010201",
+              "sct": "0",
+              "istype": "4",
+              "meterid": "0"
+            },
+            "a_attr": { }
+          }
+        ],
+        "li_attr": { },
+        "data": {
+          "code": "0102",
+          "sct": "0",
+          "istype": "0",
+          "meterid": "0"
+        },
+        "a_attr": { }
+      }
+    ],
+    "li_attr": { },
+    "data": {
+      "code": "0104",
+      "sct": "0",
+      "istype": "0",
+      "meterid": "0"
+    },
+    "a_attr": { }
+  }
+]

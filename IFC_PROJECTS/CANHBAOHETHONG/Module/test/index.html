@@ -1,0 +1,54 @@
+﻿<div class="col-lg-12" id="">
+    <!--<section class="panel">
+        <div class="panel-heading">
+            <div class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="th">Từ ngày</label>
+                    <input type="text" id="txt_datefrom_cbif" class="form-control datepicker ">
+                </div>
+                <div class="form-group">
+                    <label class="th">Đến ngày</label>
+                    <input type="text" id="txt_dateto_cbif" class="form-control datepicker ">
+                </div>
+                <div class="form-group">
+                    <a class="btn btn-warning" id="btnThucHien_cbif" >
+                        <i class="fa fa-plus"></i>Thực hiện
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <section class="panel">
+        <div class="form-inline">
+            <div class="form-group">
+                <label>Đơn vị </label>
+                <select class="form-control form-control-inline input-medium " id="cbdonvi_tat">
+                    <option value="-1">Tất cả</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" id="hellothu">ket noi</button>
+        <button type="button" id="guithu">gui</button>
+        <button type="button" id="nhanthu">nhan</button>
+        <button type="button" id="dongketnoi">dongketnoi</button>
+    </section>
+    <section class="panel">
+        <div class="panel-body">
+            <div id="messinfo_cbif"></div>
+            <table class="table table-bordered table-striped">
+                <tr class="bg-aqua">
+                    <td class="c">STT</td>
+                    <td class="c">Đơn vị</td>
+                    <td class="c">Chủ đề</td>
+                    <td class="c">Nội dung</td>
+                    <td class="c">Loại lỗi</td>
+                    <td class="c">Thời điểm</td>
+                    <td class="c">Trạng thái</td>
+                </tr>
+                <tbody id="grvView_cbif"></tbody>
+            </table>
+
+        </div>
+    </section>
+</div>
+<div data-include="Module/Chitietcanhbao"></div>

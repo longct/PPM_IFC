@@ -1,0 +1,53 @@
+﻿<div class="modal fade " id="suadiemdo" tabindex="-1" role="dialog" aria-labelledby="mymodallabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Khắc phục xử lý lỗi điểm đo</h4>
+            </div>
+            <div class="modal-body loidd">
+                <div id="">
+                    <table class="table table-responsive no-border" id="tbl_loidiemdo_">
+                        <tr class="loidiemdo_txt">
+                            <td>
+                                <!--<h5 class="text-bold">Loại lỗi</h5>-->
+                                <button class="btn btn-flat btn-warning">Loại lỗi</button>
+                            </td>
+                        </tr>
+                        <tr class="loidiemdo_ds">
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    </table>                    
+                    <table class="table table-responsive table-bordered">
+                        <tr>
+                            <th>IMEI</th>
+                            <td id="suadiemdo_imei"></td>
+                        </tr>
+                        <tr>
+                            <th>Loại SIM</th>
+                            <td id="suadiemdo_loaisim"></td>
+                        </tr>
+                        <tr>
+                            <th>Số SIM</th>
+                            <td id="suadiemdo_sosim"></td>
+                        </tr>
+                        <tr>
+                            <th>Version Modem</th>
+                            <td id="suadiemdo_version"></td>
+                        </tr>
+                    </table>
+
+                    <div id="btn_edit">
+                        <button class="btn btn-flat btn-danger pull-left" id="btn_capnhatloi">Cập nhật lỗi</button>
+                        <!--<button class="btn btn-flat btn-warning">Btn 2</button>
+                        <button class="btn btn-flat btn-success">Btn 3</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div data-include="Modules/DSLoiDiemDo"></div>

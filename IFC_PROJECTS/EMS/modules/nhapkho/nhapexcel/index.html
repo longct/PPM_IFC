@@ -1,0 +1,198 @@
+﻿<div class="col-lg-12 classnhapexcel" id="tab_nhapexcel">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/nhapkho/nhap_tab"></div>
+        </div>
+    </section>
+    <div id="nhapexcel">
+    <section class="panel"  >
+        <div class="panel-heading">
+            <div class="form-inline" role="form">
+                <table class="table" id="tbl_nhapexcel" style="margin-top:10px;width:100%">
+                    <tr>
+                        <td>
+                            <label class="th">
+                                Nhập mua mới
+                            </label>
+                        </td>
+                        <td>
+                            <select id="cbchuloainhap_nhapexcel" class="form-control">
+                                <option value="1">Nhập mua mới</option>
+                                <option value="2">Nhập thành phẩm</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Mã hợp đồng (*)</label>
+                        </td>
+                        <td>
+                            <select id="txmavandon_NhapExcel" class="form-control select2">
+                                <option>--Chọn mã hợp đồng--</option>
+                            </select>
+                            <br />
+                            <span style="font-size:12px">Chưa có mã HĐ:</span> <a href="#modules/baocao/khaibaohopdong/themmoiHD" id="kbmahd_excel" style="font-size:13px">Khai báo MHĐ</a>
+                        </td>
+                      
+                      
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="th">Vật tư thiết bị (*)</label>
+                        </td>
+                        <td>
+                            <select id="cbvatuthietbi_NhapExcel" class="form-control  ">
+                                <option>--Chọn thiết bị--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Ngày bắt đầu BH</label>
+                        </td>
+                        <td>
+                            <input class="form-control form-control-inline input-medium default-date-picker" type="text" value="" data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_datefrombh_NhapExcel" />
+                        </td>
+
+                       
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="th">Loại thiết bị (*)</label>
+                        </td>
+                        <td>
+                            <select id="cbloaithietbi_NhapExcel" class="form-control  ">
+                                <option>--Chọn Loại thiết bị--</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <label class="th">Ngày kết thúc BH</label>
+                        </td>
+                        <td>
+                            <input class="form-control form-control-inline input-medium default-date-picker" type="text" value=""
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_datetobh_NhapExcel" cache="true" />
+                        </td>                     
+                      
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="th"> Kho nhận (*)</label>
+                        </td>
+                        <td>
+                            <select id="cbkhonhan_NhapExcel" class="form-control  ">
+                                <option>--Chọn kho--</option>
+                            </select>
+                        </td>
+                      
+                        <td>
+                            <label class="th">Version</label>
+                        </td>
+                        <td>
+                            <input type="text" id="txtversion_NhapExcel" class="form-control form-control-inline input-medium" />
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="th">Người duyệt (*)</label>
+                        </td>
+                        <td>
+                            <select id="cbnguoiduyet_NhapExcel" class="form-control  ">
+                                <option>--Chọn người duyệt--</option>
+                            </select>
+                        </td>
+                       
+                        <td>
+                            <label class="th">	File biên bản</label>
+                        </td>
+                        <td>
+                            <input type="file" id="file_bienban_NhapExcel" />
+                        </td>
+
+                      
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label class="th">Chủ sở hữu (*)</label>
+                        </td>
+                        <td>
+                            <select id="cbchusohuu_NhapExcel" class="form-control  ">
+                                <option>--Chọn chủ sở hữu--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Chọn file execl (*)</label>
+                        </td>
+                        <td rowspan="2">
+                           
+                            <input type="file" id="file_chonexecl_NhapExcel" onchange="f_UploadFile_NhapExcel(this)" />
+                            <a href="filemau/FileMau1.xls" download><label class="filemau"><i class="fa fa-download"></i>Download file mẫu</label></a><br />
+                        </td>
+                    
+                    </tr>
+                   <tr>
+                       <td>
+                           <label class="th">Lý do nhập(*)</label>
+                       </td>
+                       <td >
+                           <textarea id="txtlydonhap_NhapExcel" class="form-control form-control-inline input-medium" maxlength="500"></textarea>
+                       </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+
+            <table id="action" style="margin-bottom: 10px;">
+                <tr>
+                    <td>
+                        <a class="btn btn-warning" id="btnCapNhat_NhapExcel"  disabled="disabled" >
+                            <i class="fa fa-plus"></i>Cập nhật
+                        </a>
+                    </td>
+                  
+                    <td style="padding-left:5px">
+                        <a class="btn btn-warning" id="btnXuatExecl_NhapExcel"  disabled="disabled" >
+                            <i class="fa fa-plus"></i>Xuất Excel
+                        </a>
+                    </td>
+                    <td  style="padding-left:5px">
+                        <a class="btn btn-warning" id="btnkiemtra_NhapExcel">
+                            <i class="fa fa-plus"></i>Kiểm tra
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+            <div id="messinfo_NhapExcel"></div>
+           
+            <table class="table" id="grvnhapkhotrung_NhapExcel" style="display:none;border: 1px solid #f5f5f5;">
+                <thead>
+                    <tr class="alert-danger">
+                        <td class="c" style="width:20px">STT</td>
+                        <td>Series</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div id="messinfo_tongbanghi" style="margin-top: 10px;margin-bottom: 5px;font-weight: bold;"></div>
+            <table class="table table-bordered" id="grvnhapkho_NhapExcel" style="display:none">
+                <thead>
+                    <tr>
+                        <th class="c">STT</th>
+                        <th class="c">Series</th>
+                        <th class="c">Thông tin thêm</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            
+        </div>
+    </section>
+
+</div>
+</div>
+<div data-include="modules/modals_yesno"></div>

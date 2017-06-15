@@ -1,0 +1,66 @@
+﻿<section class="panel">
+    <div class="panel-body">
+        <div class="modal-body2">
+            <div id="messinfo_tlcb"></div>  
+            <table  class="table"  style="width:100%;border:none" id="tlcb_tbl">
+                <tr>
+                    <td> <select class="form-control" id="cbchon_tlcb"></select></td>
+                    <td colspan="2"><input type="text" placeholder='TÊN CẤU HÌNH (*)' class="form-control col-md-3" id="txt_tencauhinh_tlcb" /></td>
+                    <td> 
+                        <button class="btn btn-success" type="button" id="btn_checkluu_tlcb">Lưu cấu hình</button>
+                        <button class="btn btn-warning" type="button" id="btn_apdungC_tlcb">Áp dụng cấu hình </button>
+                        <button class="btn btn-danger" type="button" id="btn_xoach_tlcb">Xóa cấu hình</button>
+                     </td>
+                </tr>
+            </table>
+            <table class="table" style="width:100%;border:none" id="tbl_thietlapcb">
+                <tr>
+                    <th>Loại cảnh báo</th>
+                    <th>Thông số thiết lập</th>
+                    <th>Bật cảnh báo</th>
+                </tr>
+                 <tr>
+                    <td colspan="3"><b>Cảnh báo điện áp (U)</b></td>
+                </tr>
+                <tr>
+                    <td>- Cảnh báo quá điện áp  </td>
+                    <td><span class="tl_txt">Tỷ lệ</span><input type="text"  id="txt_canhqua_tlcb"> (%) U định mức  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; U định mức  </td>
+                    <td><input type="checkbox" id="txt_checkudinh_tlcb"></td>
+                </tr>
+                <tr>
+                    <td>- Cảnh báo thấp điện áp</td>
+                    <td><span class="tl_txt">Tỷ lệ</span><input type="text" id="txt_canhthap_tlcb"> (%) U định mức &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <input type="text" id="txt_canhbaoudc_tlcb"> (V) </td>  
+                    <td></td>        
+                </tr>
+                <tr>
+                    <td colspan="3"><b>Cảnh báo dòng điện (I)</b></td> 
+                </tr>
+                <tr>
+                    <td>- Cảnh báo quá dòng </td>
+                    <td><span class="tl_txt">Tỉ lệ </span><input type="text" id="txt_canhbaoquadong_tlcb" /> (%) I định mức</td>
+                    <td><input type="checkbox" id="txt_checkcanhbao"></td>
+                </tr>
+                <tr>
+                    <td>- Quá dòng 1 pha và 2 pha còn lại = 0 </td>
+                    <td>1 phase ≥ <input type="text"  id="txt_dong1pha_tlcb" />(%) I định mức &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; I định mức </td>
+                    <td><input type="checkbox" id="txt_check1phaqua_tlcb"></td>
+                </tr>
+                <tr>
+                    <td>- Quá dòng 2 pha và 1 pha còn lại = 0 </td>
+                    <td><span class="tl_txt3">2 phase ≥</span><input type="text" id="txt_dong2pha_tlcb" />(%) I định mức  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  <input type="text" id="txt_canhbaoidc_tlcb"> (A) </td>
+                    <td><input type="checkbox" id="txt_check2pha_tlcb"></td>
+                </tr>
+                <tr>
+                    <td>- Dòng 1 pha lệch so với các pha </td>
+                    <td> 1 phase ≤ <input type="text" id="txt_donglenh1pha_tlcb" /> (%) tb các pha </td>
+                    <td><input type="checkbox" id="txt_check1phadong_tlcb"></td>
+                </tr>
+                <tr>
+                    <td><b>Hệ số công suất - Cos(φ)</b></td>
+                    <td><span class="tl_txt2">CosTB < </span><input type="text" id="txt_hscos_tlcb" /> thì cảnh báo</td>
+                    <td><input type="checkbox" id="txt_checkcos_tlcb"></td>
+                </tr>                
+            </table>
+        </div>
+    </div>
+</section>

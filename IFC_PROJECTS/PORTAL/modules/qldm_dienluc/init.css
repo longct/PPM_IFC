@@ -1,0 +1,197 @@
+﻿.easy-tree-qldm {
+    min-height: 20px;
+    float: left;
+    margin-bottom: 20px;
+    /*background-color: #e56155;*/
+    color: #FF9800;
+    border: none;
+    border-top: none;
+    padding-bottom: 15px;
+    overflow: auto;
+    width: 100%;
+}
+
+    .easy-tree-qldm > ul {
+        padding-left: 5px;
+    }
+
+    .easy-tree-qldm li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px 5px 0 5px;
+        position: relative;
+    }
+
+        .easy-tree-qldm li::before, .easy-tree-qldm li::after {
+            content: '';
+            left: -3px;
+            position: absolute;
+            right: auto;
+        }
+
+        .easy-tree-qldm li::before {
+            /*border-left: 1px dotted #ccc;
+            bottom: 50px;
+            height: 100%;
+            top: 0;
+            width: 1px;*/
+        }
+
+        .easy-tree-qldm li::after {
+            /*border-top: 1px dotted #ccc;
+            height: 20px;
+            top: 12px;
+            width: 10px;*/
+        }
+
+a.node:hover {
+    color: #FF9800;
+}
+
+a.node {
+    margin-left: 2px;
+}
+
+.easy-tree-qldm li > span {
+    /*border: 1px solid #fff;*/
+    /*border-radius: 3px;*/
+    display: inline-block;
+    padding: 2px;
+    text-decoration: none;
+    /*text-transform:uppercase;*/
+}
+
+.easy-tree-qldm li.parent_li > span {
+    cursor: pointer;
+}
+
+.easy-tree-qldm li.parent_li > ul {
+    padding-left: 12px;
+}
+
+.easy-tree-qldm > ul > li::before, .easy-tree-qldm > ul > li::after {
+    border: 0;
+}
+
+.easy-tree-qldm li:last-child::before {
+    height: 30px;
+}
+
+.easy-tree-qldm li.parent_li > span:hover, .easy-tree-qldm li.parent_li > span a:hover {
+    /*background: #ff6c60;*/
+    color: #ff6c60;
+}
+
+    .easy-tree-qldm li.parent_li > span:hover + ul li span {
+        /*background: #ff6c60;*/
+        /*color: #ff6c60;*/
+    }
+
+    .easy-tree-qldm li.parent_li > span:hover + ul li.li_selected span {
+        background: #57c8f2;
+        color: #fff;
+    }
+
+.easy-tree-qldm li > span > a {
+    color: #347da0;
+    text-decoration: none;
+}
+
+.easy-tree-qldm li > span > span.glyphicon-folder-close, .easy-tree-qldm li > span > span.glyphicon-folder-open {
+    margin-right: 5px;
+}
+
+.easy-tree-qldm li.li_selected > span {
+    background: #57c8f2;
+    /*color: #e56155;*/
+}
+
+    .easy-tree-qldm li.li_selected > span > a {
+        background: #57c8f2;
+        color: #fff;
+    }
+
+    .easy-tree-qldm li.li_selected > span:hover, .easy-tree-qldm li.li_selected > span:hover > a {
+        background: #57c8f2;
+        /*color: #ff6c60;*/
+    }
+
+.easy-tree-qldm .easy-tree-qldm-toolbar {
+    background-color: #fff;
+}
+
+    .easy-tree-qldm .easy-tree-qldm-toolbar > div {
+        display: inline-block;
+    }
+
+        .easy-tree-qldm .easy-tree-qldm-toolbar > div > button {
+            border-radius: 0;
+            margin: 20px 5px;
+        }
+
+    .easy-tree-qldm .easy-tree-qldm-toolbar .create .input-group {
+        top: -15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+        .easy-tree-qldm .easy-tree-qldm-toolbar .create .input-group input {
+            border-radius: 0;
+        }
+
+        .easy-tree-qldm .easy-tree-qldm-toolbar .create .input-group button {
+            border-radius: 0;
+        }
+
+.item {
+    display: inline-block;
+    background-image: url(../../css/tree/32px.png);
+    background-position: 220px 32px;
+    width: 30px;
+    height: 24px;
+    line-height: 20px;
+}
+
+.folder {
+    display: inline-block;
+    background-image: url(../../css/tree/32px.png);
+    background-position: -260px 0px;
+    width: 30px;
+    height: 24px;
+    line-height: 20px;
+}
+
+.tr_selected {
+    background: #c5c5c5 !important;
+}
+
+
+#tbl_list_items.onfocus {
+}
+
+#rightclick_menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+    padding-left: 0px !important;
+}
+
+    #rightclick_menu li {
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+        #rightclick_menu li:hover {
+            background-color: #DEF;
+        }
+
+        #rightclick_menu li.deactive {
+            color: #ccc;
+        }

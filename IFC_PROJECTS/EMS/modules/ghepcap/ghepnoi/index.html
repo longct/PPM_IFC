@@ -1,0 +1,68 @@
+﻿<div class="col-lg-12 classghepnoi" id="tab_ghepnoi">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/ghepcap/ghepcap_tab"></div>
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-heading">
+            <div class="form-inline" role="form">
+                <table class="table" id="tbl_ghepnoi">
+                    <tr>
+                        <td>
+                            <label class="th">Mã phiếu</label>
+                        </td>
+                        <td>
+                            <input type="text" disabled class="form-control form-control-inline input-medium" id="txtMaphieu_ghepnoi" />
+                        </td>
+                        <td rowspan="2">
+                            <a href="filemau/FileMau2.xls" download="" style="font-size:13px">
+                                <label class="filemau"><i class="fa fa-download" aria-hidden="true"></i>Download File mẫu</label>
+                            </a>
+                            <div style="margin-top:5px; font-size:12px; color:red; text-align:left">
+                                <span class="red">Lưu ý: Đối với trường hợp ghép cặp, trong file excel </span><br>
+                                <span>- Cột SERIES1 điền IMEI Ghép Nối</span><br>
+                                <span>- Cột SERIES2 điền Series Sim Ghép Nối </span>
+                            </div>
+                        </td>  
+                                             
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                            <label class="th">File Excel</label>
+                        </td>
+                        <td colspan="5">
+                            <input type="file" id="file_chonexecl_ghepnoi" onchange="f_UploadFile_ghepnoi(this)" />
+                        </td>
+                    </tr>
+                  
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+            <div class="classquyen_them" style="margin:5px 0">
+                <a class="btn btn-warning" id="btnCapNhat_ghepnoi" disabled="disabled">
+                    <i class="fa fa-plus"></i>Cập nhật
+                </a>
+            </div>
+            <div id="messinfo_ghepnoi"></div>
+            <table class="table table-bordered" id="grview_ghepnoi" >
+                <thead>
+                    <tr>
+                        <td class="c">STT</td>
+                        <td class="c">Series1</td>
+                        <td class="c">Series2</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+    </section>
+</div>
+
+<div data-include="modules/modals_yesno"></div>

@@ -1,0 +1,49 @@
+﻿<!-- Modal -->
+<div class="modal fade " id="md_tlemail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header m-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Xác thực email</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table no-border table-responsive">
+                    <tr>
+                        <td colspan="3"id="thongbao_tle"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="text" class="form-control" id="email_ncb" placeholder="Email nhận cảnh báo"/>
+                        </td>
+                        <td>
+                            <button class="btn btn-info" id="tlncb_btnSendXacThuc">Xác thực Email</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email CC</td>
+                        <td>
+                            <textarea type="text" class="form-control" placeholder="Các email khác nhận cảnh báo"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mã xác thực</td>
+                        <td>
+                            <input type="text" id="maxacthuc"class="form-control" disabled placeholder="Điền mã xác thực được gửi vào email."/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <button class="btn btn-success" id="btn_xacthucemail"disabled>Thực hiện</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--<div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>-->
+        </div>
+    </div>
+</div>
+<div id="toast" class='' style='display:none'></div>

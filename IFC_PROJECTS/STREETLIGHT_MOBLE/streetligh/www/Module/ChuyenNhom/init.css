@@ -1,0 +1,16 @@
+﻿#cb_chonnhom {
+    border-color: transparent;
+    background-color: #f7f7f7;
+    font-size: 1.4rem !important;
+    border-radius: 3px;
+    padding: 8px;
+    width: 70%;
+    float: left;
+    margin-right: 5px;
+}
+.btn_modal {
+    margin-top: 0px !important;
+}
+option.dv4{
+    padding-left:20px;
+}

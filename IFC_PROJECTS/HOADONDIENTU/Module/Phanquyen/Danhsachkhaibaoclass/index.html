@@ -1,0 +1,57 @@
+﻿<div class="box box-body">
+    <div class="col-xs-12">
+        <div class="panel-heading">
+            <!-- /.box-header -->
+            <div class="panel panel-info filterable">
+                <div class="panel-heading">
+                
+                    <h3 class="panel-title"> DANH SÁCH CÁC FROM </h3>
+                </div>
+
+                <br />
+                <div class="form-inline">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-success" id="btn_mauhd" data-toggle='modal' href='#them_quyen'><i class="fa fa-plus"></i> Thêm</button>
+                    </div>
+                </div>
+                <br />
+                <div id="messinfoxoa_quyen"></div>
+                <div id="messinfo_quyen"></div>
+                <table class="table table-striped table-bordered">
+                    <thead class="bg-aqua">
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên chức năng</th>
+                            <th>Tên class</th>
+                            <th>Ngày khai báo</th>
+                            <th>Chức năng</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody id="table_quyen"></tbody>
+                </table>
+                <div class="row-fluid row-fluid2">
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_dquyen"></label></div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_dquyen">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div data-include="Module/Phanquyen/Themclass"></div>
+<div data-include="Module/Phanquyen/Suaclass"></div>

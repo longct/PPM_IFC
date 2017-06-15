@@ -1,0 +1,31 @@
+﻿.backrow{
+    background-color: red;
+    
+}
+.btn#btnThucHien_cbtu,.btn#btnThucHien_cbden{
+    margin-bottom:10px;
+}
+#txt_timkiemcongto {
+    border-color: transparent;
+    background-color: #e6e6e6;
+    font-size: 1.6rem !important;
+    width: 45%;
+    border-radius: 3px;
+    font-size: 10px !important;
+    padding: 8px;
+    margin-bottom:10px;
+}
+input[type="checkbox"]{
+    height:18px;
+    width:18px;
+}
+#tbl_ckbT thead tr th{
+    background:#09f;
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+}
+#tbl_ckbT {
+    max-height: 300px;
+    overflow-y: auto;
+}

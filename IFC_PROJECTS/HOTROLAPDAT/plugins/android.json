@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "com.infras.hotrolapdat"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.infras.hotrolapdat"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.infras.hotrolapdat"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.infras.hotrolapdat"
+        },
+        "cordova-plugin-sim": {
+            "PACKAGE_NAME": "com.infras.hotrolapdat"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.infras.hotrolapdat"
+        },
+        "cz.blocshop.socketsforcordova": {
+            "PACKAGE_NAME": "com.infras.hotrolapdat"
+        },
+        "de.appplant.cordova.plugin.email-composer": {
+            "PACKAGE_NAME": "com.infras.hotrolapdat"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.infras.hotrolapdat"
+        }
+    }
+}

@@ -1,0 +1,45 @@
+﻿.log_title {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    width: 20%;
+    height: auto;
+    background: rgb(247, 246, 174);
+}
+
+.close span {
+    font-size: 13px;
+}
+
+.logtitle_body {
+    margin-top: 25px;
+    font-size:12px;
+    /*background:#fff;*/
+    padding: 10px;
+    max-height: 150px;
+    overflow: auto;
+}
+
+#close_ht {
+    background: #09f;
+    width: 100%;
+    opacity: .9;
+    font-size: 12px;
+    height: 25px;
+    padding: 2%;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+     text-shadow: none !important; 
+}
+.last_log{
+    font-weight:normal;
+    color:#fff;
+}
+.last_log marquee{
+    margin-left:10px;
+    font-size:11px;
+    line-height:13px;
+}
+.titleLog{
+    border-bottom:1px dotted #ccc;
+}

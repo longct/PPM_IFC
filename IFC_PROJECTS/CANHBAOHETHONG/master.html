@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HỆ THỐNG CẢNH BÁO</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/AdminLTE.css">
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <link href="plugins/select2/select2.css" rel="stylesheet" />
+    <link href="plugins/iCheck/all.css" rel="stylesheet" />
+    <link href="plugins/timepicker/bootstrap-timepicker.css" rel="stylesheet" />
+    <link href="css/jquery.treefilter.css" rel="stylesheet" />
+    <link href="css/tree/style.css" rel="stylesheet" />
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/skins/_all-skins.css">
+    <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+    <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link href="css/jquery.dynatable.css" rel="stylesheet" />
+    <!--<link href="css/style.css" rel="stylesheet" />-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini ">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a  class="linktomod logo" href="#Module/Home" >
+                
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <span tkey="page_header">HỆ THỐNG CẢNH BÁO</span>
+                
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                     <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <img src="img/user3-128x128.jpg" class="user-image" alt="User Image">
+                                <span class="hidden-xs" id="txt_tenhienthi_nv"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="user-header">
+                                    <img src="img/user3-128x128.jpg" class="img-circle" alt="User Image">
+
+                                    <p>
+                                        <span id="txt_tennv_nv"> </span>
+                                        <small>Nhân viên</small>
+                                       
+                                    </p>
+                                </li>
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat" data-toggle="modal" data-target="#thongtintaikhoan" id="btn_taikhoan">Tài khoản</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat" id="btn_dangxuat">Đăng xuất</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="#" class="sidebar-toggle" data-toggle="control-sidebar" role="button">
+                                <span class="sr-only">Toggle navigation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <!--<div data-include="template/menu"></div>-->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                
+            </section>
+            <!-- Main content -->
+            <section id="main-content">
+                <div class="site-min-height">
+                    <div class="main-content-delete">
+                        <div data-include="Module/CanhBaoInsertFile"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <!--<div data-include="template/footer"></div>-->
+        <!--<div data-include="modules/thongtintaikhoan"></div>-->
+        <div class="movetotop"><i class="glyphicon glyphicon-open"></i></div>
+        <div id="toast" class='' style='display:none'></div>
+    </div>
+    <!-- The Right Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <section class="sidebar">
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu treeview">
+                <li class="header">CHỨC NĂNG</li>
+                <li class="active treeview">
+                    <a href="#">
+                        <i class="fa fa-dashboard"></i> <span>CẢNH BÁO</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">                        
+                        <li id=""><a class="linktomod" href="#Module/CanhBaoInsertFile"><i class="fa fa-circle-o"></i>CẢNH BÁO INSERT FILE</a></li>
+                        <li id=""><a class="linktomod" href="#Module/test"><i class="fa fa-circle-o"></i>TEST</a></li>
+                     </ul>
+                </li>  
+        
+               
+                     
+            </ul>
+        </section>
+    </aside>
+    <div id="loading_over">
+        <div class="loading">
+            Đang tải dữ liệu ...<br />
+            <span class="huyload">(Click để hủy)</span>
+        </div>
+    </div>
+    <div class="control-sidebar-bg"></div>
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="api/addModul.js"></script>
+    <script src="api/api.js"></script>
+    <script src="js/jstree.js"></script>
+    <script src="js/jquery.dynatable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="plugins/knob/jquery.knob.js"></script>
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+    <script src="plugins/select2/select2.full.min.js"></script>
+    <script src="plugins/iCheck/icheck.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+    <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="plugins/fastclick/fastclick.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.treefilter.js"></script>
+    <script src="js/highchart.js"></script>
+    <script src="master/init.js"></script>
+    <link href="master/init.css" rel="stylesheet" />
+
+    <!--TIMER-->
+    <script src="js/timer-doctucthoi.js"></script>
+</body>
+
+</html>
+
+<div data-include="Module/modals_yesno"></div>
+<div data-include="Module/modals_yesnoxoa"></div>
+<div data-include="Module/TaiKhoan/Thongtintaikhoan"></div>
+<!--<script>
+    $(document).ready(function () {
+        var userinfo = JSON.parse(localStorage.getItem('userinfo'));
+        $("#txt_tenhienthi_nv").html(userinfo.ten);
+        $("#txt_tennv_nv").html(userinfo.ten);
+      
+    });
+
+</script>-->

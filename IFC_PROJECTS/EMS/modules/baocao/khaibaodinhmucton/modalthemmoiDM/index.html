@@ -1,0 +1,78 @@
+﻿
+<div class="modal fade " id="them_kbdm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 80%;">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title">Khai báo dự phòng VTTB theo kho</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_themkbdm"> </div>
+                <div style="width: 100%; float: left;">
+                    <div class="form-group  col-xs-12 col-sm-6 col-lg-6 col-md-6">
+                        <label>Ban miền (*)</label>
+                        <select id="cb_banmien_kbdm" class="form-control form-control-inline input-medium">
+                            <option value="-1">--Chọn ban miền--</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-6 col-md-6">
+                        <label>Thời gian khai báo (*)</label>
+                        <input type="text" class="form-control form-control-inline input-medium default-date-picker" id="txt_thoigiankhaibao_kbdm" />
+                    </div>
+                </div>
+                <div style="width: 100%; float: left;">
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-6 col-md-6">
+                        <label>Vật tư thiết bị (*)</label>
+                        <select id="cbvattu_kbdm" class="form-control form-control-inline input-medium">
+                            <option value="-1">--Tất cả--</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-6 col-md-6">
+                        <label>Định mức tồn tối thiểu (*)</label>
+                        <input type="number" class="form-control form-control-inline input-medium" id="txt_dmttt_kbdm" min="0" />
+                    </div>
+                </div>
+                <div style="width: 100%; float: left;">
+
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-6 col-md-6">
+                        <label>Loại VTTB (*)</label>
+                        <select id="cb_tenvt_kbdm" class="form-control form-control-inline input-medium">
+                            <option value="-1">--Tất cả--</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-6 col-md-6">
+                        <label>Định mức tồn tối đa (*)</label>
+                        <input type="number" class="form-control form-control-inline input-medium" id="txt_dmttd_kbdm" min="0" />
+                    </div>
+
+                </div>
+                <div style="width: 100%; float: left;">
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-6 col-md-6">
+                        <label>SL VTTB dự phòng/tháng (*)</label>
+                        <input type="number" class="form-control form-control-inline input-medium" id="txt_slvttbduphong_kbdm" min="0" />
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-6 col-md-6">
+                        <label>SL VTTB xin cấp phát sinh (*)</label>
+                        <input type="number" class="form-control form-control-inline input-medium" id="txt_slvttbcapphat_kbdm" min="0" />
+                    </div>
+                </div>
+                <div class="form-group col-xs-12 col-sm-12 col-lg-12 col-md-12">
+                    <label>Ghi chú (*)</label>
+                    <input type="text" class="form-control form-control-inline input-medium" id="txt_ghichu_kbdm" />
+                </div>
+                <div class="form-group col-xs-12 col-sm-12 col-lg-12 col-md-12" style="margin-top: 10px;">
+                    <button class="btn btn-success" id="btn_checkluu_themkbdm"><i class="fa fa-plus"></i>Lưu lại</button>
+                    <button class="btn btn-default" type="button" id="btn_thoat_kbdm">Thoát</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- page end-->

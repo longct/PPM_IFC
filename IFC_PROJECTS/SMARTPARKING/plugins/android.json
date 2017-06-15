@@ -1,0 +1,29 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.infras.smartparking"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.infras.smartparking"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.infras.smartparking"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.infras.smartparking"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "85075801930",
+            "PACKAGE_NAME": "com.infras.smartparking"
+        }
+    }
+}

@@ -1,0 +1,77 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12 panel-tkdn">
+        <div class="date-filter">
+            <div class="col-lg-3 tungay_d ">
+                <label class="filter_tsvh">Từ ngày</label>
+                <div class="input-group date">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right datepicker" id="txt_tungay_ctdn">
+                </div>
+            </div>
+            <div class="col-lg-3 denngay_d">
+                <label class="filter_tsvh">Đến ngày</label>
+                <div class="input-group date">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right datepicker" id="txt_denngay_ctdn">
+                </div>
+            </div>
+            <div class="col-lg-2 ">
+                <label style="width:50px;">&nbsp;</label>
+                <button class="btn btn-success " id="btn_thuchien">Thực hiện</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box box-body">
+    <div class="pull-left"><span class="sobanghi"></span></div>
+    <div class="pull-right" id="toolbar">
+        <ul>
+            <li><a href="#help_ctdn" data-toggle="modal"><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></a></li>
+            <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel"></i></li>
+            <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+        </ul>
+    </div>
+
+    <div class="col-lg-12 panel-tkdn">
+        <table class="table table-bordered table-striped tabhead">
+            <thead class=" bg-aqua-gradient">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên đăng nhập</th>
+                    <th>Đăng nhập lúc</th>
+                    <th>Đăng xuất</th>
+                    <th>Số lần đăng nhập</th>
+                    <th>Đơn vị</th>
+                </tr>
+            </thead>
+            <tbody id="tKdangnhap_tk"></tbody>
+        </table>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade modal-info" id="help_ctdn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header m-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">TRỢ GIÚP</h4>
+            </div>
+            <div class="modal-body bg_fff" style="background-color:#fff !important;color:#111 !important;">
+                <b>MÔ TẢ CHỨC NĂNG:</b><br />
+                Cho phép xem các báo cáo chi tiết thống kê đăng nhập <br />
+                <b>HƯỚNG DẪN DỬ DỤNG:</b><br />
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="toast" class='' style='display:none'></div>
+

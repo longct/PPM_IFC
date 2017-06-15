@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <link rel="shortcut icon" href="../../img/favicon.png">
+   
+    <title>AMOSI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+
+</head>
+
+<body>
+
+    <section id="container" class="">
+        <!--header start-->
+        <header class="header white-bg">
+            <div class="top-nav ">                
+            </div>
+        </header>
+        <!--header end-->
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu" id="nav-accordion">
+
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-laptop"></i>
+                            <span>VẬN HÀNH</span>
+                        </a>
+                        <ul class="sub">
+                            <!--<li><a href="#Module/Home">Trang chủ</a></li>-->
+                            <li><a href="#Module/Vanhanh/locthongtin">Lọc thông tin</a></li>
+                            <li><a href="#Module/Vanhanh/DanhGiaTyLeDocDL">Đánh giá tỷ lệ đọc dữ liệu</a></li>
+                            <li><a href="#thsl_hethong">Tổng hợp sô liệu hệ thống</a></li>
+                            <li><a href="#lapmoi_khacphuc">Lắp đặt khắc phục</a></li>
+                            <li><a href="#bcthsl_theongay">Tổng hợp số liệu theo ngày</a></li>
+                            <li><a href="#bcthsl_congto">Đánh giá chất lượng hệ thống</a></li>
+                            <li><a href="#bcthsl_hientruong">Tổng hợp phân tích lỗi</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="fa fa-book"></i>
+                            <span>BÁO CÁO ĐỐI SOÁT</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="#bc_doisoat">Báo cáo đối soát</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+
+        <section id="main-content">
+            <div data-include-mas="Module/Home/index.html"></div>
+        </section>
+        <!--main content end-->
+        <!--footer start-->
+        <footer class="site-footer">
+            <div class="text-center">
+                Copyright © 2015. All rights reserved. Infras consult
+                <a href="#" class="go-top">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
+        </footer>
+
+        <!--footer end-->
+    </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/advanced-form-components.js"></script>
+
+    <script type="text/javascript" src="js/common-scripts.js"></script>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <!--<script src="js/highcharts.js"></script>
+    <script src="js/draggable-legend.js"></script>-->
+
+   
+   
+   
+   
+
+    <script type="text/javascript" src="api/csi.js"></script>
+    <script type="text/javascript" src="api/api.js"></script>
+    <script type="text/javascript" src="api/ifc.js"></script>
+
+    <script>
+        $(document).ready(function () {
+                $('#panel-body').toggleClass("fullscreen", 1000);
+
+        });
+    </script>
+
+
+</body>
+</html>

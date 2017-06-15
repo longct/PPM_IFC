@@ -1,0 +1,23 @@
+﻿#kychot {
+    padding: 6px;
+}
+#kychot_multi{
+    width:55px;
+}
+#btnExec {
+    margin-top: 10px;
+}
+
+.select2-container {
+    /*margin-top:5px;*/
+}
+
+.input-group {
+    padding: 0px !important;
+}
+
+select.form-control {
+    /*text-transform: lowercase;*/
+}
+.totalcs{text-align:center}
+#cboOptionGetData.form-control option{line-height:30px;}

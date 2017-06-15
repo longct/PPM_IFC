@@ -1,0 +1,102 @@
+﻿
+<div class="panel panel-body no-margin-bt no-padding">
+    <div class="box-body" style="margin-bottom:10px;">
+        <div class="col-lg-12">
+            <div class="col-lg-8">
+                <div class="tl_cmiss">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm theo tên tài khoản" id="txtsearch_dlmk"  style="" />
+                </div>
+                <div class="tl_cmiss">
+                    <button class="btn btn-success pull-right" id="btnsearch_dlmk">Tìm kiếm</button>
+                </div>
+            </div>
+          
+        </div>   
+    </div>
+</div>
+<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left"><span class="sobanghi"></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12 panel-tsvh">
+        <table class="table table-responsive table-bordered table-hover" id="tbl_dlmk_data">
+            <thead class="bg-aqua-gradient">
+                <tr>
+                    <th class="c">STT</th>
+                    <th class="">Tên tài khoản</th>
+                    <th class="c">Trạng thái</th>
+                    <th class="c">Mở khóa</th>
+                    <th class="c">Đặt lại mật khẩu</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="row-fluid row-fluid2">
+        <table style="width:100%">
+            <tr>
+                <td class="col-lg-3" style="padding-top:8px">
+                    <div>
+                        <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_dlmk"></label></div>
+                    </div>
+                </td>
+                <td class="col-lg-9">
+                    <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_dlmk">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="md_datlaimatkhau" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header m-success">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Đổi mật khẩu</h4>
+            </div>
+            <div class="modal-body">
+                <table id="dmk" class="table table-bordered">
+
+                    <tr>
+                        <td>Mật khẩu mới</td>
+                        <td>
+                            <div class="input-group">
+                                <input type="password" class="form-control" placeholder="Mật khẩu mới" id="txt_nhapmoimk_dlmk">
+                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nhập lại mật khẩu mới</td>
+                        <td>
+                            <div class="input-group">
+
+                                <input type="password" class="form-control" placeholder="Nhập lại mật khẩu mới" id="txt_nhaplaimk_dlmk">
+                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td valign="bottom" style="padding:5px;">
+                            <button class="btn btn-success" id="btn_thaymatkhau_dlmk">Lưu</button>
+                            <button class="btn btn-warning" id="cancel_dmk_dlmk">Hủy</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+﻿<section class="panel">
+    <div class="panel-body">
+        <div class="modal-body2">
+            <div class="form-inline">
+                <div class="form-group ">
+                    <label class="control-label" for="uploadexcel_nhapketquadiemdo">Nhập từ tệp</label>
+                    <input type="file" id="uploadexcel_nhapketquadiemdo" accept=".xls, .xlsx" class="form-control form-control-inline input-medium" onchange=" f_UploadFile_xuatexcel(this); " />
+                    <button type="button" class="btn btn-success" id="btn_execl_tkt"><i class="fa fa-download info-icon"></i>Cập nhật</button>
+                </div>
+
+
+            </div>
+
+            <br />
+            <div id="messinfo_capnhat"></div>
+            <div style="float:right; text-align:right">
+                <a href="../../filemau/DiemDoLoi.xlsx" download="" id="filemau_ldd"><label class="filemau" style="cursor:pointer;">File mẫu</label></a>
+                <!--<input class="square_btn excel" type="button" id="btn_export_excel" alt="Xuất excel">-->
+            </div>
+            <table class="table table-responsive table-bordered" id="table_upketquaxuly">
+                <thead class="bg-aqua">
+                    <tr>
+                        <th>STT</th>
+                        <th>Meterid</th>
+                        <th>Mã điểm đo</th>
+                        <th>Dự án</th>
+                        <th>Loại lỗi</th>
+                        <th>Chi tiết lỗi</th>
+                        <th>Ngày lỗi</th>
+                        <th>Trạng thái xử lý</th>
+                        <th>Ngày xử lý</th>
+                        <th>Kết quả xử lý</th>
+                        <th>Người xử lý</th>
+                        <th>Ngày tạo</th>
+                        <th>Ghi chú</th>
+                        <!--<th>Chức năng</th>-->
+                    </tr>
+
+                </thead>
+                <tbody id="table_dsldd"></tbody>
+            </table>
+
+            <div class="row-fluid row-fluid2">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_ttddxl"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_ttddxl">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</section>
+

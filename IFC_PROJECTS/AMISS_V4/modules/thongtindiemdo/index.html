@@ -1,0 +1,88 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12 mes">
+        <span id="mesMain"></span>
+    </div>
+    <div class="col-lg-12 panel-tsvh">
+        <div class="col-lg-9 ttdd_info">
+            <table id="tab_info" class="table table-responsive no-border table-condensed padding-3" style="width:100%">
+                <tr>
+                    <td><label class="filter_tsvh">Sổ ghi (*)</label></td>
+                    <td><label class="filter_tsvh">Mã điểm đo (*)</label></td>
+                    <td><label class="filter_tsvh">Tên Khách hàng (*)</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="ttdd_soghi" class="form-control" disabled>
+                    </td>
+                    <td><input type="text" class="form-control" disabled id="ttkh_madiemdo" /></td>
+                    <td><input type="text" class="form-control" disabled id="ttkh_tenkh" /></td>
+                </tr>
+                <tr>
+                    <td><label class="filter_tsvh">IMEI (*)</label></td>
+                    <td><label class="filter_tsvh">Số công tơ(*)</label></td>
+                    <td><label class="filter_tsvh">Số thứ tự</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control" disabled id="ttkh_imei" /></td>
+                    <td><input type="text" class="form-control" disabled id="ttkh_sct" /></td>
+                    <td><input type="text" class="form-control" disabled id="ttkh_stt" /></td>
+                </tr>
+                <tr>
+                    <td><label class="filter_tsvh">Công nghệ (*)</label></td>
+                    <td><label class="filter_tsvh">Nhà sản xuất (*)</label></td>
+                    <td><label class="filter_tsvh">Ngày lắp (*)</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="ttdd_congnghe" class="form-control" disabled>
+                            <option value="1">RF</option>
+                            <option value="2">PLC</option>
+                            <option value="3">BLUETOOTH</option>
+                            <option value="4">GPRS</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="ttdd_nsx" class="form-control" disabled>
+                            <option value="1">PSMart</option>
+                            <option value="2">IFC</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control datepicker" disabled id="ttkh_ngaylap" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><label class="filter_tsvh">Địa chỉ</label></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <textarea class="form-control" style="width:100%" disabled id="ttkh_diachi"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><label class="filter_tsvh">Ghi chú</label></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <textarea class="form-control" style="width:100%" disabled id="ttkh_ghichu"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-3 box-body tools">
+            <label class="filter_tsvh" for="c3">
+                <input type="checkbox" id="c3" class="flat-red"> Cho phép cảnh báo
+            </label>
+            <label class="filter_tsvh" for="c4">
+                <input type="checkbox" id="c4" class="flat-red"> Thông báo mất điện
+            </label>
+            <div class="form-inline" id="btn_div">
+
+            </div>
+            <div class="form-group">
+            </div>
+        </div>
+    </div>
+</div>
+
+

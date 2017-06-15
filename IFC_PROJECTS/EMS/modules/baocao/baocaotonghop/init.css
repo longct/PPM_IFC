@@ -1,0 +1,21 @@
+﻿
+.middle{vertical-align:middle !important;}
+.tongquan th{background-color: #11a914;vertical-align:middle}
+.c{text-align:center}
+
+::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+}
+.panel-body table thead tr th.sltk {
+   vertical-align:middle !important;
+}
+.ktmb{background-color:#f0ad4e !important}
+.kbp{background-color:#3c763d !important}
+.kbm{background-color:#607D8B !important}
+#myTableDatathead_baocaokhoth th,#myTableData_baocaokhoth tr{
+    white-space: nowrap;
+}
+.th-chitietton-ktmb{background-color: #11a914 !important;}
+.th-chitietton-kbmb{background-color: #F4B084 !important;}
+.multiselect{min-width:200px !important}

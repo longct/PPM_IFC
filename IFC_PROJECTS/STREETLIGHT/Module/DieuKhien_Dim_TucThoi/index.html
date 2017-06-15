@@ -1,0 +1,52 @@
+﻿
+<div class="modal fade " id="DieuKhien_Dim_TucThoi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title nameheader_Dkdtt">THIẾT LẬP TỨC THỜI BÓNG</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_Dkdtt"></div>
+
+                <div class="arbtn">
+                    <table style="width: 100%" >
+                        <tr style="border: 1px solid #077fce; border-radius: 5px; background: #c7dbe8;" class="ContBtn">
+                            <td colspan="4" style="padding:10px;">
+                                <span id="TimeSl_Dkdtt" name="TimeSl_Dkdtt" value=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select class="form-control" id="Brightness_Dkdtt">
+                                    <option value='-1'>Chọn độ sáng</option>
+                                  
+                                    <option value='40'>40%</option>
+                                    <option value='50'>50%</option>
+                                    <option value='60'>60%</option>
+                                    <option value='70'>70%</option>
+                                    <option value='80'>80%</option>
+                                    <option value='90'>90%</option>
+                                    <option value='100'>100%</option>
+                                   
+                                </select>
+                            </td>
+                            <td align="right"><span> Thời gian (phút): <input type="text" id="ToHour_Dkdtt" value="0" style="width: 60px;" /></span></td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button data-dismiss="modal" class="btn btn-default btn_modal" type="button">Thoát</button>
+                                <button class="btn btn-success btn_modal" type="button" id="btn_CapNhat_Dkdtt">Cập nhật</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,154 @@
+﻿<div class="col-lg-12" id="tab_xuatexcel">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/ghepcap/ghepcap_tab"></div>
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-heading">
+            <div class="form-inline" role="form">
+                <table class="table" id="tbl_xuatexcel">
+                    <tr>
+                       
+                        <td>
+                            <label class="th">Chọn loại xuất - thu hồi</label>
+                        </td>
+                        <td>
+                            <select id="cbloainhapxuat_xuatexcel" class="form-control  ">
+                                <option>--Chọn loại xuất - thu hồi--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Mã phiếu</label>
+                        </td>
+                        <td>
+                            <input type="text" disabled class="form-control form-control-inline input-medium" id="txtMaphieu_xuatexcel" />
+                        </td>
+                        <td></td>
+                        <td><a href="filemau/FileMauNhapExcel.xls" download><label class="filemau">File mẫu</label></a></td>                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="th" id="lbkho_xuatexcel">Xuất đến kho</label>
+                        </td>
+                        <td>
+                            <select id="cb_toikho_xuatexcel" class="form-control  ">
+                                <option>--Chọn kho--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">Lý do</label>
+                        </td>
+                        <td>
+                            <input type="text" id="txtlydo_xuatexcel" class="form-control form-control-inline input-medium" />
+                        </td>
+
+                        <!--<td>Loại thiết bị</td>
+                        <td>
+                            <select id="cbloaithietbi_xuatexcel" class="form-control  ">
+                                <option>--Chọn loại thiết bị--</option>
+                            </select>
+                        </td>-->
+                        <td></td>
+
+                       
+                    </tr>
+                    <tr>
+                        <td>Trạng thái</td>
+                        <td>
+                            <select id="cbtrangthai_xuatexcel" class="form-control  ">
+                                <option>--Chọn trạng thái--</option>
+                            </select>
+                        </td>
+                        <td>Dự án</td>
+                        <td>
+                            <select id="cb_project_xuatexcel" class="form-control  ">
+                                <option>--Dự án--</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="th">Người duyệt</label>
+                        </td>
+                        <td>
+                            <select id="cb_nguoiduyet_xuatexcel" class="form-control  ">
+                                <option>--Chọn người duyệt--</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="th">File Biên bản</label>
+                        </td>
+                        <td>
+                            <input type="file" id="file_bienban_xuatexcel" />
+                        </td>
+                       
+                      
+                       
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="th">File Excel</label>
+                        </td>
+                        <td colspan="5">
+                            <input type="file" id="file_chonexecl_xuatexcel" onchange="f_UploadFile_xuatexcel(this)" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+
+            <table id="action">
+                <tr>
+                    <td>
+                        <a class="btn btn-warning" id="btnCapNhat_xuatexcel" disabled="disabled">
+                            <i class="fa fa-plus"></i>Cập nhật
+                        </a>
+                    </td>
+                    <td> &nbsp;</td>
+                    <td>
+                        <a class="btn btn-warning" id="btnXuatExecl_xuatexcel" disabled="disabled">
+                            <i class="fa fa-plus"></i>Xuất Execl
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+            <div id="messinfo_xuatexcel"></div>
+            <table class="table table-bordered" id="grview_xuatexcel" style="display:none">
+                <thead>
+                    <tr>
+                        <td class="c">STT</td>
+                        <td class="c">Series1</td>
+                        <td class="c">Series2</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <table class="table table-bordered" id="grvnhapkhotrung_xuatexcel" style="display:none">
+                <thead>
+                    <tr>
+                        <td class="c">STT</td>
+                        <td class="c">Series1</td>
+                        <td class="c">Series2</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+    </section>
+</div>
+
+<div data-include="modules/modals_yesno"></div>

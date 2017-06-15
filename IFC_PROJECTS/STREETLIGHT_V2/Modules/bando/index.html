@@ -1,0 +1,35 @@
+﻿<div class="col-md-12" style="padding-right:0px">
+    <div class="panel panel-warning" id="gmap" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div class="panel-title-box">
+                <h3 class="text-orange"><i class="glyphicon glyphicon-map-marker"></i> Bản đồ</h3>
+                <span>Vị trí tủ trên bản đồ</span>
+            </div>
+            <ul class="panel-controls panel-controls-title">
+                <li style="padding-top: 7px;padding-right: 10px;">Hiện bóng</li>
+                <li style="padding-right: 10px;">
+                    <label class="switch switch-small">
+                        <input type="checkbox" checked="" value="0" id="hienbong_map">
+                        <span></span>
+                    </label>
+                </li>
+                <li style="padding-top: 7px;padding-right: 10px;">Hiện cáp</li>
+                <li style="padding-right: 10px;">
+                    <label class="switch switch-small">
+                        <input type="checkbox"  value="0" id="hiencap_map">
+                        <span></span>
+                    </label>
+                </li>
+                <li><a href="#" class="panel-full-right"><span class="fa fa-expand"></span></a></li>
+            </ul>
+
+        </div>
+        <div class="panel-body panel-body-map">
+            <div id="google_ptm_map" style="width: 100%;"></div>
+        </div>
+        <div class="panel-body">
+            <span class="text-bold text-danger pull-left">Tổng số tủ: <label id="tongsotu"></label> Tổng số bóng: <label id="tongsobong"></label></span>
+
+        </div>
+    </div>
+</div>

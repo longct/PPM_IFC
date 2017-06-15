@@ -1,0 +1,113 @@
+﻿body {
+    font-size: 14px;
+}
+
+#timkiemdiemdo, #cb_loaict, #matkhaucto {
+    height: 34px;
+    margin-top: 5px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+}
+
+.tbl_data table tbody tr td {
+    text-align: center;
+}
+
+.tbl_data table {
+    margin-bottom: 0 !important;
+}
+
+.tbl_data {
+    overflow: hidden;
+}
+
+#timkiemdiemdo {
+    width: 100%;
+    font-size: 20px;
+}
+
+#matkhaucto {
+    width: 60%;
+}
+
+#cb_loaict {
+    width: 22%;
+}
+
+.btn_meter i {
+    color: #fff;
+    font-size: 50px;
+}
+
+.btn_meter {
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.act_btn {
+    /*height: 65px;*/
+    /*position: absolute;*/
+    /*bottom: 75px;*/
+}
+
+.meter_info_tbl {
+    color: #fff;
+    text-transform: none;
+    overflow: auto;
+}
+
+.modal-body {
+    padding: 0px !important;
+}
+
+#connect_bg_tk {
+    text-align: center;
+}
+
+.toadohientai {
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.loading_search {
+    color: #fff;
+    text-align: center;
+    text-transform: none;
+    padding: 5px;
+}
+
+.loading2 {
+    width: 30px;
+}
+
+#tbl_process_status {
+    color: #fff;
+    margin: 0 auto;
+}
+
+#process_status {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.step_icon {
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.step_label {
+    /*font-size: 20px;*/
+}
+
+.tr_step {
+    border-bottom: 1px dashed #ccc;
+}

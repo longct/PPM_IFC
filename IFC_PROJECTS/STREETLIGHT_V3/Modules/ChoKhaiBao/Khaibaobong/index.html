@@ -1,0 +1,55 @@
+﻿<div class="modal fade " id="Khaibaobong" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">KHAI BÁO BÓNG</h4>
+            </div>
+            <div class="panel-body classdanhkhaibaobong">
+                <div id="messinfo_thembong"></div>
+                <div id="messinfo_xuatexcel"></div>
+                <div>
+
+                </div>
+                <table class="tbl_kbb" >
+                    <tr>
+                        <td>Chọn tủ</td>
+                        <td>
+                            <select class="form-control input-sm m-bot15" id="cbtu_thembong"></select>
+                        </td>
+                        <td style="display:none" id="td_fileexcel">Chọn file excel</td>
+                        <td style="display:none"  id="td_fileupload">
+                            <input type="file" class="form-control" id="uploadexcel_thembong" accept=".xls, .xlsx" style="width:100%!important" onchange="f_UploadFile_xuatexcel()" />
+                        </td>
+                        <td style="display:none" id="td_btn_thuchien"><button class="btn btn-success classquyen_them" type="button" id="btn_checkluu_thembong">Thực hiện</button></td>
+                        <td><a class="btn btn-success classquyen_them" href="#" id="btn_kbnb" >Khai báo nhiều bóng</a><a class="btn btn-success classquyen_them" href="#" id="btn_kbnb_dong" style="display:none">Đóng</a></td>
+                        <td><a class="btn btn-success classquyen_them" href="#" data-toggle="modal" data-target="#Khaibao_kbbong">Khai báo bóng</a></td>
+                    </tr>
+                </table>
+                <div class="txt_cssmau"><a href="filemau/Thembong.xlsx" download><label class="filemau"><span class="glyphicon glyphicon-paperclip"></span> File mẫu</label></a></div>
+                <table class="table table-striped table-bordered" id="thembong_tbl" style="margin-top: 11px;">
+                    <tbody id="table_thembong"></tbody>
+                </table>
+                <div class="table-responsive" style="height:400px; overflow:auto;margin-top: 11px;">
+                    <table class="table table-hover table-striped table-bordered" id="table_dsbong_tqtctb" style="display:none">
+                        <thead>
+                            <tr>
+                                <th class="c">Tên bóng</th>
+                                <th class="c">Chế độ</th>
+                                <th class="c">CS thiết lập</th>
+                                <th class="c">CS hiện tại</th>
+                                <th class="c">Điện áp(V)</th>
+                                <th class="c">Dòng điện(A)</th>
+                                <th class="c">Công suất(W)</th>
+                                <th class="c">
+                                   Nhánh
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

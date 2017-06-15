@@ -1,0 +1,20 @@
+﻿
+table#tbl_xuatexcel tr td {
+    border: none;
+    padding: 5px;
+}
+table#tbl_xuatexcel tbody tr td input[type="text"], table#tbl_xuatexcel tbody tr td select, table#tbl_xuatexcel tbody tr td textarea {
+    width: 200px !important;
+    font-size: 13px !important;
+    margin: 0;
+}
+
+
+.them_phieu {
+    padding-top: 20px;
+}
+
+i.fa-them {
+    cursor: pointer;
+    color: #047514;
+}

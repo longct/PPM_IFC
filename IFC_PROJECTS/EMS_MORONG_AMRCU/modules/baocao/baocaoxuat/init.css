@@ -1,0 +1,8 @@
+﻿.v_m{vertical-align:middle !important}
+.c_m{background-color: #339933 !important; color:#fff !important; font-weight:bold;}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+#grv_baocaoxuat tbody td{text-align:center}

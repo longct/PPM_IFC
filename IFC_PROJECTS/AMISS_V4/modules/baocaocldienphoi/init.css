@@ -1,0 +1,31 @@
+﻿h3.bcvh {
+    margin-top: 0 !important;
+}
+
+#top1 {
+    max-height: 150px;
+    overflow: auto;
+}
+
+#cb_loaidulieu {
+    width: 257px !important;
+}
+
+.tong {
+    color: #fdc689;
+    text-align: right;
+}
+
+.ma {
+    color: #a186be;
+    text-align: right;
+}
+
+.sa {
+    color: #6dcff6;
+    text-align: right;
+}
+
+.l {
+    text-align: right;
+}

@@ -1,0 +1,143 @@
+﻿.tu_panel {
+    background: #fff  ;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.tuseselect {
+    background: #d3edff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+    .tu_panel table tr th {
+        border-top: none;
+        border-radius: 10px 10px 0px 0px;
+        color: #fff;
+        background: #09f;
+    }
+
+.th {
+    border-top: none;
+    background: #09f !important;
+    color: #fff;
+    border-right: 1px solid #ddd;
+}
+.tu_panel table{
+    margin-bottom:0px !important;
+}
+.tu_panel table tr td {
+    background: #eee;
+    border:1px solid #ccc;
+}
+.tu_panel table tr td:last-child {
+    background: #eee;
+    border-right:none;
+}
+.tu_panel table tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.date_time {
+    padding: 0px !important;
+    text-align: right !important;
+    padding-right: 10px !important;
+    background: #eeeeee;
+    border: none !important;
+}
+
+.led {
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    float: right;
+}
+
+.connect {
+    background: #02f602;
+}
+.disconnect {
+    background: #f60202;
+}
+
+
+.panel {
+    overflow: auto !important;
+}
+
+.main-content {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #aaa;
+    }
+
+.tu_panel input[type="checkbox"]{
+    margin: -10px 0 0px -10px;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+    opacity: 0;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+
+.tu_panel ul li{
+    display:inline;
+}
+.tu_panel ul{
+    padding:8px;
+    /*border-right:1px #09f solid;
+    border-bottom:1px #09f solid;
+    border-left:1px #09f solid;*/
+    background:#eee;
+}
+.tu_panel ul li img{
+    margin-right:5px;    
+    width: 25px !important;
+}
+
+.tudien tbody tr th a{
+    color:#fff;
+}
+span#checktatca,span#refreshAll{
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #09f;
+    font-weight: bold;
+}
+.checkGroup{
+    float:left;
+}
+.checkGroup input[type=checkbox]{
+    margin:0px;
+
+}
+#thanhly a i{
+    font-size:18px;
+}

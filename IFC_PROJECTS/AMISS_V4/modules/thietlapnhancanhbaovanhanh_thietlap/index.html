@@ -1,0 +1,73 @@
+﻿<div class="modal fade " id="choncanhbao_tlncbvh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:70%">
+        <div class="panel panel-info filterable">
+            <div class="panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="panel-title"> Danh sách cảnh báo</h3>
+            </div>
+            <div id="messinfo_suatk"></div>
+            <select id="cbwaning_type_tlncbvh" class="form-control margin-5 margin-30" style="max-width:300px"></select><br />
+           <div class="table-responsive  padding-30" id="mod_thietlapnhancb">
+               <table class="table table-bordered" id="tbl_ccbvh" style="width:100%; margin:auto">
+                   <thead class="bg-aqua-gradient">
+                       <tr>
+                           <th>STT</th>
+                           <th>Loại cảnh báo</th>
+                           <th>Phân loại cảnh báo</th>
+                           <th>Tên cảnh báo</th>
+                           <th><input type="checkbox"  id="chkAll" /></th>
+                       </tr>
+                   </thead>
+                   <tbody></tbody>
+               </table>
+           </div>
+            <div class="btn_close_tlncbvh">
+                <button class="btn btn-success" id="btn_close_tlncbvh">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade " id="thietlapemail_tlncbvh" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog" style="width:50%">
+        <div class="panel panel-info filterable">
+            <div class="panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="panel-title">Xác thực email</h3>
+            </div>
+            <div id="messinfo_xtmail" ></div>
+            <div class="table-responsive  padding-30" id="mod_thietlapnhancb">
+                <table class="table table-bordered" style="width:100%; margin:auto"> 
+                    <tbody>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text" class="form-control" id="txtemail_tlncbvh" placeholder="maibt@infras.com.vn" /></td>
+                            <td><button id="btxacthucmail_tlncbvh" class="btn btn-success" >Xác thực email</button></td>
+                        </tr>
+                        <tr>
+                            <td>Email cc:</td>
+                            <td><input type="text" class="form-control" id="txtemailcc_tlncbvh" placeholder="baopqsl@gmail.com,minhdvp9pcsl@gmail.com,thelk.ifc@gmail.com"  /></td>
+                        </tr>
+                        <tr>
+                            <td>Nhập mã xác thực</td>
+                            <td><input type="text" class="form-control" id="txtnhapmaxt_tlncbvh"  readonly/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" id="tdnotesendmail"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn_close_tlncbvh">
+                <button class="btn btn-success" id="btn_closextmail_tlncbvh">Đóng</button>
+                <button class="btn btn-success" id="btn_xacthuc_tlncbvh" disabled>Xác thực</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,8 @@
+﻿body {
+}
+.vertical-middle{vertical-align:middle !important;}
+table#tbl_baocaokho tbody tr td input[type="text"], table#tbl_baocaokho tbody tr td select, table#tbl_baocaokho tbody tr td textarea {
+    width: 200px !important;
+    font-size: 13px !important;
+    margin:0
+}

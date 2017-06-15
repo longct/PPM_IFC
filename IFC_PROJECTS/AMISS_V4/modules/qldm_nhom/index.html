@@ -1,0 +1,128 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left"><span class=""></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12 panel-tsvh" id="qldm">
+        <div class="col-lg-3">
+            <select class="form-control">
+                <option value="-1">-- Chọn điện lực</option>
+                <option value="0101">ĐIỆN LỰC IFC</option>
+            </select>
+            <select class="form-control" disabled>
+                <option value="010101">TẦNG 15</option>
+                <option value="010102">TẦNG 14</option>
+            </select>
+            <input type="text" class="form-control" id="dm_search" placeholder="Tìm kiếm điểm đo" />
+            <label class="filter_tsvh">Điện áp</label>
+            <select class="form-control">
+                <option value="-1">CHỌN ĐIỆN ÁP</option>
+                <option value="1">Uavg <= 6kV</option>
+                <option value="2">Uavg > 110kV</option>
+            </select>
+            <label class="filter_tsvh">Sản lượng: </label>
+            <input type="radio" name="sl_rad" id="r1" class="icheckbox_flat-blue" checked/><label for="r1">Trung bình</label>
+            <input type="radio" name="sl_rad" id="r2" class="icheckbox_flat-blue" /><label for="r2">Tháng gần nhất</label>
+            <div class="slthang" style="display:none">
+                <table class="table table-nopadding no-border">
+                    <tr>
+                        <td><label class="filter_tsvh">Từ</label></td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="(KwH)" />
+                        </td>
+                        <td><label class="filter_tsvh">Đến</label></td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="(KwH)" />
+                        </td>
+                    </tr>
+                </table>                
+            </div>
+            <div class="sltb">
+                <table class="table table-nopadding">
+                    <tr>
+                        <td><label class="filter_tsvh">Từ</label></td>
+                        <td>
+                            <input type="text" class="form-control datepicker"  />
+                        </td>
+                        <td><label class="filter_tsvh">Đến</label></td>
+                        <td>
+                            <input type="text" class="form-control datepicker"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="filter_tsvh">Từ</label></td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="(KwH)" />
+                        </td>
+                        <td><label class="filter_tsvh">Đến</label></td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="(KwH)"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button class="btn btn-success" disabled>Thực hiện</button>
+            <div class="table_diemdo">
+                <label class="filter_tsvh">3 điểm đo</label>
+                <table class="table table-responsive table-bordered table-nopadding table-hover" id="tbl_dsdiemdo">
+                    <thead class="bg-aqua-gradient">
+                        <tr>
+                            <th>Mã</th>
+                            <th>Tên khách hàng</th>
+                            <th>Số công tơ</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-lg-1">
+            <div class="btn_chuyendiemdo">
+                <i class="glyphicon glyphicon-play"></i><br />
+                <i class="glyphicon glyphicon-forward"></i>
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <select class="form-control">
+                <option value="-1">-- Chọn Nhóm</option>
+                <option value="0">Thêm nhóm mới</option>
+                <option value="123">Nhóm 110kV</option>
+            </select>
+            <label class="filter_tsvh">Tên nhóm</label>
+            <input type="text" class="form-control" />
+            <label class="filter_tsvh">Ghi chú</label>
+            <input type="text" class="form-control" placeholder="Ghi chú" />
+           
+            <button class="btn btn-success">Thêm mới</button>
+            <button class="btn btn-warning">Cập nhật</button>
+            <button class="btn btn-danger">Xóa</button>
+            <div class="table_diemdo_nhan">
+                <label class="filter_tsvh">3 điểm đo</label>
+                <table class="table table-responsive table-bordered table-nopadding table-hover" id="tbl_dsdiemdo_nhan">
+                    <thead class="bg-aqua-gradient">
+                        <tr>
+                            <th>Mã</th>
+                            <th>Tên khách hàng</th>
+                            <th>Mã điểm đo</th>
+                            <th>IMEI</th>
+                            <th>Số công tơ</th>
+                        </tr>
+                    </thead>
+
+                    <tbody></tbody>
+                </table>
+            </div>
+            <button class="btn btn-danger">Loại bỏ điểm đo</button>
+        </div>
+    </div>
+
+</div>
+
+

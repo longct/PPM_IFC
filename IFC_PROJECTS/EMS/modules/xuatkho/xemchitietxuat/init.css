@@ -1,0 +1,19 @@
+﻿table#tbl_nhaptay tr td {
+    border: none;
+    padding: 0px;
+}
+
+table#tbl_nhaptay input,table#tbl_nhaptay select, table#tbl_nhaptay textarea {
+width:220px;
+}
+
+
+.them_phieu{
+    padding-top:20px;
+}
+i.fa-them{
+    cursor:pointer;
+    color:#047514;
+}
+.c{text-align:center}
+.row-fluid.chitietpx{width: 97% !important;margin-bottom: 2px !important;}

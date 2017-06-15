@@ -1,0 +1,73 @@
+﻿
+<div class="modal fade" id="tab_baocaosoluongvattu_qlvt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">BÁO CÁO SỐ LƯỢNG VẬT TƯ DỰ ÁN</h4>
+            </div>
+           
+            <section class="panel" style="box-shadow: none;border: none;">
+                <div class="panel-body">
+                    <table >
+                        <tr>
+                            <td>Từ ngày</td>
+                            <td>
+                                <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                       data-date="30/01/2015" data-date-format="dd/mm/yyyy" placeholder="30/01/2015" id="txt_datefrom_baocaotbdan" cache="true" />
+                            </td>
+                            <td>Đến ngày</td>
+                            <td>
+                                <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                       data-date="30/01/2015" data-date-format="dd/mm/yyyy" placeholder="30/01/2015" id="txt_dateto_baocaotbdan" cache="true" />
+                            </td>
+                            <td>
+                                <a class="btn btn-success" id="btnThucHienDanhsach_baocaotbdan">
+                                    <i class="fa fa-plus"></i>Thực hiện
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="messinfo_baocaotbdan"></div>
+                    <table class="table table-bordered" style="margin:5px 0">
+                        <tr>
+                            <td class="c">STT</td>
+                            <td class="c">Mã VTTB</td>
+                            <td class="c">Dự án thử nghiệm 1</td>
+                            <td class="c">Dự án thử nghiệm 2</td>
+                            <td class="c">Dự án thử nghiệm 3</td>
+                            <td class="c">Dự án 1</td>
+                            <td class="c">Dự án 2</td>
+                            <td class="c">Dự án 3</td>
+                            <td class="c">Tổng cộng</td>
+                        </tr>
+                        <tbody id="tblbaocao_baocaotbdan"></tbody>
+                    </table>
+                    <div class="row-fluid">
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <div class="span6">
+                                        <div class="dataTables_info" id="hidden-table-info_info"><label id="txt_tongsobanghi_baocaotbdan"></label></div>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="span6">
+                                        <div class="dataTables_paginate paging_bootstrap pagination" id="pagecurent_baocaotbdan">
+                                            <ul></ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<!--<div data-include="modules/quanlyvattu/nhapkho/nhaptayxemchitiet"></div>-->

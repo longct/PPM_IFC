@@ -1,0 +1,65 @@
+﻿
+<div class="modal fade " id="baocao_trangthaibong" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 900px; margin: auto;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">TÌNH TRẠNG BÓNG HIỆN TẠI</h4>
+            </div>
+            <div class="panel-body classbaocaotrangthaibong">
+                <div class="modal-body2">
+                    <table style="width:40%">
+                        <tr>
+                            <td>
+                                <select class="form-control input-sm m-bot10" id="cb_atu_bcttbong">
+                                    <option value="-1">Tất cả tủ</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button class="btn btn-success" type="button" id="btn_tu_bcttbong">Thực hiện</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <div id="messinfo_bcttbong"></div>
+                    <div id="tong_thai"><label class="sum">Tổng: <span id="txt_tong_thai"></span></label>&nbsp;, <label class="kn"> Bóng sáng: <span id="txt_bong_sang"></span> </label>&nbsp;,<label class="hong"> Bóng dim: <span id="txt_bong_dim"></span> </label>&nbsp; , <label class="mkn"> Bóng tắt: <span id="txt_bong_tat"></span> </label>&nbsp;, <label class="cxd"> Bóng hỏng: <span id="txt_chua_hong"></span> </label>&nbsp; <label class="cxd"> Bóng chưa xác định: <span id="txt_chuaxacdinh"></span> </label></div>
+                    <br />
+                    <table class="table table-striped table-bordered" id="tbl_ckbT">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên bóng</th>
+                                <th>IDRF bóng</th>
+                                <th>Thời gian lắp</th>
+                                <th>Thời gian cập nhật trạng thái bóng</th>
+                                <th>Tên tủ</th>
+                                <th>Trạng thái</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="table_bcttbong"></tbody>
+                    </table>
+                    <div class="row-fluid row-fluid2">
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <div class="span6">
+                                        <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_bcttbong"></label></div>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="span6">
+                                        <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_bcttbong">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

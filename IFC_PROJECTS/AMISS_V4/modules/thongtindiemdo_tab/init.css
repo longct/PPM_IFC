@@ -1,0 +1,7 @@
+﻿#tab_info input, #tab_info select{
+    width:200px !important;
+}
+.tools{
+    background: rgba(243, 156, 18, 0.18);
+    border-radius: 5px;
+}

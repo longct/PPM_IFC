@@ -1,0 +1,107 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left">
+            <div class="form-inline col-lg-12">
+                <div class="col-lg-2">
+                    <label class="filter_tsvh">Loại cảnh báo</label>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control" id="cb_ct_loaicb">
+                        <option value="0">–– TẤT CẢ ––</option>
+                        <option value="TIME">LỆCH THỜI GIAN CÔNG TƠ VÀ HỆ THỐNG</option>
+                        <option value="ANGLE">CẢNH BÁO GÓC LỆCH PHA</option>
+                        <option value="COS">CẢNH BÁO COS Φ</option>
+                        <option value="FREG">CẢNH BÁO TẦN SỐ</option>
+                        <option value="SL">CẢNH BÁO SẢN LƯỢNG</option>
+                        <option value="U">CẢNH BÁO ĐIỆN ÁP</option>
+                        <option value="I">CẢNH BÁO DÒNG ĐIỆN</option>
+                        <option value="PHA">CẢNH BÁO THỨ TỰ PHA</option>
+                        <option value="P">CẢNH BÁO CÔNG SUẤT</option>
+                    </select>
+                </div>
+                <div class="col-lg-2">
+                    <label class="filter_tsvh ">Loại khách hàng</label>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control" id="cb_ct_loaikh">
+                        <option value="0">–– TẤT CẢ ––</option>
+                        <option value="1">TRUNG THẾ &gt; 0.4Kv VÀ DƯỚI 110Kv</option> <!--(TU > 100 và TU < 1000, TI > 1)-->
+                        <option value="2">TRỰC TIẾP HẠ THẾ (TU=1 và TI &gt; 1)</option>
+                        <option value="3">TRỰC TIẾP (TU=1 và TI=1)</option>
+                        <option value="4">110 kv (TU &gt;=1000 và TI&gt; 1)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-inline col-lg-12">
+                <!--<div class="col-lg-2">
+                    <label class="filter_tsvh">Phân loại cảnh báo</label>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control">
+                        <option>-- Tất cả --</option>
+                    </select>
+                </div>-->
+                <div class="col-lg-2">
+                    <label class="filter_tsvh">Trạng thái khắc phục</label>
+                </div>
+                <div class="col-lg-3">
+                    <select class="form-control" id="cb_ct_trangthai">
+                        <option value="0">MỚI CẢNH BÁO</option>
+                        <option value="1">ĐANG KIỂM TRA HIỆN TRƯỜNG</option>
+                        <option value="2">ĐÃ ĐI XỬ LÝ HIỆN TRƯỜNG</option>
+                        <option value="3">XỬ LÝ KHÔNG THÀNH CÔNG</option>
+                        <option value="4">ĐÃ XỬ LÝ VÀ TRUY THU</option>
+                    </select>
+                </div>
+
+                <div class="form-inline col-lg-3 div_btn">
+                    <button class="btn  btn-success" id="btn_thuchien_ctcb">Thực hiện</button>
+                    <button class="btn  btn-warning" disabled id="btn_phieudd" data-value="abc">Phiếu điều động</button>
+                </div>
+            </div>
+        </div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel" id="excel_cbvh_chitiet"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="pull-left col-lg-12"><span class="sobanghi"></span></div>
+    <div class="col-lg-12 panel-tsvh">
+        <table class="table table-responsive table-bordered table-hover" id="tbl_ctcb_data">
+            <thead class=" bg-aqua-gradient">
+                <tr>
+                    <th class="th_stt1pha">STT</th>
+                    <th class="">Thời điểm cảnh báo</th>
+                    <th class="">Phân loại cảnh báo</th>
+                    <th class="">Nội dung cảnh báo</th>
+                    <th class="">Tổng thời gian</th>
+                    <th class="">
+                        <!--<input type="checkbox" class="flat-red" />-->
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <!--<div class="scroll_header col-lg-12 " style="display:none;">
+        <table class="table table-responsive table-bordered" id="fix_header">
+            <thead class=" bg-aqua-gradient">
+                <tr>
+                    <th class="th_stt1pha">STT</th>
+                    <th class="th_sct">Số công tơ</th>
+                    <th class="th_lct">Thời điểm chốt</th>
+                    <th class="th_tgct">Chỉ số điện năng(Kwh)</th>
+                    <th class="th_dienap">Sản lượng lũy kế tháng (KWh)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>-->
+</div>
+
+<div data-include="modules/modal_phieudieudong"></div>
+

@@ -1,0 +1,86 @@
+﻿<section class="panel">
+    <div id="messinfo"></div>
+    <div class="panel panel-primary filterable">
+        <div class="panel-heading col-sm-12">
+            <h3 class="panel-title">Hệ thống</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <label class="th" style="width:100px">Hệ thống</label>
+                <select id="cb_hethong" class="form-control form-control-inline input-medium">
+                    <option value="1">--Chọn hệ thống--</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label class="th">Mã</label>
+                <input id="txt_mahethong" type="text" class="form-control form-control-inline input-medium" />
+            </div>
+            <div class="col-sm-3">
+                <label class="th">Tên</label>
+                <input id="txt_tenhethong" type="text" class="form-control form-control-inline input-medium" />
+            </div>
+            <div class="col-sm-3" style="margin-top: 30px;">
+                <button class="btn btn-success" type="button" id="btn_luu_hethong">Lưu</button>
+                <button class="btn btn-danger" type="button" id="btn_xoahethong">Xóa</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary filterable">
+        <div class="panel-heading">
+            <h3 class="panel-title">Giải pháp</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <label class="th" style="width:100px">Giải pháp</label>
+                <select id="cb_giaiphap" class="form-control form-control-inline input-medium">
+                    <option value="1">--Chọn giải pháp--</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label class="th">Mã</label>
+                <input id="txt_magiaiphap" type="text" class="form-control form-control-inline input-medium" />
+            </div>
+            <div class="col-sm-3">
+                <label class="th">Tên</label>
+                <input id="txt_tengiaiphap" type="text" class="form-control form-control-inline input-medium" />
+            </div>
+            <div class="col-sm-3" style="margin-top: 30px;">
+                <button class="btn btn-success" type="button" id="btn_luu_thunghiem">Lưu</button>
+                <button class="btn btn-danger" type="button" id="btn_xoa_thunghiem">Xóa</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary filterable">
+        <div class="panel-heading">
+            <h3 class="panel-title">Danh mục lỗi</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <label class="th" style="width:100px">Danh mục lỗi</label>
+                <select id="cb_danhmucloi" class="form-control form-control-inline input-medium">
+                    <option value="1">--Chọn loại lỗi--</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label class="th" style="width:100px">Loại lỗi</label>
+                <select id="cb_loailoi" class="form-control form-control-inline input-medium">
+                    <option value="1">--Chọn loại lỗi--</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label class="th">Mã</label>
+                <input id="txt_maloi" type="text" class="form-control form-control-inline input-medium" />
+            </div>
+            <div class="col-sm-3">
+                <label class="th">Tên</label>
+                <input id="txt_tenloi" type="text" class="form-control form-control-inline input-medium" />
+            </div>
+            <div class="col-sm-2" style="margin-top: 30px;">
+                <button class="btn btn-success" type="button" id="btn_luu_loi">Lưu</button>
+                <button class="btn btn-danger" type="button" id="btn_xoa_loi">Xóa</button>
+            </div>
+        </div>
+        <div id="messinfo_tldmloi"></div>
+    </div>
+</section>
+<div data-include="Module/modals_yesnoxoa"></div>

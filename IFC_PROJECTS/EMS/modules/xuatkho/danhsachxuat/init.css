@@ -1,0 +1,4 @@
+.dsxuat tbody tr td input[type="text"], .dsxuat tbody tr td select, .dsxuat tbody tr td textarea {
+    width: 160px !important;
+    font-size: 14px;
+}

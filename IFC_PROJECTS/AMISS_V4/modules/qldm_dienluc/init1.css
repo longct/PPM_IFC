@@ -1,0 +1,89 @@
+﻿#qldm input,
+#qldm select,
+#qldm button {
+    margin-bottom: 5px;
+}
+
+.col-lg-1 {
+    padding: 0px;
+    width: 50px;
+}
+
+.btn_chuyendiemdo {
+    width: 100%;
+    padding-top: 250px;
+}
+
+    .btn_chuyendiemdo i {
+        font-size: 20px;
+        background: #0094ff;
+        padding: 5px;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 3px;
+        margin-top: 5px;
+        line-height: 20px;
+    }
+
+.table_diemdo {
+    height: 610px;
+    max-height: 590px;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+
+.table_diemdo_nhan {
+    height: 482px;
+    max-height: 462px;
+    overflow: auto;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+label.filter_tsvh {
+    margin-left: 10px;
+}
+
+.table-hover tbody tr:hover {
+    background: #ff6a00 !important;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+#jqxDropDL_qldm_1, #jqxDropDL_qldm_2 {
+    overflow-y: scroll;
+    background-color: #fff;
+}
+
+    #jqxDropDL_qldm_1 ul, #jqxDropDL_qldm_2 ul {
+        background-color: white;
+        color: black;
+    }
+
+        #jqxDropDL_qldm_1 ul li div:hover, #jqxDropDL_qldm_2 ul li div:hover {
+            background-color: white;
+            color: black;
+        }
+
+#dropDownButton1, #dropDownButton2 {
+    /*width: 528px !important;*/
+    width: 100% !important;
+    margin: 5px 0px 5px 0px;
+    color: black;
+    height: 30px !important;
+    border-radius: 0px;
+}
+
+
+.jqx-fill-state-hover {
+    background-color: white;
+}
+
+#dropDownButtonContentdropDownButton {
+    top: 3px !important;
+}
+
+tr.selected {
+    background-color: #ccc !important;
+}

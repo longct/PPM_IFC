@@ -1,0 +1,8 @@
+﻿.backrow{
+    background-color: red;
+    
+}
+table#tbl_themtk tr td{
+    border:none;
+    vertical-align: middle;
+}

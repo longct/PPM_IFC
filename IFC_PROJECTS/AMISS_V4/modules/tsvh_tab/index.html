@@ -1,0 +1,152 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12 panel-tsvh">
+        <div class="bg_tab tab-div">
+            <div class="tab_tsvh active" data-value="chisotungthoidiem">
+                <label id="cs_tungthoidiem" title="Chỉ số từng thời điểm">CS từng thời điểm</label>
+            </div>
+            <div class="tab_tsvh " data-value="thongsovanhanh">
+                <label id="tsvh">Thông số vận hành</label>
+            </div>
+
+            <div class="tab_tsvh" data-value="chisochotngay">
+                <label id="csc_thang">Chỉ số chốt ngày</label>
+            </div>
+            <div class="tab_tsvh" data-value="chisochotthang">
+                <label id="vector">Chỉ số chốt tháng</label>
+            </div>
+            <div class="tab_tsvh" data-value="bieudophutai">
+                <label id="bdpt">Biểu đồ phụ tải</label>
+            </div>
+            <div class="tab_tsvh" data-value="bieudotsvh">
+                <label id="bdtsvh">Biểu đồ TSVH</label>
+            </div>
+            <div class="tab_tsvh" data-value="sukien">
+                <label id="sukien">Sự kiện</label>
+            </div>
+        </div>
+        <div class="box box-info no-margin-bt">
+            <div class="box-header">
+                <h3 class="box-title">
+                    <i class="glyphicon glyphicon-dashboard help_tsvh"></i><span id="tendiemdo_span"></span>
+                </h3>
+                <div class="pull-right box-tools">
+                    <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Thu nhỏ">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="date-filter">
+                    <!--  -->
+                    <div class="col-lg-3 cscthang tuthang_d" style="display:none;width:initial;">
+                        <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:5px;">Từ tháng</label>
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right datepicker" id="date_tuthang"  datepicker_op="{'minViewMode' : 'months', 'format': 'mm/yyyy'}">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 cscthang denthang_d" style="display:none;width:initial;">
+                        <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:5px;">Đến tháng</label>
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right datepicker" id="date_denthang"  datepicker_op="{'minViewMode' : 'months', 'format': 'mm/yyyy'}">
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg-3 tungay_d btg" style="width:initial;">
+                        <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:5px;">Từ ngày</label>
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right datepicker" id="date_tungay">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 denngay_d btg" style="width:initial;">
+                        <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:5px;">Đến ngày</label>
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right datepicker" id="date_denngay">
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg-3 thoidiem " style="display:none;width:initial;">
+                        <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:5px;">Thời điểm</label>
+                        <select id="thoidiem_cb" class="form-control" style="width:90px">
+                            <option value=""> </option>
+                            <option value="00:00">00:00</option>
+                            <option value="00:30">00:30</option>
+                            <option value="01:00">01:00</option>
+                            <option value="01:30">01:30</option>
+                            <option value="02:00">02:00</option>
+                            <option value="02:30">02:30</option>
+                            <option value="03:00">03:00</option>
+                            <option value="03:30">03:30</option>
+                            <option value="04:00">04:00</option>
+                            <option value="04:30">04:30</option>
+                            <option value="05:00">05:00</option>
+                            <option value="05:30">05:30</option>
+                            <option value="06:00">06:00</option>
+                            <option value="06:30">06:30</option>
+                            <option value="07:00">07:00</option>
+                            <option value="07:30">07:30</option>
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                        </select>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg-4 sct" style="width:initial;">
+                        <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:5px;">Số công tơ</label>
+                        <select id="cb_sct_tsvh" class="form-control ">
+                        </select>
+                    </div>
+                    <div class="col-lg-2 ">
+                        <button class="btn btn-success " id="btn_thuchien" disabled>Thực hiện</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="tab_content">
+    <!--<div data-include="modules/thongsovanhanh"></div>-->
+</div>
+
+

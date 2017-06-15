@@ -1,0 +1,165 @@
+﻿<section class="panel">
+    <div class="panel-body">
+        <div class="modal-body2">
+            <div class="form-inline" role="form">
+
+                <table class="table" border="0">
+                    <tr>
+                        <td>
+                            <label class="th">Đơn vị</label>
+                        </td>
+                        <td>
+                            <!--<select id="cb_donvi" class="form-control" style="width:204px;">
+                                <option value="1">--Chọn đơn vị--</option>
+                            </select>-->
+                            <div id="dropDownButton" style="width: 200px !important;margin-top:0px">
+                                <div id='jqxDropDonvi' style="border: none;">
+                                </div>
+                            </div>
+                        </td>
+
+                        <!--<td>
+                            <label class="th">Dự án</label>
+                        </td>
+                        <td>
+                            <select id="cb_duan" class="form-control" style="width:204px;">
+                                <option value="1">--Chọn dự án--</option>
+                            </select>
+                        </td>-->
+
+                        <td>
+                            <label class="th">Trạng thái xử lý</label>
+                        </td>
+                        <td>
+                            <select id="cb_trangthai" class="form-control" style=" width:204px;">
+                                <option value="-1">--Chọn trạng thái xử lý--</option>
+                                <option value="CHUAXULY">Chưa xử lý</option>
+                                <option value="DANGXULY">Đang xử lý</option>
+                                <option value="DAXULY">Đã xử lý</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <label class="th">Kết quả xử lý</label>
+                        </td>
+                        <td>
+                            <select id="cb_ketqua" class="form-control" style=" width:204px;">
+                                <option value="-1">--Chọn kết quả--</option>
+                                <option value="THANHCONG">Thành công</option>
+                                <option value="THATBAI">Thất bại</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="th">Từ ngày</label>
+                        </td>
+                        <td>
+                            <input type="text" style="width:204px;" class="form-control form-control-inline input-medium default-date-picker" id="txt_tungay" />
+                        </td>
+
+                        <td>
+                            <label class="th">Loại lỗi</label>
+                        </td>
+                        <td>
+                            <select id="cb_loailoi" class="form-control" style="width:204px;">
+                                <option value="-1">--Chọn loại lỗi--</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="th">Đến ngày</label>
+                        </td>
+                        <td>
+                            <input type="text" style="width:204px;" class="form-control form-control-inline input-medium default-date-picker" id="txt_denngay" />
+                        </td>
+
+                        <td>
+                            <label class="th">Chi tiết lỗi</label>
+                        </td>
+                        <td>
+                            <select id="cb_chitietloi" class="form-control" style="width:204px;">
+                                <option value="-1">--Chọn chi tiết lỗi--</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <div class="form-group">
+                                <button class="btn btn-success" type="button" id="btn_laydulieu">Lấy dữ liệu</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <button class="btn btn-success" type="button" id="btn_xuatfileexcel">Xuất file Excel</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div id="messinfo_ldd"></div>
+                <table class="table table-responsive table-bordered">
+                    <thead class="header123">
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã điểm đo</th>
+                            <th>Dự án</th>
+                            <th>Loại lỗi</th>
+                            <th>Chi tiết lỗi</th>
+                            <th>Ngày lỗi</th>
+                            <th>Trạng thái xử lý</th>
+                            <th>Ngày xử lý</th>
+                            <th>Kết quả xử lý</th>
+                            <th>Người xử lý</th>
+                            <th>Ngày tạo</th>
+                            <th>Ghi chú</th>
+                            <th>Chức năng</th>
+                        </tr>
+
+                    </thead>
+                    <tbody id="table_dsldd"></tbody>
+                </table>
+                <div class="row-fluid row-fluid2">
+                    <table width="100%">
+                        <tr>
+                            <!--<td>
+                                <div class="span6">
+                                    <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_tldmloi"></label></div>
+                                </div>
+
+                            </td>-->
+                            <!--<td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_tldmloi">
+                                    </div>
+                                </div>
+                            </td>-->
+                            <td>
+                                <center><div class="form-group">
+                                    <button class="btn btn-success" type="button" id="btnXemThem" style="display: none">Xem thêm</button>
+                                </div></center>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+</section>
+<div data-include="Module/modals_yesno"></div>
+<div data-include="Module/Danhsachloi/Suathongtinloi"></div>
+<link href="../../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../../js/jqx/jqxcore.js"></script>
+<script src="../../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../../js/jqx/jqxtree.js"></script>
+<script src="../../../js/jqx/jqxdata.js"></script>

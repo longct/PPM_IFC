@@ -1,0 +1,153 @@
+﻿<div class="col-lg-12">
+    <div class="box box-body">
+        <div class="col-lg-12">
+            <div class="col-lg-2">
+                <div id="dropDownButton" style="width: 100%;margin-top:11px">
+                    <div id='jqxDropDL_home' style="border: none;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="margin-top: 15px;">
+                <input type="radio" name="rad_typeview" value="1" checked>
+                <label>
+                    Xem chỉ số định kỳ
+                </label>
+                <input type="radio" name="rad_typeview" value="2">
+                <label>
+                    Xem dữ liệu ngày
+                </label>
+            </div>
+            <div class="col-lg-3 typeview2">
+                <select id="Cb_thongke" class="form-control" style="width: 100%;margin-top: 10px;">
+                    <option value="1" selected="selected" tkey="trangthaikhachhang">TRẠNG THÁI KHÁCH HÀNG</option>
+                    <option value="2" tkey="canhbaovanhanh">CẢNH BÁO VẬN HÀNH</option>
+                    <option value="3" tkey="canhbaosukien">CẢNH BÁO SỰ KIỆN</option>
+                </select>
+            </div>
+            <div class="col-lg-2 typeview2" style="margin-top: 15px;" id="Inday">
+                <input type="checkbox" id="ckInday">
+                <label tkey="xemdulieutrongngay">
+                    Xem dữ liệu trong ngày
+                </label>
+            </div>
+            <div class="col-lg-1 typeview2" style="margin-top: 15px;" id="Inday">
+                <button id="f5_sumhome" class="" style="margin-top: 0px; display: inline-block;"></button>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <div class="row" id="Chart_content">
+                    <div style="margin: 0 auto;width:50%;">
+                        <div style="width: 600px; float:left;">
+                            <div class="chart-responsive" style="margin-top:10px;">
+                                <canvas id="pieChart"></canvas>
+                            </div>
+                            <div class="legg">
+                                <table id="legend_js"></table>
+                            </div>
+                            <!-- ./chart-responsive -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer no-padding">
+                <table class="table table-responsive table-bordered table-striped table-hover typeview2" id="summary_table">
+                    <thead class="bg-aqua">
+                        <tr>
+                            <th>STT</th>
+                            <th>Đơn vị</th>
+                            <th>Đọc thành công</th>
+                            <th>Chưa có dữ liệu</th>
+                            <th>Thanh lý</th>
+                            <th>Tổng điểm đo</th>
+                            <th>Tỷ lệ đọc thành công</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <table class="table table-responsive table-bordered table-striped table-hover typeview2" id="event_table" style="display:none">
+                    <thead class="bg-aqua">
+                        <tr>
+                            <th>STT</th>
+                            <th>Đơn vị</th>
+                            <th>Lập trình công tơ</th>
+                            <th>Mất cân bằng dòng</th>
+                            <th>Mất dòng</th>
+                            <th>Quá dòng</th>
+                            <th>Ngược công suất</th>
+                            <th>Quá tải</th>
+                            <th>Đổi mật khẩu</th>
+                            <th>Thay đổi thời gian</th>
+                            <th>Mất nguồn</th>
+                            <th>Thấp áp</th>
+                            <th>Quá áp</th>
+                            <th>Mất điện áp pha</th>
+                            <th>Ngược chiều điện áp</th>
+                            <th>Ngược chiều dòng điện</th>
+                            <th>Mất cân bằng áp</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <table class="table table-responsive table-bordered table-striped table-hover typeview2" id="vanhanh_table" style="display:none">
+                    <thead class="bg-aqua">
+                        <tr>
+                            <th>STT</th>
+                            <th>Đơn vị</th>
+                            <th>Cảnh báo điện áp(U)</th>
+                            <th>Cảnh báo dòng điện(I)</th>
+                            <th>Cảnh báo cosφ</th>
+                            <th>Cảnh báo lệch thời gian</th>
+                            <th>Cảnh báo công suất</th>
+                            <th>Cảnh báo sản lượng</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="col-lg-1 typeview1" style="margin:5px;">
+                    <label class="filter_tsvh pull-left">Kỳ &nbsp;</label>
+                    <select id="cbo_kychot" class="form-control" style="width:50%;padding:5px">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 typeview1" style="margin:5px;">
+                    <label class="filter_tsvh pull-left">Tháng &nbsp;</label>
+                    <div class="input-group date" style="width:70%">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right datepicker" id="date_thang" datepicker_op="{'minViewMode' : 'months', 'format': 'mm/yyyy'}">
+                    </div>
+                </div> 
+                <div class="col-lg-2 typeview1" style="margin:5px;">
+                    <select id="cbo_option" class="form-control">
+                        <option value="0">Có chỉ số</option>
+                        <option value="1">Không có chỉ số</option>
+                    </select>
+                </div>
+                <button class="btn btn-success typeview1" id="btn_thuchien" style="margin:5px;">Thực hiện</button>
+            </div>
+            <table class="table table-responsive table-bordered table-striped table-hover typeview1" id="thongke_chisodinhky">
+                <thead class="bg-aqua"></thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+        <!-- /.footer -->
+    </div>
+    <!-- /.box -->
+
+</div>
+</div>
+<div data-include="modules/modal_chitiet_home"></div>
+<link href="../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../js/jqx/jqxcore.js"></script>
+<script src="../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../js/jqx/jqxtree.js"></script>
+<script src="../../js/jqx/jqxdata.js"></script>

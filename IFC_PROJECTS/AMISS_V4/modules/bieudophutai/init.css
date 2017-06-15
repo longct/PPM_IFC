@@ -1,0 +1,11 @@
+﻿table.tbl-info tbody tr td{
+    vertical-align:top !important;
+    padding:10px;
+}
+.input-group{
+    padding:0px !important;
+    width:100%;
+}
+#doimatkhau{
+    cursor:pointer;
+}

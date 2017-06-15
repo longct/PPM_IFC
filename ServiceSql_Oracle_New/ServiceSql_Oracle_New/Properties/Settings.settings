@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ServiceSql_Oracle_New.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebReference_WS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://117.3.47.98/amiss/ws_dnpc.asmx</Value>
+    </Setting>
+    <Setting Name="ServiceSql_Oracle_New_WebReference_WS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://117.3.47.98/amissjson/ws_dnpc.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

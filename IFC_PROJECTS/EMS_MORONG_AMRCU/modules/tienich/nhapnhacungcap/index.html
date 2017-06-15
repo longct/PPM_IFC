@@ -1,0 +1,50 @@
+﻿<div class="col-lg-12" id="tab_nhaptay">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/tienich/tienich_tab"></div>
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-heading">
+            <div id="messinfo_tinhapltb"></div>
+            <div class="form-inline" role="form">
+                <table class="table" id="tbl_nhaptay">
+                    <tr>
+                        <td>
+                            <label class="th">Nhà sản xuất (*)</label>
+                        
+                            <select id="cb_nhasanxuat_tienichncc" class="form-control form-control-inline input-medium">
+                                <option value="1">--Chọn nhà sản xuất--</option>
+                            </select>
+                            <label class="th">Mã nhà cung cấp (*)</label>
+                            <input type="text" class="form-control form-control-inline input-medium" id="txtmacc_tienichncc" />
+
+                            <label class="th">Nhà cung cấp (*)</label>
+                            <input type="text" class="form-control form-control-inline input-medium" id="txtnhacungcap_tienichncc" />
+                            <a class="btn btn-warning" id="btnCapNhat_tienichncc">
+                                <i class="fa fa-plus"></i>Cập nhật
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-body">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã nhà cung cấp</th>
+                        <th>Nhà Cung Cấp</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="myTableData_tienichncc"></tbody>
+            </table>
+        </div>
+    </section>
+</div>
+<div data-include="modules/tienich/modalssuacc"></div>
+<div data-include="modules/modals_yesno"></div>

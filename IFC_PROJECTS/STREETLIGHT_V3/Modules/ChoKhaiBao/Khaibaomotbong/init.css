@@ -1,0 +1,3 @@
+﻿table#tbl_themtk tbody tr td input[type="text"], table#tbl_themtk tbody tr td select, table#tbl_themtk tbody tr td textarea {
+    margin:0
+}

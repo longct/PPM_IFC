@@ -1,0 +1,70 @@
+﻿<div class="col-lg-12">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Lịch sử đăng nhập</h3>
+        </div>
+
+        <div class="panel-body">
+
+            <div class="col-lg-8">
+                <table id="" class="table no-border table-responsive">
+                    <tr>
+                        <td>Từ ngày:</td>
+                        <td>
+                            <input type="text" id="txt_tungay_dnht" class="form-control datepicker " />
+                        </td>
+                        <td>Đến ngày:</td>
+                        <td>
+                            <input type="text" id="txt_denngay_dnht" class="form-control datepicker " />
+                        </td>
+                        <td>Chọn khách hàng:</td>
+                        <td>
+                            <input type="text" id="txt_tenkhachang_dnht" class="form-control" />
+                        </td>
+                        <td><button id="btn_searchHD" class="btn btn-success"><i class="glyphicon glyphicon-search"> </i> Tìm kiếm</button></td>
+                    </tr>
+
+                </table>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div id="anhload" style="display:none;"> </div>
+           
+            <table class="table table-bordered table-striped">
+                <thead class="bg-aqua">
+                    <tr>
+                        <th>Tên khách hàng</th>
+                        <th>Số công tơ</th>
+                        <th>Tên đăng nhập</th>
+                        <th>Số lần đăng nhập</th>
+                        <th>Thời gian đăng nhập</th>
+
+                    </tr>
+                </thead>
+                <tbody id="table_thongke_dnht"></tbody>
+            </table>
+            <div id="messinfo_dnht"></div>
+            <div class="row-fluid row-fluid2">
+                <table style="width:100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_lsttdnht"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_lsttdnht">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+           
+        </div>
+    </div>
+</div>

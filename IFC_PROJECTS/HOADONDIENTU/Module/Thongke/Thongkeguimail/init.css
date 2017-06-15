@@ -1,0 +1,15 @@
+﻿.r{
+    text-align:right;
+}
+.c{
+    text-align:center;
+}
+.l{
+    text-align:left;
+}
+.w150{width:150px}
+.w100{width:100px !important;}
+.popover {
+    max-width:650px;
+    top:0px !important;
+}

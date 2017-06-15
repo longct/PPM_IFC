@@ -1,0 +1,91 @@
+﻿
+<div id="sua_nkldvh" class="modal fade" role="dialog" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Chỉnh sửa bài viết</h4>
+            </div>
+            <div class="box box-body" style="padding:15px">
+                <div class="col-lg-12">
+                    <input type="hidden" id="hdarticleId" />
+                    <div class="col-lg-12 col-xs-12" style="margin-bottom:5px !important">
+                        <label class="filter_tsvh">Chọn chủ đề</label>
+                        <select class="form-control" style="width:100%;" id="cb_editchude">
+                            <option value="0" class="lang_nkldvh_comboType_option0">- Chọn chủ đề -</option>
+                            <option value="1" class="lang_nkldvh_comboType_option1">Lỗi kết nối điểm đo</option>
+                            <option value="2" class="lang_nkldvh_comboType_option2">Lỗi chương trình phần mềm</option>
+                            <option value="3" class="lang_nkldvh_comboType_option3">Hư hỏng cháy nổ thiết bị đo xa</option>
+                            <option value="4" class="lang_nkldvh_comboType_option4">Chủ đề khác</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 col-xs-12" style="margin-bottom:5px !important">
+                        <label class="filter_tsvh">Tiêu đề</label>
+                        <input type="text" id="txt_edittieude" class="form-control" />
+                    </div>
+                    <div class="col-lg-12 col-xs-12" style="margin-bottom:5px !important">
+                        <label class="filter_tsvh">Nội dung</label>
+                        <textarea id="txt_editnoidung" class="form-control" cols="10" rows="15"></textarea>
+                    </div>
+                    <div class="col-lg-12 col-xs-12" style="margin-bottom:5px !important">
+
+                        <input type="file" class="form-control" placeholder="" id="txt_editfile" style="" />
+                        <em class="notransform"><span class="lang_nkldvh_fileAttach" style="display: inline;">Tệp đính kèm</span> (&lt;2mb)</em><br />
+                        <a id="hrfdinhkem" class="filter_tsvh"><span class="glyphicon glyphicon-paperclip"></span> Tải file đính kèm</a>
+                        
+                    </div>
+                    <div class="col-lg-12 col-xs-12" style="margin-bottom:5px !important">
+                        <button class="btn btn-success" id="btn_EditAticle" >SỬA BÀI</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="detail_nkldvh" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Chi tiết bài viết</h4>
+            </div>
+            <div class="box box-body" style="padding:15px">
+                <input type="hidden" id="hdcommentArticle_Id" />
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                  <div class="filter_tsvh" style="float:left; margin-right:5px; font-weight:bold">
+                      Chủ đề: 
+                  </div>
+                 <div id="lblchude_nkldvh" >
+
+                 </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 user_date">
+                  <span class="glyphicon glyphicon-user"></span> <span id="lblnguoitao_nkldvh"></span>  -  <span class="glyphicon glyphicon-time"></span> <span id="lblngaytao_nkldvh"></span>
+                </div>
+                <div  class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <h3 id="lbltieude_nkldvh"></h3>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" id="noidung_nkldvh">
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding-bottom: 10px;" >
+                    <a id="hrfdinhkem" class="filter_tsvh"><span class="glyphicon glyphicon-paperclip"></span> Tải file đính kèm</a>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="margin-bottom:5px !important">
+                    <textarea id="txt_ndcomment_nkldvh" class="form-control" cols="10" rows="7"></textarea>
+                </div>
+                <div class="col-lg-12 col-xs-12" style="margin-bottom:5px !important">
+
+                    <input type="file" class="form-control" placeholder="" id="txt_editcommentfile" style="" />
+                    <em class="notransform"><span class="lang_nkldvh_fileAttach" style="display: inline;">Tệp đính kèm</span> (&lt;2mb)</em><br />
+                </div>
+                <div class="col-lg-12 col-xs-12" style="margin-bottom:5px !important">
+                    <button class="btn btn-success" id="btn_CommentAticle">Trả lời</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

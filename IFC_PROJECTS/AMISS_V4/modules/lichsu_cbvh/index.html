@@ -1,0 +1,94 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left"><span class=""></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-9 panel-tsvh">
+        <table class="table no-border no-padding">
+            <tr>
+                <td>
+                    <label class="filter_tsvh">Từ ngày</label>
+                </td>
+                <td colspan="3">
+                    <div class="form-inline">
+                        <input type="text" class="form-control datepicker" id="ls_txttungay" />
+                        <label class="filter_tsvh">Đến ngày</label>
+                        <input type="text" class="form-control datepicker" id="ls_txtdenngay" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="filter_tsvh">Loại cảnh báo</label>
+                </td>
+                <td>
+                    <select id="ls_cbloaicanhbao" class="form-control">
+                        <option value="0">–– TẤT CẢ ––</option>
+                        <option value="TIME">LỆCH THỜI GIAN CÔNG TƠ VÀ HỆ THỐNG</option>
+                        <option value="ANGLE">CẢNH BÁO GÓC LỆCH PHA</option>
+                        <option value="COS">CẢNH BÁO COS Φ</option>
+                        <option value="FREG">CẢNH BÁO TẦN SỐ</option>
+                        <option value="SL">CẢNH BÁO SẢN LƯỢNG</option>
+                        <option value="U">CẢNH BÁO ĐIỆN ÁP</option>
+                        <option value="I">CẢNH BÁO DÒNG ĐIỆN</option>
+                        <option value="PHA">CẢNH BÁO THỨ TỰ PHA</option>
+                        <option value="P">CẢNH BÁO CÔNG SUẤT</option>
+                    </select>
+                </td>
+                <td>
+                    <label class="filter_tsvh">Phân loại cảnh báo</label>
+                </td>
+                <td>
+                    <select id="ls_cbphanloaicanhbao" class="form-control">
+                        <option value="0">–– TẤT CẢ ––</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="filter_tsvh">Loại khách hàng</label>
+                </td>
+                <td>
+                    <select id="ls_cbloaikhachhang" class="form-control">
+                        <option value="0">–– TẤT CẢ ––</option>
+                        <option value="1">TRUNG THẾ &gt; 0.4Kv VÀ DƯỚI 110Kv</option> <!--(TU > 100 và TU < 1000, TI > 1)-->
+                        <option value="2">TRỰC TIẾP HẠ THẾ (TU=1 và TI &gt; 1)</option>
+                        <option value="3">TRỰC TIẾP (TU=1 và TI=1)</option>
+                        <option value="4">110 kv (TU &gt;=1000 và TI&gt; 1)</option>
+                    </select>
+                </td>
+                <td>
+                    <button class="btn btn-success" id="btn_thuchien_lscb">Thực hiện</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="pull-left col-lg-12"><span class="sobanghi"></span></div>
+    <table class="table table-responsive table-bordered" id="tbl_lscb_data">
+        <thead class="bg-aqua-gradient">
+            <tr>
+                <th>STT</th>
+                <th>Thời điểm xảy ra cảnh báo</th>
+                <th>Thời điểm hết cảnh báo</th>
+                <th>Giá trị cảnh báo</th>
+                <th>Giá trị hết cảnh báo</th>
+                <th>Phân loại cảnh báo</th>
+                <th>Nội dung cảnh báo</th>
+                <th>Tổng thời gian</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+

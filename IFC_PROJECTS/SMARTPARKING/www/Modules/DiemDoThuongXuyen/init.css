@@ -1,0 +1,25 @@
+﻿
+
+#kq_table {
+    max-height: 120px;
+    overflow: auto;
+}
+
+
+
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+#kq_map{
+    background:#ccc;
+}
+.locpanel{
+    height:33%;
+}
+.kttdl {
+	padding:10px;
+}
+.kqtable{margin-top:10px;}
+.filter_tsvh{text-transform:none !important;color: rgba(1,91,136,1);}

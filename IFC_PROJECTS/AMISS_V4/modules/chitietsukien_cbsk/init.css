@@ -1,0 +1,97 @@
+﻿.col-lg-4,
+.col-lg-3,
+.col-lg-2,
+.col-lg-12{
+    padding:0px !important;
+}
+.form-inline.col-lg-12{
+    margin-top:3px;
+}
+.col-md-2 button{
+    margin-left:10px;
+}
+.col-lg-3 select{
+    /*width:90% !important;*/
+}
+.div_btn{
+    text-align:center;
+    /*margin-top:5px;*/
+}
+#btn_thuchien_cbsk{
+    margin-top: 28px;
+    margin-left: 17px;
+}
+.input-group{
+    padding:0 5px 0 5px !important;
+}
+#cb_sk_loaicb{
+    width:97%;
+}
+/**Tô màu sự kiện*/
+.sukien1, .sukien1:hover {
+    background: #f44336 !important;
+}
+
+.sukien2, .sukien2:hover {
+    background: #9c27b0 !important;
+    display: none;
+}
+
+.sukien3, .sukien3:hover {
+    background: #3f51b5 !important;
+}
+
+.sukien4, .sukien4:hover {
+    background: #2196f3 !important;
+}
+
+.sukien5, .sukien5:hover {
+    background: #00bcd4 !important;
+}
+
+.sukien6, .sukien6:hover {
+    background: #4caf50 !important;
+}
+
+.sukien7, .sukien7:hover {
+    background: #cddc39 !important;
+}
+
+.sukien8, .sukien8:hover {
+    background: #ff9800 !important;
+}
+
+.sukien9, .sukien9:hover {
+    background: #ff5722 !important;
+}
+
+.sukien10, .sukien10:hover {
+    background: #795548 !important;
+}
+
+.sukien11, .sukien11:hover {
+    background: #9e9e9e !important;
+}
+
+.sukien12, .sukien12:hover {
+    background: #607d8b !important;
+}
+
+.sukien13, .sukien13:hover {
+    background: #fdc689 !important;
+}
+
+.sukien14, .sukien14:hover {
+    background: #8dc63f !important;
+}
+
+.sukien15, .sukien15:hover {
+    background: #2c3757 !important;
+}
+
+.sukien16, .sukien16:hover {
+    background: #f58220 !important;
+}
+.tsvh_tendiemdo td{
+    padding:7px;
+}

@@ -1,0 +1,52 @@
+﻿<div class="modal fade " id="Baocao_chitiettu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content" style="margin: auto;overflow:hidden">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">THÔNG TIN TỦ</h4>
+            </div>
+
+            <div class="left-panel-bongden">
+                <div class="top-left">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <span>Tìm kiếm bóng</span><br />
+                                <input type="text" id="search_txt_tu_tqb" placeholder="Nhập thông tin tìm kiếm">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Trạng thái bóng</span><br />
+                                <select class="selectpicker" id="trangthaibong_tqb">
+                                    <option value="-1">Tất cả</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!--<tr>
+                            <td>
+                                <span>Mức công suất</span><br />
+                                <select class="selectpicker" id="muccongsuat_tqb">
+                                    <option value='-1'>Chọn độ sáng</option>
+                                </select>
+                            </td>
+                        </tr>-->
+                    </table>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="right-top">
+                    <div data-include="Modules/tongquantu_chitiettu"></div>
+                </div>
+            </div>
+            <div class="bottom-left">
+                <div data-include="Modules/tongquantu_chitietbong"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div data-include="Modules/ThongtinBongCUD/Capnhatttbong"></div>
+<div data-include="Modules/ThongtinctCUD/Capnhatcongtotu"></div>
+

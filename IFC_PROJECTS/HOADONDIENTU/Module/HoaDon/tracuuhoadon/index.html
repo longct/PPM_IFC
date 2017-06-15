@@ -1,0 +1,131 @@
+﻿    <div class="col-lg-12">
+         
+            <div class="panel panel-info ">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Tra cứu hóa đơn</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-lg-2">
+                        <div class="col-lg-12">
+                            <label style="width:90px">Tháng năm:</label>
+                            <input type="text" id="txt_thang_tthd" class="form-control datepicker" style="width:90px;display:inline-block" placeholder="" />
+                        </div>
+                        <div class="col-lg-12">
+                            <label style="width:90px"> Kỳ: </label>                                
+                            <select class="form-control select2" id="cb_kychot" style="width: 90px;display:inline-block">
+                                <option selected="selected">1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>                            
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="col-lg-12">
+                            <div class="col-lg-4">
+                                <label style="width:90px;">
+                                    <input type="radio" name="rdKieuLoc" value="0" class="flat-red" checked>Điện lực
+                                </label>
+                                <select class="form-control select2" id="cbDienluc" style="width: 220px;display:inline-block"></select>
+                            </div>
+                            <!--<div class="col-lg-1">
+                                <label style="width:60px;">Trạm</label>
+                            </div>-->
+                            <!--<div class="col-lg-2">
+                                <select class="form-control select2" id="cbTram" style="width: 100%;display:inline-block"></select>
+                            </div>-->
+                            <div class="col-lg-1">
+                                <label style="width:80px;">Mã sổ GCS</label>
+                            </div>
+                            <div class="col-lg-2">
+                                <select class="form-control select2" id="cbSoGCS" style="width:100%;display:inline-block"></select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="col-lg-4">
+                                <label style="width:90px;">
+                                    <input type="radio" name="rdKieuLoc" value="1" class="flat-red"> Khách hàng
+                                </label>
+                                <input type="text" id="txtKH" class="form-control" style="display:inline-block;width:220px;" placeholder="Tên KH, mã KH, số công tơ" disabled />
+                            </div>
+                            <div class="col-lg-1">
+                                <label style="width:80px;">Kiểu lọc</label>
+                            </div>
+                            <div class="col-lg-2">
+                                <select class="form-control select2" id="cbCohoadon" style="width: 100%;display:inline-block">
+                                    <option value="1">Đã có hóa đơn</option>
+                                    <option value="0">Chưa có hóa đơn</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-1">
+                                <label style="width:80px;">Loại HĐ</label>
+                            </div>
+                            <div class="col-lg-2">
+                                <select class="form-control select2" id="cbLoaimauhoadon" style="width:200px;display:inline-block">
+                                    <option value="0">Điện năng tiêu thụ</option>
+                                    <option value="2">Điện năng phản kháng</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-lg-1" style="padding-left:35px;">
+                                <button type="button" id="btn_laysolieu" class="btn btn-success"><i class="glyphicon glyphicon-download-alt"></i> Lấy số liệu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-2">
+                        <div class="col-lg-12" style="height:34px;"></div>
+                        <button type="button" id="btn_laysolieu" class="btn btn-success"><i class="glyphicon glyphicon-download-alt"></i> Lấy số liệu</button>
+                    </div>-->
+                </div>
+            </div>
+        <div id="mess_tchd"></div> 
+            <div class="panel panel-info ">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Thông tin hóa đơn</h3>
+                </div>
+                <div class="pull-right" id="toolbar">
+                    <ul>
+                        <!--<li><a href="#help_tsvh" data-toggle="modal"><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></a></li>-->
+                        <!--<li><i class="glyphicon glyphicon-download-alt" title="Tải tất cả" id="download_allhoadon"></i></li>-->
+                        <!--<li><i class="glyphicon glyphicon-print" title="In"></i></li>-->
+                    </ul>
+                </div>
+                <table id="tb_dshoadon" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên khách hàng</th>
+                            <th>Số hóa đơn</th>
+                            <th>Ngày hóa đơn</th>
+                            <th>Kỳ hóa đơn</th>
+                            <th>Sản lượng</th>
+                            <th>Số tiền</th>
+                            <th>Chi tiết hóa đơn</th>
+                            <th>Tải hóa đơn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="row-fluid row-fluid2">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_tchd"></label></div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_tchd">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+<div data-include="Module/modals_yesno"></div>
+<div data-include="Module/HoaDon/modal_chitiethoadon"></div>
+<div data-include="Module/HoaDon/modal_chitiethoadon_phankhang"></div>

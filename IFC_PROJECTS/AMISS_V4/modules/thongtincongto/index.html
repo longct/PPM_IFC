@@ -1,0 +1,94 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12 mes">
+        <span id="mesMain"></span>
+    </div>
+    <div class="col-lg-12 panel-tsvh">
+        <div class="col-lg-10 ttct_info">
+            <table id="tabct_info" class="table table-responsive no-border table-condensed padding-3" style="width:100%">
+                <tr>
+                    <td><label class="filter_tsvh">Số công tơ</label></td>
+                    <td><label class="filter_tsvh">Chủng loại</label></td>
+                    <td><label class="filter_tsvh">Ngày treo</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control" disabled id="ttct_sct"/></td>
+                    <td>
+                        <select id="ttct_chungloai" class="form-control w200p" disabled>
+                            <option value="0">Chọn Chủng loại</option>
+                            <option value="ELSTER">ELSTER</option>
+                            <option value="LANDIS">LANDIS</option>
+                            <option value="GENIUS">GENIUS</option>
+                            <option value="STAR-DTS27">STAR-DTS27</option>
+                            <option value="GELEX-M4">GELEX-M4</option>
+                            <option value="GELEX-11MGS">GELEX-11MGS</option>
+                            <option value="DEC_PSMART_3PHASE">DEC_PSMART_3PHASE</option>
+                            <option value="TF06M-30">Công tơ 3 phase 3 giá gián tiếp</option>
+                            <option value="TF100M-30">Công tơ 3 phase 3 giá trực tiếp</option>
+                            <option value="TF100P-30">Công tơ 3 phase 1 giá trực tiếp</option>
+                            <option value="SF80P-30">Công tơ 1 phase SF80P-30</option>
+                            <option value="SF80P-20">Công tơ 1 phase SF80P-20</option>
+                            <option value="SF80C-20">Công tơ 1 phase SF80C-20</option>
+                            <option value="SF80P-10">Công tơ 1 Phase SF80P-10</option>
+                            <option value="DDS26D_01">Công tơ 1 phase Hữu hồng loại 1</option>
+                            <option value="DDS26D_02">Công tơ 1 phase Hữu hồng loại 2</option>
+                            <option value="DTS27_01">Công tơ Hữu hồng 3 phase loại 1</option>
+                        </select>
+                    </td>
+                    <td><input type="text" class="form-control datepicker w200p" disabled id="ttct_ngaytreo"/></td>
+                </tr>
+                <tr>
+                    <td><label class="filter_tsvh">Năm sản xuất</label></td>
+                    <td><label class="filter_tsvh">Chỉ số treo</label></td>
+                    <td>
+                        <label class="filter_tsvh" for="c3">
+                            <input type="checkbox" id="c3" class="flat-red" disabled id="txt_sudunghesonhan_ct" /> Sử dụng hệ số nhân ngoài
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control w200p" disabled id="ttct_namsx"/></td>
+                    <td><input type="text" class="form-control w200p" disabled id="ttct_cstreo"/></td>
+                    <td>
+                        <input type="text" class="form-control" style="width:15%;float:left;margin-right:3px" id="ttct_tu"/>
+                        <label style="float:left;margin-right:3px"> * </label>
+                        <input type="text" class="form-control" style="width:15%;float:left;margin-right:3px" id="ttct_ti" />
+                        <label style="float:left;margin-right:3px"> = </label>
+                        <input type="text" class="form-control" style="width:15%;float:left;margin-right:3px" id="ttct_kp"/>
+                        <i>(TU * TI = KP)</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="ttct_edit" class="btn btn-success _edit">Chỉnh sửa</button>
+                        <button id="btn_thaycongto"class="btn btn-warning" disabled>Thay công tơ</button>
+                    </td>
+                    <td colspan="2">
+                        <button class="btn btn-danger" id="btn_huybo">Hủy bỏ</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table class="table table-responsive table-bordered" id="tbl_ttct_data">
+            <thead class="bg-aqua-gradient">
+                <tr>
+                    <th>STT</th>
+                    <th>Số công tơ</th>
+                    <th>Chủng loại</th>
+                    <th>Số phần tử</th>
+                    <th>Ngày treo</th>
+                    <th>Ngày tháo</th>
+                    <th>Sử dụng hệ số ngoài</th>
+                    <th>Hệ số TU ngoài</th>
+                    <th>Hệ số TI ngoài</th>
+                    <th>Chu kì chốt thiết lập</th>
+                    <th>Trạng thái treo</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

@@ -1,0 +1,37 @@
+﻿.td_stt{
+    font-size:17px;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+}
+
+#jqxDropDL_home {
+    overflow-y: scroll;
+    background: #fff;
+}
+
+    #jqxDropDL_home ul {
+        background-color: white;
+        color: black;
+    }
+
+        #jqxDropDL_home ul li div:hover {
+            background-color: white;
+            color: black;
+        }
+
+#dropDownButton {
+    width: 100% !important;
+    margin: 0px 0px 5px 0px;
+    color: black;
+    height: 30px !important;
+    border-radius: 0px;
+}
+
+.jqx-fill-state-hover {
+    background-color: white;
+}
+
+#dropDownButtonContentdropDownButton {
+    top: 3px !important;
+}

@@ -1,0 +1,63 @@
+﻿<div class="modal fade " id="btn_suanv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">CẬP NHẬT THÔNG TIN TÀI KHOẢN</h4>
+            </div>
+
+
+            <section class="panel">
+                <div class="panel-body">
+                    <div id="messinfo_cttk"></div>
+                    <table class="table table-hover" style="width:100%;border:none" id="tbl_themtk">
+                        <tr>
+                            <td><label class="th">Họ và tên</label></td>
+                            <td><input class="form-control" type="text" id="txt_hoten_cttk" /></td>
+                        </tr>
+                        <tr>
+                            <td><label class="th">Tên đăng nhập</label></td>
+                            <td><input class="form-control" type="text" id="txt_taikhoan_cttk"  disabled/></td>
+                        </tr>
+                        <tr>
+                            <td><label class="th">Kho ban miền</label></td>
+                            <td><select id="cbkhobanmien_cttk" class="form-control form-control-inline input-medium"></select></td>
+                        </tr>
+                        <tr>
+                            <td><label class="th">Quyền quản trị</label></td>
+                            <td>
+                                <select id="cbquyenqtri_cttk" class="form-control form-control-inline input-medium">
+                                    <option value="-1">--Vui lòng quản trị--</option>
+                                    <option value="1">Trưởng kho</option>
+                                    <option value="0">Nhân viên</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label class="th">Email</label></td>
+                            <td><input class="form-control" type="text" id="txt_email_cttk" /></td>
+                        </tr>
+                        <tr>
+                            <td><label class="th">Số điện thoại</label></td>
+                            <td><input class="form-control" type="text" id="txt_sodienthoai_cttk" /></td>
+                        </tr>
+                        <tr>
+                            <td><label class="th">Địa chỉ</label></td>
+                            <td><input class="form-control" type="text" id="txt_diachi_cttk" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="btn btn-success" id="btn_taikhoan_cttk">Cập nhật</button></td>
+                        </tr>
+
+                    </table>
+
+
+
+                 </div>
+
+            </section>
+
+        </div>
+    </div>
+</div>
+<div data-include="modules/modals_yesno"></div>

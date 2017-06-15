@@ -1,0 +1,21 @@
+﻿.btn_img {
+    float: left;
+    color: #fff;
+    margin-right: 25px;
+    text-align: center;
+}
+
+    .btn_img a {
+        color: #fff;
+    }
+
+    .btn_img img {
+        margin-bottom: 5px;
+    }
+
+.device_info {
+    color: #fff;
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}

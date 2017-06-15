@@ -1,0 +1,14 @@
+﻿{
+  "VI": {
+    "lang_hienthitatcasmartpacking": "Hiển thị tất cả",
+    "lang_modeName": "Thiết lập hệ thống",
+    "lang_ngongu": "Ngôn ngữ",
+    "lang_donvi":  "Đơn vị đo lường"
+  },
+  "EN": {
+    "lang_hienthitatcasmartpacking": "Show all",
+    "lang_modeName": "System settings",
+    "lang_ngongu": "Language",
+    "lang_donvi":  "Unit"
+  }
+}

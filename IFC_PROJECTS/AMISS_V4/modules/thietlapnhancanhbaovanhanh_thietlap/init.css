@@ -1,0 +1,30 @@
+﻿.center {
+    text-align: center;
+}
+
+.padding-left-10 {
+    padding-left: 10px !important;
+}
+
+.margin-30 {
+    margin: 30px 30px 0 30px !important;
+}
+
+.padding-30 {
+    padding: 0 30px 30px 30px !important;
+}
+
+#tbl_ccbvh {
+    border: 1px solid #f4f4f4 !important;
+}
+
+#mod_thietlapnhancb {
+    max-height: 400px;
+    overflow: auto;
+}
+.btn_close_tlncbvh{
+    text-align: center;
+    padding: 14px 0;
+    background-color: #f5f5f5;
+    margin-bottom: 0;
+}

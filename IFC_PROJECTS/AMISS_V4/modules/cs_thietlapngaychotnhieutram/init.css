@@ -1,0 +1,29 @@
+﻿#kychot{
+    padding:6px;
+}
+#btn_thuchien_xemcs{
+    margin-top:5px;
+}
+.select2-container {
+    /*margin-top:5px;*/
+}
+.input-group{
+    padding:0px !important;
+}
+.modal-content{
+    width:40%;
+    margin:10% auto;
+}
+.modal-body button{
+    margin-right:5px;
+}
+.dropdown-menu{max-height:200px; overflow:auto}
+.box-info{display:none}
+
+
+.alt_ttncnt{display:none;}
+
+#tlnct_data th, #tlnct_data td{text-align:center }
+.cl{text-align:left !important}
+.width-sokychot{width:95px; float:left}
+

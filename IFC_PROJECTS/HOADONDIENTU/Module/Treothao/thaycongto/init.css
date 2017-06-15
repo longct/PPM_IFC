@@ -1,0 +1,20 @@
+﻿#thayct{float:left;width:100%;}
+#thayct .tab-content{
+    padding:5px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+#thayct .panel-heading {
+    color: #ffffff;
+    background-color: #01b8fe;
+    border-color: #bce8f1;
+}
+#thayct table{text-align:right}
+#thayct table .textlable{width:130px}
+#anhload{
+    width: 100%;
+    height: 30%;
+    z-index: 2000;
+    background: url(../img/red-loader.gif) /*#999 center*/ center no-repeat;
+    position: absolute;
+}

@@ -1,0 +1,29 @@
+﻿
+table#tbl_nhapexcel tr td {
+    border: none;
+    padding: 10px;
+}
+
+table#tbl_nhapexcel input, table#tbl_nhapexcel select, table#tbl_nhapexcel textarea {
+    width: 220px;
+}
+
+
+.them_phieu {
+    padding-top: 20px;
+}
+
+i.fa-them {
+    cursor: pointer;
+    color: #047514;
+}
+
+table#tbl_nhapexcel>tbody>tr>td{
+    border-bottom:none !important;
+    border-top:none !important;
+}
+
+label.filemau{
+    float:right;
+    cursor:pointer;
+}

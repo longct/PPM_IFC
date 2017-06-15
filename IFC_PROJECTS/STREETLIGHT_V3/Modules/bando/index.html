@@ -1,0 +1,108 @@
+﻿<div class="col-md-12" style="padding-right:0px">
+    <div class="panel panel-warning" id="gmap" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div class="panel-title-box">
+                <h3 class="text-orange"><i class="glyphicon glyphicon-map-marker"></i> Bản đồ <i class="fa fa-exclamation-circle text-info" title="Trợ giúp" data-target="#help_map" id="btn_help"></i></h3>
+                <span>Vị trí tủ trên bản đồ</span>
+            </div>
+            <ul class="panel-controls panel-controls-title">
+                <li style="padding-top: 7px;padding-right: 10px;">Tên tủ</li>
+                <li style="padding-right: 10px;">
+                    <label class="switch switch-small">
+                        <input type="checkbox" value="0" id="tentu_map">
+                        <span></span>
+                    </label>
+                </li>
+                <li style="padding-top: 7px;padding-right: 10px;">Chọn bóng</li>
+                <li style="padding-right: 10px;">
+                    <label class="switch switch-small">
+                        <input type="checkbox" value="0" id="chonbong_map">
+                        <span></span>
+                    </label>
+                </li>
+                <li style="padding-top: 7px;padding-right: 10px;">Hiện bóng</li>
+                <li style="padding-right: 10px;">
+                    <label class="switch switch-small">
+                        <input type="checkbox" checked="" value="0" id="hienbong_map">
+                        <span></span>
+                    </label>
+                </li>
+                <li style="padding-top: 7px;padding-right: 10px;">Hiện cáp</li>
+                <li style="padding-right: 10px;">
+                    <label class="switch switch-small">
+                        <input type="checkbox" value="0" id="hiencap_map">
+                        <span></span>
+                    </label>
+                </li>
+                <li><a href="#" class="panel-full-right"><span class="fa fa-expand"></span></a></li>
+            </ul>
+
+        </div>
+        <div class="panel-body panel-body-map">
+            <div id="google_ptm_map" style="width: 100%;"></div>
+        </div>
+        <div class="panel-body">
+            <span class="text-bold text-danger pull-left">Tổng số tủ: <label id="tongsotu"></label> Tổng số bóng: <label id="tongsobong"></label></span>
+            <marquee id="thongtintu_text" style="width:80%;float:right;"></marquee>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="help_map" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:450px;height:400px;margin: auto;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">TRỢ GIÚP</h4>
+            </div>
+            <div class="panel-body">
+                <table class="table table-responsive">
+                    <tr>
+                        <td><img src="img/tu_tree1.png" /></td>
+                        <td>Tủ hoạt động bình thường</td>
+                        <td><img src="img/bong_tree1.png" /></td>
+                        <td>Bóng sáng 100%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/tu_tree2.png" /></td>
+                        <td>Tủ đang tắt</td>
+                        <td><img src="img/dimming.png" /></td>
+                        <td>Bóng đang Dim</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/tu_tree4.png" /></td>
+                        <td>Tủ đang Dim</td>
+                        <td><img src="img/bong_off.png" /></td>
+                        <td>Bóng đang tắt</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/tu_tree3.png" /></td>
+                        <td>Tủ mất kết nối</td>
+                        <td><img src="img/bong_tree3.png" /></td>
+                        <td>Bóng hỏng</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/tu_tree5.png" /></td>
+                        <td>Tủ đang mất điện</td>
+                        <td><img src="img/bong_tree2.png" /></td>
+                        <td>Bóng mất kết nối</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <hr/>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table table-responsive">
+                    <tr>
+                        <td colspan="4"><b>Ấn giữ Shift rồi kéo chuột trên bản đồ để chọn Bóng hoặc Tủ</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img src="img/chonbong.JPG" /></td>
+                        <td colspan="2"><i>Click để cho phép kéo chọn Bóng hoặc Tủ trên bản đồ</i></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

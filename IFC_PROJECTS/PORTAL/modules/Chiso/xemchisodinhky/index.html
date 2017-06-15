@@ -1,0 +1,121 @@
+﻿<div class="box box-info no-margin-bt">
+    <div class="box-header">
+        <h3 class="box-title">
+            <i class="glyphicon glyphicon-dashboard help_tsvh"></i><span id="tendiemdo_span"></span>
+        </h3>
+        <div class="pull-right box-tools">
+            <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Thu nhỏ">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div>
+    </div>
+    <div class="box-body" style="margin-bottom:10px;">
+        <div class="date-filter" id="filter_1meter">
+            <div class="col-lg-2 ">
+                <label class="filter_tsvh">Từ tháng</label>
+                <div class="input-group date">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right datepicker" id="date_tungay" datepicker_op="{'minViewMode' : 'months', 'format': 'mm/yyyy'}">
+                </div>
+            </div>
+            <div class="col-lg-2 ">
+                <label class="filter_tsvh">Đến tháng</label>
+                <div class="input-group date">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right datepicker" id="date_denngay" datepicker_op="{'minViewMode' : 'months', 'format': 'mm/yyyy'}">
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <label class="filter_tsvh" style="margin-bottom:5px;">Số công tơ</label>
+                <select class="form-control " style="width: 100%;" id="cb_socongto">
+                    <option  value="">Tất cả</option>
+                </select>
+            </div>
+            <div class="col-lg-1">
+                <label class="filter_tsvh" style="margin-bottom:5px;">Kỳ chốt</label>
+                <select class="form-control" style="width: 100%;" id="kychot">
+                    <option selected="selected">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div class="col-lg-2">
+                <br />
+                <button class="btn btn-success" id="btnExec">Thực hiện</button>
+            </div>
+        </div>
+
+        <div class="date-filter" id="filter_multimeter" style="display: inline-block;">
+            <div class="col-lg-2 ">
+                <label class="filter_tsvh">Tháng</label>
+                <div class="input-group date">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <input type="text" class="form-control pull-right datepicker months" id="dateThang" datepicker_op="{'minViewMode' : 'months', 'format': 'mm/yyyy'}">
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <label class="filter_tsvh" style="margin-bottom:5px;">Kỳ chốt</label>
+                <select class="form-control"  id="kychot_multi">
+                    <option selected="selected">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div class="col-lg-3" style="padding-top: 27px;">
+                <select class="form-control" style="width: 100%;" id="cboOptionGetData">
+                    <option value="1" selected="selected">Có chỉ số</option>
+                    <option value="0">Không có chỉ số</option>
+                </select>
+            </div>
+            <div class="col-lg-3" style="padding-top: 27px;">
+                <select class="form-control" style="width: 100%;" id="cboOptionTypeInsert">
+                    <option value="ALL" selected="selected">Tất cả</option>
+                    <option value="AUTO">Dữ liệu DCU</option>
+                    <option value="BLUETOOTH">Dữ liệu Bluetooth</option>
+                    <option value="HHU">Dữ liệu HHU</option>
+                    <option value="HAND">Dữ liệu nhập tay</option>
+                </select>
+            </div>
+            <div class="col-lg-2"  style="padding-top: 25px;">
+                <button class="btn btn-success" id="btnExecMulti">Thực hiện</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left"><span class="sobanghi"></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel" id="excel_xemcs"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-12 panel-tsvh">
+        <table class="table table-responsive table-bordered table-hover" id="csdk_data">
+            <thead class="bg-aqua-gradient">
+                <tr>
+                  
+                    <th class="">Biểu giá</th>
+                    <th class="">Chỉ số cũ</th>
+                    <th class="">Chỉ số mới</th>
+                    <th class="">Ngày chốt</th> 
+                    <th class="">Sản lượng ( CS mới - CS cũ ) (kwh)</th>
+
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+</div>
+
+

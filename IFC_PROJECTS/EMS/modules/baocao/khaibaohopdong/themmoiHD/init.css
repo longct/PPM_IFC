@@ -1,0 +1,9 @@
+﻿.backrow3{
+    background-color: forestgreen;
+    
+}
+.c{text-align:center}
+#myTableData_VTTB_kbhd tbody tr td input[type="text"], #myTableData_VTTB_kbhd tbody tr td select, #myTableData_VTTB_kbhd tbody tr td textarea {
+    width: 165px !important;
+    font-size: 14px;
+}

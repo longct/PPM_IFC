@@ -1,0 +1,133 @@
+﻿<div class="col-lg-12">
+    
+    <div class="panel panel-info ">
+        <div class="panel-heading">
+            <h3 class="panel-title">Tạo hóa đơn</h3>
+        </div>
+        <div class="panel panel-body">
+            <div class="col-lg-3">
+                <div class="col-lg-12">
+                    <label style="width:65px;">Điện lực</label>
+                    <select class="form-control select2" id="cb_dienluc" style="width: 180px;display:inline-block"></select>
+                </div>
+                <!--<div class="col-lg-12">
+                    <label style="width:65px;">Trạm</label>
+                    <select class="form-control select2" id="cb_tram" style="width: 180px;display:inline-block"></select>
+                </div>-->
+                <div class="col-lg-12">
+                    <label style="width:65px;">Mã sổ GCS</label>
+                    <select class="form-control select2" id="cb_soghi" style="width: 180px;display:inline-block"></select>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="col-lg-6">
+                    <label style="width:90px">Tháng năm</label>
+                    <input type="text" id="txt_thang_thdsg" class="form-control datepicker " style="width:100px;display: inline-block;" placeholder="" />
+                </div>
+                <div class="col-lg-6">
+                    <label style="width:80px">    Kỳ       </label>
+                    <select class="form-control select2" id="cb_ky" style="width: 100px;display:inline-block">
+                        <option selected="selected">1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <!--<div class="col-lg-6">
+                    <label style="width:90px">Đầu kỳ</label>
+                    <input type="text" id="txt_dauky" class="form-control " style="width:100px;display: inline-block;" readonly />
+                </div>
+                <div class="col-lg-6">
+                    <label style="width:80px">Cuối kỳ</label>
+                    <input type="text" id="txt_cuoiky" class="form-control " style="width:100px;display: inline-block;" readonly />
+                </div>-->
+                <div class="col-lg-6">
+                    <label style="width:90px">Ngày xuất HĐ</label>
+                    <input type="text" id="txt_ngayxuathd" class="form-control datepicker" style="width:100px;display: inline-block;" />
+                </div>
+                <div class="col-lg-3">
+                    <button type="button" id="btn_locdulieu" class="btn btn-warning"><i class="glyphicon glyphicon-download-alt"></i> Lấy số liệu</button>
+                </div>
+                <div class="col-lg-3">
+                    <button type="button" id="btn_taohoadon" class="btn btn-success"><i class="fa fa-plus"></i> Tạo hóa đơn</button>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="col-lg-12">
+                    <label style="width:110px">Loại hóa đơn </label>
+                    <select class="form-control select2" id="cb_loaimauhoadon_thdsg" style="width: 200px;display:inline-block">
+                        <option value="0">Điện năng tiêu thụ</option>
+                        <option value="2">Điện năng phản kháng</option>
+                    </select>
+                </div>
+                <div class="col-lg-12">
+                    <label style="width:110px">Mẫu hóa đơn </label>
+                    <select class="form-control select2" id="cb_mauhoadon_thdsg" style="width: 200px;display:inline-block"></select>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="mess_thdsg"></div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title" id="lb_tongso">Tổng số: </h3>
+        </div>
+        <table id="tb_danhsachoadon" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Mã khách hàng</th>
+                    <th>Tên khách hàng</th>
+                    <th>Số công tơ</th>
+                    <th>BCS</th>
+                    <th>CS cũ</th>
+                    <th>CS mới</th>
+                    <th>Sản lượng</th>
+                    <th>SL kỳ trước</th>
+                    <th>Cảnh báo bất thường</th>
+                    <th>Chi tiết hóa đơn</th>
+                    <th>Xử lý riêng</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <table id="tb_danhsachoadonphankhang" class="table table-bordered table-striped" style="display:none">
+            <thead>
+                <tr>
+                    <th>Mã khách hàng</th>
+                    <th>Tên khách hàng</th>
+                    <th>Số công tơ</th>
+                    <th>CS cũ</th>
+                    <th>CS mới</th>
+                    <th>Sản lượng</th>
+                    <th>Chi tiết hóa đơn</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="row-fluid row-fluid2">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <div class="span6">
+                            <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_thdsg"></label></div>
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="span6">
+                            <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_thdsg">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+<div data-include="Module/HoaDon/modal_chitiethoadon"></div>
+<div data-include="Module/HoaDon/modal_chitiethoadon_phankhang"></div>
+<div data-include="Module/modals_yesno"></div>

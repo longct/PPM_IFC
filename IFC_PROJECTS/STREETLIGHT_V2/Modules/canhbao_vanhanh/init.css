@@ -1,0 +1,29 @@
+﻿.trang2{
+    
+    color:#ff0000;
+    font-weight:bold;
+    font-size: 16px;
+}
+.trang1{
+     color:#0094ff;
+     font-weight:bold;
+     font-size: 16px;
+ 
+}
+
+#tbl_ckbT thead tr th{
+    background:#09f;
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+}
+#tbl_ckbT {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.a0{
+   color:#06f704;
+}
+.a1{
+    color:#ff0000;
+}

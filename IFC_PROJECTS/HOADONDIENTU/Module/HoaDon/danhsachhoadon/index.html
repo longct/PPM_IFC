@@ -1,0 +1,68 @@
+﻿<div class="box box-body">
+    <div class="col-lg-2">
+        <div class="form-group">
+            <div class="input-group date">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input type="text" class="form-control pull-right datepicker" id="date_tungay" placeholder="Từ ngày">
+            </div>
+            <!-- /.input group -->
+        </div>
+    </div>
+    <div class="col-lg-2">
+        <div class="form-group">
+            <div class="input-group date">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <input type="text" class="form-control pull-right datepicker" id="date_denngay" placeholder="Đến ngày">
+            </div>
+            <!-- /.input group -->
+        </div>
+    </div>
+    <div class="col-lg-1">
+        <div class="form-group">
+            <button type="button" class="btn btn-info"><i class="fa fa-check"></i> <i class="fa fa-search"> </i> Thực hiện</button>
+        </div>
+    </div>
+</div>
+<div class="box box-body">
+    <div class="col-xs-12">
+        <div class="panel-heading">
+            <ul class="filter_column"></ul>
+            <!-- /.box-header -->
+            <div class="panel panel-primary filterable">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Danh sách hóa đơn</h3>
+                    <div class="pull-right" style="margin-top: -20px !important;">
+                        <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Lọc</button>
+                    </div>
+                </div>
+                <table id="" class="table table-bordered table-striped">
+                    <thead>
+                        <!--<tr>
+                            <th class='masoghi'>Mã sổ</th>
+                            <th class='tenso'>Tên sổ ghi</th>
+                            <th class='khuvuc'>Khu vực</th>
+                            <th class='lotrinh'>Lộ trình</th>
+                            <th class='trangthai'>Trạng thái</th>
+                            <th class='ghichu'>Ghi chú</th>
+                        </tr>-->
+                        <tr class="filters">
+                            <th class="mahoadon"><input type="text" class="form-control " placeholder="Mã hóa đơn" disabled></th>
+                            <th class="makhachhang"><input type="text" class="form-control " placeholder="Mã Khách hàng" disabled></th>
+                            <th class="tenkh"><input type="text" class="form-control " placeholder="Tên khách hàng" disabled></th>
+                            <th class="sohopdong"><input type="text" class="form-control " placeholder="Số hợp đồng" disabled></th>
+                            <th class="loaikh"><input type="text" class="form-control " placeholder="Loại Khách hàng" disabled></th>
+                            <th class="diachi"><input type="text" class="form-control " placeholder="Địa chỉ" disabled></th>
+                        </tr>
+                    </thead>
+                    <tbody id="soghi_details"></tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>

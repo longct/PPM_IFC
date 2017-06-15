@@ -1,0 +1,42 @@
+﻿{
+  "VI": {
+    "lang_hienthitatcasmartpacking": "Hiển thị tất cả",
+    "lang_thongbaodangkyloi": "Đăng ký không thành công",
+    "lang_thongbaodangkythanhcong": "Đăng ký thành công",
+    "lang_thongbaodangkytaikhoantontai": "Tài khoản đã tồn tại trong hệ thống",
+    "lang_thongbaodangkybiensotontai": "Biển số xe đã được sử dụng, vui lòng nhập biển số khác",
+    "lang_thongbaodangkydienthoaitontai": "Số điện thoại đã được sử dụng, vui lòng nhập số điện thoại khác",
+    "lang_thongbaodangkyemailtontai": "Email đã được sử dụng, vui lòng nhập email khác",
+    "lang_kiemtratendaydu": "Tên khách hàng không được bỏ trống",
+    "lang_kiemtraemail": "Email không đúng định dạng",
+    "lang_kiemtrabiensoxe": "Biển số xe không được bỏ trống",
+    "lang_selectloaixe": "-- Loại Xe --",
+    "lang_thongbaoupdatedangkythanhcong": "Cập nhật thành công",
+    "lang_thongbaoupdatedangkyloi": "Cập nhật không thành công",
+    "lang_buttontextdangky": "Cập nhật",
+    "lang_modName": "Đăng ký tài khoản",
+    "lang_placeholedername": "Họ và tên",
+    "lang_placeholederbienso": "Biển số",
+    "lang_dangky": "Đăng ký"
+  },
+  "EN": {
+    "lang_hienthitatcasmartpacking": "Show all",
+    "lang_thongbaodangkyloi": "Register failed",
+    "lang_thongbaodangkythanhcong": "Register succesfull",
+    "lang_thongbaodangkytaikhoantontai": "Account existed in the system",
+    "lang_thongbaodangkybiensotontai": "Please enter car number plates other",
+    "lang_thongbaodangkydienthoaitontai": "Phone numbers have been used, Please enter phone number other",
+    "lang_thongbaodangkyemailtontai": "Email have been used, Please enter phone number other",
+    "lang_kiemtratendaydu": "Please enter FullName",
+    "lang_kiemtraemail": "Email validate format",
+    "lang_kiemtrabiensoxe": "Please enter Car number plates",
+    "lang_selectloaixe": "Vehicle type",
+    "lang_thongbaoupdatedangkythanhcong": "Update sucessfull",
+    "lang_thongbaoupdatedangkyloi": "Update failed",
+    "lang_buttontextdangky": "Update",
+    "lang_modName": "Register",
+    "lang_placeholedername": "FullName",
+    "lang_placeholederbienso": "License plate",
+     "lang_dangky": "Register"
+  }
+}

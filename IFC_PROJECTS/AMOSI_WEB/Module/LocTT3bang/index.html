@@ -1,0 +1,139 @@
+﻿<section class="panel">
+    <div class="panel-body">
+        <div class="modal-body2">
+            <div class="form-inline" role="form">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label class="th">Đơn vị</label>
+                         <select class="form-control input-sm txx" id="cb_donvi_bcxlt"></select>
+                    </div>
+                    <label class="th">Từ Ngày</label>
+                    <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                           data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_tungay_bcxlt" cache="true" />
+                    </div>
+                <div class="form-group">
+                    <label class="th">Đến Ngày</label>
+                    <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                           data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_denngay_bcxlt" cache="true" />
+                </div>
+               
+                <div class="form-group">
+                    <button class="btn btn-success" type="button" id="btn_checkluu_bcskct">Thực hiện</button>
+                </div>
+            </div>
+
+            <br />
+            <div id="messinfo_bcskct"></div>
+            <table class="table table-responsive table-bordered">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Nhóm lỗi</th>
+                        <th>Phân loại chi tiết lỗi</th>
+                        <th>Số lượng</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td rowspan="9">Lỗi do điện lực </td>
+                    <td>Cắt điện</td>
+                    <td><span id="txt_catdien"></span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Thanh lý</td>
+                    <td><span id="txt_thanhly"></span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lỗi thao tác lắp đặt của điện lực</td>
+                    <td><span id="txt_loithaoldlapdat_dl"></span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Điện lực thay công tơ lỗi không đọc đựơc dữ liệu</td>
+                    <td><span id="txt_dlthayctloi"></span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Cổng giao tiếp RS hỏng</td>
+                    <td><span id="txt_conggiaotiep"></span></td>
+                <tr>
+                    <td>6</td>
+                    <td>Thay công tơ khác loại nhưng không báo</td>
+                    <td><span id="txt_thaycongto_kloai"></span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Lỗi tác động xử lý nhưng không thông báo</td>
+                    <td><span id="txt_loitacdong_xl"></span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Cháy trạm</td>
+                    <td><span id="txt_chaytram"></span></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Không tìm thấy modem, nguồn</td>
+                    <td><span id="txt_khongtimmodem"></span></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td rowspan="3">Lỗi do IFC</td>
+                    <td>Lỗi modem</td>
+                    <td><span id="txt_loidoifc"></span></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Lỗi cáp chuyển đổi </td>
+                    <td><span id="txt_loicap"></span></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Nguồn hư hỏng, cháy nổ do nguồn </td>
+                    <td><span id="txt_nguonhuhong"></span></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td rowspan="2">Lỗi nhà mạng</td>
+                    <td>Lỗi sim</td>
+                    <td><span id="txt_Loimang"></span></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Lỗi sóng nhà mạng </td>
+                    <td><span id="txt_loisongnhamang"></span></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Lỗi khách quan</td>
+                    <td>Lỗi khách quan </td>
+                    <td><span id="txt_khachquan"></span></td>
+                </tr>
+
+
+                <tbody id="table_bcskct"></tbody>
+            </table>
+            <div class="row-fluid row-fluid2">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_bcskct"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_bcskct">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,98 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="col-lg-5">
+            <div id="dropDownButton_nkhtcmis" style="width: 100%;">
+                <div id='jqxDropDL_nkhtcmis' style="border: none;">
+                </div>
+            </div>
+        </div>
+       
+        <div class="clearfix"></div>
+        <div class="col-lg-5 margin_radio" style="margin: 7px 7px 0 7px;">
+            <div style="float:left">
+                <input type="radio" value="xml" name="usingfile" id="rdiXml" class="icheckbox_flat-blue icheckbox_xml" checked /><label for="rdiXml" style="margin-right: 12px;margin-top: 2px;">FILE XML</label>
+            </div>
+            <div style="float:left">
+                <input type="radio" value="excel" name="usingfile" id="rdiExcel" class="icheckbox_flat-blue icheckbox_xml" /><label for="rdiExcel" style="margin-top: 2px;">FILE EXCEL</label>
+            </div>
+            <div style="float:left; margin-left:10px;">
+                <a href="ref/filemau/KhachHangExcel.xlsx"><span class="glyphicon glyphicon-save"></span> Download File mẫu</a>
+            </div>
+            <input type="file" class="form-control" onchange="f_cleartemp(this);" placeholder="" id="txt_file_ckhtcmis" style="" accept=".xml" />
+
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-6" style="margin: 13px 7px 0 7px;">
+                <button class="btn btn-success pull-left" style="margin-right:10px" id="btnkiemtra_nkhtcmis" disabled>Kiểm tra</button>
+                <button class="btn btn-success pull-left" style="margin-right:10px" id="btnthuchien_nkhtcmis" disabled>Thực hiện</button>
+                <a class="btn btn-success pull-left" style="margin-right:10px" id="btnThietlap" data-toggle="modal" href="#modal_nhaptay_ttkh_cmiss">Nhập tay</a>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="divMessage_cmiskh">
+
+            </div>
+            <div class="progress-bar-dtt noload" style="display: none;">
+                <span class="loadtext"></span>
+                <div class="load"></div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="total_khntcmis" style="display:none">Tổng số bản ghi</div>
+        </div>
+        <div class="col-lg-12 panel-nkhtcmis" style="width:98%;max-height:350px; overflow-y:auto; margin: 10px 10px 10px 20px;display: none;">
+   
+                <table class="blue table table-bordered" id="tbl_khntcmis">
+                    <thead>
+                        <tr>
+                            <th>Mã khách hàng</th>
+                            <th>Mã điểm đo</th>
+                            <th>Số công tơ</th>
+                            <th>Mã quyển</th>
+                            <th>Mã trạm</th>
+                            <th>Tên khách hàng</th>
+                            <th>Mã cột</th>
+                            <th>Chức năng thực hiện</th>
+                            <th>Kết quả</th>
+
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+           
+        
+        </div>
+      
+    </div>
+    <!-- Modal -->
+    <div class="modal fade modal-info" id="help_tkdn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header m-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">TRỢ GIÚP</h4>
+                </div>
+                <div class="modal-body bg_fff" style="background-color:#fff !important;color:#111 !important;">
+                    <b>MÔ TẢ CHỨC NĂNG:</b><br />
+                    Thống kê số lần đăng nhập trong 5 ngày gần nhất <br />
+                    <b>HƯỚNG DẪN DỬ DỤNG:</b><br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toast" class='' style='display:none'></div>
+</div>
+
+<div data-include="modules/modal_nhaptay_ttkh_cmiss"></div>
+<link href="../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../js/jqx/jqxcore.js"></script>
+<script src="../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../js/jqx/jqxtree.js"></script>
+<script src="../../js/jqx/jqxdata.js"></script>
+
+

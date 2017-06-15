@@ -1,0 +1,44 @@
+﻿
+<div class="modal fade " id="sua_bon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Sửa thông tin bồn</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_sbon"></div>
+                <table class="table table-hover" style="width:100%;border:none" id="tbl_themtk">
+                    <tr>
+                        <td>Tên Bồn </td>
+                        <td><input type="text" class="form-control" id="txt_tenbons_tbon"></td>
+
+                    </tr>
+                    <tr>
+                        <td> Loại Xăng</td>
+                        <td>
+                            <select class="form-control input-sm m-bot15" id="cbloaixangs_tbon"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tên Trạm: </td>
+                        <td>
+                            <select class="form-control input-sm m-bot15" id="cb_trams_tbon"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thể tích </td>
+                        <td><input type="text" class="form-control" id="txt_thetichs_tbon"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button data-dismiss="modal" class="btn btn-default" type="button">Thoát</button>
+                            <button class="btn btn-success" type="button" id="btn_sua_bon">Thêm</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-include="Module/modals_yesno"></div>

@@ -1,0 +1,183 @@
+﻿
+/*them load process*/
+.progress-bar-dtt {
+    width: 99%;
+    text-align: center;
+    margin: 5px auto 5px auto;
+}
+
+.load {
+    width: 0%;
+    height: 12px;
+    background: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAALCAYAAAC+jufvAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAAPklEQVQYV2M48Gvvf4ZDv/b9Z9j7Fcha827Df4alr1b9Z1j4YsV/BuML3v8ZTC/7/GcwuwokrG4DCceH/v8Bs2Ef1StO/o0AAAAASUVORK5CYII=);
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.noload {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAALCAYAAAC+jufvAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAANUlEQVQYVy3EIQ4AQQgEwfn/zwghCMwGh8Tj+8yVKN0d2l00M6i70XsPmdmfu6OIQJmJqooPOu8mqi//WKcAAAAASUVORK5CYII=);
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #999999;
+    position: relative;
+}
+
+.loadtext {
+    font-family: Arial;
+    font-size: 11px;
+    color: #000000;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+}
+
+.clock {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #09f;
+    margin-top: 10px;
+    padding: 25px;
+    border: 2px solid #4cff00;
+    z-index: -1;
+}
+
+.clock1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #09f;
+    margin-top: 10px;
+    padding: 25px;
+    border: 2px solid #4cff00;
+    z-index: -1;
+}
+
+h2.timer {
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    z-index: 9999;
+}
+
+.bar {
+    width: 100px;
+    height: 57px;
+    text-align: center;
+    position: relative;
+    margin:-24px auto 0 auto;
+}
+
+.bar2 {
+    width: 100px;
+    height: 57px;
+    text-align: center;
+    position: relative;
+    margin:0 auto;
+}
+
+.clock {
+    display: block;
+    /*width: 10px;*/
+    /*height: 10px;*/
+    border-radius: 50%;
+    background: -webkit-radial-gradient(25px 25px, circle, #09f, #000);
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    /*position: absolute;
+  left: 0;*/
+}
+
+.clock1 {
+    display: block;
+    /*width: 10px;*/
+    /*height: 10px;*/
+    background: red;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(25px 25px, circle, #09f, #000);
+    background: -moz-radial-gradient(25px 25px, circle, #09f, #000);
+    background: radial-gradient(25px 25px, circle, #09f, #000);
+    /* Animation to spin and move the sphere */
+    /*position: absolute;
+  left: 0;*/
+}
+
+/* Spinning the sphere using key frames */
+@-ms-keyframes spin {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* Move sphere from left to right */
+/*@-moz-keyframes moveLeftToRight {
+  0%   { left: -100px; }
+  100% { left: 100%; }
+}
+@-ms-keyframes moveLeftToRight {
+  0%   { left: -100px; }
+  100% { left: 100%; }
+}
+@keyframes moveLeftToRight {
+  0%   { left: -100px; }
+  100% { left: 100%; }
+}
+@-webkit-keyframes moveLeftToRight {
+  0%   { left: -100px; }
+  100% { left: 100%; }
+}*/
+
+#process_modal .modal-body {
+    position: relative;
+    padding: 20px;
+    height: 340px;
+    max-height: 330px;
+    overflow-y: auto;
+}
+#divDocTucThoi_process.tuselect{
+    border:none;
+}
+#tbl_ckbT thead tr th{
+    background:#09f;
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+}
+#tbl_ckbT {
+    max-height: 300px;
+    overflow-y: auto;
+}

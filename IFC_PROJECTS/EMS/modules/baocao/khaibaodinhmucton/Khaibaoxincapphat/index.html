@@ -1,0 +1,93 @@
+﻿
+<div class="modal fade " id="them_kbcapphatsinh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 80%;">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title">Khai báo cấp phát sinh VTTB theo kho</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_themkbdmcp"> </div>
+                <div style="width: 100%; float: left;">
+                    <div class="form-group  col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>Ban miền (*)</label>
+                        <select id="cb_banmien_kbdmcp" class="form-control form-control-inline input-medium">
+                            <option value="-1">--Chọn ban miền--</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>Vật tư thiết bị (*)</label>
+                        <select id="cbvattu_kbdmcp" class="form-control form-control-inline input-medium">
+                            <option value="-1">--Tất cả--</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-lg-4 col-md-4">
+                        <label>Loại VTTB (*)</label>
+                        <select id="cb_tenvt_kbdmcp" class="form-control form-control-inline input-medium">
+                            <option value="-1">--Tất cả--</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12" >
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <td colspan="5" style="font-weight:bold">CHI TIẾT ĐỀ XUẤT SỐ LƯỢNG PHÁT SINH</td>
+                            </tr>
+                            <tr>
+                                <td>Số lần</td>
+                                <td>SL VTTB xin cấp phát sinh</td>
+                                <td>Thời gian</td>
+                                <td>lý do</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <input type="number" class="form-control form-control-inline input-medium" id="txt_slvttbcapphat_kbdm" min="0" />
+                                </td>
+                                <td>
+                                    
+                                    <input type="text" class="form-control form-control-inline input-medium default-date-picker" id="txt_thoigiankhaibao_kbdmcp"  />
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control form-control-inline input-medium" id="txt_lydo_kbdm"  maxlength="250" />
+                                </td>
+                                <td>
+                                    <i class="fa fa-plus-circle fa-them" style="font-size:20px; cursor: pointer;" title="Thêm" id="btn_them_cp"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <td>Số lần</td>
+                                <td>SL VTTB xin cấp phát sinh</td>
+                                <td>Thời gian</td>
+                                <td>lý do</td>
+                                <td>Chức Năng</td>
+                            </tr>
+                        </thead>
+                        <tbody id="myTableData_cp"></tbody>
+
+                    </table>
+                </div>
+                <div class="form-group col-xs-12 col-sm-12 col-lg-12 col-md-12" style="margin-top: 10px;">
+                    <button class="btn btn-success" id="btn_checkluu_themkbdmcp"><i class="fa fa-save"></i>Lưu lại</button>
+                    <button class="btn btn-default" type="button" id="btn_thoat_kbdmcp">Thoát</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- page end-->

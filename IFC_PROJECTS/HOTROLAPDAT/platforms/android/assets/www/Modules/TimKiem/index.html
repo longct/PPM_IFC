@@ -1,0 +1,89 @@
+﻿<div id="search_field">
+    <select id="cb_loaict" class=""></select>
+    <input type="text" id="timkiemdiemdo" placeholder="Nhập IMEI" class="" />
+    <label for="ck_mkct" class="text-aqua font-light text-normal">Sử dụng mật khẩu mặc định</label>
+    <input type="checkbox" id="ck_mkct" checked class="" />
+    <input type="text" id="matkhaucto" placeholder="Bỏ trống nếu sử dụng mật khẩu mặc định" class="" style="display:none" />
+</div>
+<div id="connect_bg_tk" style="display:none">
+    <img src="img/signalx.png" id="" /><br />
+    <span class=""><p class="text-red">Không kết nối được tới Server !</p></span>
+</div>
+<div class="loading_search" style="display:none">
+    <span class="loading_text"></span><br />
+    <img src="img/loading.gif" />
+</div>
+<div class="meter_info_tbl" style="display:none">
+    <div class="toadohientai">
+        <span></span>
+    </div>
+    <div class="tbl_info_data">
+        <table class="table table-responsive table-bordered ">
+            <tr>
+                <td style="width:35%" class="text-bold">Tên Thiết bị</td>
+                <td id="td_tenthietbi"></td>
+            </tr>
+            <tr>
+                <td class="text-bold">IMEI</td>
+                <td id="td_imei"></td>
+            </tr>
+            <tr>
+                <td class="text-bold">Loại Modem</td>
+                <td id="td_loaimodem"></td>
+            </tr>
+            <tr>
+                <td class="text-bold">Vị trí</td>
+                <td id="td_vitri"></td>
+            </tr>
+            <tr>
+                <td class="text-bold">Kinh độ</td>
+                <td id="td_kinhdo"></td>
+            </tr>
+            <tr>
+                <td class="text-bold">Vĩ độ</td>
+                <td id="td_vido"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="act_btn" style="display:none">
+    <div class="btn_meter">
+        <a data-toggle='modal' href='#checkConnect' id="connect_click">
+            <img src="img/connect.png" /><br />
+            <span class="btn_text">Đọc dữ liệu</span>
+        </a>
+    </div>
+    <div class="btn_meter" id="capnhattoado_btn">
+        <a href="#">
+            <img src="img/capnhattoado.png" /><br />
+            <span class="btn_text">Cập nhật tọa độ</span>
+        </a>
+    </div>
+    <div class="btn_meter">
+        <a data-toggle='modal' href='#suadiemdo' id="edit_click">
+            <img src="img/setting.png" /><br />
+            <span class="btn_text">Sửa điểm đo</span>
+        </a>
+    </div>
+    <div class="btn_meter">
+        <a data-toggle='modal' href='#bando_meter' id="map_click">
+            <img src="img/map-icon.png" /><br />
+            <span class="btn_text">Vị trí điểm đo</span>
+        </a>
+    </div>
+</div>
+<div class="modal fade " id="bando_meter" tabindex="-1" role="dialog" aria-labelledby="mymodallabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">vị trí điểm đo</h4>
+            </div>
+            <div class="modal-body">
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-include="Modules/Connect"></div>
+<div data-include="Modules/SuaDiemDo"></div>

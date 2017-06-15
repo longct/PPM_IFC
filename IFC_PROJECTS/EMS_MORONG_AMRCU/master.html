@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!--<script>
+        if (navigator.userAgent.toLowerCase().indexOf('android') > -1)
+            document.getElementById('metaViewport').setAttribute('content', 'width=' + screen.width + ', initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+    </script>-->
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <link href="http://evnit.vn/img/evn_logo.png" type="image/x-icon" rel="icon" />
+
+    <title>EMS</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-ifc.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+
+
+</head>
+
+<body>
+    <section id="container" class="sidebar-closed">
+        <!--header start-->
+        <header class="header white-bg">
+            <!--logo start-->
+            <a href="#modules/home" class="logo linktomod"><img src="img/logoifc.png" />            
+            </a>
+            <!--logo end-->
+            <div class="top-nav ">
+
+                <ul class="nav pull-right top-menu">
+                    <li class="menunChuyenTap">
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-hethong btn_menu" type="button">NHẬP KHO <span class="caret"></span></button>
+                            <ul role="menu" class="dropdown-menu contentInclue ">
+                                <li><a class="linktomod" href="#modules/nhapkho/nhaptay">NHẬP TAY</a></li> 
+                                <li><a class="linktomod" href="#modules/nhapkho/nhapexcel">NHẬP EXCEL</a></li> 
+                                <li><a class="linktomod" href="#modules/nhapkho/danhsachnhap">DANH SÁCH NHẬP</a></li> 
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-hethong btn_menu" type="button">XUẤT KHO <span class="caret"></span></button>
+                            <ul role="menu" class="dropdown-menu contentInclue">     
+                                <li><a class="linktomod" href="#modules/xuatkho/xuattay">XUẤT TAY</a></li> 
+                                <li><a class="linktomod" href="#modules/xuatkho/xuatexcel">XUẤT EXCEL</a></li> 
+                                <li><a class="linktomod" href="#modules/xuatkho/danhsachxuat">DANH SÁCH XUẤT</a></li> 
+                            </ul>
+
+                        </div>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-hethong btn_menu" type="button">BÁO CÁO <span class="caret"></span></button>
+                            <ul role="menu" class="dropdown-menu contentInclue">
+                                <li>
+                                    <a class="linktomod" href="#modules/baocao/baocaokhotong">BÁO CÁO KHO</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/baocao/baocaonhanvien">BÁO CÁO NHÂN VIÊN</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/baocao/baocaonhap">BÁO CÁO NHẬP</a>
+                                </li> 
+                                <li>
+                                    <a class="linktomod" href="#modules/baocao/baocaoxuat">BÁO CÁO XUẤT</a>
+                                </li> 
+                                <li>
+                                    <a class="linktomod" href="#modules/baocao/baocaothuhoi">BÁO CÁO THU HỒI</a>
+                                </li> 
+                                <li>
+                                    <a class="linktomod" href="#modules/baocao/baocaovtbtdluc">BÁO CÁO VTTB TẠI ĐIỆN LỰC</a>
+                                </li> 
+                                <li class="">
+                                    <a class="linktomod" href="#modules/baocaothietbi/baocaovattuthietbi">BÁO CÁO VẬT TƯ THIẾT BỊ PHỤ</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/baocaothietbi/baocaotonghangmuave">BÁO CÁO HÀNG MUA</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/baocaothietbi/baocaovattuthietbitaduan">BÁO CÁO SỐ LƯỢNG VẬT TƯ DỰ ÁN</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/baocaothietbi/baocaobangvttb">BÁO CÁO BẢNG PHÂN BỐ VTTB</a>
+                                </li>
+                                               
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-hethong btn_menu" type="button">TIỆN ÍCH <span class="caret"></span></button>
+                            <ul role="menu" class="dropdown-menu contentInclue">
+                                <li class="">
+                                    <a class="linktomod" href="#modules/tienich/Nhapnhasanxuat">NHẬP NHÀ SẢN XUẤT </a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/tienich/nhapnhacungcap">NHẬP NHÀ CUNG CẤP</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/tienich/nhaploaithietbi">NHẬP LOẠI THIẾT BỊ</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/tienich/nhapchitietloaithietbi">NHẬP CHI TIẾT LOẠI THIÊT</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/ghepcap/ghepnoi">GHÉP CẶP</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/tienich/capnhattrangthaithietbi">CẬP NHẬT TRẠNG THÁI TB</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/barcode/barcode_timkiemexcel">BARCODE TÌM KIẾM EXCEL</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/barcode/imei_timkiemexecl">IMEI TÌM KIẾM EXCEL</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/barcode/Chuyenbarcodesangimei">CHUYỂN MÃ BARCODE SANG IMEI</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/barcode/Quanlydanhsachbarcode">QUẢN LÝ DANH SÁCH BARCODE</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/tienich/Taokho">TẠO KHO</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-hethong btn_menu" type="button">THIẾT LẬP <span class="caret"></span></button>
+                            <ul role="menu" class="dropdown-menu contentInclue">
+                                <li><a class="linktomod" href="#modules/baocao_lanhdao/hopdongcungcapdichvu">BÁO CÁO LÃNH ĐẠO</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-hethong btn_menu" type="button">QUẢN LÝ<span class="caret"></span></button>
+                            <ul role="menu" class="dropdown-menu contentInclue">
+                                <li><a class="linktomod" href="#modules/quanly/TaiKhoan">THÔNG TIN TÀI KHOẢN</a></li>
+                                <li><a class="linktomod" href="#modules/quanly/thaydoimatkhau">THAY ĐỔI MẬT KHẨU</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-hethong btn_menu" type="button">TRỢ GIÚP<span class="caret"></span></button>
+                            <ul role="menu" class="dropdown-menu contentInclue">
+                                <li><a class="linktomod" href="#modules/trogiup/huongdansudung">HƯỚNG DẪN SỬ DỤNG</a></li>
+                                <li><a class="linktomod" href="#modules/trogiup/thongtinphanmem">THÔNG TIN PHẦN MỀM</a></li>
+                            </ul>
+
+                        </div>
+                        <!--<div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-hethong btn_menu" type="button"><i class="fa fa-stack-exchange"></i> BÁO CÁO LÃNH ĐẠO <span class="caret"></span></button>
+                            <ul role="menu" class="dropdown-menu contentInclue">
+                                <li>
+                                    <a class="linktomod" href="#modules/baocao_lanhdao/hopdongcungcapdichvu">HỢP ĐỒNG CUNG CẤP DỊCH VỤ</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/baocao_lanhdao/vattuthietbinhapdauvao">VẬT TƯ THIẾT BỊ NHẬP ĐẦU VÀO</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/baocao_lanhdao/tiendolapdatanghiemthu">TIẾN ĐỘ LẮP ĐẶT NGHIỆM THU</a>
+                                </li>
+                                <li>
+                                    <a class="linktomod" href="#modules/test">test</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                    </li>
+                    <li>
+                        <!--<div class="btn-group">
+                            <label id="lbUserFullName" style="font-size:11px;"></label>
+                        </div>-->
+                        <div class="btn-group" style="margin-left:10px;">
+                            <input class="form-control form-control-inline input-medium" size="15" type="text" value=""id="serach_all"  /> 
+                        </div>
+                        <div class="btn-group">
+                            <a class="linktomod btn btn-warning" href="#modules/timkiem" id="btn_timkiem_master">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <div class="btn-group">
+                            <a class="linktomod btn btn-success " href="#modules/timkiemnangcao" id="btn_timkiemnangcao_master">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                        <div class="btn-group">
+                            <a class="linktomod" href="http://vttbphu.infras.com.vn:8888" target="_self" >
+                                <img src="img/orange-shuffle-24.ico" />
+                            </a>
+                        </div>
+                        <div class="btn-group">
+                            <label id="lbPhieuChoDuyet">0</label>
+                        </div>
+                     </li>
+                    
+                    <!--<li>
+            <button type="button" class="btn btn-info btn-hethong ">
+            <i class="fa fa-cogs"></i> <a class="linktomod" href="#modules/vanhanh">Vận hành</a></button>
+        </li>-->
+                    <!--<li>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-info dropdown-toggle btn-hethong" type="button"><i class="fa fa-sitemap"></i> Quản lý <span class="caret"></span></button>
+                            <ul role="menu" class="dropdown-menu contentInclue">
+                                <li><a class="linktomod" href="#modules/hethong/ql-khachhang">Quản lý khách hàng</a></li>
+                                <li class="divider"></li>
+                                <li><a id="" class="linktomod" href="#modules/hethong/ql-danhmucdienluc">Quản lý danh mục điện lực</a></li>
+                                <li><a class="linktomod" href="#modules/hethong/ql-taikhoan">Quản lý tài khoản</a></li>
+                            </ul>
+                        </div>
+                    </li>-->
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle btn-group linkmodule" >
+                            <img alt="" src="http://evnit.vn/img/evn_logo.png">
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li>
+                                <span id="lbUserFullName"></span>
+                            </li>
+                            <!--<li><a id="profile_btn" class="linktomod" href="#modules/profile"><i class="fa fa-cog"></i> Cài đặt</a></li>-->
+                            <!--<li><a  ><i class="fa fa-bell-o"></i> Thông báo</a></li>-->
+                            <li><a  id="logout"><i class="fa fa-key"></i> Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+            </div>
+        </header>
+        <!--header end-->
+        <!--sidebar start-->
+        <aside>
+
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content" style="" class="main-content">
+            <div class="wrapper site-min-height">
+                <div class="main-content-delete">
+                    <!-- page start-->
+                    <div data-include="modules/home"></div>
+                    <!-- page end-->
+                    </div>
+                </div>
+        </section>
+        <!--main content end-->
+        <!--footer start-->
+        <!--<footer class="site-footer">
+            <div class="text-center">
+                2016 &copy; Infras Consult.
+                <a   class="go-top">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
+        </footer>-->
+        <!--footer end-->
+        <div class="gotoTop">
+            <a   class="go-top" title="Lên đầu trang">
+                <i class="fa fa-arrow-circle-up"></i>
+            </a>
+        </div>
+    </section>
+    <!-- js placed at the end of the document so the pages load faster -->
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/advanced-form-components.js"></script>
+    <script src="js/numeral.js"></script>
+    <script type="text/javascript" src="js/common-scripts.js"></script>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script src="js/morris.min.js"></script>
+    <!--<script src="js/raphael-min.js"></script>-->
+    <script src="js/multiselect.js"></script>
+    <link href="css/morris.css" rel="stylesheet" />
+    <!--<script src="js/highcharts.js"></script>
+    <script src="js/draggable-legend.js"></script>-->
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="api/addModul.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+    <script type="text/javascript" src="api/api.js"></script>
+    <script src="master/init.js"></script>
+
+    <link href="master/init.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+    <!--custom switch-->
+    <script src="js/bootstrap-switch.js"></script>
+    <!--custom tagsinput-->
+    <script src="js/jquery.tagsinput.js"></script>
+    <!--custom checkbox & radio-->
+    <script type="text/javascript" src="js/ga.js"></script>
+    <!--<script src="js/form-component.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
+
+    <!--TIMER-->
+    <script type="text/javascript" src="js/timer-doctucthoi.js"></script>
+    <script src="js/jquery.menu.js"></script>
+    <div class="modal fade" id="huongdan_mod" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Chú thích</h4>
+                </div>
+                <div class="modal-body" style="overflow:hidden">
+                    - Ems: Số lượng VTTB trên hệ thống EMS<br/>
+
+                    - Thực tế: Số lượng VTTB tại Điện lực, Nvlđ<br />
+
+                    - Tạm thu hồi: Số lượng VTTB Nvlđ thu hồi từ Điện lực nhưng chưa lập phiếu trên hệ thống EMS<br />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                    <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

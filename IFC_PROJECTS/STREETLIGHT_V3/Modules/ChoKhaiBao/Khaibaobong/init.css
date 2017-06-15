@@ -1,0 +1,28 @@
+﻿.tbl_kbb tbody tr td{
+padding:5px;
+}
+.txt_cssmau{
+    float:right;
+    margin-top: -27px;
+}
+/*#table_thembong{
+    max-height: 300px;
+    overflow-y:auto;
+}*/
+#table_thembong tr {
+width: 100%;
+display: inline-table;
+table-layout: fixed;
+}
+
+table#table_thembong{
+ height:300px;              
+ display: -moz-groupbox;    
+}
+#table_thembong tbody{
+  overflow-y: scroll;      
+  height: 290px;           
+  width: 98%;
+  position: absolute;
+}
+.c{text-align:center}

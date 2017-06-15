@@ -1,0 +1,119 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="col-lg-12">
+            <div class="col-lg-6">
+                <input type="radio" value="xuatdulieu" name="rdtype" id="rdXuat" class="icheckbox_flat-blue" checked /><label for="rdXuat">Xuất file cho HHU</label>
+                <input type="radio" value="nhapdulieu" name="rdtype" id="rdNhap" class="icheckbox_flat-blue" /><label for="rdNhap">Nhập chỉ số từ HHU</label>
+            </div>
+            
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-6 col-md-6" style="padding-left:0px;width:initial;">
+                <div style="float:left">
+                    <input type="file" class="form-control " placeholder="" id="cmis_input_cnhhu" accept=".xml" style="" />
+                </div>
+                <div style="float:left; padding:0px 5px;">
+                    <label style="float:left;margin:5px 10px 5px 0px">Chọn ngày</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right datepicker" id="date_ngay" >
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <button class="btn btn-success pull-left" style="margin-right:10px" id="btnLocdulieu">Lọc dữ liệu HHU</button>
+                <button class="btn btn-success pull-left" style="margin-right:10px" id="btnXuatfilexml">Xuất file xml</button>
+                <button class="btn btn-success pull-left" style="margin-right:10px;display:none;" id="btnLuuChiSoMoi">Nhập chỉ số HHU</button>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="divMessage_nxhhucmis" style="display: none;">
+                <span class="kh_ccs"></span>
+                <span class="kh_kccs"></span>
+            </div>
+            <!--<div class="total_nxhhucmis"></div>-->
+        </div>
+        <div class="col-lg-12">
+            <span class="sobanghi"></span>
+        </div>
+        <div class="col-lg-12 panel-tkdn" style="width:100%; overflow-x:scroll;max-height:350px">
+            <table class="table table-responsive table-bordered table-hover" id="tbl_nxhhu">
+                <thead class="bg-aqua-gradient">
+                    <tr>
+                        <th>MA_NVGCS</th>
+                        <th>MA_KHANG</th>
+                        <th>MA_DDO</th>
+                        <th>MA_DVIQLY</th>
+                        <th>MA_GC</th>
+                        <th>MA_QUYEN</th>
+                        <th>MA_TRAM</th>
+                        <th>BOCSO_ID</th>
+                        <th>LOAI_BCS</th>
+                        <th>LOAI_CS</th>
+                        <th>TEN_KHANG</th>
+                        <th style="width:200px;">DIA_CHI</th>
+                        <th>MA_NN</th>
+                        <th>SO_HO</th>
+                        <th>MA_CTO</th>
+                        <th>SERY_CTO</th>
+                        <th>HSN</th>
+                        <th>CS_CU</th>
+                        <th>TTR_CU</th>
+                        <th>SL_CU</th>
+                        <th>SL_TTIEP</th>
+                        <th>NGAY_CU</th>
+                        <th>CS_MOI</th>
+                        <th>SL_MOI</th>
+                        <th>CHUOI_GIA</th>
+                        <th>KY</th>
+                        <th>THANG</th>
+                        <th>NAM</th>
+                        <th>NGAY_MOI</th>
+                        <th>NGUOI_GCS</th>
+                        <th>SL_THAO</th>
+                        <th>KIMUA_CSPK</th>
+                        <th>MA_COT</th>
+                        <th>SLUONG_1</th>
+                        <th>SLUONG_2</th>
+                        <th>SLUONG_3</th>
+                        <th>SO_HOM</th>
+                        <th>PMAX</th>
+                        <th>NGAY_PMAX</th>
+                        <th>GHI CHÚ</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+       
+    </div>
+    <!-- Modal -->
+    <div class="modal fade modal-info" id="help_tkdn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header m-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">TRỢ GIÚP</h4>
+                </div>
+                <div class="modal-body bg_fff" style="background-color:#fff !important;color:#111 !important;">
+                    <b>MÔ TẢ CHỨC NĂNG:</b><br />
+                    Thống kê số lần đăng nhập trong 5 ngày gần nhất <br />
+                    <b>HƯỚNG DẪN DỬ DỤNG:</b><br />
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                    <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="toast" class='' style='display:none'></div>
+</div>
+
+
+

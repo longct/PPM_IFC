@@ -1,0 +1,142 @@
+﻿<div class="box box-body">
+    <div class="col-xs-12">
+        <div class="panel-heading">
+            <ul class="filter_column"></ul>
+            <!-- /.box-header -->
+            <div class="panel panel-primary filterable">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Tra cứu hóa đơn</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-lg-4">
+                        <div class="col-lg-6" style="display:block;text-align:right;width:92%">
+                            <label style="width:80px">Tháng năm:</label>
+                            <input type="text" class="form-control datepicker " style="width:90px" placeholder="" />
+                        </div>
+                        <div class="col-lg-6" style="display:block;text-align:right;width:92%">
+                            <label>
+                                Kỳ:
+                                <select class="form-control select2" style="width: 90px;display:inline-block">
+                                    <option selected="selected">1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="col-lg-8">
+                            <div class="col-lg-3">
+                                <label>
+                                    <input type="radio" name="rdKieuLoc" value="0" class="flat-red">
+                                    Sổ
+                                </label>
+                            </div>
+                            <div class="col-lg-8">
+                                <select class="form-control select2" style="width: 100%;display:inline-block">
+                                    <option selected="selected">Sổ ghi 01</option>
+                                    <option>Sổ ghi 02</option>
+                                    <option>Sổ ghi 03</option>
+                                    <option>Sổ ghi 04</option>
+                                    <option>Sổ ghi 05</option>
+                                    <option>Sổ ghi 06</option>
+                                    <option>Sổ ghi 07</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="col-lg-3">
+                                <label>
+                                    <input type="radio" name="rdKieuLoc" value="1" class="flat-red">
+                                    Khách hàng
+                                </label>
+                            </div>
+                            <div class="col-lg-8">
+                                <input type="text" id="txtKH" class="form-control" placeholder="Khách hàng" disabled />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2" style="margin-left:10px">
+                            <button type="button" class="btn btn-block btn-primary"><i class="glyphicon glyphicon-download-alt"></i> Lấy số liệu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-primary filterable">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Thông tin hóa đơn</h3>
+                </div>
+                <table id="" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Mã khách hàng</th>
+                            <th>Tên khách hàng</th>
+                            <th>ID hóa đơn</th>
+                            <th>Sản lượng</th>
+                            <th>Số tiền</th>
+                            <th>Tiền thuế</th>
+                        </tr>
+                    </thead>
+                    <tbody id="soghi_details">
+                        <tr>
+                            <td>PA201633444444</td>
+                            <td>Mai Phương Thúy</td>
+                            <td>0123456</td>
+                            <td>666</td>
+                            <td>1,250,600</td>
+                            <td>125,600</td>
+                        </tr>
+                        <tr>
+                            <td>PA2016335555555</td>
+                            <td>Mai Phương Thúy</td>
+                            <td>0123456</td>
+                            <td>777</td>
+                            <td>2,250,600</td>
+                            <td>225,600</td>
+                        </tr>
+                        <tr>
+                            <td>PA2016366666666</td>
+                            <td>Mai Phương Thúy</td>
+                            <td>0123456</td>
+                            <td>888</td>
+                            <td>3,250,600</td>
+                            <td>325,600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <div class="col-lg-3">
+                    <span>Số hóa đơn TD: </span>
+                </div>
+                <div class="col-lg-3">
+                    <span>Sản lượng: </span>
+                </div>
+                <div class="col-lg-3">
+                    <span>Tiền: </span>
+                </div>
+                <div class="col-lg-3">
+                    <span>Thuế: </span>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-3">
+                    <span>Số hóa đơn CSPK: </span>
+                </div>
+                <div class="col-lg-3">
+                    <span>Sản lượng: </span>
+                </div>
+                <div class="col-lg-3">
+                    <span>Tiền: </span>
+                </div>
+                <div class="col-lg-3">
+                    <span>Thuế: </span>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+</div>

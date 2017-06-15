@@ -1,0 +1,115 @@
+﻿<div class="modal fade" id="tab_baocaoxuat_qlvt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">BÁO CÁO XUẤT</h4>
+            </div>
+            <section class="panel" style="box-shadow: none;border: none;">
+                <div class="panel-heading">
+                    <!--<div class="form-inline form-actions-bar">
+                        <div class="form-group">
+                            <label class="label_radio r_off" for="qlseries_rad_baocaoxuat">
+                                <input name="quanly_baocaoxuat" id="tongquan_baocaoxuat" value="0" type="radio" checked="checked"> Tổng quan
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="label_radio r_off" for="qlsoluong_rad_baocaoxuat">
+                                <input name="quanly_baocaoxuat" id="banmien_baocaoxuat" value="1" type="radio"> Kho tổng 
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="label_radio r_off" for="qlsoluong_rad_baocaoxuat">
+                                <input name="quanly_baocaoxuat" id="lapdat_baocaoxuat" value="2" type="radio"> Kho miền về nhân viên lắp đặt
+                            </label>
+                        </div>
+
+                    </div>-->
+                    <div class="form-inline" role="form">
+
+                        <table class="table" id="tbl_baocaoxuat">
+                            <tr>
+                                <td>
+                                    <label class="th">Từ ngày</label>
+                                    <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                           data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_datefrom_baocaoxuat" cache="true" />
+
+                                </td>
+                                <td>
+                                    <label class="th">Đến ngày</label>
+
+                                </td>
+                                <td>
+                                    <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                           data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_dateto_baocaoxuat" cache="true" />
+
+
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="th">Kho xuất</label>
+                                    <select id="cbkhoxuat_baocaoxuat" class="form-control form-control-inline input-medium">
+                                        <option value="-1">--Tất cả--</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label class="th">Vật tư thiết bị</label>
+                                </td>
+                                <td>
+                                    <select id="cbvattutb_baocaoxuat" class="form-control form-control-inline input-medium">
+                                        <option value="-1">--Tất cả--</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel" style="box-shadow: none;border: none;">
+                <div class="panel-body">
+
+                    <table>
+                        <tr>
+                            <td>
+                                <a class="btn btn-success" id="btnCapNhat_baocaoxuat">
+                                    <i class="fa fa-search"></i>Thực hiện
+                                </a>
+                                <a class="btn btn-success" id="btninbaocao_baocaoxuat" disable="true">
+                                    <i class="fa fa-plus"></i> In Báo cáo
+                                </a>
+                                <a class="btn btn-success" id="btnxuatexecl_baocaoxuat">
+                                    <i class="fa fa-plus"></i> Xuất Excel
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                    <div id="messinfo_baocaoxuat"></div>
+                    <div id="titleReport" style="text-align:center;width:100%;font-weight:bold;text-transform:uppercase;display:none;padding-top:10px;margin:10px 0 10px 0;border-top:3px solid #fca023;font-size:15px;"></div>
+                    <div style="overflow-x:auto; height:350px">
+                        <table class="table table-striped table-bordered" id="grv_baocaoxuat">
+                            <thead>
+
+                            </thead>
+                            <tbody></tbody>
+
+                        </table>
+                        <div id="messinfo_notdata"></div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+

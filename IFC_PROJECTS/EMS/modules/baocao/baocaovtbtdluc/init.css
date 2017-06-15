@@ -1,0 +1,5 @@
+﻿body {
+}
+.nw{white-space: nowrap;}
+.multiselect{min-width:200px !important}
+#tb_vttbtdl th,#tb_vttbtdl td{white-space:nowrap;}

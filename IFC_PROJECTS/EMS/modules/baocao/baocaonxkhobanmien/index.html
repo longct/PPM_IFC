@@ -1,0 +1,152 @@
+﻿<div class="col-lg-12 classbaocaokhobm" id="tab_nhaptay">
+    <section class="panel">
+        <div class="panel-heading"> 
+            <div class="form-inline" role="form">
+                <table class="table" id="tbl_baocaokhobm">
+                    <tr>
+                        <td>
+                            <label class="th">Thông kê từ ngày</label>
+                        </td>
+                        <td>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_datefrombh_baocaokbm" cache="true" />
+                        </td>
+
+                        <td>
+                            <label class="th">Vật tư thiết bị</label>
+                        </td>
+                        <td>
+                            <select id="cbvattutbi_baocaokbm" class="form-control" multiple="multiple"></select>
+                           
+                        </td>
+                        <td>
+                            <label class="th">Kho</label>
+                        </td>
+                        <td>
+                            <select id="cbkho_baocaokbm" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label class="th">Thông kê đến ngày</label>
+                        </td>
+                        <td>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value=""
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_datetobh_baocaokbm" cache="true" />
+                        </td>
+
+
+                        <td>
+                            <label class="th">Loại thiết bị</label>
+                        </td>
+                        <td>
+                            <select id="cbloaithietbi_baocaokbm" class="form-control" multiple="multiple"></select>
+                           
+                        </td>
+                        <td>
+                            <label class="th">Tình trạng</label>
+                        </td>
+                        <td>
+                            <select id="cbtinhtrang_baocaokbm" class="form-control form-control-inline input-medium">
+                                <option value="-1">--Tất cả--</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a class="btn btn-warning" id="btnCapNhat_baocaokbm">
+                                <i class="fa fa-plus"></i>Thực hiện
+                            </a>
+                            <a class="btn btn-warning classquyen_download" id="btnxuatexcel_baocaokbm">
+                                <i class="fa fa-plus"></i>Xuất excel
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+             
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+            <div id="messinfo_baocaokbm"></div>
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th rowspan="3" class="middle">STT</th>
+                        <th rowspan="3" class="middle">Tên VTTB</th>
+                        <th rowspan="3" class="middle">ĐVT</th>
+                        <th colspan="2"  class="middle">Tồn ĐK</th>
+                        <th colspan="6" class="middle bgcolor">Nhập TK</th>
+                        <th colspan="6" class="middle bgcolorx">Xuất TK</th>
+                        <th colspan="2" class="middle">Tồn CK</th>
+                    </tr>
+                    <tr>
+                        <!--tồn dk-->
+                        <th rowspan="2"  class="middle">Mới tốt</th>
+                        <th rowspan="2"  class="middle">TH tốt</th>
+
+                        <th class="middle bgcolor" colspan="2">TH từ NVLĐ</th>
+                        <th class="middle bgcolor"  colspan="2">TH từ ĐL</th>
+                        <th class="middle bgcolor"  colspan="2">ĐCNB từ kho tổng</th>
+                        <th class="middle bgcolorx"  colspan="2">Xuất thẳng ĐL</th>
+                        <th class="middle bgcolorx"  colspan="2">Xuất cho NV xử lý</th>
+                        <th class="middle bgcolorx"  colspan="2">Xuất ĐCNB trả KT</th>
+                        <!--TỒN ĐK-->
+                        <th rowspan="2"  class="middle">Mới tốt</th>
+                        <th rowspan="2"  class="middle">TH tốt</th>
+                    </tr>
+                    <tr>
+                      
+                        <!--TH từ NVLĐ-->
+                        <th  class="middle bgcolor">Mới tốt</th>
+                        <th  class="middle bgcolor">TH tốt</th>
+                        <!--TH từ ĐL-->
+                        <th  class="middle bgcolor">Mới tốt</th>
+                        <th  class="middle bgcolor">TH tốt</th>
+                        <!--ĐCNB từ KT-->
+                        <th  class="middle bgcolor">Mới tốt</th>
+                        <th  class="middle bgcolor">TH tốt</th>
+
+                        <!--Xuất thẳng điện lực-->
+                        <th  class="middle bgcolorx">Mới tốt</th>
+                        <th  class="middle bgcolorx">TH tốt</th>
+                        <!--Xuất cho NV xử lý-->
+                        <th  class="middle bgcolorx">Mới tốt</th>
+                        <th  class="middle bgcolorx">TH tốt</th>
+
+                        <!--Xuất ĐCNB trả KT-->
+                        <th  class="middle bgcolorx">Mới tốt</th>
+                        <th  class="middle bgcolorx">TH tốt</th>
+
+
+                    </tr>
+                </thead>
+                <tbody id="myTableData_baocaokbm"></tbody>
+            </table>
+            <div class="row-fluid row-fluid2">
+                <table style="width:100%">
+                    <tr>
+                        <td class="col-lg-3" style="padding-top:8px">
+                            <div>
+                                <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_qlkbm"></label></div>
+                            </div>
+                        </td>
+                        <td class="col-lg-9">
+                            <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_qlkbm">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+<div data-include="modules/modals_yesno"></div>

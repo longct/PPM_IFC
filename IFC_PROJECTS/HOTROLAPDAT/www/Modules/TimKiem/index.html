@@ -1,0 +1,157 @@
+﻿<div id="search_field">
+    <input type="text" id="timkiemdiemdo" placeholder="Nhập IMEI" class="" maxlength="16" value="3531960430654800" /> <!--value="3531960422813020"-->
+    <label for="ck_mkct" class="font-light text-normal" style="color:#fff">Sử dụng mật khẩu và loại công tơ mặc định</label>
+    <input type="checkbox" id="ck_mkct" checked class="" style="float:left;margin-top: 8px;margin-right: 10px;" />
+    <div style="display:none" id="div_matkhau">
+        <select id="cb_loaict" class="">
+            <option value="ELSTER">ELSTER</option>
+            <option value="LANDIS">LANDIS</option>
+            <option value="GENIUS">GENIUS</option>
+            <option value="STAR-DTS27">STAR-DTS27</option>
+            <option value="GELEX-M4">GELEX-M4</option>
+            <option value="GELEX-11MGS">GELEX-11MGS</option>
+            <option value="DEC_PSMART_3PHASE">DEC_PSMART_3PHASE</option>
+        </select>
+        <input type="text" id="matkhaucto" placeholder="Bỏ trống nếu dùng mật khẩu mặc định" class="" />
+        <button class="btn btn-success" id="btn_OK">Đọc</button>
+    </div>
+</div>
+<!--<div id="connect_bg_tk" style="display:none">
+    <img src="img/signalx.png" id="" /><br />
+    <span class=""><p class="text-red">Modem chưa kết nối với hệ thống, vui lòng kiểm tra và thử lại!</p></span>
+</div>-->
+<div id="process_status">
+    <table id="tbl_process_status">
+        <tr id="tr_step1" class="tr_step" style="display:none">
+            <td class="step_icon pull-right"><img class="loading2" src="img/loading2.gif" id="step1_icon" /></td>
+            <td id="step1" class="step_label">Kiểm tra kết nối với hệ thống</td>
+            <td></td>
+        </tr>
+        <tr id="tr_step2" class="tr_step" style="display:none">
+            <td class="step_icon pull-right"><img class="loading2" src="img/loading2.gif" id="step2_icon" /></td>
+            <td id="step2" class="step_label">Đang kiểm tra trạng thái kết nối của modem</td>
+            <td></td>
+        </tr>
+        <tr id="tr_step3" class="tr_step" style="display:none">
+            <td class="step_icon pull-right"><img class="loading2" src="img/loading2.gif" id="step3_icon" /></td>
+            <td id="step3" class="step_label">Hệ thống ddang đọc dữ liệu, vui lòng đợi 2-5 phút</td>
+            <td><span class="timer_run" style="display:inline-block;margin-left:5px; margin-right:10px">00:00:00</span></td>
+        </tr>
+    </table>
+</div>
+
+<div class="loading_search" style="display:none">
+    <span class="loading_text"></span><br />
+    <img src="img/loading.gif" />
+</div>
+<div class="meter_info_tbl" style="display:none">
+    <div class="toadohientai">
+        <span></span>
+    </div>
+    <div class="tbl_info_data">
+        <table class="table table-responsive table-bordered ">
+            <tr>
+                <td style="width:35%" class="text-bold">Tên Điểm đo</td>
+                <td id="td_tenthietbi"></td>
+            </tr>
+            <tr>
+                <td class="text-bold">Mã Khách hàng</td>
+                <td id="td_imei"></td>
+            </tr>
+            <tr>
+                <td class="text-bold">Số công tơ</td>
+                <td id="td_loaimodem"></td>
+            </tr>
+            <tr>
+                <td class="text-bold">Vị trí</td>
+                <td id="td_vitri"></td>
+            </tr>
+            <!--<tr style="display:none">
+                <td class="text-bold">IP:Port</td>
+                <td id="td_ipport"></td>
+            </tr>-->
+            <!--<tr>
+                <td class="text-bold">Vĩ độ</td>
+                <td id="td_vido"></td>
+            </tr>-->
+        </table>
+    </div>
+    <div class="tbl_data" id="read_ressult">
+        <table class="table table-responsive table-bordered ">
+            <thead class="bg-aqua-gradient">
+                <tr>
+                    <th>Pha</th>
+                    <th>U (V)</th>
+                    <th>I (A)</th>
+                    <th>Cos φ</th>
+                    <th>P(KW)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="">A</td>
+                    <td id="ua"></td>
+                    <td id="ia"></td>
+                    <td id="cosa"></td>
+                    <td id="pa"></td>
+                </tr>
+                <tr>
+                    <td id="">B</td>
+                    <td id="ub"></td>
+                    <td id="ib"></td>
+                    <td id="cosb"></td>
+                    <td id="pb"></td>
+                </tr>
+                <tr>
+                    <td id="">C</td>
+                    <td id="uc"></td>
+                    <td id="ic"></td>
+                    <td id="cosc"></td>
+                    <td id="pc"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="act_btn" style="display:none">
+    <div class="btn_meter">
+        <a data-toggle='modal' href='#checkConnect' id="connect_click">
+            <img src="img/connect.png" /><br />
+            <span class="btn_text">Cập nhật thông tin</span>
+        </a>
+    </div>
+    <div class="btn_meter" id="capnhattoado_btn">
+        <a href="#">
+            <img src="img/capnhattoado.png" /><br />
+            <span class="btn_text">Cập nhật tọa độ</span>
+        </a>
+    </div>
+    <div class="btn_meter">
+        <a data-toggle='modal' href='#suadiemdo' id="edit_click">
+            <img src="img/setting.png" /><br />
+            <span class="btn_text">Khắc phục xử lý lỗi</span>
+        </a>
+    </div>
+    <div class="btn_meter">
+        <a data-toggle='modal' href='#bando_meter' id="map_click">
+            <img src="img/map-icon.png" /><br />
+            <span class="btn_text">Vị trí điểm đo</span>
+        </a>
+    </div>
+</div>
+<div class="modal fade " id="bando_meter" tabindex="-1" role="dialog" aria-labelledby="mymodallabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">vị trí điểm đo</h4>
+            </div>
+            <div class="modal-body">
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div data-include="Modules/Connect"></div>-->
+<div data-include="Modules/SuaDiemDo"></div>
+<div data-include="Modules/Capnhat_thongtin"></div>

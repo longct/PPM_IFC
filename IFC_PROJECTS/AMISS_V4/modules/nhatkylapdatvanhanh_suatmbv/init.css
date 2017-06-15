@@ -1,0 +1,31 @@
+﻿.center {
+    text-align: center;
+}
+
+#sua_nkldvh .box, #detail_nkldvh .box {
+    border-top: none !important;
+}
+
+#sua_nkldvh .modal-header, #detail_nkldvh .modal-header {
+    padding: 8px;
+}
+
+.notransform {
+    color: #00AEF0;
+    font-size: 11px;
+}
+
+input[type="file"] {
+    margin-bottom: 3px;
+}
+
+#detail_nkldvh .user_date {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#noidung_nkldvh {
+    margin: 10px 0;
+    padding-bottom: 15px;
+}
+#lbltieude_nkldvh{font-size:15px; font-weight:bold}

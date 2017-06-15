@@ -1,0 +1,10 @@
+﻿#tbl_thongke_data thead tr th{
+    background:#fff;
+}
+.thongke_view{
+    margin-top:1px;
+}
+#tbl_thongke_data tbody tr td,#tbl_data_xuly_tong tbody tr td {
+    background: #fff;
+    text-align: center;
+}

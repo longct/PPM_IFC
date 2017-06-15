@@ -1,0 +1,30 @@
+﻿
+<section class="panel">
+    <div class="panel-heading">
+        <div data-include="Module/ChoKhaiBao/TabChung"></div>
+    </div>
+
+    <div class="panel-body">
+        <div id="messinfo_thembong"></div>
+        <div id="messinfo_xuatexcel"></div>
+        <table class="tbl_kbb">
+            <tr>
+                <td>
+                    <select class="form-control input-sm m-bot15" id="cbtu_thembong"></select>
+                </td>
+                <td style="vertical-align: top;">
+                    <input type="file" id="uploadexcel_thembong" accept=".xls, .xlsx" style="display:inline-block;" onchange="f_UploadFile_xuatexcel(this)" />
+                </td>
+            </tr>
+        </table>
+        <button class="btn btn-success" type="button" id="btn_checkluu_thembong">Cập nhật</button>
+        <div class="txt_cssmau"><a href="filemau/Thembong.xlsx" download><label class="filemau">File mẫu</label></a></div>
+
+    </div>
+
+    <table class="table table-striped table-bordered" id="thembong_tbl">
+        <tbody id="table_thembong"></tbody>
+    </table>
+
+</section>
+

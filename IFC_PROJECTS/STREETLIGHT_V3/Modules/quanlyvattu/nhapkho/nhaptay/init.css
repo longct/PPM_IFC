@@ -1,0 +1,33 @@
+﻿table#tbl_nhaptay tr td {
+    border: none;
+    padding: 0px;
+}
+table#tbl_nhaptay tbody tr td input[type="text"], table#tbl_nhaptay tbody tr td select, table#tbl_nhaptay tbody tr td textarea {
+    width: 200px !important;
+    font-size: 13px !important;
+    margin:0
+}
+
+.them_phieu{
+    padding-top:20px;
+}
+i.fa-them{
+    cursor:pointer;
+    color:#047514;
+}
+label.th {
+    font-weight: normal !important;
+    font-size: 13px;
+}
+table#tbl_nhaptay>tbody>tr>td{
+    border-bottom:none !important;
+    border-top:none !important;
+    padding: 5px;
+}
+.form-actions-bar {
+    background: #F4F7D0;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}

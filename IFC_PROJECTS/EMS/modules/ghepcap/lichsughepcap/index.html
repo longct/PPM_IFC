@@ -1,0 +1,90 @@
+﻿<div class="col-lg-12" id="tab_xuatexcel">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/ghepcap/ghepcap_tab"></div>
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-heading">
+            <div class="form-inline" role="form">
+                <table class="table" id="tbl_xuatexcel">
+                    <tr>
+                        <td style="width:250px;">
+                            <input type="radio" name="rdKieuLoc" value="ngaythang" id="rdNgaythang" checked/> 
+                            <label for="rdNgaythang">Tìm theo ngày ghép</label>
+                        </td>
+                        <td>
+                           Từ ngày
+                        </td>
+                        <td>
+                            <input type="text" class="form-control form-control-inline input-medium default-date-picker" data-date-format="dd/mm/yyyy" id="dtTungay" />
+                        </td>
+                        <td>
+                           Đến ngày
+                        </td>
+                        <td>
+                            <input type="text" class="form-control form-control-inline input-medium default-date-picker" data-date-format="dd/mm/yyyy" id="dtDenngay" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="rdKieuLoc" value="series" id="rdSeries" />
+                            <label for="rdSeries">Tìm theo series</label>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" disabled class="form-control form-control-inline" id="txtSeries" placeholder="Series thiết bị"/>
+                        </td>
+                        <td>
+                            <a class="btn btn-success" id="btnSearch">
+                                <i class="fa fa-search"></i>Lọc dữ liệu
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+            <div id="messinfo_lsgc"></div>
+            <table class="table table-bordered" id="tbDanhsach">
+                <thead>
+                    <tr>
+                        <td class="c">STT</td>
+                        <td class="c">Tên thiết bị</td>
+                        <td class="c">Series1</td>
+                        <td class="c">Tên thiết bị</td>
+                        <td class="c">Series2</td>
+                        <td class="c">Ngày ghép</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="row-fluid">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"><label id="txt_tongsobanghi_lstgc"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pagecurent_lstgc">
+                                    <ul>
+                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<div data-include="modules/modals_yesno"></div>

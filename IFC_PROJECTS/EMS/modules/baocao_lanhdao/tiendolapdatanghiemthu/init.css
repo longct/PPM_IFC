@@ -1,0 +1,16 @@
+label.th {
+    min-width: 100px;
+}
+label.th1 {
+    min-width: 205px;
+    font-weight: normal !important;
+    margin-left: 20px;
+}
+#btn_add_tdld{margin-left: 20px;}
+.form-inline {
+    margin-bottom: 10px;
+}
+
+.form-group select, .form-group input {
+    min-width:200px;
+}

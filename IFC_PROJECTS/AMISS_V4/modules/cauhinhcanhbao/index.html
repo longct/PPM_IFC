@@ -1,0 +1,327 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12">
+        <div class="pull-left"><span class="sobanghi"></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><button class="btn btn-success" id="btn_taomoicauhinh">Tạo mới</button></li> 
+                <li><a href="#help_tsvh" data-toggle="modal"><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></a></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+        <div class="col-lg-12">
+            <div id="Main" style="display:none">
+                <!--<div style="text-align: right;margin-right: 10px;float:right;">
+                    <input id="btnHelpMainProfile" type="button" class="form-control" onclick="getHtmlForHelp('btnHelpMainProfile')" />
+                </div>-->
+                <div class="col-lg-12">
+                    <label class="filter_tsvh">Tên cấu hình(*)</label>
+                    <input type="text" class="form-control" id="txtNameProfile" />
+                </div>
+                <div class="col-lg-12">
+                    <div class="col-lg-6" style="padding-left:0px !important">
+                        <label for="cboWhichPha" class="filter_tsvh">Áp dụng cho(*):</label>
+                        <select id="cboWhichPha" class="form-control" data-wrap="styledSelectbox block">
+                            <option value="3">3 Pha</option>
+                            <option value="1">1 Pha</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6" style="margin-top:30px !important">
+                        <div class="group" style="padding-bottom: 10px; padding-left: 10px; float: left;">
+                            <button id="btnBack" type="button" class="btn btn-default">
+                                Trở lại
+                            </button>
+                            <button id="btnSaveProfile" type="button" class="btn btn-sua_cess">
+                                Cập nhật cấu hình
+                            </button>
+                            <button id="btnDefault" type="button" class="btn btn-warning">
+                                Sử dụng mặc định
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-responsive table-bordered">
+                    <thead class="tlcb bg-aqua-gradient">
+                        <tr>
+                            <!--<th style="display:none"></th>-->
+                            <th class="lang_mod_tlcb_lbl_type_warning" style="padding-left: 10px;text-align:left;width:30%">Loại cảnh báo</th>
+                            <th class="lang_mod_tlcb_lbl_parameter_settings" style="text-align: center;">Thông số thiết lập</th>
+                            <th style="text-align: center; width: 100px">
+                                Bật cảnh báo
+                                <!--<center><input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkAll" /></center>-->
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="tlcb">
+                        <!-- Điện áp -->
+                        <tr>
+                            <!--<td style="display:none"></td>-->
+                            <td>
+                                <strong>Cảnh báo điện áp (U)</strong><br />
+                                Cảnh báo quá điện áp<br />
+                                Cảnh báo thấp điện áp
+                            </td>
+                            <td>
+                                <div class="form-inline">
+                                    <label>Tỉ lệ (+)</label>
+                                    <input type="text" class="form-control" maxlength="6" id="txtU_Tren"  style="margin-left:28px;"/> (%) U định mức
+                                    <label style="margin-left:30px;"> U định mức </label>
+                                    <input type="text" class="form-control" maxlength="6" id="txtUDinhMuc" /> (V)
+                                </div>
+                                <div class="form-inline">
+                                    <label>Tỷ lệ (-)</label>
+                                    <input type="text" class="form-control" id="txtU_Duoi"  style="margin-left:28px;"/> (%) U định mức
+                                </div>
+                            </td>
+                            <td class="a_c"><input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoU" class="flat-red" /></td>
+                        </tr>
+                    </tbody>
+                    <tbody class="tlcb">
+                        <!-- Dòng Điện -->
+                        <tr>
+                            <!--<td style="display:none"></td>-->
+                            <td>
+                                <strong>Cảnh báo dòng điện (I)</strong><br />
+                                Cảnh báo quá dòng<br />
+                                Quá dòng 1 pha và 2 pha còn lại = 0<br />
+                                Quá dòng 2 pha và 1 pha còn lại = 0<br />
+                                Dòng 1 pha lệch so với các pha
+                            </td>
+                            <td>
+                                <div class="form-inline">
+                                    <!--Dòng Điện-->
+                                    <label>Tỉ lệ (+)</label>
+                                    <input type="text" class="form-control" maxlength="6" id="txtIQua" style="margin-left:28px;" /> (%) I định mức
+                                    <label style="margin-left:40px;"> I định mức </label>
+                                    <input type="text" class="form-control" maxlength="6" id="txtI_DinhMuc" style="margin-left:30px;" /> (A)
+                                </div>
+                                <div class="form-inline">
+                                    <label class="turnOnOff3pha">1 pha ≥ </label>
+                                    <input type="text" class="form-control turnOnOff3pha" id="txtI1Pha" style="margin-left:30px;">
+                                    <span class="turnOnOff3pha"> (%) I định mức</span>
+</div>
+                                <div class="form-inline">
+                                    <label class="turnOnOff3pha">2 pha ≥ </label>
+                                    <input type="text" class="form-control turnOnOff3pha" maxlength="6" id="txtI2Pha" style="margin-left:30px;">
+                                    <span class="turnOnOff3pha"> (%) I định mức</span>
+</div>
+                                <div class="form-inline">
+                                    <label class="turnOnOff3pha">1 pha ≤ </label>
+                                    <input type="text" class="form-control turnOnOff3pha" maxlength="6" id="txtILech" style="margin-left:30px;">
+                                    <span class="turnOnOff3pha"> (%) tb các pha</span><br />
+                                </div>
+                            </td>
+                            <td class="a_c" style="vertical-align: top;">
+                                <input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoI1" /><br />
+                                <span class="turnOnOff3pha"><input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoI2" style="top: 20px;" /></span><br />
+                                <span class="turnOnOff3pha"><input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoI3" style="top: 40px;" /></span><br />
+                                <span class="turnOnOff3pha"><input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoI4" style="top: 60px;" /></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="tlcb turnOnOff3pha">
+                        <!-- Cos-->
+                        <tr>
+                            <!--<td style="display:none"></td>-->
+                            <td>
+                                <strong>Hệ số công suất - Cos(φ)</strong><br />
+                            </td>
+                            <td>
+                                <div class="form-inline">
+                                    <!--CosTB(φ) -->
+                                    <label>CosTB &lt;</label>
+                                    <input type="text" class="form-control" maxlength="5" id="txtCos"  style="margin-left:22px;"/> thì cảnh báo
+                                </div>
+                            </td>
+                            <td class="a_c">
+                                <input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoCos" />
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="tlcb turnOnOff3pha">
+                        <!--Tần số (Hz)-->
+                        <tr>
+                            <!--<td style="display:none"></td>-->
+                            <td>
+                                <strong>Cảnh báo tần số (Freg)</strong><br />
+                                Cảnh báo quá tần số<br />
+                                Cảnh báo thấp tần số
+                            </td>
+                            <td>
+                                <div class="form-inline">
+                                    <!--Tỉ lệ (+)-->
+                                    <label>Tỉ lệ (+)</label>
+                                    <input type="text" class="form-control" id="txtFreg_Tren" style="margin-left:28px;" /> (%) Tần số định mức
+                                    <label style="margin-left:10px"> Tần số định mức </label>
+                                    <input type="text" class="form-control" maxlength="6" id="txtF_DinhMuc" style="margin-left:29px;" />(Hz)<!--(%) F định mức-->
+                                </div>
+                                <div class="form-inline">
+                                    <!--Tỷ lệ (-)-->
+                                    <label>Tỷ lệ (-) </label>
+                                    <input type="text" class="form-control" id="txtFreg_Duoi" style="margin-left:29px;" /> (%) Tần số định mức
+                                </div>
+                            </td>
+                            <td class="a_c">
+                                <input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoFreg" />
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="tlcb turnOnOff3pha">
+                        <!--Góc Lệch-->
+                        <tr>
+                            <!--<td style="display:none"></td>-->
+                            <td>
+                                <strong>Cảnh báo góc lệch pha (φ)</strong><br />
+                                Cảnh báo góc lệch pha A--><br />
+                                Cảnh báo góc lệch pha B--><br />
+                                Cảnh báo góc lệch pha C-->
+                            </td>
+                            <td>
+                                <div class="form-inline">
+                                    <label>Angle A ≤</label> <!--&lt;=-->
+                                    <input type="text" class="form-control" id="txtAngleA_Duoi" maxlength="6" />
+                                    <span class="lang_mod_tlcb_lbl_degrees">(độ)</span> |
+                                    <label>Angle A ≥</label> <!--&gt;=-->
+                                    <input type="text" class="form-control" id="txtAngleA_Tren" maxlength="6" />
+                                    <span class="lang_mod_tlcb_lbl_degrees">(độ)</span><br />
+                                </div>
+                                <div class="form-inline">
+                                    <label>Angle B ≤</label>
+                                    <input type="text" class="form-control" id="txtAngleB_Duoi" maxlength="6" />
+                                    <span class="lang_mod_tlcb_lbl_degrees">(độ)</span> |
+                                    <label>Angle B ≥</label>
+                                    <input type="text" class="form-control" id="txtAngleB_Tren" maxlength="6" />
+                                    <span class="lang_mod_tlcb_lbl_degrees">(độ)</span><br />
+                                </div>
+                                <div class="form-inline">
+
+                                    <label>Angle C ≤</label>
+                                    <input type="text" class="form-control" id="txtAngleC_Duoi" maxlength="6" />
+                                    <span class="lang_mod_tlcb_lbl_degrees">(độ)</span> |
+                                    <label>Angle C ≥</label>
+                                    <input type="text" class="form-control" id="txtAngleCTren" maxlength="6" />
+                                    <span class="lang_mod_tlcb_lbl_degrees">(độ)</span>
+                                </div>                               
+
+                            </td>
+                            <td class="a_c">
+                                <input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoAngle" />
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="tlcb">
+                        <!--Lệch thời gian-->
+                        <tr>
+                            <!--<td style="display:none"></td>-->
+                            <td>
+                                <strong>Cảnh báo thời gian</strong><br />
+                                Cảnh báo lệch thời gian hệ thống và công tơ
+                            </td>
+                            <!--<td class="colThamso"></td>-->
+                            <td>
+                                <div class="form-inline">
+                                    <label>Độ lệch &lt;</label>
+                                    <input type="text" class="form-control" maxlength="6" id="txtTime" /> (phút) thì cảnh báo
+                                </div>                                
+                            </td>
+                            <td class="a_c">
+                                <input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoTime" />
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="tlcb">
+                        <!--Cảnh báo công suất-->
+                        <tr>
+
+                            <td>
+                                <strong><span class="">Cảnh báo công suất (P)</span></strong><br />
+                                <span class=""> - Cảnh báo công suất vượt ngưỡng</span>
+                            </td>
+                            <td>
+                                <div class="form-inline">
+                                    <label>Tỉ lệ (+)</label>
+                                    <input type="text" class="form-control" maxlength="6" id="txtP_Tren" style="margin-left:27px"/> (%)
+
+                                    <label> P định mức </label>
+                                    <input type="text" class="form-control" maxlength="6" id="txtP_DinhMuc" />
+                                    <span>(Kwh)<!--(%) P định mức--></span>
+                                </div>
+                            </td>
+
+                            <td class="a_c">
+                                <input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoP" />
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="tlcb">
+                        <!--Cảnh báo sản lượng k thay đổi-->
+                        <tr>
+                            <td>
+                                <strong><span class="">Cảnh báo sản lượng</span></strong><br />
+                                <span class=""> - Sản lượng không đổi qua nhiều ngày liên tiếp</span><br />
+                                <span class=""> - Sản lượng kỳ vượt ngưỡng so với kì trước</span><br />
+                                <span class=""> - Sản lượng kỳ dưới ngưỡng so với kì trước</span>
+                            </td>
+                            <td>
+                                <div class="form-inline">
+                                    <label>Số ngày</label>
+                                    <input type="text" class="form-control" maxlength="6" id="txtSoNgay" style="margin-left:23px;"/>
+                                    (ngày) liên tục sản lượng không đổi<br />
+                                </div>
+                                <div class="form-inline">
+                                    <label>Tỉ lệ (+)</label>
+                                    <input type="text" class="form-control" id="txtSLKy_Tren" maxlength="6" style="margin-left:27px;"/> (%) sản lượng kỳ trước <br />
+                                </div>
+                                <div class="form-inline">
+                                    <label>Tỉ lệ (-)</label>
+                                    <input type="text" class="form-control" id="txtSLKy_Duoi" maxlength="6"  style="margin-left:31px;"/> (%) sản lượng kỳ trước
+                                </div>
+                            </td>
+                            <td class="a_c" style="vertical-align: top;">
+                                <input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoSL_KoDoi" /><br />
+                                <input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoSL_KyTren" style="top: 20px;" /><br />
+                                <input type="checkbox" style="margin-top:10px;" class="flat-red" id="chkCanhbaoSL_KyDuoi" style="top: 40px;" />
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="contactprofile">
+                        <tr>
+                            <td>
+                                <strong><span class="">Danh sách gửi email:</span></strong><br />
+                                <textarea placeholder="Email ngăn cách nhau bằng dấu phẩy" id="txtemaillist" style="width:100%" class="txt2" maxlength="300"></textarea>
+                            </td>
+                            <td>
+                                <strong><span class="">Danh sách số điện thoại:</span></strong><br />
+                                <textarea placeholder="Số điện thoại ngăn cách nhau bằng dấu phẩy" style="width:100%" id="txtphonelist" class="txt1" maxlength="300"></textarea>
+                            </td>
+                            <td class="a_c" style="vertical-align: top;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+        <div class="col-lg-12" id="">
+            <table class="table table-responsive table-bordered" id="cauhinh_profile">
+                <thead class=" bg-aqua-gradient">
+                    <tr>
+                        <th class="">STT</th>
+                        <th class="">Tên cấu hình(*)</th>
+                        <th class="">Tài khoản tạo </th>
+                        <th class="">Ngày tạo</th>
+                        <th class="">Sửa lần cuối</th>
+                        <th class="">Cấu hình trực thuộc</th>
+                        <th class="">Trạng thái áp dụng</th>
+                        <th class="">Xem</th>
+                        <th class="">Xóa</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

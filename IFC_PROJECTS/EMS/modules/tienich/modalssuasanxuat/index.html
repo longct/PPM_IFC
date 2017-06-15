@@ -1,0 +1,32 @@
+﻿
+    <div class="modal fade " id="sua_nhasaxuat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                   
+                    <h4 class="modal-title">Cập nhật thông tin nhà sản xuất</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="messinfo_sanxuat"> </div>
+                    <table class="table table-hover" style="width:100%;border:none" id="tbl_themtk">
+                        <tr>
+                            <td>Nhà sản xuất </td>
+                            <td><input type="text" class="form-control" id="txt_nhasanxuat_suasxuat"></td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button  class="btn btn-default" type="button" id="btnthoat_nsx">Thoát</button>
+                                <button class="btn btn-success" data-toggle='modal' href='#confirm-yn' id="btn_checkluu_suaxuat">Lưu lại</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div data-include="Module/modals_yesno"></div>
+    <!-- page end-->

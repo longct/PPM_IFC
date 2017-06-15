@@ -1,0 +1,8 @@
+﻿.v_m{vertical-align:middle !important}
+.c_m{background-color: #339933 !important; color:#fff !important; font-weight:bold;}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+}
+
+#grv_baocaoth tbody td{text-align:center;white-space: nowrap;}

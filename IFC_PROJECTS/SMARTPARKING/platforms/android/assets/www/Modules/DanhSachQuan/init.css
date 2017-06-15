@@ -1,0 +1,30 @@
+﻿.img_diemdo_quan{
+    width:25%;
+    height:80px;
+    /*background:#0094ff;*/
+    float:left;
+    margin-top:25px;
+    text-align:center;
+}
+.img_diemdo_quan img{
+    margin-bottom:3px;
+    width:40px;
+    height:40px;
+    margin-left:10%;
+    margin-right:10%;
+    border:1px solid #0094ff;
+    padding:4px;
+    background:#fff;
+}
+.img_diemdo_quan .tenquan{
+    margin-top:3px;
+}
+.tongsocho{
+    color:#0094ff;
+    font-weight:bold;
+}
+.tenquan{
+    color:#0094ff;
+    text-transform:none;
+    font-weight:bold;
+}

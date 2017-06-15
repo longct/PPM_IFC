@@ -1,0 +1,59 @@
+﻿<section class="panel">
+    <div class="panel-body">
+        <div class="modal-body2">
+            <div class="form-inline">
+                <div class="form-group ">
+                    <label class="control-label" for="uploadexcel_nhapketquadiemdo">Nhập từ tệp</label>
+                    <input type="file" id="uploadexcel_nhapketquadiemdo" accept=".xls, .xlsx" class="form-control form-control-inline input-medium" onchange=" f_UploadFile_xuatexcel(this); " />
+                    <button type="button" class="btn btn-success" id="btn_execl_tkt"><i class="fa fa-download info-icon"></i>Cập nhật</button>
+                </div>
+
+
+            </div>
+
+            <br />
+            <div id="messinfo_capnhat"></div>
+            <div style="float:right; text-align:right">
+                <a href="#" download=""><label class="filemau" style="cursor:pointer;">File mẫu</label></a>
+                <!--<input class="square_btn excel" type="button" id="btn_export_excel" alt="Xuất excel">-->
+            </div>
+            <table class="table table-responsive table-bordered" id="table_upketquaxuly">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã điểm đo</th>
+                        <th>Số công tơ</th>
+                        <th>IMEI</th>
+                        <th>Tên khách hàng</th>
+                        <th>Điện lực</th>
+                        <th>Công ty điện lực</th>
+                        <th>Trạng thái</th>
+                    </tr>
+
+                </thead>
+                <tbody id="table_ttddxl"></tbody>
+            </table>
+
+            <div class="row-fluid row-fluid2">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_ttddxl"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_ttddxl">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</section>
+

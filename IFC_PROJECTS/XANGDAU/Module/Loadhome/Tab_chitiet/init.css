@@ -1,0 +1,50 @@
+﻿#Tab_Lichsu_home .modal-dialog {
+    width: 80% !important;
+}
+
+.lichsutab_home {
+    color: #fff !important;
+    font-weight: normal;
+    text-align: center;
+    border-right: 1px solid #fff;
+    width: 100%;
+    line-height: 33px;
+}
+
+    .lichsutab_home :hover {
+        color: #fff !important;
+    }
+
+.tabcol {
+    width: 33.32%;
+    float: left;
+    line-height: 45px;
+    background: #428bca;
+}
+
+    .tabcol:hover, .btn.active {
+        background: #399ef6 !important;
+        color: #fff;
+    }
+
+.tabmodal {
+    height: 45px;
+    padding: 0px;
+}
+
+.tenvoibom{
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 17px;
+    padding: 10px;
+    color: #428bca;
+    font-weight: bold;
+}
+.tongsolit{
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 17px;
+    padding: 10px;
+    color: #ff606c;
+    font-weight: bold;
+}

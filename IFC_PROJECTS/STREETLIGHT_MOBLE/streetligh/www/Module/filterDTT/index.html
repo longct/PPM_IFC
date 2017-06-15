@@ -1,0 +1,71 @@
+﻿<ul class="nav pull-right top-menu">
+    <!--<li>
+        <a class="linktomod" href="#Module/HomeDenTrangTri">
+            <img src="img/chieusang.png" style="margin-top:-2px;cursor:pointer" />
+        </a>
+    </li>-->
+    <li id="filter">
+        <img src="img/cd-icon-filter.svg" /> Bộ lọc
+    </li>
+</ul>
+<div class="filter">
+    <!--<div class="close_filter">x</div>-->
+    <div class="heade close">Lọc thông tin</div>
+    <div class="filter_content">
+        <div class="filter_item">
+            <input type="text" id="search_txt_filter" placeholder="Nhập thông tin tìm kiếm" />
+            <button type="button" class="btn btn-warning" id="btn_search_filter">Tìm kiếm</button>
+        </div>
+        <div class="filter_item">
+            <span>Chọn nhóm tủ</span>
+            <br />
+            <select class="selectpicker" id="ChonNhom_filter"></select>
+        </div>
+        <div class="filter_item">
+            <span>Trạng thái tủ</span>
+            <br />
+            <div class="funkyradio">
+                <div class="funkyradio-success">
+                    <input type="radio" name="rdo_trangthai_filter" id="rdo_trangthai_filter_lb1" value="-1" checked />
+                    <label for="rdo_trangthai_filter_lb1">Tất cả</label>
+                </div>
+                <div class="funkyradio-success">
+                    <input type="radio" name="rdo_trangthai_filter" id="rdo_trangthai_filter_lb2" value="1" />
+                    <label for="rdo_trangthai_filter_lb2">Kết nối</label>
+                </div>
+                <div class="funkyradio-success">
+                    <input type="radio" name="rdo_trangthai_filter" id="rdo_trangthai_filter_lb3" value="0" />
+                    <label for="rdo_trangthai_filter_lb3">Mất kết nối</label>
+                </div>
+            </div>
+        </div>
+        <div class="filter_item">
+            <span>Trạng thái cảnh báo</span>
+            <br />
+            <div class="funkyradio">
+                <div class="funkyradio-success">
+                    <input type="radio" name="rdo_canhbao_filter" id="rdo_canhbao_filter1" value="-1" checked />
+                    <label for="rdo_canhbao_filter1">Tất cả</label>
+                </div>
+                <div class="funkyradio-success">
+                    <input type="radio" name="rdo_canhbao_filter" id="rdo_canhbao_filter2" value="1" />
+                    <label for="rdo_canhbao_filter2">Đang cảnh báo</label>
+                </div>
+                <div class="funkyradio-success">
+                    <input type="radio" name="rdo_canhbao_filter" id="rdo_canhbao_filter3" value="0" />
+                    <label for="rdo_canhbao_filter3">Hết cảnh báo</label>
+                </div>
+            </div>
+        </div>
+        <!--<div class="filter_item">
+            <span>Ngày xem dữ liệu</span>
+            <br />
+            <div class='input-group date' id='datetimepicker1'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>-->
+    </div>
+</div>

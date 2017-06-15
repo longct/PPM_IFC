@@ -1,0 +1,56 @@
+﻿<div class="col-lg-12 classnhapnhasanxuat" id="tab_nhaptay">
+    <section class="panel" style="margin-bottom:0px;">
+        <div class="panel-heading">
+            <div data-include="modules/tienich/tienich_tab"></div>
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-heading">
+           <div class="box-header" style="padding: 10px;">
+                <div style="text-align: right" class="classquyen_them">
+                    <a href="#sua_nhasaxuat" data-toggle="modal" id="btn_themmoi_nsx"><i class="fa fa-plus-square" aria-hidden="true"></i> Thêm mới</a>
+                </div>
+                <form method="post">
+                    <input class="form-control search_vt" id="txt_tennsx_search" placeholder="Tên nhà sản xuất" type="text" value="" />
+                   
+                    <input type="button" value="Tìm kiếm" class="btn btn-primary" id="btn_search_nsx" />
+                </form>
+            </div>
+            <div id="messinfo_tienichnsx"></div>
+            
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-body">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Nhà sản xuất</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="myTableData_tienichnsx"></tbody>
+
+            </table>
+            <div class="row-fluid row-fluid2">
+                <table style="width:100%">
+                    <tr>
+                        <td class="col-lg-3" style="padding-top:8px">
+                            <div>
+                                <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_nsx"></label></div>
+                            </div>
+                        </td>
+                        <td class="col-lg-9">
+                            <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_nsx">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+<div data-include="modules/modals_yesno"></div>
+<div data-include="modules/tienich/modalssuasanxuat"></div>

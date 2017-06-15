@@ -1,0 +1,89 @@
+﻿<div class="modal fade " id="Khaibao_kbbong" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 650px; margin: auto;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">KHAI BÁO BÓNG</h4>
+            </div>
+            <div class="modal-body">
+                <div id="messinfo_kbbong"></div>
+                <table class="table table-hover" style="width:100%;border:none" id="tbl_themtk">
+                    <tr>
+                        <td>Tên tủ: </td>
+                        <td>
+                            <select class="form-control" style=" width:200px;" id="cbtu_kbbong"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ID RF BÓNG</td>
+                        <td><input type="text" class="form-control" id="txt_idrfbong_kbbong"></td>
+                    </tr>
+                    <tr>
+                        <td>Tên bóng </td>
+                        <td><input type="text" class="form-control" id="txt_ten_kbbong"></td>
+                    </tr>
+                    <tr>
+                        <td>Kinh độ </td>
+                        <td><input type="text" class="form-control" id="txt_kinhdo_kbbong"></td>
+                    </tr>
+                    <tr>
+                        <td>Vĩ độ </td>
+                        <td><input type="text" class="form-control" id="txt_vido_kbbong"></td>
+                    </tr>
+                    <tr>
+                        <td>Loại bóng </td>
+                        <td>
+                            <select class="form-control " id="cb_loaibong_kbbong" style=" width:200px;"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pha bóng</td>
+                        <td>
+                            <select class="form-control " id="cb_phabong_kbbong" style=" width:200px;">
+                                <option value="-1"> Chọn Pha bóng </option>
+                                <option value="A"> Pha A</option>
+                                <option value="B"> Pha B</option>
+                                <option value="C"> Pha C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ngày lắp: </td>
+                        <td>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value="" cache="true"
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="txt_ngaylapdat_kbbong" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Công suất (W) </td>
+                        <td>
+                            <input class="form-control input-sm m-bot15" id="txt_congsuat_kbbong" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Điện Áp (V) </td>
+                        <td>
+                            <input class="form-control input-sm m-bot15" id="txt_dienap_kbbong" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Độ cao cột (M) </td>
+                        <td>
+                            <input class="form-control input-sm m-bot15" id="txt_docaocot_kbbong" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ghi chú:</td>
+                        <td><input type="text" class="form-control input-sm m-bot15" id="txt_ghichu_kbbong"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button data-dismiss="modal" class="btn btn-default" type="button">Thoát</button>
+                            <button class="btn btn-success" type="button" id="btn_checkluu_kbbong">Cập nhật</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

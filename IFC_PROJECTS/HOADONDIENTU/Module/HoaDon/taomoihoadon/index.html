@@ -1,0 +1,155 @@
+﻿    <div class="col-xs-12">
+            <!-- /.box-header -->
+            <div id="messinfo_tmhd"></div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Tạo mới hóa đơn</h3>
+                </div>
+                <div class="panel panel-body">
+                <table id="" class="table no-border">
+                    <tbody id="hd_head">
+                        <tr>
+                            <td>
+                                <img src="img/logo-evn.png" />
+                            </td>
+                            <td style="width:70%" align="center" valign="top">
+                                <h2 class="text-red no-margin">HÓA ĐƠN GTGT (TIỀN ĐIỆN)</h2>
+                                <table>
+                                    <tr>
+                                        <td>&nbsp;Tháng&nbsp;</td>
+                                        <td><input type="text" id="txt_thang" class="form-control datepicker " style="width:90px" placeholder="Tháng" ></td>
+                                        <td>Kỳ&nbsp;</td>
+                                        <td>
+                                            <select id="cbb_kychot" class="select2" style="width: 40px;">
+                                                <option selected="selected">1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </td>
+                                        <td>&nbsp;Từ ngày&nbsp;</td>
+                                        <td><input type="text" id="txt_tungay" class="form-control " style="width:110px" placeholder="Từ ngày" disabled value="01/09/2016"></td>
+                                        <td>&nbsp;Đến ngày&nbsp;</td>
+                                        <td><input type="text" id="txt_denngay" class="form-control " style="width:110px" placeholder="Đến ngày" disabled value="15/09/2016"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="width:15%">
+                                <table id="tb_mahoadon">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:60px"><small>Mẫu số:</small></td>
+                                            <td><select id="cb_mausohoadon_tmhd" class="form-control small-box" ></select></td>
+                                        </tr>                                                       
+                                        <tr>
+                                            <td><small>Ký hiệu:</small></td>
+                                            <td><input type="text" id="txt_kyhieuhoadon_tmhd" validate="true" class="form-control small-box" disabled/></td>
+                                        </tr>
+                                        <tr>
+                                            <td><small>Số:</small></td>
+                                            <td><input type="text" id="txt_mahoadon_tmhd"  validate="true" class="form-control small-box" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td><small>ID HĐ:</small></td>
+                                            <td><input type="text" id="txt_idhoadon_tmhd" validate="true" class="form-control small-box" disabled/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!--<span><small>Mẫu số: 01GHDDT/001</small></span><br />
+                                <span><small>Ký hiệu: AA/13E</small></span><br />
+                                <span><small>Số: </small></span>
+                                    <input type="text" id="txt_mahoadon_tmhd" class="form-control" style="width:120px;display:inline-block;" /><br />
+                                <span><small>ID HĐ: 243289242</small></span><br />-->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--<table class="table no-border no-padding ">
+                    <tr>
+                        <td colspan="6"><b>CÔNG TY TNHH MTV ĐIỆN LỰC ĐÀ NẴNG (Điện lực Hải Châu TK-102010000188278-NH TMCP Công thương ĐN)</b></td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ: </td>
+                        <td class="no-pad-top" colspan="5">35 Phan Đình Phùng, Q.Hải Châu, TP.Đà Nẵng (391 Trưng Nữ Vương)</td>
+                    </tr>
+                    <tr>
+                        <td>Điện thoại: </td>
+                        <td><input type="text"  id="txt_dienthoaicty" class="form-control  " style="width:120px; margin-left:6%;" placeholder="Điện thoại"></td>
+                        <td>MST: </td>
+                        <td><input type="text"  id="txt_masothuecty" class="form-control " style="width:120px" placeholder="Mã số thuế"></td>
+                        <td>ĐT sửa chữa</td>
+                        <td><input type="text"  id="txt_dienthoaisuachua" class="form-control " style="width:120px" placeholder="ĐT sửa chữa"></td>
+                    </tr>
+                </table>-->
+
+                <table class="table table-bordered no-padding">
+                    <tbody>
+                        <tr>
+                            <td>Mã KH: </td>
+                            <td><input type="text" id="txt_makh" class="form-control "  placeholder="Mã khách hàng"></td>
+                            <td style="width:150px;">Tên khách hàng: </td>
+                            <td colspan="5"><label id="txt_tenkh"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Điện thoại: </td>
+                            <td><label id="txt_dienthoaikh"></label></td>
+                            <td>Địa chỉ: </td>
+                            <td colspan="5"><label id="txt_diachikh"></label></td>
+
+                        </tr>
+                        <tr>
+                            <td>MST: </td>
+                            <td><label id="txt_masothuekh"></label></td>
+                            <td>Số công tơ</td>
+                            <td style="width:15%;"><label type="text" id="txt_socongto"></label></td>
+                            <td style="width:100px;">Số hộ</td>
+                            <td style="width:15%;"><label type="text" id="txt_soho"></label></td>
+                            <td style="width:100px;">Cấp ĐA</td>
+                            <td style="width:15%;"><label type="text" id="txt_capdienap"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Mã T.toán: </td>
+                            <td><label type="text" id="txt_matt"></label></td>
+                            <td>Mã NN</td>
+                            <td><label type="text" id="txt_mann"></label></td>
+                            <td>Mã giá</td>
+                            <td><label type="text" id="txt_magia"></label></td>
+                            <td>Mã trạm</td>
+                            <td><label type="text" id="txt_matram"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Sổ GCS: </td>
+                            <td><label type="text" id="txt_soghi"></label></td>
+                            <td>P GCS: </td>
+                            <td><label type="text" id="txt_p_gcs"></label></td>
+                            <td colspan="4">
+                                <button id="btn_TinhHoaDon" class="btn btn-success">Tính hóa đơn</button>
+                                <button id="btn_GhiHoaDon" class="btn btn-success">Ghi hóa đơn</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Chi tiết hóa đơn</h3>
+                </div>
+
+                <table id="table_tmhd" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <td>Bộ CS</td>
+                            <td>Chỉ số mới</td>
+                            <td>Chỉ số cũ</td>
+                            <td>HS nhân</td>
+                            <td>Điện năng TT</td>
+                            <td>Đơn giá</td>
+                            <td>Thành tiền</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>

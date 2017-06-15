@@ -1,0 +1,76 @@
+﻿<section class="panel">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-lg-1">
+                <label class="th" style="width:100px;margin-top: 17px;">Hệ thống</label>
+            </div>
+            <div class="col-lg-3">
+                <div id="dropDownButton" style="width: 100%;margin-top:11px">
+                    <div id='jqxDropDonvi' style="border: none;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <label class="th" style="width:100px;margin-top: 17px;">Ngày</label>
+            </div>
+            <div class="col-lg-1">
+                <input type="text" style="width:100px;margin-top: 10px;" class="form-control form-control-inline input-medium datepicker" id="dt_ngay" />
+            </div>
+            <div class="col-lg-1">
+                <label class="th" style="width:100px;margin-top: 17px;">Thời điểm</label>
+            </div>
+            <div class="col-lg-2">
+                <select class="form-control form-control-inline input-medium" style="margin-top: 10px;width:130px;" id="cbo_time">
+                    <option value="now">Hiện tại</option>
+                    <option value="06:00:00">06:00</option>
+                    <option value="16:00:00">16:00</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <button class='btn btn-success btn_luu_cfg' type='button' id='btn_xembaocao' style="margin-top: 10px;">Xem báo cáo</button>
+                <button class='btn btn-success btn_luu_cfg' type='button' id='btn_excel' style="margin-top: 10px;">Excel</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" style="display:inline-block">
+            <div id="messinfo_bht"></div>
+            <table class="table table-responsive table-bordered table-striped sticky-header" id="table_baocao">
+                <thead>
+                    <tr>
+                        <th rowspan="2">STT</th>
+                        <th rowspan="2">Hệ thống RF</th>
+                        <th colspan="3">Ngày hiện tại</th>
+                        <th colspan="3">Ngày quá khứ</th>
+                        <th rowspan="2">Tăng giảm</th>
+                        <th rowspan="2">Ghi chú</th>
+                    </tr>
+                    <tr>
+                        <th>Đọc thành công</th>
+                        <th>Tổng điểm đo</th>
+                        <th>Tỷ lệ</th>
+                        <th>Đọc thành công</th>
+                        <th>Tổng điểm đo</th>
+                        <th>Tỷ lệ</th>
+                    </tr>
+                </thead>
+                <tbody id="table_bcht"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <input type="text" id="msg" name="msg" />
+        <input type="button" id="btnsendmessage" name="" value="Send" />
+        <input type="hidden" id="userid" />
+        <ul id="discussion"></ul>
+    </div>
+
+</section>
+<div data-include="Module/modals_yesno"></div>
+<link href="../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../js/jqx/jqxcore.js"></script>
+<script src="../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../js/jqx/jqxtree.js"></script>
+<script src="../../js/jqx/jqxdata.js"></script>

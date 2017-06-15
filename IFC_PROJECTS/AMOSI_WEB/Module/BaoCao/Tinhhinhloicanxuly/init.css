@@ -1,0 +1,77 @@
+﻿
+.col-lg-12, .col-lg-2 {
+    margin-bottom: 10px !important;
+}
+
+.legg {
+    position: absolute;
+    right: 15%;
+    top: 13%;
+}
+
+.filterable {
+    margin-top: 15px;
+}
+
+    .filterable .panel-heading .pull-right {
+        margin-top: -20px;
+    }
+
+    .filterable .filters input[disabled] {
+        background-color: transparent;
+        border: none;
+        cursor: auto;
+        box-shadow: none;
+        padding: 0;
+        height: auto;
+    }
+
+        .filterable .filters input[disabled]::-webkit-input-placeholder {
+            color: #333;
+        }
+
+        .filterable .filters input[disabled]::-moz-placeholder {
+            color: #333;
+        }
+
+        .filterable .filters input[disabled]:-ms-input-placeholder {
+            color: #333;
+        }
+
+.form-group button {
+    margin-top: 5px;
+}
+
+#jqxDropDonvi {
+    overflow-y: scroll;
+    background: #fff;
+}
+
+    #jqxDropDonvi ul {
+        background-color: white;
+        color: black;
+    }
+
+        #jqxDropDonvi ul li div:hover {
+            background-color: white;
+            color: black;
+        }
+
+#dropDownButton {
+    width: 200px !important;
+    margin: 5px 0px 5px 0px;
+    color: black;
+    border-radius: 0px;
+}
+
+.jqx-fill-state-hover {
+    background-color: white;
+}
+
+#dropDownButtonContentdropDownButton {
+    top: 3px !important;
+}
+
+.jqx-fill-state-pressed {
+    background: #999 !important;
+}

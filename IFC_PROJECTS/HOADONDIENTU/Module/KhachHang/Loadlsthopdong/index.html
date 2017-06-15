@@ -1,0 +1,75 @@
+﻿<div class="col-lg-12">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Thông tin hơp đồng</h3>
+        </div>
+
+        <div class="panel-body">
+            <table class="table no-border table-responsive">
+                <tr>
+                    <td>Điện lực</td>
+                    <td><select class="form-control" id="cb_dienluchd_lstkh"> </select> </td>
+                    <!--<td>Trạm </td>
+                    <td><select class="form-control" id="cb_matramhd_lstkh"> </select> </td>-->
+                    <td>Mã sổ GCS</td>
+                    <td><select class="form-control" id="cb_soghihd_lstkh"> </select> </td>
+                </tr>
+                <tr>
+                    <td>Trạng thái hợp đồng</td>
+                    <td>
+                        <select class="form-control" id="cb_hopdonghd_lstkh">
+                            <option value="-1">Tất cả</option>
+                            <option value="1">Có Hợp đồng</option>
+                            <option value="0">Hợp đồng thanh lý</option>
+                            <option value="">Chưa có hợp đồng</option>
+                        </select>
+                    </td>
+                    <td>Tìm kiếm</td>
+                    <td><input class="form-control" type="text" id="txt_timkiemhd_lstkh" /> </td>
+                    <td><button class="btn btn-success" id="bt_tkiemhd_lstkh"><i class="fa fa-search"></i> Tìm kiếm </button> </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="messinfo_hd_lst"></div>
+        <div class="panel-body">
+            <table class="table table-bordered table-striped">
+                <thead class="bg-aqua">
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên khách hàng</th>
+                        <th>Mã khách hàng</th>
+                        <th>Số công tơ</th>
+                        <th>Người tạo hợp đồng</th>
+                        <th>Ngày tạo hợp đồng</th>
+                        <!--<th>File HĐ (Word)</th>-->
+                        <th>File HĐ (Pdf)</th>
+                        <th>Thanh lý hợp đồng</th>
+                    </tr>
+                </thead>
+                <tbody id="tb_table_hopdong"></tbody>
+            </table>
+            <div class="row-fluid row-fluid2">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_lskh_hd"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_lsth_hd">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-mar-50"></div>
+</div>

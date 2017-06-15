@@ -1,0 +1,78 @@
+﻿<div class="col-lg-12">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Thống kê gửi mail</h3>
+        </div>
+
+        <div class="panel-body">
+
+            <div class="col-lg-7">
+                <table id="" class="table no-border table-responsive">
+                    <tr>
+                        <td>Tháng năm:</td>
+                        <td>
+                            <input type="text" id="txt_ngay_tkmai" class="form-control datepicker " />
+                        </td>
+                        <td>Trạng thái</td>
+                        <td>
+                            <select id="cb_trangthaiHD" class="form-control">
+                                <option value="-1">Chọn trạng thái</option>
+                                <option value="OK">Đã gửi</option>
+                                <option value="UNKNOW">Chưa gửi</option>
+                                <option value="SENDING">Đang gửi</option>
+                            </select>
+                        </td>
+                        <td><button id="btn_search_tkmai" class="btn btn-success"><i class="glyphicon glyphicon-search"> </i> Tìm kiếm</button></td>
+                    </tr>
+
+                </table>
+               
+            </div>
+            <br />
+            <br />
+            <br />
+            <div id="messinfo_tkmai"></div>
+            <div class="table-responsive">
+
+
+                <table class="table table-bordered table-striped">
+                    <thead class="bg-aqua">
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên khách hàng</th>
+                            <th>Email</th>
+                            <th class="w100">Điện thoại</th>
+                            <th>Chủ đề</th>
+                            <th>Nội dung</th>
+                            <th class="w100">Thời gian </th>
+                            <th class="w100">Người gửi </th>
+                            <th class="w100">Trạng thái gửi</th>
+                            <th class="w100">KH xem</th>
+                            <th>Ngày KH xem</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_thongke_tkmai"></tbody>
+                </table>
+
+                <div class="row-fluid row-fluid2">
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_lstkmai"></label></div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_lstkmai">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

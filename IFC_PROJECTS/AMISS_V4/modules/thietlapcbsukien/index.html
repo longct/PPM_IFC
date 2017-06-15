@@ -1,0 +1,73 @@
+﻿<div class="box box-body">
+    <!--<div class="col-lg-12">
+        <div class="pull-left"><span class=""></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+    </div>-->
+    <div class="col-lg-8 panel-tsvh">
+        <table class="table table-responsive no-border padding-3">
+            <tr>
+                <td><label class="filter_tsvh">Loại cảnh báo</label></td>
+                <td>
+                    <select id="selectLoaiCB" class="multi_select" multiple="multiple">
+                        <option value="PROGLOG">Lập trình công tơ</option>
+                        <option value="CURRENTIMBALANCE">Mất cân bằng dòng</option>
+                        <option value="LOSTCURRENT">Mất dòng</option>
+                        <option value="OVERCURRENT">Quá dòng</option>
+                        <option value="REVERSEPOWER">Ngược công suất</option>
+                        <option value="OVERLOAD">Quá tải</option>
+                        <option value="PASSCHANGE">Đổi mật khẩu</option>
+                        <option value="TAMPER">Đấu sai</option>
+                        <option value="TIMECHANGE">Thay đổi thời gian</option>
+                        <option value="POWERFAIL">Mất nguồn</option>
+                        <option value="UNDERVOLTAGE">Thấp áp</option>
+                        <option value="OVERVOLTAGE">Quá áp</option>
+                        <option value="PHASEFAIL">Mất điện áp pha</option>
+                        <option value="REVERSEVOLTAGE">Ngược chiều điện áp</option>
+                        <option value="REVERSECURRENT">Ngược chiều dòng điện</option>
+                        <option value="VOLTAGEIMBALANCE">Mất cân bằng áp</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label class="filter_tsvh">Email nhận cảnh báo</label></td>
+                <td>
+                    <textarea id="emailnhancb" type="text" class="form-control" placeholder="Email nhận cảnh báo cách nhau bằng dấu phẩy"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-lg-4"><label class="filter_tsvh">Số điện thoại nhận cảnh báo</label></td>
+                <td>
+                    <textarea id="sdtnhancb"type="text" class="form-control" placeholder="Số điện thoại nhận cảnh báo cách nhau bằng dấu phẩy"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class=" btn btn-success" id="btn_thietlapcbsk">Thực hiện</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-lg-12 ">
+        <table class="table table-responsive table-bordered" id="tbl_tlcksk_data">
+            <thead class=" bg-aqua-gradient">
+                <tr>
+                    <th class="th_stt1pha">Vị Trí</th>
+                    <th class="th_sct">Loại Cảnh báo</th>
+                    <th class="th_lct">Email nhận cảnh báo</th>
+                    <th class="th_tgct">Số điện thoại nhận cảnh báo</th>
+                    <th class="th_dienap"><i class="glyphicon glyphicon-remove"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+

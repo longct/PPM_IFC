@@ -1,0 +1,6 @@
+﻿.search_vt {width:20%; float:left; margin-right:5px}
+.c{text-align:center}
+.table>tbody>tr>td {
+    border-top: none !important;
+    vertical-align: middle;
+}

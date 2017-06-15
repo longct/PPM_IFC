@@ -1,0 +1,14 @@
+﻿
+.middle{vertical-align:middle !important;}
+.tongquan th.sltk{background-color: #11a914 !important;}
+.c{text-align:center}
+.slcd{background-color: #F4B084 !important;}
+td.slmoitot{color:#11a914;}
+td.slmoiloi{color:#ff0000;}
+#header-fixed { 
+    position: fixed; 
+    top: 57px; display:none;
+    background-color:white;
+    width:94.8%;
+
+}

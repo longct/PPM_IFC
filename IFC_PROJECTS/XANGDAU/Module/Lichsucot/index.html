@@ -1,0 +1,85 @@
+﻿<div class="modal fade" id="lstram" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">THÔNG TIN CỘT <span id="txt_thaythecongto1pha"></span></h4>
+            </div>
+            <div class="modal-body">
+                <div id="themmoikh_form">
+                    <div class="form-inline">
+                        <!--<div class="form-group">
+                            <label>Cột</label>
+                            <select class="form-control form-control-inline input-medium " id="cbcot_lichsutram">
+                                <option value="-1">Tất cả</option>
+                            </select>
+                        </div>-->
+                        <div class="form-group ">
+                            <label class="control-label" for="datefrom_lichsutram">Từ </label>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value="" cache="true"
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="datefrom_lichsutramct" />
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label" for="dateto_lichsutram">Đến </label>
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="10" type="text" value="" cache="true"
+                                   data-date="30/01/2015" data-date-format="dd/mm/yyyy" id="dateto_lichsutramct" />
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success" id="btn_lichsutramct"><i class="fa fa-search-minus"></i>Thực hiện</button>
+                            <!--<button type="button" class="btn btn-success" id="btn_lichsuexecl"><i class="fa fa-search-minus"></i>Xuất Execl</button>-->
+
+                         </div>
+
+
+                    </div>
+                    <div id="messinfo_lichsutramct"></div>
+                    <div style="float:right" id="txt_tongtientramct">
+                        <label class="control-label" for="dateto_lichsutram" style="font-weight: bold;">Tổng tiền: <span id="txt_tongtien_lichsutramct"></span> </label>
+                    </div>
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Cột</th>
+                                <th>Thời điểm bắt đầu</th>
+                                <th>Thời điểm kết thúc</th>
+                                <th>Loại Xăng</th>
+                                <th>Số lít bán</th>
+                                <th>Giá bán</th>
+                                <th>Thành tiền</th>
+                                <th>Tên trạm</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_lichsutramct"></tbody>
+                    </table>
+                    <div class="row-fluid row-fluid2">
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <div class="span6">
+                                        <div class="dataTables_info" id="hidden-table-info_info"  > <label id="txt_plichsutramct"></label></div>
+                                    </div>
+
+                                </td>
+                                <td>
+                                    <div class="span6">
+                                        <div class="dataTables_paginate paging_bootstrap pagination" id="pagecurent_lichsutramct">
+                                            <ul>
+                                                <li class="prev disabled"><a href="#">← Đầu</a></li>
+                                                <li class="active"><a href="#">←</a></li>
+                                                <li><input type="text" class="form-control" id="pagenumber" size="2"/></li>
+                                                <li class=""><a href="#">→</a></li>                                                
+                                                <li class="next"><a href="#">Cuối → </a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

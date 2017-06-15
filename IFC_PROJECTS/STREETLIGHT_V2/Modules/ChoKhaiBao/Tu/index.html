@@ -1,0 +1,52 @@
+﻿<div class="modal fade " id="Khaibao_tu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">DANH SÁCH TỦ</h4>
+            </div>
+            <div class="panel-body">
+                <!--<div class="panel col-md-12">
+                    <input type="text" style="width: 150px; border: 1px solid #ccc;" size="20" id="txt_timkiemcongto" />
+                    <button class="btn btn-success" type="button" id="btn_timkiems">Thực hiện</button>
+                </div>-->
+                <br />
+                <div id="messinfo_ttct"></div>
+                <table class="table table-striped table-bordered" id="tbl_ckbT">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã điểm đo</th>
+                            <th>Số công tơ</th>
+                            <th>Imei</th>
+                            <th>Tên Tủ</th>
+                            <th>Đơn vị</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_thontinct"></tbody>
+                </table>
+                <div class="row-fluid row-fluid2">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_thct"></label></div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_thct">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div data-include="Modules/ThongtinctCUD/Capnhatthongtincongto"></div>

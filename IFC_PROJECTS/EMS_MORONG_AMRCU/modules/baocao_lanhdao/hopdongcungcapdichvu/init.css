@@ -1,0 +1,11 @@
+label.th {
+    min-width: 150px;
+}
+
+.form-inline {
+    margin-bottom: 10px;
+}
+
+.form-group select, .form-group input {
+    min-width:200px;
+}

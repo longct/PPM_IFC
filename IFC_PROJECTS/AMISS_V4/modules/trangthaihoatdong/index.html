@@ -1,0 +1,59 @@
+﻿<div class="box box-body">
+    <div class="col-lg-12 panel-tsvh">
+        <h3 class="box-title bcvh">
+            <i class="glyphicon glyphicon-dashboard help_tsvh"></i><span id="tendiemdo_span"></span>
+        </h3>
+        <div class="box-body">
+            <div class="date-filter">
+                <div class="col-lg-3 tungay_d ">
+                    <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:8px;">Từ ngày</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right datepicker" id="date_tungay">
+                    </div>
+                </div>
+                <div class="col-lg-3 denngay_d">
+                    <label class="filter_tsvh" style="float:left;margin-right:10px;margin-top:8px;">Đến ngày</label>
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right datepicker" id="date_denngay">
+                    </div>
+                </div>
+                <button class="btn btn-success" id="btn_thuchien_bcvh">Thực hiện</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="pull-left"><span class="sobanghi sobanghi_top1"></span></div>
+        <div class="pull-right" id="toolbar">
+            <ul>
+                <li><a href="#help_tsvh" data-toggle="modal"><i class="glyphicon glyphicon-eye-open" title="Trợ giúp"></i></a></li>
+                <li><i class="glyphicon glyphicon-download-alt" title="Xuất Excel" id="excel_baocaotrangthai"></i></li>
+                <li><i class="glyphicon glyphicon-print" title="In"></i></li>
+            </ul>
+        </div>
+        <div class="col-lg-12">
+            <table class="table table-responsive table-bordered" id="tthd_data">
+                <thead class=" bg-aqua-gradient">
+                    <tr>
+                        <th class="th_stt">STT</th>
+                        <th class="th_pha">Mã điểm đo</th>
+                        <th class="th_u">Tên khách hàng</th>
+                        <th class="th_v">Số công tơ</th>
+                        <th class="th_v">Tình trạng on/off</th>
+                        <th class="th_v">Tình trạng dữ liệu</th>
+                        <th class="th_v">Cảnh báo vận hành</th>
+                        <th class="th_v">Sự kiện công tơ</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

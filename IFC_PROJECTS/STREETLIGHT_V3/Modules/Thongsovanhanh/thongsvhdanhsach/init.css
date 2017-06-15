@@ -1,0 +1,43 @@
+﻿.tr{
+ 
+    text-align:right;
+}
+.tl{
+ 
+    text-align:left;
+}
+.tc{
+    text-align:center;
+}
+.ca{
+    font-weight:bold;
+    color:#FF9933;
+    text-align:right;
+}
+.cb{
+    font-weight:bold;
+    color:#006D55;
+    text-align:right;
+}
+.cc{
+    font-weight:bold;
+    color:#FF0000;
+    text-align:right;
+}
+.tda{
+    font-weight:bold;
+    color:#FF9933;
+}
+.tdb{
+    font-weight:bold;
+    color:#006D55;
+}
+.tdc{
+    font-weight:bold;
+    color:#FF0000;
+}
+#txt_thongtintu{
+    color: #000000;
+    font-size: 20px;
+    line-height: 32.5px;
+}

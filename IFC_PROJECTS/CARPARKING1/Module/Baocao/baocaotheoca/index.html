@@ -1,0 +1,79 @@
+﻿<div class="col-lg-12">
+    <div class="form-inline">
+
+    </div>
+    <section class="panel">
+        <div class="panel-body">
+            <div class="col-lg-12">
+                <div class="col-lg-1">
+                    <label>Ca trực</label>
+                </div>
+                <div class="col-lg-3">
+                    <input class="form-control  select2 easyui-combobox" id="cb_catruc_bctheoca" style="width:100%;" />
+                </div>
+
+                <div class="col-lg-1">
+                    <label>Từ ngày</label>
+                </div>
+                <div class="col-lg-2" style="max-width:150px;">
+                    <input type="text" id="txt_tungay" class="form-control default-date-picker" style="width:105px;display:inline-block" />
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="col-lg-1" style="padding:4px 0px 4px 15px;">
+                    <label>Nhân viên</label>
+                </div>
+                <div class="col-lg-3">
+                    <input class="form-control  select2 easyui-combobox" id="cb_nhanvien_bctheoca" style="width:100%;" />
+                </div>
+
+                <div class="col-lg-1">
+                    <label>Đến ngày</label>
+                </div>
+                <div class="col-lg-2" style="max-width:150px;">
+                    <input type="text" id="txt_denngay" class="form-control default-date-picker" style="width:105px;display:inline-block" />
+                </div>
+                <div class="form-group col-lg-2">
+                    <button type="button" class="btn btn-success" id="btn_locdulieu">Lọc dữ liệu</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="messinfo_bcdoanhthu"></div>
+        <section class="panel">
+            <div class="panel-body">
+                <table class="table table-striped table-bordered" id="tb_hethongghitay">
+                    <thead>
+                        <tr>
+                            <th>Nhân viên</th>
+                            <th>Vị trí</th>
+                            <th>Giờ vào</th>
+                            <th>Giờ ra</th>
+                            <th>Thời gian gửi</th>
+                            <th>Tổng tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="row-fluid row-fluid2">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate" id="hidden-table-info_info"> <label id="pageCurent_bctheoca"></label></div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="span6">
+                                    <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_bctheoca">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>

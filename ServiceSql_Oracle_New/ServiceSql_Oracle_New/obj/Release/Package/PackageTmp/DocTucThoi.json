@@ -1,0 +1,8 @@
+﻿{
+  "Dtt_ConnectTo": "Sql",
+  "Dtt_ProcedureOracle": "PKG_DOCTUCTHOI.GetInfoPort",
+  "Dtt_ProcedureSql": "DocTucThoi_GetInfoPort",
+  "Dtt_SaveFileToFolder": "C:\\ServiceDocTucThoi\\readImei",
+  "PathWriteFileTxtError": "C:\\ServiceDocTucThoi\\writeLogError",
+  "PathWriteFileAllText": "C:\\ServiceDocTucThoi\\writeLogAllText"
+}

@@ -1,0 +1,81 @@
+﻿<section class="panel">
+    <div class="panel-body">
+        <div class="modal-body2">
+            <div class="form-inline" role="form">
+                
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-lg-1">
+                            <label class="th" style="margin-top:10px">Đơn vị</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <div id="dropDownButton">
+                                <div id='jqxDropDonvi' style="border: none;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <button class="btn btn-success" type="button" id="btn_laydulieu" style="margin-top:4px">Thực hiện</button>
+                        </div>
+                        <!--<div class="col-lg-1">
+                            <button class="btn btn-success" type="button" id="btnExcel" style="margin-top:4px">Xuất file Excel</button>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div id="messinfo_ttddxl"></div>
+            <table class="table table-responsive table-bordered" id="table_upketquaxuly">
+                <!--<thead>
+                    <tr>
+                        <th rowspan="3">Loại sự kiện</th>
+                        <th rowspan="3">Sự kiện</th>
+                        <th colspan="2">SPC</th>
+                        <th colspan="2">CPC</th>
+                        <th colspan="2">Ưu tiên loại 2</th>
+                    </tr>
+                    <tr>
+                        <th>3 pha GPRS</th>
+                        <th>RF/PLC</th>
+                        <th></th>
+                        <th>3 pha GPRS</th>
+                        <th>RF/PLC</th>
+                        <th>3 pha GPRS</th>
+                        <th>RF/PLC</th>
+                        <th>3 pha GPRS</th>
+                        <th>RF/PLC</th>
+                    </tr>
+
+                </thead>-->
+                <tbody id="table_ttddxl"></tbody>
+            </table>
+
+            <div class="row-fluid row-fluid2">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_info" id="hidden-table-info_info"> <label id="pageCurent_ttddxl"></label></div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination" id="pageLst_ttddxl">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<link href="../../../css/jqx/jqx.base.css" rel="stylesheet" />
+<script src="../../../js/jqx/jqxcore.js"></script>
+<script src="../../../js/jqx/jqxdropdownbutton.js"></script>
+<script src="../../../js/jqx/jqxtree.js"></script>
+<script src="../../../js/jqx/jqxdata.js"></script>
